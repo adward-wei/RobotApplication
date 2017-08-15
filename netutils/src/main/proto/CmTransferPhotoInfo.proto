@@ -1,0 +1,19 @@
+syntax = "proto3";
+option java_package = "com.ubtechinc.alpha";
+message CmTransferPhotoInfoRequest {
+
+    int32 type = 1;
+    int32 amount = 2;
+    string path = 3;
+    repeated string delPics = 4;
+
+}
+
+message CmTransferPhotoInfoResponse {
+
+    int32 type = 1;
+    int32 amount = 2;
+    string path = 3;
+    repeated string delPics = 4;
+
+}

@@ -1,0 +1,14 @@
+syntax = "proto3";
+option java_package = "com.ubtechinc.alpha";
+message CmSetErrorLogDataRequest {
+
+
+}
+
+message CmSetErrorLogDataResponse {
+
+    bool isSuccess = 1;
+    int32 resultCode = 2;
+    int32 minute2wait = 3;
+
+}

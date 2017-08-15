@@ -1,0 +1,19 @@
+<!--
+  ~ /*
+  ~  *
+  ~  * Copyright (c) 2008-2016 UBT Corporation.  All rights reserved.  Redistribution,
+  ~  *  modification, and use in source and binary forms are not permitted unless otherwise authorized by UBT.
+  ~  *
+  ~  */
+  -->
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.ubtechinc.alpha.sdk">
+
+    <application
+        android:allowBackup="true"
+        android:supportsRtl="true"
+        >
+    </application>
+
+</manifest>

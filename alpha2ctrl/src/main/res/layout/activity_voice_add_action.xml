@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_voice_add"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/bg_color_b5"
+    >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/top_title_heigh"
+        android:background="@color/text_color_t3">
+
+        <LinearLayout
+            android:id="@+id/ll_back"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/btn_back_margin_left"
+            android:clickable="true"
+            android:minWidth="100dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/btn_back"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/authorize_title"
+            style="@style/top_title_text_style"
+            android:visibility="visible"/>
+
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/listView_action"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relativeLayout1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:background="@color/white"
+        android:divider="@color/guide_bg"
+        android:dividerHeight="1dp"
+        android:scrollbars="none"/>
+</RelativeLayout>

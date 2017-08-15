@@ -1,0 +1,19 @@
+syntax = "proto3";
+option java_package = "com.ubtechinc.alpha";
+import "CmQuerySoftwareVersion.proto";
+import "CmQueryPowerData.proto";
+import "CmRobotMemory.proto";
+message CmAlphaInitParamRequest {
+
+
+}
+
+message CmAlphaInitParamResponse {
+
+    CmQuerySoftwareVersionResponse softwareVersion = 1;
+    CmQueryPowerDataResponse  powerData = 2;
+    CmRobotMemoryResponse memory = 3;
+    string masterName = 4;
+    string connectedWifiName = 5;
+    string serviceLanguage = 6;
+}

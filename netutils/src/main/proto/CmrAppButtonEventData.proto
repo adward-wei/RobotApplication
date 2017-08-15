@@ -1,0 +1,10 @@
+syntax = "proto3";
+option java_package = "com.ubtechinc.alpha";
+
+message CmrAppButtonEventData {
+
+    int32 cmd = 1;
+    bytes datas = 2;
+    string packageName = 3;
+
+}

@@ -1,0 +1,25 @@
+syntax = "proto3";
+option java_package = "com.ubtechinc.alpha";
+message CmSetRTCTimeDataRequest {
+
+    int32 year = 1;
+    int32 month = 2;
+    int32 day = 3;
+    int32 week = 4;
+    int32 hour = 5;
+    int32 minute = 6;
+    int32 second = 7;
+    string timeZone = 8;
+}
+
+message CmSetRTCTimeDataResponse {
+
+    int32 year = 1;
+    int32 month = 2;
+    int32 day = 3;
+    int32 week = 4;
+    int32 hour = 5;
+    int32 minute = 6;
+    int32 second = 7;
+    string timeZone = 8;
+}

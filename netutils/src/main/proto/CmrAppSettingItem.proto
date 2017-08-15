@@ -1,0 +1,17 @@
+syntax = "proto3";
+option java_package = "com.ubtechinc.alpha";
+message CmrAppSettingItemRequest {
+
+    string editText = 1;
+    string ID = 2;
+    string textView = 3;
+  
+}
+
+message CmrAppSettingItemResponse {
+
+    string editText = 1;
+    string ID = 2;
+    string textView = 3;
+
+}

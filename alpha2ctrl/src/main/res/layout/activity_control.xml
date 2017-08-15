@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentTop="true"
+        android:layout_weight="6"
+        android:background="@drawable/main_content_update_bg" >
+
+        <include layout="@layout/contro_top_layout" />
+
+        <ImageView
+            android:id="@+id/control_setting_btn"
+            android:layout_width="@dimen/control_title_item_setting_width"
+            android:layout_height="@dimen/control_title_item_setting_height"
+            android:clickable="true"
+            android:src="@drawable/control_title_item_setting" />
+
+        <ImageView
+            android:id="@+id/control_change_btn"
+            android:layout_width="@dimen/control_title_item_setting_width"
+            android:layout_height="@dimen/control_title_item_setting_height"
+            android:layout_alignParentRight="true"
+            android:clickable="true"
+            android:src="@drawable/control_title_item_setting2" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:gravity="center" >
+
+        <include layout="@layout/control_content_layout" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:visibility="gone" >
+    </RelativeLayout>
+
+</LinearLayout>

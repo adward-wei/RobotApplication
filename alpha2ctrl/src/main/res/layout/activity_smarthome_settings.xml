@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/model_funciton_bg"
+    android:orientation="vertical"
+      android:fitsSystemWindows="true" >
+
+    <include
+        android:id="@+id/top_title"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/top_title_heigh"
+        layout="@layout/authorize_top_title" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="160dp"
+        android:orientation="vertical"
+        android:background="@drawable/more_liseview_item_style" >
+
+        <EditText
+            android:id="@+id/et_wifi_ssid"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="wifi" />
+
+        <EditText
+            android:id="@+id/et_wifi_password"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="passsword" />
+
+        <Button
+            android:id="@+id/config_network"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="250dp"
+            android:text="配置网络" />
+    </LinearLayout>
+
+</LinearLayout>

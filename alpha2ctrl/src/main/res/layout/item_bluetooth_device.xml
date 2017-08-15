@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+
+    >
+
+    <TextView
+        android:id="@+id/device_name_tv"
+        style="@style/t2_text_style"
+        android:layout_alignParentLeft="true"
+        android:text=""
+        android:textSize="@dimen/text_third_size"
+        android:layout_centerVertical="true"
+        />
+
+    <Button
+        android:id="@+id/btn_connect"
+        style="@style/contentTitleText"
+        android:layout_width="@dimen/search_item2_height"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/btn_negative_selector"
+        android:text="@string/bt_button_connect"
+        android:textColor="@color/text_color_t5"/>
+
+</RelativeLayout>

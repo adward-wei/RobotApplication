@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/list_background"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/btn_back_margin_left"
+        android:paddingRight="@dimen/btn_back_margin_left"
+        >
+
+        <RelativeLayout
+            android:id="@+id/rl_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/tv_date_year"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="12dp"
+                android:layout_marginLeft="13dp"
+                android:gravity="center_vertical"
+                android:paddingTop="15dp"
+                android:textColor="@color/reord_textcolor_item"
+                android:textSize="30sp"
+                android:visibility="visible"
+                />
+
+            <TextView
+                android:id="@+id/tv_date_day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_date_year"
+                android:layout_marginLeft="10dp"
+                android:gravity="bottom"
+                android:paddingBottom="@dimen/_mode_text_margin_top"
+                android:textColor="@color/reord_textcolor_item"
+                android:textSize="30sp"
+                android:visibility="visible"
+                />
+
+            <TextView
+                android:id="@+id/tv_date_month"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/tv_date_day"
+                android:layout_below="@+id/tv_date_year"
+                android:layout_toRightOf="@+id/tv_date_day"
+                android:gravity="bottom"
+                android:textColor="@color/reord_textcolor_item"
+                android:textSize="18sp"
+                android:visibility="gone"
+                />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/rl_date"
+            android:layout_centerVertical="true"
+            android:background="@drawable/record_item_background"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/tv_date"
+                android:layout_centerVertical="true"
+                android:background="@drawable/record_item_background"
+                android:orientation="vertical"
+                android:padding="@dimen/btn_back_margin_left"
+                >
+
+                <TextView
+                    android:id="@+id/tv_user_word"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/reord_textcolor_item"
+                    android:textSize="@dimen/text_third_size"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_robot_word"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/current_model_text_margin_top"
+                    android:textColor="@color/bg_color_b7"
+                    android:textSize="@dimen/text_midle_size"
+                    />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/ll_bottom_link"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/tv_date"
+                android:layout_centerVertical="true"
+                android:background="@drawable/record_item_background"
+                android:orientation="vertical"
+                android:visibility="visible"
+                >
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:layout_alignParentTop="true"
+                    android:background="@color/left_menu_line"/>
+
+                <ImageView
+                    android:id="@+id/iv_replay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingBottom="@dimen/_mode_text_margin_top"
+                    android:paddingLeft="@dimen/btn_back_margin_left"
+                    android:paddingRight="8dp"
+                    android:paddingTop="@dimen/_mode_text_margin_top"
+                    android:src="@drawable/ic_replay_action"/>
+
+                <TextView
+                    android:id="@+id/tv_link"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/btn_back_margin_left"
+                    android:layout_toRightOf="@+id/iv_replay"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="@dimen/_mode_text_margin_top"
+                    android:paddingTop="@dimen/_mode_text_margin_top"
+                    android:textColor="@color/reord_textcolor_item"
+                    android:textSize="@dimen/text_third_size"
+                    />
+            </RelativeLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

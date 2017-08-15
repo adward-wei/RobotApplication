@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rounder_white_bg"
+    android:fillViewport="true"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                style="@style/thirdTitleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/connect_disable_voice"
+                android:textColor="@color/main_page_active_select" />
+
+            <ImageView
+                android:id="@+id/btn_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/input_wifi_edittext_margin_right"
+                android:src="@drawable/ic_delect" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="10dp"
+            android:background="@color/main_page_active_select"/>
+
+        <TextView
+            style="@style/contentTitleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:gravity="left"
+            android:lineSpacingExtra="5dp"
+            android:text="@string/network_configure_scan_tips_1"
+            android:textColor="@color/main_page_active_select" />
+
+        <TextView
+            style="@style/smallTitleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/input_wifi_edittext_margin_right"
+            android:layout_marginTop="25dp"
+            android:gravity="left"
+            android:lineSpacingExtra="5dp"
+            android:text="@string/network_configure_scan_tips_content_1"
+            android:textColor="@color/text_black" />
+
+        <TextView
+            style="@style/contentTitleText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:gravity="left"
+            android:lineSpacingExtra="5dp"
+            android:text="@string/network_configure_scan_tips_2"
+            android:textColor="@color/main_page_active_select" />
+
+        <TextView
+            style="@style/smallTitleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/input_wifi_edittext_margin_right"
+            android:layout_marginTop="25dp"
+            android:gravity="left"
+            android:lineSpacingExtra="5dp"
+            android:text="@string/network_configure_scan_tips_content_2"
+            android:textColor="@color/text_black" />
+
+        <TextView
+            style="@style/contentTitleText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:gravity="left"
+            android:lineSpacingExtra="5dp"
+            android:text="@string/network_configure_scan_tips_3"
+            android:textColor="@color/main_page_active_select" />
+
+        <TextView
+            style="@style/smallTitleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/input_wifi_edittext_margin_right"
+            android:layout_marginTop="25dp"
+            android:gravity="left"
+            android:lineSpacingExtra="5dp"
+            android:text="@string/network_configure_scan_tips_content_3"
+            android:textColor="@color/text_black" />
+    </LinearLayout>
+</ScrollView>

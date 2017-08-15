@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/search_item_margin"
+    android:background="@color/model_funciton_bg"
+    android:minHeight="@dimen/search_item_height"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/authorize_type"
+        style="@style/thirdTitleText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/sending_color"
+        android:background="#f9f9f9"
+        android:textStyle="bold" 
+        android:paddingLeft="@dimen/search_item_margin"
+        android:gravity="center_vertical|left"/>
+
+    <RelativeLayout
+        android:id="@+id/imageLay"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/search_item_height"
+        android:layout_below="@id/authorize_type"
+        android:padding="@dimen/search_item_margin" >
+
+        <com.ubtechinc.alpha2ctrlapp.widget.RoundImageView
+            android:id="@+id/user_header"
+            android:layout_width="@dimen/search_item_image_height"
+            android:layout_height="@dimen/search_item_image_height"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true" />
+
+        <ImageButton
+            android:id="@+id/btn_delete_authorize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/icon_delete" />
+
+        <TextView
+            android:id="@+id/user_name"
+            style="@style/smallTitleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/search_item_name_margin"
+            android:layout_toLeftOf="@id/btn_delete_authorize"
+            android:layout_toRightOf="@+id/user_header"
+            android:textColor="@color/text_gray2" />
+    </RelativeLayout>
+
+</RelativeLayout>

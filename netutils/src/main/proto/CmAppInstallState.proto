@@ -1,0 +1,12 @@
+syntax = "proto3";
+option java_package = "com.ubtechinc.alpha";
+message CmAppInstallStateResponse {
+
+    string packageName = 1;
+    string appId = 2;
+    int32 state = 3;
+    int32 progress = 4;
+
+}
+
+

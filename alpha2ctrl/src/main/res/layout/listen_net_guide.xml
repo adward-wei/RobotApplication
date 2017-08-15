@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rounder_white_bg"
+    android:fillViewport="true"
+    android:scrollbars="none" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical" >
+        <TextView
+            android:id="@+id/tips_index_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:textColor="@color/main_page_active_select"
+            android:textSize="@dimen/text_third_size"
+            android:text = "1. "/>
+        <TextView
+            android:id="@+id/tips_1_text"
+            android:layout_toRightOf="@id/tips_index_1"
+            style="@style/contentTitleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:gravity="left"
+            android:text="@string/connect_guide_disable_voice_tips1"
+            android:textSize="@dimen/text_third_size"
+            android:textColor="@color/main_page_active_select" />
+
+        <TextView
+            android:id="@+id/tips_1_reply"
+            style="@style/smallTitleText"
+            android:layout_below="@id/tips_1_text"
+            android:layout_toRightOf="@id/tips_index_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="left"
+            android:lineSpacingExtra="5dp"
+            android:text="@string/connect_guide_disable_voice_tips1_tips"
+            android:textSize="@dimen/text_click_size"
+            android:textColor="@color/text_black" />
+
+        <TextView
+            android:id="@+id/tips_index_2"
+            android:layout_below="@id/tips_1_reply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:textColor="@color/main_page_active_select"
+            android:textSize="@dimen/text_third_size"
+            android:text = "2. "/>
+        <TextView
+            android:id="@+id/tips_text_2"
+            style="@style/contentTitleText"
+            android:layout_below="@id/tips_1_reply"
+            android:layout_toRightOf="@id/tips_index_2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:gravity="left"
+            android:lineSpacingExtra="5dp"
+            android:text="@string/connect_guide_disable_voice_tips2"
+            android:textSize="@dimen/text_third_size"
+            android:textColor="@color/main_page_active_select" />
+
+        <TextView
+            android:id="@+id/tips_text_2_reply"
+            style="@style/smallTitleText"
+            android:layout_below="@id/tips_text_2"
+            android:layout_toRightOf="@id/tips_index_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="left"
+            android:lineSpacingExtra="5dp"
+            android:text="@string/connect_guide_disable_voice_tips2_tips"
+            android:textSize="@dimen/text_click_size"
+            android:textColor="@color/text_black" />
+
+        <TextView
+            android:id="@+id/tips_index_3"
+            android:layout_below="@id/tips_text_2_reply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:textColor="@color/main_page_active_select"
+            android:textSize="@dimen/text_third_size"
+            android:text = "3. "/>
+        <TextView
+            android:id="@+id/tips_text_3"
+            android:layout_below="@id/tips_text_2_reply"
+            android:layout_toRightOf="@id/tips_index_3"
+            style="@style/contentTitleText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:gravity="left"
+            android:lineSpacingExtra="5dp"
+            android:text="@string/connect_guide_disable_voice_tips3"
+            android:textSize="@dimen/text_third_size"
+            android:textColor="@color/main_page_active_select" />
+
+        <TextView
+            android:id="@+id/tips_text_3_reply"
+            android:layout_toRightOf="@id/tips_index_3"
+            android:layout_below="@id/tips_text_3"
+            style="@style/smallTitleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="left"
+            android:lineSpacingExtra="5dp"
+            android:text="@string/connect_guide_disable_voice_tips3_tips"
+            android:textSize="@dimen/text_click_size"
+            android:textColor="@color/text_black" />
+
+        <ImageView
+            android:id="@+id/img_intro"
+            android:layout_below="@id/tips_text_3_reply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/input_wifi_edittext_margin_top"
+            android:layout_centerHorizontal="true"
+            android:background="@null"
+            android:src="@drawable/img_into" />
+
+        <TextView
+            android:layout_below="@id/img_intro"
+            style="@style/smallTitleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:lineSpacingExtra="5dp"
+            android:layout_centerHorizontal="true"
+            android:text="@string/connect_guide_disable_voice_tips4_tips"
+            android:textSize="@dimen/text_click_size"
+            android:textColor="@color/text_black" />
+    </RelativeLayout>
+</ScrollView>

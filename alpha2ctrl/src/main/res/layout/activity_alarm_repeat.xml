@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F7"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/top_title_heigh"
+        android:background="@color/text_color_t3" >
+
+        <LinearLayout
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/btn_back_margin_left"
+            android:clickable="true"
+            android:minWidth="100dp"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/btn_back"
+               />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/authorize_title"
+              style="@style/top_title_text_style"
+            android:layout_gravity="center"
+            android:text="@string/alarm_remind" />
+
+        <LinearLayout
+            android:id="@+id/finish"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:clickable="true"
+            android:gravity="right"
+            android:minWidth="100dp" >
+
+            <TextView
+                 style="@style/top_right_button_style"
+                 android:layout_gravity="center_vertical"
+                android:text="@string/common_btn_finish"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <!-- titlebar -->
+    <!--
+    <RelativeLayout style="@style/titlebar" >
+
+        <LinearLayout style="@style/titlebar_left" >
+
+            <TextView
+                android:id="@+id/back"
+                style="@style/titlebar_tv"
+                android:text="@string/back" />
+        </LinearLayout>
+
+        <TextView
+            style="@style/titlebar_title"
+            android:text="@string/repeat" />
+
+        <LinearLayout style="@style/titlebar_right" >
+
+            <TextView
+                android:id="@+id/finish"
+                style="@style/titlebar_tv"
+                android:text="@string/finish" />
+        </LinearLayout>
+
+        <View style="@style/titlebar_" />
+    </RelativeLayout>
+
+    -->
+    <!-- 重复模式 -->
+
+    <com.ubtechinc.alpha2ctrlapp.widget.CheckedRelativeLayout
+        android:id="@+id/repeat_once"
+        style="@style/alarm_repeat" >
+
+        <TextView
+            style="@style/alarm_repeat_prompt"
+            android:text="@string/alarm_repeat_once" />
+
+        <ImageView style="@style/alarm_repeat_sel_iv" />
+    </com.ubtechinc.alpha2ctrlapp.widget.CheckedRelativeLayout>
+
+    <com.ubtechinc.alpha2ctrlapp.widget.CheckedRelativeLayout
+        android:id="@+id/repeat_everyday"
+        style="@style/alarm_repeat" >
+
+        <TextView
+            style="@style/alarm_repeat_prompt"
+            android:text="@string/alarm_repeat_everyday" />
+
+        <ImageView style="@style/alarm_repeat_sel_iv" />
+    </com.ubtechinc.alpha2ctrlapp.widget.CheckedRelativeLayout>
+
+    <com.ubtechinc.alpha2ctrlapp.widget.CheckedRelativeLayout
+        android:id="@+id/repeat_everyweek"
+        style="@style/alarm_repeat" >
+
+        <TextView
+            style="@style/alarm_repeat_prompt"
+            android:text="@string/alarm_repeat_everyweek" />
+
+        <ImageView style="@style/alarm_repeat_sel_iv" />
+    </com.ubtechinc.alpha2ctrlapp.widget.CheckedRelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/days_container"
+        style="@style/alarm_repeat"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@android:color/white"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:visibility="gone"
+        android:weightSum="8" >
+
+        <Space style="@style/alarm_days_dummy" />
+
+        <com.ubtechinc.alpha2ctrlapp.widget.CheckedRelativeLayout
+            android:id="@+id/monday"
+            style="@style/alarm_days" >
+
+            <ImageView style="@style/alarm_days_iv" />
+
+            <TextView
+                style="@style/alarm_days_tv"
+                android:text="@string/alarm_monday" />
+        </com.ubtechinc.alpha2ctrlapp.widget.CheckedRelativeLayout>
+
+        <Space style="@style/alarm_days_dummy" />
+
+        <com.ubtechinc.alpha2ctrlapp.widget.CheckedRelativeLayout
+            android:id="@+id/tuesday"
+            style="@style/alarm_days" >
+
+            <ImageView style="@style/alarm_days_iv" />
+
+            <TextView
+                style="@style/alarm_days_tv"
+                android:text="@string/alarm_tuesday" />
+        </com.ubtechinc.alpha2ctrlapp.widget.CheckedRelativeLayout>
+
+        <Space style="@style/alarm_days_dummy" />
+
+        <com.ubtechinc.alpha2ctrlapp.widget.CheckedRelativeLayout
+            android:id="@+id/wednesday"
+            style="@style/alarm_days" >
+
+            <ImageView style="@style/alarm_days_iv" />
+
+            <TextView
+                style="@style/alarm_days_tv"
+                android:text="@string/alarm_wednesday" />
+        </com.ubtechinc.alpha2ctrlapp.widget.CheckedRelativeLayout>
+
+        <Space style="@style/alarm_days_dummy" />
+
+        <com.ubtechinc.alpha2ctrlapp.widget.CheckedRelativeLayout
+            android:id="@+id/thursday"
+            style="@style/alarm_days" >
+
+            <ImageView style="@style/alarm_days_iv" />
+
+            <TextView
+                style="@style/alarm_days_tv"
+                android:text="@string/alarm_thursday" />
+        </com.ubtechinc.alpha2ctrlapp.widget.CheckedRelativeLayout>
+
+        <Space style="@style/alarm_days_dummy" />
+
+        <com.ubtechinc.alpha2ctrlapp.widget.CheckedRelativeLayout
+            android:id="@+id/friday"
+            style="@style/alarm_days" >
+
+            <ImageView style="@style/alarm_days_iv" />
+
+            <TextView
+                style="@style/alarm_days_tv"
+                android:text="@string/alarm_friday" />
+        </com.ubtechinc.alpha2ctrlapp.widget.CheckedRelativeLayout>
+
+        <Space style="@style/alarm_days_dummy" />
+
+        <com.ubtechinc.alpha2ctrlapp.widget.CheckedRelativeLayout
+            android:id="@+id/saturday"
+            style="@style/alarm_days" >
+
+            <ImageView style="@style/alarm_days_iv" />
+
+            <TextView
+                style="@style/alarm_days_tv"
+                android:text="@string/alarm_saturday" />
+        </com.ubtechinc.alpha2ctrlapp.widget.CheckedRelativeLayout>
+
+        <Space style="@style/alarm_days_dummy" />
+
+        <com.ubtechinc.alpha2ctrlapp.widget.CheckedRelativeLayout
+            android:id="@+id/sunday"
+            style="@style/alarm_days" >
+
+            <ImageView style="@style/alarm_days_iv" />
+
+            <TextView
+                style="@style/alarm_days_tv"
+                android:text="@string/alarm_sunday" />
+        </com.ubtechinc.alpha2ctrlapp.widget.CheckedRelativeLayout>
+
+        <Space style="@style/alarm_days_dummy" />
+    </LinearLayout>
+
+    <com.ubtechinc.alpha2ctrlapp.widget.CheckedRelativeLayout
+        android:id="@+id/repeat_everymonth"
+        style="@style/alarm_repeat" >
+
+        <TextView
+            android:id="@+id/dummy"
+            style="@style/alarm_repeat_prompt"
+            android:text="@string/alarm_repeat_everymonth" />
+
+        <TextView
+            android:id="@+id/month_prompt_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/dummy"
+            android:text="2016-05-15"
+            android:visibility="invisible" />
+
+        <ImageView style="@style/alarm_repeat_sel_iv" />
+    </com.ubtechinc.alpha2ctrlapp.widget.CheckedRelativeLayout>
+
+</LinearLayout>

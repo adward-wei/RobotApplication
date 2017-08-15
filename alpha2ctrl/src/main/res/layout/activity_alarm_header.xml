@@ -1,0 +1,55 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android_custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/top_title_heigh"
+        android:background="@color/text_color_t3" >
+
+        <LinearLayout
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/btn_back_margin_left"
+            android:clickable="true"
+            android:minWidth="100dp"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/btn_back" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/authorize_title"
+            style="@style/top_title_text_style"
+            android:text="@string/alarm_tip" />
+
+        <LinearLayout
+            android:id="@+id/add_alarm"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:minWidth="100dp"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_vertical|right"
+                android:layout_marginRight="@dimen/btn_back_margin_left"
+                android:src="@drawable/btn_adding" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

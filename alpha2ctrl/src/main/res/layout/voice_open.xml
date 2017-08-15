@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/main_bg_black"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/show_send_voice_tips_Lay"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="@dimen/voice_image_margin_top"
+        android:layout_marginTop="@dimen/voice_image_margin_top"
+        android:layout_weight="3"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/icon_up_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@null"
+            android:src="@drawable/up" />
+
+        <TextView
+            style="@style/smallTitleText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/icon_up_image"
+            android:layout_marginTop="10dp"
+            android:ellipsize="end"
+            android:gravity="center_horizontal"
+            android:lineSpacingExtra="2dp"
+            android:maxLines="6"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="@string/sonic_open_power_button_tips"
+            android:textColor="@color/bound_tips_color" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/voice_middle_image_height"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginTop="@dimen/voice_middle_image_margin_top"
+            android:background="@null"
+            android:src="@drawable/juli2" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/btn_start_height"
+            android:orientation="horizontal"
+            android:weightSum="5" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_start"
+                style="@style/SecondTitleText"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/input_wifi_edittext_height"
+                android:layout_below="@id/show_send_voice_tips_Lay"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="3"
+                android:background="@drawable/btn_button_able"
+                android:gravity="center"
+                android:text="@string/sonic_send_voice"
+                android:textColor="@color/white" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            style="@style/contentTitleText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:clickable="true"
+            android:gravity="center_horizontal"
+            android:text="@string/sonic_keep_far_tips"
+            android:textColor="@color/bound_tips_color" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,15 @@
+syntax = "proto3";
+option java_package = "com.ubtechinc.alpha";
+import "CmAlarmEntrity.proto";
+
+message CmAlarmEntrityListRequest {
+
+    repeated CmAlarmEntrityRequest alarmList = 1;
+
+}
+
+message CmAlarmEntrityListResponse {
+
+    repeated CmAlarmEntrityResponse alarmList = 1;
+
+}

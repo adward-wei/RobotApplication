@@ -1,0 +1,14 @@
+syntax = "proto3";
+option java_package = "com.ubtechinc.alpha";
+message AlPlayActionCommandRequest {
+
+    string actionName = 1;
+
+}
+
+message AlPlayActionCommandResponse {
+
+    bool isSuccess = 1;
+    int32 resultCode = 2;
+
+}

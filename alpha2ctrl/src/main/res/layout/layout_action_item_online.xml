@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/input_wifi_edittext_margin_right"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/action_logo"
+                android:layout_width="@dimen/app_image_size"
+                android:layout_height="@dimen/app_image_size"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:scaleType="fitXY" >
+            </ImageView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/lay_info"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/action_logo"
+            android:layout_weight="3" >
+
+            <TextView
+                android:id="@+id/txt_action_name"
+                style="@style/thirdTitleText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="5dp"
+                android:gravity="top|left"
+                android:text=""
+                android:singleLine="true"
+                android:layout_toLeftOf="@+id/img_state"
+                android:textColor="@color/text_color_t2" />
+
+            <LinearLayout
+                android:id="@+id/lay_center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_action_name"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/img_type_logo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" 
+                    android:layout_gravity="center_vertical"/>
+
+                <TextView
+                    android:id="@+id/txt_time"
+                    style="@style/smallTitleText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/input_wifi_edittext_margin_right"
+                    android:gravity="bottom"
+                    android:text=""
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/text_color_t1" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txt_disc"
+                style="@style/contentTitleText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lay_center"
+                android:layout_marginTop="5dp"
+                android:layout_toLeftOf="@+id/img_state"
+                android:maxLines="2"
+                android:textColor="@color/text_color_t4" />
+            <ImageView
+                android:id="@+id/img_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="8sp" />
+        </RelativeLayout>
+
+
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:visibility="visible"
+         android:background="@color/bg_color_b5"
+        android:layout_marginLeft="@dimen/input_wifi_edittext_margin_right" 
+        android:layout_marginRight="@dimen/input_wifi_edittext_margin_right"/>
+
+</LinearLayout>

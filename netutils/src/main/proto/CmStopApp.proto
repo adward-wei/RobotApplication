@@ -1,0 +1,19 @@
+syntax = "proto3";
+option java_package = "com.ubtechinc.alpha";
+
+message CmStopAppRequest {
+
+    string packageName = 1;
+    string name = 2;
+
+}
+
+message CmStopAppResponse {
+
+    bool isSuccess = 1;
+    int32 resultCode = 2;
+
+
+}
+
+

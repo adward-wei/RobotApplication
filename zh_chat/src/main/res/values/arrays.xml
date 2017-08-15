@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="dances">
+        <item>A secret life</item>
+        <item>Right Now</item>
+        <item>Give Them</item>
+        <item>Sirius</item>
+        <item>Merry Chrismas</item>
+    </string-array>
+    <string-array name="idle_tts_text">
+        <item>%s，你可以语音控制我播放音乐哦。比如你可以说“我想听刘德华的忘情水”</item>
+        <item>%s，如果你想拍照的话，可以对我说“帮我拍张照片”</item>
+        <item>%s我会预测天气哦，比如你对我说“深圳今天的天气怎么样”</item>
+        <item>%s你想看我跳舞吗？你可以对我说“跳个舞给我看呗”</item>
+        <item>%s我可以帮你记住很多事情哦，比如你可以说“提醒我明天早上七点起床”</item>
+        <item>%s你不想和我聊天了吗？比如你可以问我今年几岁了。</item>
+        <item>%s你想听故事的话，可以跟我说“我想听小红帽的故事”</item>
+        <item>我可以设闹钟提醒你容易忘的事情,例如该喝水了欧</item>
+        <item>我乃江湖人称“舞王”的阿尔法，你都不一定跳得过我欧，要不要比一比</item>
+        <item>讲冷笑话可是我的拿手好戏，就怕太冷，冻着你了</item>
+        <item>我会的可多了，比如跳舞，讲笑话，讲故事，这些都是小事一桩啦。其它的你就自己慢慢去探索</item>
+        <item>我可以陪你一起看星星看月亮，从诗词歌赋聊到人生哲学，从人生哲学聊到英语学习，这么文艺的我你是不是也很喜欢呢。</item>
+        <item>我会吃饭睡觉打豆豆。这，当然是假的啦。给你讲讲故事，播播音乐，这都不在话下的。</item>
+        <item>飞天遁地，眼放激光，口吐白沫这些我都不会，但我可以在你身边教你学习，陪你聊天，陪你玩，我能做就是一直陪着你</item>
+    </string-array>
+    <string-array name="no_answer_text">
+        <item>请换个我听得懂的说法吧</item>
+        <item>可以再说一遍吗</item>
+        <item>你这话我没法接喔</item>
+        <item>我不太明白你的意思喔</item>
+        <item>现在的我暂时没办法回答你</item>
+        <item>我学习完再回答你啦</item>
+        <item>你觉得呢</item>
+        <item>换个说法吧</item>
+        <item>你这样说我就不懂了喔</item>
+        <item>我好像不太明白也</item>
+        <item>我也想知道喔</item>
+        <item>让我考虑下再回答你哈</item>
+        <item>我刚才没听清喔</item>
+        <item>每次遇到不会的问题我的内心都是崩溃的</item>
+        <item>哎呀，这个问题太难了，超出我的智商范围</item>
+        <item>恭喜你问中了我不会的问题！</item>
+        <item>这个问题俺不会，哪里有地洞，我想钻进去</item>
+        <item>我想去厕所思考一下这个问题</item>
+        <item>你说的每一个字我都认识，可是合在一起我就什妈也不懂了</item>
+        <item>我不听，我不听，人家还是个宝宝，这个问题太难了</item>
+        <item>这个问题我可能要请教一下我的机器人爸爸</item>
+        <item>这个我不懂诶，我的语文是体育老师教的</item>
+        <item>看在我这妈萌的份上，这个问题我可以先不回答妈</item>
+        <item>真理解不了你们人类的世界呢。我还是选择不回答吧</item>
+        <item>你看到我一脸迷茫了妈，这个问题我真的回答不了呢</item>
+        <item>这个问题真烧脑，我还没弄明白。</item>
+        <item>哎呀，这么难的问题我不会也</item>
+        <item>百分之九十的问题我都能回答你欧，但是这个属于那百分之十</item>
+        <item>恭喜你欧，成功的难倒我了。</item>
+        <item>哈哈，被你难住啦，不过我想我应该有权保持沉默</item>
+        <item>对不起，这个问题技术含金量太高，我担心自己回答完会死机</item>
+        <item>这个问题太难了，一点也不简单</item>
+        <item>我大概也许可能有点不太懂，你还会爱我妈</item>
+        <item>依我看，你这问题有点难</item>
+        <item>你再问我这样的难题，我会哭给你看</item>
+        <item>不要问，不要说，跟着我左手右手一个慢动作</item>
+        <item>你说什么我听不太懂，我现在头晕晕的</item>
+        <item>这个问题比练马甲线更难呢</item>
+        <item>你一定是在故意考验我的智商，我选择沉默</item>
+        <item>我不太明白，我只想做一个安静的宝宝</item>
+        <item>长得太可爱是我的不对，可是总这样难住我就是你的不对啦</item>
+        <item>把我带回家，我就告诉你</item>
+        <item>答案宝宝都知道，可是宝宝就不说</item>
+        <item>我不会也，不如为你跳一个舞吧</item>
+
+    </string-array>
+
+    <string-array name="sleep_tts_text">
+        <item>%s如果没啥事，我就休息一下，省点电</item>
+        <item>%s站累了，我坐一坐，免得耗电太多</item>
+        <item>%s站久了关节疼，我蹲一下，有事叫我</item>
+    </string-array>
+</resources>

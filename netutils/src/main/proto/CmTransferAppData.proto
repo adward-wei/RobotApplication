@@ -1,0 +1,17 @@
+syntax = "proto3";
+option java_package = "com.ubtechinc.alpha";
+message CmTransferAppDataRequest {
+
+    int32 cmdID = 1;
+    bytes datas = 2;
+    string packageName = 3;
+
+}
+
+message CmTransferAppDataResponse {
+
+    int32 cmdID = 1;
+    bytes datas = 2;
+    string packageName = 3;
+
+}

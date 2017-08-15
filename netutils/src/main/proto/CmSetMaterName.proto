@@ -1,0 +1,14 @@
+syntax = "proto3";
+option java_package = "com.ubtechinc.alpha";
+message CmSetMasterNameRequest {
+
+    string masterName = 1;
+
+}
+
+message CmSetMasterNameResponse {
+
+    bool isSuccess = 1;
+    int32 resultCode = 2;
+
+}

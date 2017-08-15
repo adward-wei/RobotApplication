@@ -1,0 +1,15 @@
+syntax = "proto3";
+option java_package = "com.ubtechinc.alpha";
+message CmrButtonConfigItemRequest {
+
+    string index = 1;
+    string text = 2;
+
+}
+
+message CmrButtonConfigItemResponse {
+
+    string index = 1;
+    string text = 2;
+
+}

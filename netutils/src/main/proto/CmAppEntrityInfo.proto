@@ -1,0 +1,21 @@
+syntax = "proto3";
+option java_package = "com.ubtechinc.alpha";
+message CmAppEntrityInfo {
+
+    string packageName = 1;
+    string name = 2;
+    string appKey = 3;
+    string versionCode = 4;
+    string versionName = 5;
+    string url = 6;
+    bytes icon = 7;
+    bool isSetting = 8;
+    bool isSystemApp = 9;
+    bool isButtonEvent = 10;
+    int64 appSize = 11;
+    int64 dataSize = 12;
+    int64 cacheSize = 13;
+
+}
+
+

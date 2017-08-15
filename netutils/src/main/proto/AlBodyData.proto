@@ -1,0 +1,14 @@
+syntax = "proto3";
+option java_package = "com.ubtechinc.alpha";
+message AlBodyDataRequest {
+
+    int32 commandId = 1;
+    bytes bodyData = 2;
+
+}
+message AlBodyDataResponse {
+
+    int32 commandId = 1;
+    bytes bodyData = 2;
+
+}

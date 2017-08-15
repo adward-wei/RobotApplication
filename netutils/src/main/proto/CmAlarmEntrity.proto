@@ -1,0 +1,35 @@
+syntax = "proto3";
+option java_package = "com.ubtechinc.alpha";
+message CmAlarmEntrityRequest {
+
+    int32 hh = 1;
+    int32 mm = 2;
+    int32 repeat = 3;
+    bool isUseAble = 4;
+    string actionStartName = 5;
+    string actionEndName = 6;
+    int32 actionType = 7;
+    int32 yy = 8;
+    int32 mo = 9;
+    int32 day = 10;
+    int32 date = 11;
+    int32 ss = 12;
+
+}
+
+message CmAlarmEntrityResponse {
+
+    int32 hh = 1;
+    int32 mm = 2;
+    int32 repeat = 3;
+    bool isUseAble = 4;
+    string actionStartName = 5;
+    string actionEndName = 6;
+    int32 actionType = 7;
+    int32 yy = 8;
+    int32 mo = 9;
+    int32 day = 10;
+    int32 date = 11;
+    int32 ss = 12;
+
+}

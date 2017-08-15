@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent_background"
+    android:orientation="vertical" >
+
+
+
+    <LinearLayout
+        android:id="@+id/lay_new_more_app"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/input_wifi_edittext_height"
+        android:background="@color/main_bg_black"
+        android:orientation="horizontal"
+        android:weightSum="2" >
+
+        <TextView
+            style="@style/thirdTitleText"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="@dimen/input_wifi_edittext_margin_right"
+            android:layout_weight="1"
+            android:gravity="center_vertical|left"
+            android:text="@string/shop_page_new"
+            android:textColor="@color/main_page_active_select" />
+
+        <TextView
+            android:id="@+id/btn_get_more_app"
+            style="@style/thirdTitleText"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+
+            android:gravity="right|center_vertical"
+            android:paddingRight="@dimen/input_wifi_edittext_margin_right"
+            android:text="@string/shop_page_more"
+            android:textColor="@color/text_gray2" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/title_ry"
+    android:layout_width="200dp"
+    android:layout_height="200dp"
+    android:layout_centerInParent="true" >
+
+    <ImageView
+        android:id="@+id/direction_D"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="20dp"
+        android:clickable="true"
+        android:scaleType="center"
+        android:src="@drawable/direction_btn_d_style" />
+
+    <ImageView
+        android:id="@+id/direction_C"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp"
+        android:clickable="true"
+        android:scaleType="center"
+        android:src="@drawable/direction_btn_c_style" />
+
+    <ImageView
+        android:id="@+id/direction_A"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:clickable="true"
+        android:scaleType="center"
+        android:src="@drawable/direction_btn_a_style" />
+
+    <ImageView
+        android:id="@+id/direction_B"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="30dp"
+        android:clickable="true"
+        android:scaleType="center"
+        android:src="@drawable/direction_btn_b_style" />
+
+</RelativeLayout>

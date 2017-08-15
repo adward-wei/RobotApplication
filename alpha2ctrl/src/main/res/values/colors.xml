@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="dark">#FF222222</color>
+    <color name="light">#FFEEEEEE</color>
+    <color name="listview_item_bg">#bf6131</color>
+    <color name="black">#3d3d3d</color>
+    <color name="white">#ffffff</color>
+    <color name="sort_list_item_header">#E0E0E0</color>
+    <color name="sort_list_select">#CCCCCC</color>
+    <color name="setting_fragment_white">#f2f2f2</color>
+    <color name="transparent_background">#00000000</color>
+    <color name="transparent_background2">#50000000</color>
+    <color name="more_item_click">#faf9f7</color>
+    <color name="text_datail_grey">#999999</color>
+    <!-- add 2015-8-18 -->
+    <color name="main_bg_black">#ffffff</color>
+    <color name="main_bg_black2">#071f34</color>
+    <color name="text_gray">#9c9c9c</color>
+    <color name="text_green">#44b55a</color>
+    <!-- add 2015-8-22 -->
+    <color name="main_funciton_bg">#ffffff</color>
+    <color name="model_funciton_bg">#ffffff</color>
+    <color name="white2">#dddddd</color>
+    <color name="red">#2E86EF</color>
+    <color name="black2">#424242</color>
+    <color name="item_bg">#eeeeee</color>
+    <color name="top_title_red">#8C94A7</color>
+    <color name="page_main_bg">#ffffff</color>
+    <color name="page_bottom_bg">#6e757a</color>
+    <color name="page_gray_line">#667f94</color>
+    <color name="actions_lib_spi">#8C94A7</color>
+    <color name="bottom">#051326</color>
+    <color name="actions_lib_video_crl">#d7d6d6</color>
+    <color name="txt_hint">#999898</color>
+    <color name="actions_lib_line">#b7b7b7</color>
+    <color name="actions_lib_news">#0bffffff</color>
+    <color name="actions_lib_input">#44ffffff</color>
+    <color name="color_setting">#ffffff</color>
+    <color name="color_active_bg">#142a3d</color>
+    <!-- 菜单界面 -->
+    <color name="menu_bg">#e5e5e5</color>
+    <color name="menu_text_color">#464646</color>
+    <!-- 完善用户资料界面 -->
+    <color name="page_title">#040f1e</color>
+    <color name="page_title_remote">#0c2d49</color>
+    <!-- 找回密码界面 -->
+    <color name="txt_nums">#dedede</color>
+    <!-- 图片浏览 -->
+    <color name="pic_scan">#ba1b1b1b</color>
+    <!-- wheel -->
+    <color name="main_hite">#cc1b1b1b</color>
+    <color name="txt_title_red">#f53d3a</color>
+    <color name="txt_title_green">#45b655</color>
+    <!-- 新UI -->
+    <color name="black3">#20446f</color>
+    <color name="txt_share">#464646</color>
+    <color name="btn_share_cancel">#e5e5e5</color>
+    <color name="txt_share_cancel">#de565a</color>
+    <color name="txt_note">#989898</color>
+    <color name="blue">#3d3d3d</color>
+    <color name="text_gray2">#b7b7b7</color>
+    <color name="text_black">#4a4a4a</color>
+    <color name="guide_text_title_black">#181818</color>
+    <color name="guide_text_title_red">#B53A39</color>
+    <color name="guide_bg">#f4f4f4</color>
+    <color name="guide_button_text">#67879e</color>
+    <color name="finder_mask">#28000000</color>
+    <color name="white_05">#05ffffff</color>
+    <color name="tips_black">#697e8d</color>
+    <color name="edit_hint">#9a9a9a</color>
+    <color name="sex_black">#55595c</color>
+    <color name="welcome_black">#6F767B</color>
+    <color name="welcome_name_gray">#aebdc8</color>
+    <color name="black_hint">#9a9aa4</color>
+    <color name="bound_tips_color">#566a78</color>
+    <color name="choose_wifi_blue">#1e92f7</color>
+    <color name="sending_color">#686E73</color>
+    <color name="bound_bottom_color">#747a7f</color>
+    <color name="main_page_select">#686e73</color>
+    <color name="main_page_unselect">#a8a8a8</color>
+    <color name="main_page_active_select_bg">#f7f7f8</color>
+    <color name="main_page_active_list_bg">#f7f7f9</color>
+    <color name="main_page_active_unselect_bg">#ededed</color>
+    <color name="main_page_active_select">#4d4f55</color>
+    <color name="main_page_active_unselect">#8c94a7</color>
+    <color name="left_menu_line">#d8d8d8</color>
+    <color name="alarm_bg">#e2e2e2</color>
+    <color name="alarm_hint">#8c94a7</color>
+    <color name="alarm_black">#656c78</color>
+    <color name="wait_black">#383b3E</color>
+    <color name="confirm_black">#7d7e83</color>
+    <color name="no_video_color">#dfdfdf</color>
+    <color name="find_psw_tip_color">#697E8D</color>
+    <color name="find_psw_tip_color_red">#2E86EF</color>
+    <color name="dia_sloading">#4c000000</color>
+    <color name="device_offline">#77B1e0</color>
+    <color name="device_online">#46A962</color>
+    <color name="device_busy">#ABABAB</color>
+    <color name="dialog_bg">#28000000</color>
+    <color name="blue_tips_nomal">#2E86EF</color>
+    <color name="blue_tips_press">#7BB7FF</color>
+    <color name="tip_gray">#4D4D4D</color>
+    <color name="text_error">#F1585F</color>
+    <color name="menu_bg_press">#f2f2f3</color>
+    <color name="app_detail_ll">#6CA8FF</color>
+    <color name="app_detail_cmd_tip">#828ca4</color>
+    <!-- 根据新的GUI 的新颜色 -->
+    <color name="bg_color_b1">#8C94A7</color>
+    <color name="bg_color_b2">#666C71</color>
+    <color name="bg_color_b3">#FFFFFF</color>
+    <color name="bg_color_b4">#EDEDED</color>
+    <color name="bg_color_b5">#F3F3F3</color>
+    <color name="bg_color_b6">#F7F7F8</color>
+    <color name="bg_color_b7">#9B9B9B</color>
+    <color name="text_color_t1">#8C94A7</color>
+    <color name="text_color_t2">#4A4A4A</color>
+    <color name="text_color_t3">#FFFFFF</color>
+    <color name="text_color_t4">#9B9B9B</color>
+    <color name="text_color_t5">#6CA8FF</color>
+    <color name="text_color_t5_disable">#2F6CA8FF</color>
+    <color name="text_color_t6">#FB5453</color>
+    <color name="text_color_t5_press">#5898E2</color>
+    <color name="line_connect_color">#D1D1D1</color>
+    <color name="text_color_t7">#B9B9B9</color>
+
+    <color name="edit_normal_bg">#dee2e9</color>
+
+    <color name="surveillance_color_blue">#4f86f5</color>
+    <color name="surveillance_color_green">#7fc854</color>
+    <color name="surveillance_color_red">#ff5c91</color>
+    <color name="surveillance_color_gray">#9ca1b5</color>
+    <color name="surveillance_color_light_gray">#e9ecf4</color>
+    <color name="surveillance_color_light_blue">#727a99</color>
+    <color name="surveillance_text_color_black">#282c3b</color>
+
+    <color name="divider_color_line">#ebebeb</color>
+    <color name="text_color_selected">#8ca8ff</color>
+    <color name="text_color_disable">#d8d8d8</color>
+    <color name="text_error_color">#fb5453</color>
+    <color name="text_tranlate_color">#CBCBCB</color>
+    <color name="list_background">#F7F7F8</color>
+    <color name="reord_textcolor_item">#545454</color>
+    <color name="statu_top_background">#11000000</color>
+    <color name="colorPrimary">#6CA8FF</color>
+    <color name="colorPrimaryDark">#6CA8FF</color>
+    <color name="colorAccent">#6CA8FF</color>
+    <color name="transparent">#00000000</color>
+    <color name="translate_background">#00000000</color>
+    <color name="viewfinder_mask">#28000000</color>
+</resources>

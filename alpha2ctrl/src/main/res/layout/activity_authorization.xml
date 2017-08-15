@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color_b6"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/top_title_heigh"
+        android:background="#78b1ff">
+
+        <LinearLayout
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/btn_back_margin_left"
+            android:clickable="true"
+            android:minWidth="100dp"
+            android:onClick="onBack"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_third_login_delete" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/authorize_title"
+            style="@style/top_title_text_style"
+            android:textColor="@color/white"
+            android:text="Alpha2授权"
+            android:textSize="18dp"
+            />
+
+        <TextView
+            android:id="@+id/btn_top_right"
+            style="@style/top_right_button_style"
+            android:layout_height="fill_parent"
+            android:textColor="@color/white"
+            android:text="@string/common_btn_retry"
+            android:textSize="16dp"
+           />
+
+        <ImageButton
+            android:id="@+id/btn_search_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/input_wifi_edittext_margin_right"
+            android:background="@drawable/top_search_icon"
+            android:visibility="gone" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#78b1ff"
+        android:padding="20dp"
+        >
+        <ImageView
+            android:id="@+id/iv_app_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_launcher"
+            android:layout_gravity="center_horizontal"
+            />
+
+        <TextView
+            android:id="@+id/tv_app_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="未知"
+            android:textColor="@color/white"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            />
+
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_alpha_authority"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:textColor="#4a4a4a"
+        android:text="授权后该应用将获取以下权限"
+        android:layout_marginTop="18dp"
+        android:layout_marginLeft="10dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" 获得你的公开信息（昵称、头像等）"
+        android:textSize="14dp"
+        android:textColor="#9b9b9b"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="10dp"
+        />
+    <Button
+        android:id="@+id/btn_authorize"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:text="@string/authorize_accept_login"
+        android:textColor="@color/white"
+
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/btn_bg_third_login"
+        />
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_robots"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        />
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>

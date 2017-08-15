@@ -1,0 +1,73 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color_b6"
+    android:fitsSystemWindows="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <include
+        android:id="@+id/top_title"
+        layout="@layout/authorize_top_title"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/top_title_heigh" />
+    <LinearLayout
+        android:id="@+id/ll_delete_lay"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_image_size"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:weightSum="5"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="4"
+            android:background="@color/white"
+            android:orientation="horizontal" >
+
+            <CheckBox
+                android:id="@+id/choice_check_box"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/input_wifi_edittext_margin_right"
+                android:button="@drawable/photo_item_check_selector" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/input_wifi_edittext_margin_right"
+                android:text="@string/alarm_remind_select_all"
+                android:textColor="@color/text_black" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/delelte_tv"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="#ef6668"
+            android:gravity="center"
+            android:text="@string/alarm_delete"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+
+    <com.ubtechinc.alpha2ctrlapp.widget.RefreshListView
+        android:id="@+id/lst_actions"
+        android:layout_width="match_parent"
+        android:layout_above="@id/ll_delete_lay"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/top_title"
+        android:divider="@color/transparent_background"
+        android:listSelector="@color/transparent_background"
+        android:scrollbars="none" />
+
+
+</RelativeLayout>

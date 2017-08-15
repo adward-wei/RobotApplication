@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="230dp"
+        android:layout_height="160dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/connect_robot_background"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/tv_header"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:gravity="center"
+            android:text="@string/disconnect_robot"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            />
+
+        <View
+            android:id="@+id/view_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/tv_header"
+            android:background="@color/line_connect_color"
+            />
+
+        <Button
+            android:id="@+id/btn_reconnect"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/view_line"
+            android:background="@null"
+            android:gravity="center"
+            android:text="@string/try_connect_robot"
+            android:textColor="@color/find_psw_tip_color_red"
+            android:textSize="18sp"
+            />
+
+    </RelativeLayout>
+</RelativeLayout>

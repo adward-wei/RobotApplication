@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_voice_compound"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.ubtechinc.alpha2ctrlapp.activity.voicecompound.VoiceCompoundActivity">
+
+    <include
+        android:id="@+id/top_title"
+        layout="@layout/authorize_top_title"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/top_title_heigh"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/top_title"
+        android:background="@color/bg_color_b5">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/voice_compound_edit_content"
+                android:focusableInTouchMode="true"
+                >
+
+                <EditText
+                    android:id="@+id/edit_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@null"
+                    android:ems="500"
+                    android:gravity="top|left"
+                    android:hint="@string/voice_compound_edit_hint"
+                    android:inputType="textMultiLine"
+                    android:maxLength="50"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="8dp"
+                    android:textColor="@color/bg_color_b1"
+                    android:textColorHint="@color/bg_color_b1"
+                    android:textSize="15sp"/>
+
+                <TextView
+                    android:id="@+id/tv_edit_size"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:text="@string/voice_compound_edit_size"
+                    android:textColor="@color/bg_color_b1"/>
+
+                <TextView
+                    android:id="@+id/tv_edit_tip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:paddingBottom="5dp"
+                    android:paddingRight="10dp"
+                    android:text="@string/voice_compound_edit_symbol"
+                    android:textColor="@color/bg_color_b1"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_marginTop="15dp"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/tv_voice_tip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:paddingBottom="5dp"
+                    android:text="@string/voice_compound_tv_speack"
+                    android:textColor="@color/text_color_t7"
+                    android:textSize="16sp"/>
+
+                <!-- 定义RadioGroup控件 -->
+                <RadioGroup
+                    android:id="@+id/lan_radiogroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:clickable="false"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radio_ch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@null"
+                        android:drawableLeft="@drawable/voice_compound_radio"
+                        android:drawablePadding="10dp"
+                        android:text="@string/voice_compound_tv_speack_ch"
+                        android:textColor="@color/text_color_t7"/>
+
+                    <RadioButton
+                        android:id="@+id/radio_en"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:button="@null"
+                        android:drawableLeft="@drawable/voice_compound_radio"
+                        android:drawablePadding="10dp"
+                        android:text="@string/voice_compound_tv_speack_en"
+                        android:textColor="@color/text_color_t7"/>
+
+
+                </RadioGroup>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/tv_voice_action_tip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:paddingBottom="5dp"
+                    android:text="@string/voice_compound_tv_action"
+                    android:textColor="@color/text_black"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:id="@+id/tv_voice_action_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:drawableRight="@drawable/arra"
+                    android:padding="5dp"
+                    android:text="@string/voice_compound_tv_action_none"
+                    android:textColor="@color/main_page_active_unselect"
+                    android:textSize="16sp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_send"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginBottom="35dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="60dp"
+                android:background="@drawable/voice_compound_button_send_background"
+                >
+
+                <TextView
+                    android:id="@+id/tv_send"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/voice_compound_tv_btn_send"
+                    android:textColor="@color/white"
+                    android:textSize="17sp"
+                    android:visibility="visible"
+                    />
+
+                <LinearLayout
+                    android:id="@+id/ll_send_wait"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <ProgressBar
+                        style="@style/myProgressBarStyleLarge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_wait_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="@color/white"
+
+                        android:textSize="17sp"
+                        />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</RelativeLayout>

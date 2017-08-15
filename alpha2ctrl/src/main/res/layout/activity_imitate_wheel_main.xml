@@ -1,0 +1,121 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lay_time_select"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_hite"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white" >
+
+        <LinearLayout
+            android:id="@+id/lay_title"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:orientation="horizontal"
+            android:weightSum="3" >
+
+            <LinearLayout
+                android:id="@+id/lay_back"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp" >
+
+                <TextView
+                    android:id="@+id/txt_time_cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/common_btn_cancel"
+                    android:textColor="@color/txt_title_red"
+                    android:textSize="18dp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/alarm_set_time"
+                android:textColor="@android:color/black"
+                android:textSize="18dp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="right|center_vertical"
+                android:paddingRight="10dp" >
+
+                <TextView
+                    android:id="@+id/txt_time_save"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/alarm_sava"
+                    android:textColor="@color/txt_title_green"
+                    android:textSize="18dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/vwe_spi_1"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@+id/lay_title"
+            android:layout_margin="5dp"
+            android:background="@android:color/black" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/vwe_spi_1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <com.ubtechinc.alpha2ctrlapp.widget.wheel.WheelView
+                android:id="@+id/time_year"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:layout_weight="1"
+                android:visibility="gone" />
+
+            <com.ubtechinc.alpha2ctrlapp.widget.wheel.WheelView
+                android:id="@+id/time_month"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:visibility="gone" />
+
+            <com.ubtechinc.alpha2ctrlapp.widget.wheel.WheelView
+                android:id="@+id/time_day"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:visibility="gone" />
+
+            <com.ubtechinc.alpha2ctrlapp.widget.wheel.WheelView
+                android:id="@+id/time_hour"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <com.ubtechinc.alpha2ctrlapp.widget.wheel.WheelView
+                android:id="@+id/time_minute"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

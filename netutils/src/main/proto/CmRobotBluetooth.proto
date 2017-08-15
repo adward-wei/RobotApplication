@@ -1,0 +1,19 @@
+syntax = "proto3";
+option java_package = "com.ubtechinc.alpha";
+message CmRobotBluetoothRequest {
+
+    string deviceName = 1;
+    string deviceAddress = 2;
+    int32 bondState = 3;
+    bool isPermitConnect = 4;
+
+}
+
+message CmRobotBluetoothResponse {
+
+    string deviceName = 1;
+    string deviceAddress = 2;
+    int32 bondState = 3;
+    bool isPermitConnect = 4;
+
+}

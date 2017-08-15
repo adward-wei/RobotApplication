@@ -1,0 +1,248 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/main_funciton_bg" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/detail_item1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/app_detail_margin" >
+
+            <ImageView
+                android:id="@+id/app_icon"
+                android:layout_width="@dimen/app_icon_sieze"
+                android:layout_height="@dimen/app_icon_sieze"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/no_app" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/app_icon_sieze"
+                android:layout_marginLeft="15dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/app_name"
+                    style="@style/SecondTitleText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="@dimen/app_detail_margin"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:textColor="@color/text_color_t2" />
+
+                <TextView
+                    android:id="@+id/app_type"
+                    style="@style/thirdTitleText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:drawableLeft="@drawable/app_type_icon"
+                    android:textColor="@color/text_color_t1" />
+
+                <TextView
+                    android:id="@+id/app_size"
+                    style="@style/contentTitleText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:visibility="visible"
+                    android:textColor="@color/text_color_t1" />
+
+                <TextView
+                    android:id="@+id/sizeT"
+                    style="@style/contentTitleText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="3dp"
+                    android:layout_toRightOf="@id/app_size"
+                    android:gravity="center"
+                    android:text="M"
+                    android:visibility="visible"
+                    android:textColor="@color/text_color_t1" />
+                <!--android:layout_marginLeft="20dp"-->
+                <ImageView
+                    android:id="@+id/timesIcon"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentBottom="true"
+
+                    android:layout_toRightOf="@id/sizeT"
+                    android:src="@drawable/download_times_icon"
+                    android:visibility="gone"
+                    />
+
+                <TextView
+                    android:id="@+id/download_times"
+                    style="@style/contentTitleText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="3dp"
+                    android:layout_toRightOf="@id/timesIcon"
+                    android:gravity="center"
+                    android:textColor="@color/text_color_t1"
+                    android:visibility="gone"
+                    />
+
+                <ImageView
+                    android:id="@+id/btn_update"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/app_name"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginLeft="@dimen/app_detail_margin"
+                    android:gravity="center"
+                    android:textColor="@color/white" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/detail_line1"
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@id/detail_item1"
+            android:layout_marginTop="5dp"
+            android:src="@color/bg_color_b5" />
+
+        <Gallery
+            android:id="@+id/detail_item2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/detail_line1"
+            android:background="@color/bg_color_b6"
+            android:gravity="center_vertical|left"
+            android:spacing="@dimen/input_wifi_edittext_margin_right" />
+
+        <ImageView
+            android:id="@+id/detail_line2"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/detail_item2"
+            android:src="@color/bg_color_b5" />
+
+        <RelativeLayout
+            android:id="@+id/detail_item3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/detail_line2"
+            android:minHeight="@dimen/app_icon_sieze"
+            android:padding="@dimen/app_detail_margin" >
+
+            <RelativeLayout
+                android:id="@+id/detail_lay"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="@dimen/app_detail_margin" >
+
+                <TextView
+                    style="@style/SecondTitleText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="@string/app_detail_title"
+                    android:textColor="@color/text_color_t2" />
+
+                <TextView
+                    android:id="@+id/app_detail_zhankai"
+                    style="@style/thirdTitleText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:clickable="true"
+                    android:text="@string/app_detail_zhankai"
+                    android:textColor="@color/text_color_t4"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <com.ubtechinc.alpha2ctrlapp.widget.NumsCountTextView
+                android:id="@+id/app_details"
+                style="@style/contentTitleText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/detail_lay"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:textColor="@color/text_color_t4" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/detail_line3"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/detail_item3"
+            android:src="@color/bg_color_b5" />
+
+        <RelativeLayout
+            android:id="@+id/detail_item4"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/detail_line3"
+            android:minHeight="@dimen/app_icon_sieze"
+            android:padding="@dimen/app_detail_margin" >
+
+            <RelativeLayout
+                android:id="@+id/version_lay"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="@dimen/app_detail_margin"
+
+                >
+
+                <TextView
+                    android:id="@+id/app_detail_version"
+                    style="@style/SecondTitleText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="@string/app_detail_version"
+                    android:textColor="@color/text_color_t2" />
+
+                <TextView
+                    android:id="@+id/app_version_zhankai"
+                    style="@style/thirdTitleText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:clickable="true"
+                    android:text="@string/app_detail_zhankai"
+                    android:textColor="@color/text_color_t4"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <com.ubtechinc.alpha2ctrlapp.widget.NumsCountTextView
+                android:id="@+id/app__version_details"
+                style="@style/contentTitleText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/version_lay"
+                android:ellipsize="end"
+                android:maxLines="3"
+                android:textColor="#786868" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/detail_line4"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/detail_item4"
+            android:src="@color/bg_color_b5" />
+    </RelativeLayout>
+
+</RelativeLayout>

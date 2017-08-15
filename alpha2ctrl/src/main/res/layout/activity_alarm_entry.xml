@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F7"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:weightSum="1"
+   >
+
+    <include
+        android:id="@+id/top_title"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/top_title_heigh"
+        layout="@layout/activity_alarm_header" />
+
+  <TextView
+      android:id="@+id/remind_histroy_tv"
+      style="@style/thirdTitleText"
+      android:layout_width="fill_parent"
+      android:layout_height="@dimen/input_wifi_edittext_height"
+      android:layout_gravity="center_horizontal"
+      android:background="@color/red"
+      android:drawableRight="@drawable/icon_right_white_arrar"
+      android:gravity="center"
+      android:paddingRight="@dimen/input_wifi_edittext_margin_right"
+      android:singleLine="true"
+      android:visibility="gone"
+      android:text="@string/alarm_remind_histroy"
+      android:textColor="@color/white" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+        
+
+          
+        <com.ubtechinc.alpha2ctrlapp.widget.RefreshListView
+            android:id="@android:id/list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/transparent"
+            android:dividerHeight="2dp"
+            android:layout_marginTop="@dimen/input_wifi_edittext_margin_right" />
+
+        <!-- 列表为空提示 -->
+
+       <LinearLayout
+            android:id="@android:id/empty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/header_heigh"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/no_clock" />
+
+            <TextView
+                style="@style/thirdTitleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/input_wifi_edittext_margin_right"
+                android:singleLine="true"
+                android:textColor="@color/text_color_t4"
+                android:text="@string/alarm_null_prompt" />
+
+    
+
+              <TextView
+                  android:id="@+id/tips1"
+                style="@style/thirdTitleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/input_wifi_edittext_margin_top"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="@dimen/input_wifi_edittext_margin_right"
+                android:layout_marginRight="@dimen/input_wifi_edittext_margin_right"
+                android:gravity="center_horizontal"
+                android:textColor="@color/main_page_active_select"
+                android:text="@string/alarm_add_prompt1" />
+
+            <TextView
+                android:id="@+id/tips2"
+                style="@style/thirdTitleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:layout_marginLeft="@dimen/input_wifi_edittext_margin_right"
+                android:layout_marginRight="@dimen/input_wifi_edittext_margin_right"
+                android:text="@string/alarm_add_prompt2" 
+                    android:textColor="@color/main_page_active_select"/>
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:android_custom="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="@color/translate_background"
+              android:fitsSystemWindows="true"
+              android:orientation="vertical">
+
+
+    <View
+        android:id="@+id/view_background"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@color/transparent"
+        />
+
+    <com.ubtechinc.alpha2ctrlapp.widget.MyBottomRelativeLayout
+        android:id="@+id/bottom_status"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/list_background"
+        >
+
+        <ImageView
+            android:id="@+id/iv_close"
+            android:layout_width="30dp"
+            android:layout_height="15dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_shanghua"
+            android:visibility="gone"
+            />
+    </com.ubtechinc.alpha2ctrlapp.widget.MyBottomRelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/list_background"
+        android:padding="@dimen/_mode_text_margin_top"
+        android:text="@string/user_voice_record"
+        android:textColor="@color/alarm_black"
+        android:textSize="@dimen/text_third_size"
+        android:textStyle="bold"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/left_menu_line"
+        />
+
+    <com.ubtechinc.alpha2ctrlapp.widget.RefreshListView
+        android:id="@+id/list_record"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/top_title"
+        android:background="@color/list_background"
+        android:divider="@color/transparent"
+        android:dividerHeight="20dp"
+        android:scrollbars="none"
+        android:visibility="gone"
+        />
+
+    <LinearLayout
+        android:id="@+id/ll_none_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/list_background"
+        android:padding="@dimen/_mode_text_margin_top">
+
+
+        <TextView
+            android:id="@+id/tv_empty"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="@dimen/_mode_text_margin_top"
+            android:background="@drawable/record_item_background"
+            android:gravity="center"
+            android:textColor="@color/alarm_black"
+            />
+    </LinearLayout>
+</LinearLayout>

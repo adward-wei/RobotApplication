@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="@color/main_page_active_unselect_bg"
+              android:fitsSystemWindows="true"
+              android:orientation="vertical">
+
+    <include
+        android:id="@+id/top_title"
+        layout="@layout/authorize_top_title"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/top_title_heigh"/>
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/input_wifi_edittext_margin_top"
+        android:background="@drawable/item_middle_border_released"
+        android:divider="@drawable/divide_line_left_margin"
+        android:orientation="vertical"
+        android:showDividers="middle">
+
+        <RelativeLayout
+            android:id="@+id/photo_lay"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_setting"
+            android:orientation="horizontal"
+            android:padding="@dimen/input_wifi_edittext_margin_right"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/photo_pic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:paddingLeft="5dp"
+                android:src="@drawable/msg_photo"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/input_wifi_edittext_margin_right"
+                android:layout_toRightOf="@id/photo_pic"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+                    <TextView
+                        style="@style/thirdTitleText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="left|top"
+                        android:text="@string/msg_photo"
+                        android:textColor="@color/text_color_t2"
+
+
+                        />
+
+                    <ImageView
+                        android:id="@+id/msg_photo_new"
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/msg_red_point"
+                        android:paddingLeft="5dp"
+                        android:visibility="gone"
+                        />
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/photo_summary"
+                    style="@style/smallTitleText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="left|bottom"
+                    android:text=""
+                    android:textColor="@color/text_color_t4"/>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/photo_time_tv"
+                style="@style/smallTitleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:gravity="left|bottom"
+                android:text=""
+                android:textColor="@color/text_color_t4"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/system_lay"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_setting"
+            android:orientation="horizontal"
+            android:padding="@dimen/input_wifi_edittext_margin_right"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/system_pic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:paddingLeft="5dp"
+                android:src="@drawable/msg_system"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/input_wifi_edittext_margin_right"
+                android:layout_toRightOf="@id/system_pic"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+                    <TextView
+                        style="@style/thirdTitleText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="left|top"
+                        android:text="@string/msg_system"
+                        android:textColor="@color/text_color_t2"/>
+
+                    <ImageView
+                        android:id="@+id/msg_system_new"
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/msg_red_point"
+                        android:paddingLeft="5dp"
+                        android:visibility="gone"
+                        />
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/system_summary"
+                    style="@style/smallTitleText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="left|bottom"
+                    android:textColor="@color/text_color_t4"/>
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/system_time_tv"
+                style="@style/smallTitleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:gravity="left|bottom"
+                android:text=""
+                android:textColor="@color/text_color_t4"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/authrise_lay"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/menu_bg_selector"
+            android:orientation="horizontal"
+            android:padding="@dimen/input_wifi_edittext_margin_right"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/authorize_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:paddingLeft="5dp"
+                android:src="@drawable/msg_invitation"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/input_wifi_edittext_margin_right"
+                android:layout_toRightOf="@id/authorize_image"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+                    <TextView
+                        style="@style/thirdTitleText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="left|top"
+                        android:text="@string/msg_authorize"
+                        android:textColor="@color/text_color_t2"/>
+
+                    <ImageView
+                        android:id="@+id/msg_authorise_new"
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/msg_red_point"
+                        android:paddingLeft="5dp"
+                        android:visibility="gone"
+                        />
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/authorize_summary"
+                    style="@style/smallTitleText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="left|bottom"
+                    android:textColor="@color/text_color_t4"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/authorization_time_tv"
+                style="@style/smallTitleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/text_color_t4"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tips_title"
+        style="@style/contentTitleText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="@dimen/scan_qrcode_tips_margin_top"
+        android:gravity="center"
+        android:text="@string/bind_failed"
+        android:textColor="@color/black" />
+     <TextView
+        android:id="@+id/tips_message"
+        style="@style/contentTitleText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/tips_title"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="@dimen/scan_qrcode_tips_margin_top"
+        android:gravity="center"
+        android:text="@string/bind_failed"
+        android:textColor="@color/black" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/btn_cancel_height"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/btn_cancel_margin"
+        android:layout_marginLeft="@dimen/btn_cancel_margin"
+        android:layout_marginRight="@dimen/btn_cancel_margin"
+        android:orientation="horizontal"
+        android:textColor="@color/white" >
+
+        <Button
+            android:id="@+id/btn_skip"
+            style="@style/contentTitleText"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/btn_cancel_height"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/btn_cancel_margin"
+            android:layout_marginLeft="@dimen/btn_cancel_margin"
+            android:layout_marginRight="@dimen/btn_cancel_margin"
+            android:layout_weight="1"
+            android:background="@drawable/btn_ignore"
+            android:text="@string/common_btn_skip"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/btn_redo"
+            style="@style/contentTitleText"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/btn_cancel_height"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/btn_cancel_margin"
+            android:layout_marginLeft="@dimen/btn_cancel_margin"
+            android:layout_marginRight="@dimen/btn_cancel_margin"
+            android:layout_weight="1"
+            android:background="@drawable/btn_accept_selector"
+            android:text="@string/bind_redo"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</RelativeLayout>

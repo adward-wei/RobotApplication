@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_sys"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/getSid"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="getSid"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/getMICVersion"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="getMICVersion"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/insertAlarm"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="insertAlarm"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/queryAllAlarm"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="queryAllAlarm"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/startApp"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="startApp"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/enterUpgradeMode"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="enterUpgradeMode"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/exitUpgradeMode"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="exitUpgradeMode"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/getChestVersion"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="getChestVersion"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/getHeadVersion"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="getHeadVersion"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/getBatteryVersion"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="getBatteryVersion"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/isPowerCharging"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="isPowerCharging"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/getPowerValue"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="getPowerValue"
+        android:textAllCaps="false" />
+
+</LinearLayout>

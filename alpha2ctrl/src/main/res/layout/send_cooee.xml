@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/main_bg_black"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/send_imageLay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top_title"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="15dp"
+        android:background="@color/main_bg_black"
+        android:padding="15dp"
+        android:visibility="visible" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/send_bg" />
+
+        <ImageView
+            android:id="@+id/cooee_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/sending_icon" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/send_middle" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/disConnectImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top_title"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="15dp"
+        android:background="@drawable/lianjieshibai"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/failed_tv"
+        style="@style/SecondTitleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/disConnectImage"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:background="@color/transparent_background"
+        android:gravity="center"
+        android:text="@string/net_connected_failed"
+        android:textColor="@color/text_error"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn_failed"
+        style="@style/contentTitleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/failed_tv"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:background="@color/transparent_background"
+        android:gravity="center"
+        android:text="@string/connect_net_disable_net"
+        android:textColor="@drawable/blue_txt_selector"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/send_cooee_ing"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/send_imageLay"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        android:visibility="visible" >
+
+        <TextView
+            android:id="@+id/send_result_tv"
+            style="@style/SecondTitleText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top|center_horizontal"
+            android:text="@string/net_connecting"
+            android:textColor="@color/blue_tips_nomal" />
+
+        <LinearLayout
+            android:id="@+id/send_tipsLay"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:gravity="top|right"
+                android:text="@string/wifi_info_sending_time"
+                android:textColor="@color/tips_black" />
+
+            <TextView
+                android:id="@+id/cooee_sends"
+                style="@style/SecondTitleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:gravity="top"
+                android:textColor="@color/red" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:gravity="top|left"
+                android:text="@string/wifi_info_sending_wait"
+                android:textColor="@color/tips_black" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/page_skip_tips"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:text="@string/connect_page_skip"
+            android:textColor="@color/tips_black"
+            android:visibility="gone" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/input_wifi_edittext_margin_top"
+            android:src="@drawable/juli3" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/input_wifi_edittext_margin_top"
+            android:gravity="center_horizontal"
+            android:text="@string/connect_guide_keep_close"
+            android:textColor="#8c94a7" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_failed"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/input_wifi_edittext_margin_top"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="5" >
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal" />
+
+            <Button
+                android:id="@+id/btn_resend"
+                style="@style/thirdTitleText"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/input_wifi_edittext_height"
+                android:layout_marginBottom="@dimen/qrcode_image_margin"
+                android:layout_marginLeft="@dimen/qrcode_btn_failed_margin"
+                android:layout_marginRight="@dimen/qrcode_btn_failed_margin"
+                android:layout_weight="3"
+                android:background="@drawable/btn_button_able"
+                android:gravity="center"
+                android:text="@string/connect_net_resend"
+                android:textColor="@color/white"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   xmlns:android_custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/main_bg_black"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/top_title"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/top_title_heigh"
+        android:layout_alignParentTop="true"
+        layout="@layout/authorize_top_title" />
+
+     <com.ubtechinc.alpha2ctrlapp.widget.ScanPicGalley
+            android:id="@+id/galley"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:spacing="5dip"
+            android:layout_below="@+id/top_title" />
+
+<RelativeLayout
+        android:id="@+id/btn_deleteLay"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#50D8D8D8"
+        android:orientation="vertical"
+        android:padding="@dimen/input_wifi_edittext_margin_right"
+        android:visibility="gone" >
+
+        <ImageButton
+            android:id="@+id/btn_share_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:visibility="visible"
+            android:background="@drawable/photo_share_icon" />
+
+        <ImageButton
+            android:id="@+id/btn_delete_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:background="@drawable/btn_delete_photo" />
+
+        <ImageButton
+            android:id="@+id/btn_download_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:visibility="visible"
+            android:background="@drawable/photo_download_icon" />
+    </RelativeLayout>
+</RelativeLayout>

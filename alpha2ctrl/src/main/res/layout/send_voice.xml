@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/main_bg_black"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_margin="15dp"
+        android:layout_weight="2"
+        android:padding="15dp"
+        android:background="@color/main_bg_black" >
+
+        <ImageView
+            android:id="@+id/voice1_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/voice_star_amin" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/send_voice_fail_lay"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/qrcode_btn_failed_margin"
+            android:layout_marginRight="@dimen/qrcode_btn_failed_margin"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btn_failed"
+                style="@style/SecondTitleText"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/qrcode_image_margin_top"
+                android:layout_weight="1"
+                android:background="@color/transparent_background"
+                android:gravity="center"
+                android:text="@string/net_connected_failed"
+                android:textColor="@color/red" />
+
+            <Button
+                android:id="@+id/btn_success"
+                style="@style/SecondTitleText"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/qrcode_image_margin_top"
+                android:layout_marginLeft="@dimen/qrcode_btn_success_margin_Left"
+                android:layout_weight="1"
+                android:background="@drawable/btn_connect"
+                android:gravity="center"
+                android:text="@string/connect_net_success"
+                android:textColor="@color/white"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <TextView
+            style="@style/smallTitleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/qrcode_image_margin"
+            android:layout_marginRight="@dimen/qrcode_image_margin"
+            android:background="@null"
+            android:gravity="left"
+            android:lineSpacingExtra="5dp"
+            android:text="@string/net_failed_sonic_tips"
+            android:textColor="@color/sending_color" />
+
+        <Button
+            android:id="@+id/btn_resend"
+            style="@style/SecondTitleText"
+            android:layout_width="150dp"
+            android:layout_height="@dimen/qrcode_image_margin_top"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/qrcode_btn_failed_margin"
+            android:layout_marginRight="@dimen/qrcode_btn_failed_margin"
+            android:layout_marginTop="@dimen/qrcode_btn_help_margin_top"
+            android:background="@drawable/btn_geting"
+            android:gravity="center"
+            android:text="@string/connect_net_resend"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/choose_other"
+            style="@style/contentTitleText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/sonic_choose_other_model"
+            android:textColor="@color/text_green"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/send_voice_ing"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
+        android:visibility="visible"
+        android:orientation="vertical" >
+
+        <TextView
+            style="@style/SecondTitleText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top|center_horizontal"
+            android:text="@string/wifi_info_sending_by_sonic"
+            android:textColor="@color/sending_color" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:gravity="top|right"
+                android:text="@string/wifi_info_sending_time"
+                android:textColor="@color/tips_black" />
+
+            <TextView
+                android:id="@+id/voice_sends"
+                style="@style/SecondTitleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:gravity="top"
+                android:textColor="@color/red" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:gravity="top|left"
+                android:text="@string/wifi_info_sending_wait"
+                android:textColor="@color/tips_black" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

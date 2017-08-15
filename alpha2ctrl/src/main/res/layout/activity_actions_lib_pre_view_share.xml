@@ -1,0 +1,167 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lay_share_to"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_alignParentBottom="true"
+    android:background="@android:color/white"
+    android:visibility="visible" >
+
+    <TextView
+        android:id="@+id/txt_share_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/ui_share_to_other"
+        android:textColor="@color/text_gray"
+        android:textSize="18dp" />
+
+    <LinearLayout
+        android:id="@+id/lay_share"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_share_title"
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        android:weightSum="4" >
+
+        <ImageButton
+            android:id="@+id/btn_to_weixin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:paddingTop="4dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/share_to_weixin" />
+
+        <ImageButton
+            android:id="@+id/btn_to_pengyouquan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:paddingTop="4dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/share_to_pengyouquan" />
+
+        <ImageButton
+            android:id="@+id/btn_to_qq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:paddingTop="4dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/share_to_qq" />
+
+        <ImageButton
+            android:id="@+id/btn_to_kongjian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:paddingTop="4dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/share_to_kongjian" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <ImageButton
+                android:id="@+id/btn_to_weibo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="4dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/share_to_weibo"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/ui_share_to_weibo"
+                android:textColor="@color/txt_note"
+                android:textSize="14dp"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lay_share2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lay_share"
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        android:weightSum="4" >
+
+        <ImageButton
+            android:id="@+id/btn_to_facebook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:paddingTop="4dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/share_to_facebook" />
+
+        <ImageButton
+            android:id="@+id/btn_to_twitter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:paddingTop="4dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/share_to_twitter" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:paddingTop="4dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/share_to_facebook"
+            android:visibility="invisible" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:paddingTop="4dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/share_to_facebook"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_cancel_share"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="20dp"
+        android:background="@color/btn_share_cancel"
+        android:text="@string/common_btn_cancel"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+</RelativeLayout>

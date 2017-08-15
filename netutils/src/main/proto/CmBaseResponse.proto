@@ -1,0 +1,7 @@
+syntax = "proto3";
+option java_package = "com.ubtechinc.alpha";
+message CmBaseResponse {
+
+    int32 result = 1;
+
+}

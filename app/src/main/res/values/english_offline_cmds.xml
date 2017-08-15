@@ -1,0 +1,138 @@
+<resources>
+
+    <string-array name="app1_offline_cmd">
+        <item>free time</item>
+        <item>free time for you</item>
+        <item>go and take a break</item>
+        <item>go away</item>
+		<item>go go go</item>
+		<item>go to relax</item>
+		<item>help yourself</item>
+        <item>i don\'t need you now</item>
+        <item>i don\'t want you</item>
+        <item>i have nothing to do with you</item>
+        <item>leave me</item>
+        <item>leave me alone</item>
+        <item>now you are free</item>
+        <item>now you can go away</item>
+        <item>now you may leave</item>
+        <item>relax yourself</item>
+        <item>stand aside</item>
+        <item>that\'s all thank you</item>
+        <item>you are free to go</item>
+        <item>you can have a rest now</item>
+        <item>you go</item>
+        <item>you gotta go please</item>
+        <item>you may leave here</item>
+    </string-array>
+    <string-array name="app2_offline_cmd">
+        <item>give me a pose</item>
+        <item>give us a pose</item>
+        <item>show me your pose</item>
+        <item>show me a pose</item>
+        <item>show us a pose</item>
+        <item>show us your pose</item>
+        <item>take a pose</item>
+        <item>pose</item>
+        <item>pose for me</item>
+        <item>pose for us</item>
+        <item>pose for a photograph</item>
+        <item>pose for photographs</item>
+        <item>pose for a picture</item>
+        <item>pose for pictures</item>
+        <item>i want you to take a pose</item>
+        <item>i wanna a pose for a picture</item>
+        <item>i wanna a pose for pictures</item>
+        <item>i wanna a pose for a photograph</item>
+        <item>i wanna a pose for photographs</item>
+        <item>give me another pose</item>
+        <item>next pose</item>
+        <item>show me another pose</item>
+        <item>show me next pose</item>
+        <item>show me the last pose</item>
+        <item>take another pose</item>
+        <item>i want another pose</item>
+        <item>take two pictures in a row</item>
+        <item>take three pictures in a row</item>
+        <item>take four pictures in a row</item>
+        <item>take five pictures in a row</item>
+        <item>take six pictures in a row</item>
+        <item>take seven pictures in a row</item>
+        <item>take eight pictures in a row</item>
+        <item>take nine pictures in a row</item>
+        <item>take ten pictures in a row</item>
+        <item>take another picture</item>
+        <item>take another picture for me</item>
+        <item>take another picture for us</item>
+        <item>can you take one more photo</item>
+        <item>can you take one more picture</item>
+        <item>another shot</item>
+	</string-array>
+    <string-array name="app3_offline_cmd">
+        <item>register please</item>
+		<item>register my information</item>
+		<item>please register my information</item>
+		<item>i want to register my information</item>
+		<item>i wanna register my information</item>
+		<item>i wanna register</item>
+		<item>help me to register my information</item>
+		<item>input my information</item>
+		<item>please input my information</item>
+		<item>i wanna input my information</item>
+		<item>i want to input my information</item>
+		<item>good morning</item>
+		<item>hello</item>
+		<item>hey</item>
+		<item>hi</item>
+		<item>morning</item>
+		<item>hi there</item>
+		<item>whats up</item>
+		<item>how are you</item>
+		<item>how do you do</item>
+		<item>how are you doing</item>
+		<item>hey man</item>
+		<item>hey pretty</item>
+	</string-array>
+    <string-array name="app4_offline_cmd">
+        <item>bust a move</item>
+		<item>can you dance</item>
+		<item>dance</item>
+		<item>dance for me</item>
+		<item>dance with me</item>
+		<item>do your dance</item>
+		<item>get on the good foot</item>
+		<item>get your groove on</item>
+		<item>i hear you can dance</item>
+		<item>i want you to dance</item>
+		<item>it\'s hammer time</item>
+		<item>let\'s dance</item>
+		<item>shake your ass</item>
+		<item>come out and dance</item>
+		<item>how about a dance</item>
+		<item>i want you to dance for me</item>
+		<item>may I ask you for a dance</item>
+		<item>may I have a dance with you</item>
+		<item>show me a dance</item>
+		<item>show me your moves</item>
+		<item>why not dance</item>
+		<item>would you like to dance</item>
+		<item>would you like to dance for me</item>
+		<item>do you know how to dance</item>
+		<item>shave your groove thing</item>
+		<item>shall we dance</item>
+		<item>give me another dance</item>
+		<item>next dance</item>
+		<item>shall we have one more dance</item>
+		<item>i want another dance</item>
+		<item>dance again</item>
+		<item>dance one more time</item>
+		<item>show me another dance</item>
+		<item>show me next dance</item>
+		<item>show me the last dance</item>
+	</string-array>
+    <string-array name="app8_offline_cmd">
+        <item>call customer service</item>
+		<item>contact customer service</item>
+		<item>call again</item>
+	</string-array>
+</resources>

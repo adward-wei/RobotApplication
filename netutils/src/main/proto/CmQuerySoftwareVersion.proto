@@ -1,0 +1,16 @@
+syntax = "proto3";
+option java_package = "com.ubtechinc.alpha";
+message CmQuerySoftwareVersionRequest {
+
+
+}
+
+message CmQuerySoftwareVersionResponse {
+
+    string androidVersion = 1;
+    string serviceVersionName = 2;
+    int32 serviceVersionCode = 3;
+    string headerVersion = 4;
+    string chestVersion = 5;
+    string batteryVersion = 6;
+}

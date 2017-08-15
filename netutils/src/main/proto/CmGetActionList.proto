@@ -1,0 +1,16 @@
+syntax = "proto3";
+option java_package = "com.ubtechinc.alpha";
+import "CmNewActionInfo.proto";
+message CmGetActionListRequest {
+
+    string languageType = 1;
+    int32 actionType = 2;
+
+}
+
+message CmGetActionListResponse {
+
+     repeated CmNewActionInfoResponse actionList = 1;
+
+
+}

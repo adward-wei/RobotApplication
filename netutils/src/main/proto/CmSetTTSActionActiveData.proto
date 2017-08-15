@@ -1,0 +1,11 @@
+syntax = "proto3";
+option java_package = "com.ubtechinc.alpha";
+message CmSetTTSActionActiveDataRequest {
+    bool isOpen = 1;
+}
+
+message CmSetTTSActionActiveDataResponse {
+    bool isSuccess = 1;
+    int32 resultCode = 2;
+
+}

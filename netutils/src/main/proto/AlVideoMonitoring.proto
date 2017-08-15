@@ -1,0 +1,15 @@
+syntax = "proto3";
+option java_package = "com.ubtechinc.alpha";
+message AlVideoMonitoringRequest {
+
+    string roomNumber = 1;
+    int32 type = 2;
+
+}
+
+message AlVideoMonitoringResponse {
+
+    string roomNumber = 1;
+    int32 type = 2;
+
+}

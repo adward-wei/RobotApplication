@@ -1,0 +1,13 @@
+syntax = "proto3";
+option java_package = "com.ubtechinc.alpha";
+message AlStopPlayActionRequest {
+
+
+}
+
+message AlStopPlayActionResponse {
+
+   bool isSuccess = 1;
+   int32 resultCode = 2;
+
+}

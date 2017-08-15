@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F7"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.ubtechinc.alpha2ctrlapp.activity.alarm.AlarmEditActivity" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/top_title_heigh"
+        android:background="@color/top_title_red" >
+
+        <LinearLayout
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/btn_back_margin_left"
+            android:clickable="true"
+            android:minWidth="100dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:drawableLeft="@drawable/btn_back"
+                android:text="@string/common_btn_back"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/authorize_title"
+            style="@style/TopTitleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:text="@string/alarm_detail"
+            android:textColor="@color/white" />
+
+        <LinearLayout
+            android:id="@+id/add_alarm"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:clickable="true"
+            android:gravity="right"
+            android:minWidth="100dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dp"
+                android:text="@string/alarm_sava"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        style="@style/alarm_add"
+        android:layout_marginBottom="40dp"
+        android:layout_marginTop="20dp" >
+
+        <TextView
+            style="@style/alarm_add_prompt_key"
+            android:text="@string/alarm_content" />
+
+        <EditText
+            android:id="@+id/alarm_content"
+            style="@style/alarm_add_prompt_value"
+            android:gravity="center_vertical|left" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/alarm_add"
+        android:layout_marginBottom="10dp" >
+
+        <TextView
+            style="@style/alarm_add_prompt_key"
+            android:text="@string/alarm_time" />
+
+        <TextView
+            android:id="@+id/alarm_time"
+            style="@style/alarm_add_prompt_value"
+            android:text="1970/02/34 02:06" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/alarm_add" >
+
+        <TextView
+            style="@style/alarm_add_prompt_key"
+            android:text="@string/alarm_repeat" />
+
+        <TextView
+            android:id="@+id/alarm_repeat"
+            style="@style/alarm_add_prompt_value"
+            android:text="@string/alarm_repeat_once" />
+    </LinearLayout>
+
+</LinearLayout>

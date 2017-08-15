@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:id="@+id/pop_app"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/input_wifi_edittext_margin_right"
+        android:layout_marginTop="@dimen/top_title_heigh"
+        android:background="@drawable/guide_right_up"
+        android:orientation="vertical"
+        android:padding="@dimen/input_wifi_edittext_margin_right"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/guide_app"
+            style="@style/thirdTitleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:maxWidth="@dimen/recom_pic_height"
+            android:text="@string/guide_robot_add"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/guide_app_next"
+            style="@style/thirdTitleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/guide_app"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/input_wifi_edittext_margin_right"
+            android:background="@drawable/guide_button_bg"
+            android:minWidth="@dimen/app_image_size"
+            android:padding="5dp"
+            android:text="@string/guide_button1"
+            android:textColor="@color/red" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="@dimen/top_title_heigh"
+        android:orientation="vertical"
+        android:weightSum="10" >
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="@dimen/input_wifi_edittext_margin_right"
+            android:layout_weight="4" >
+
+            <RelativeLayout
+                android:id="@+id/pop_bottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/pop_menu"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/guide_left_down"
+                android:orientation="vertical"
+                android:padding="@dimen/input_wifi_edittext_margin_right"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/guide_bottom"
+                    style="@style/thirdTitleText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/input_wifi_edittext_margin_right"
+                    android:gravity="center"
+                    android:maxWidth="@dimen/recom_pic_height"
+                    android:text="@string/guide_robot_invite"
+                    android:textColor="@color/white" />
+
+                <Button
+                    android:id="@+id/guide_bottom_next"
+                    style="@style/thirdTitleText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/guide_bottom"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/input_wifi_edittext_margin_right"
+                    android:background="@drawable/guide_button_bg"
+                    android:minWidth="@dimen/app_image_size"
+                    android:padding="5dp"
+                    android:text="@string/guide_button2"
+                    android:textColor="@color/red" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_color_b3"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/alphaDetaile"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.0"
+        android:background="@color/sort_list_item_header"
+        android:paddingBottom="5dip"
+        android:paddingLeft="5dip"
+        android:paddingTop="5dip"
+        android:text="A"
+        android:textColor="@color/text_color_t2" />
+
+    <LinearLayout
+        android:id="@+id/lvbackground"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.0"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/alphaName"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:gravity="center_vertical"
+          android:layout_margin="@dimen/input_wifi_edittext_margin_right"
+           
+            android:text="hhhh"
+           style="@style/contentTitleText"
+            android:textColor="@color/text_color_t2" />
+          <ImageView
+
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:gravity="center_vertical"
+
+            android:layout_marginLeft="@dimen/input_wifi_edittext_margin_right"
+            android:layout_marginRight="@dimen/input_wifi_edittext_margin_right"
+         android:background="@color/bg_color_b5" />
+    </LinearLayout>
+
+</LinearLayout>

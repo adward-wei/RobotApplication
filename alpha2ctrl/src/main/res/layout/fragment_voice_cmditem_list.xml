@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/white"
+                android:fitsSystemWindows="true"
+                android:orientation="vertical">
+
+
+    <View
+        android:id="@+id/voice_cmd_line"
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:background="@color/main_page_active_list_bg"/>
+
+    <ListView
+        android:id="@+id/cmd_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/voice_cmd_line"
+        android:background="@color/white"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:fadingEdge="none"
+        android:overScrollMode="never"/>
+ 
+
+</RelativeLayout>

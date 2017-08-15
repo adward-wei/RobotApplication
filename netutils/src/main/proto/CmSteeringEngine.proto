@@ -1,0 +1,16 @@
+syntax = "proto3";
+option java_package = "com.ubtechinc.alpha";
+message CmSteeringEngineRequest {
+
+    int32 engineId = 1;
+    int32 angel = 2;
+    int32 time = 3;
+}
+
+message CmSteeringEngineResponse {
+
+    int32 engineId = 1;
+    int32 angel = 2;
+    int32 time = 3;
+
+}

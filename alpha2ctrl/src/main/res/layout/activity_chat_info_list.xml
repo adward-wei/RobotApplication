@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/main_funciton_bg"
+                android:fitsSystemWindows="true"
+                android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/layout_top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="#2ea3fe"
+            android:visibility="gone"/>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/top_title_heigh"
+            android:background="@color/bg_color_b3">
+
+            <LinearLayout
+                android:id="@+id/btn_back"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_centerVertical="true"
+                android:clickable="true"
+                android:onClick="onBack"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/top_title_heigh"
+                    android:layout_height="@dimen/top_title_heigh"
+                    android:padding="12dp"
+                    android:layout_gravity="left|center_vertical"
+                    android:src="@drawable/btn_back"/>
+
+                <TextView
+                    style="@style/thirdTitleText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/common_btn_back"
+                    android:textColor="@color/white"
+                    android:visibility="invisible"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/alphaName_tv"
+                style="@style/top_title_text_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:padding="7dp"
+                android:text="@string/main_page_msg"
+                />
+
+            <TextView
+                android:id="@+id/edit_tv"
+                style="@style/top_right_button_style"
+                android:text="@string/common_btn_edit"
+                android:padding="15dp"
+                android:layout_marginRight="5dp"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/list_info_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_top"
+        android:background="@drawable/item_middle_border_released"
+        android:divider="@drawable/divide_line_left_margin"
+        android:dividerHeight="1dp"
+        android:fadingEdge="none"
+        android:layout_above="@+id/edit_lay"
+        android:overScrollMode="never">
+    </ListView>
+
+    <RelativeLayout
+        android:id="@+id/no_message_tip"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:visibility="gone"
+     >
+
+        <ImageView
+            android:id="@+id/no_message_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="136dp"
+            android:src="@drawable/no_messages"
+
+            />
+
+        <TextView
+            android:id="@+id/no_message_tv"
+            style="@style/thirdTitleText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/no_message_iv"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="35dp"
+            android:gravity="center"
+            android:text="@string/msg_no_message"
+            android:textColor="@color/text_color_t4"/>
+    </RelativeLayout>
+
+    <include
+
+        layout="@layout/view_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+
+        />
+
+</RelativeLayout>

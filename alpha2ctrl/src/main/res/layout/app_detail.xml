@@ -1,0 +1,81 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/main_funciton_bg" >
+
+    <include
+        android:id="@+id/top_title"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/top_title_heigh"
+        android:layout_alignParentTop="true"
+        layout="@layout/app_detail_title"
+        android:visibility="visible" />
+
+   
+
+
+
+    <com.ubtechinc.alpha2ctrlapp.widget.PicScanView
+        android:id="@+id/picScanView"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone" />
+    <ScrollView
+        android:id="@+id/comment_lay"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"
+        android:background="@color/bg_color_b3">
+
+        <LinearLayout
+            android:id="@+id/lay_send_comment"
+            android:layout_width="match_parent"
+            android:minHeight="@dimen/input_wifi_edittext_height"
+            android:layout_height="@dimen/input_wifi_edittext_height"
+            android:layout_margin="@dimen/input_wifi_edittext_margin_right"
+            android:background="@drawable/input_diable_shape"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/edt_comment"
+                style="@style/contentTitleText"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="4"
+                android:background="@color/transparent"
+                android:hint="@string/shop_page_comment_note"
+                android:paddingLeft="@dimen/input_wifi_edittext_margin_right"
+                android:imeOptions="actionSend"
+                android:textColor="@color/text_color_t2"
+                android:textColorHint="@color/text_color_t4" />
+
+            <TextView
+                android:id="@+id/txt_send_comment"
+                style="@style/contentTitleText"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:layout_margin="1dp"
+                android:layout_toRightOf="@id/edt_comment"
+                android:layout_weight="1"
+                android:background="@drawable/send_button_disable"
+                android:gravity="center"
+                android:text="@string/shop_page_comment_send"
+                android:textColor="@color/text_color_t4"
+                android:visibility="visible" />
+        </LinearLayout>
+    </ScrollView>
+    <ListView
+        android:id="@+id/lst_comment"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top_title"
+        android:divider="@color/transparent_background"
+        android:gravity="bottom"
+        android:layout_above="@id/comment_lay"
+        android:scrollbars="none"
+        android:listSelector="@color/transparent_background"
+        android:visibility="visible"/>
+</RelativeLayout>

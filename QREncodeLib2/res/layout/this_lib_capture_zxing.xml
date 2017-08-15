@@ -1,0 +1,124 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <SurfaceView
+            android:id="@+id/preview_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+
+        <com.google.zxing.client.android.ViewfinderView
+            android:id="@+id/viewfinder_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/lay_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_title_heigh"
+        android:layout_alignParentTop="true"
+        android:background="@color/top_title_red"
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:minWidth="50dp"
+            android:onClick="onBack"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp" >
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/btn_back" >
+            </Button>
+        </LinearLayout>
+
+        <TextView
+            style="@style/TopTitleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/bound_alpha"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lay_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/action_image_height"
+        android:layout_alignParentBottom="true"
+        android:background="@color/this_lib_page_bottom"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/img_qr_code"
+            android:layout_width="@dimen/app_image_size"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="10dp"
+            android:background="@drawable/qr_icon"
+            android:scaleType="fitXY" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="3"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/txt_note"
+                style="@style/thirdTitleText"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/find_and_scan"
+                android:textColor="@color/white" >
+            </TextView>
+
+            <ImageView
+                android:id="@+id/line_spi"
+                android:layout_width="wrap_content"
+                android:layout_height="2dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/txt_note"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/this_lib_yello_line"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/txt_other_way"
+                style="@style/thirdTitleText"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/line_spi"
+                android:layout_weight="1"
+                android:gravity="center_vertical|right"
+                android:text="@string/other_bound"
+                android:textColor="@color/this_lib_note_other"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

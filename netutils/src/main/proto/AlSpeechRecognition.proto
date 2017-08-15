@@ -1,0 +1,15 @@
+syntax = "proto3";
+option java_package = "com.ubtechinc.alpha";
+message AlSpeechRecognitionRequest {
+
+    int32 type = 1;
+    string asrResult = 2;
+
+}
+
+message AlSpeechRecognitionResponse {
+
+    int32 type = 1;
+    string asrResult = 2;
+
+}

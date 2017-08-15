@@ -1,0 +1,32 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true" >
+
+    <include
+        android:id="@+id/top_title"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/top_title_heigh"
+        layout="@layout/authorize_top_title" />
+
+    <ImageView
+        android:id="@+id/img_line_spi_title"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/top_title"
+        android:layout_marginTop="-1dp"
+        android:background="@drawable/this_lib_write_line" />
+
+    <ListView
+        android:id="@+id/lst_app"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/img_line_spi_title"
+        android:background="@color/white"
+           android:listSelector="@color/transparent_background"
+        android:divider="@color/transparent_background"
+        android:dividerHeight="2dp" />
+
+</RelativeLayout>

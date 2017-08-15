@@ -1,0 +1,15 @@
+syntax = "proto3";
+option java_package = "com.ubtechinc.alpha";
+import "CmAppUninstallInfo.proto";
+
+message CmAppUninstallListRequest {
+
+    repeated CmAppUninstallInfoRequest appList = 1;
+
+}
+
+message CmAppUninstallListResponse {
+
+    repeated CmAppUninstallInfoResponse appList = 1;
+
+}

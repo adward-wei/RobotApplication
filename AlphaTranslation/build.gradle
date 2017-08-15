@@ -1,0 +1,110 @@
+apply plugin: 'com.android.application'
+
+//获取产品的名字
+def getProductName() {
+    return "translation_"+rootProject.ext.alpha_translation.versionName + "${getJenkinsBuild()}"
+
+}
+
+//获取当前系统的时间
+def releaseTime() {
+    return new Date().format("yyyyMMddHHmmss")
+}
+
+boolean isInJeknins() {
+    Map<String, String> map =  System.getenv()
+    if(map == null) {
+        return false
+    }
+//    printf('env=%s\n',map.toMapString())
+    String str
+    Iterator it = map.iterator();
+    while(it.hasNext()) {
+        str = it.next();
+        if(str.contains("jenkins")){
+            return true
+        }
+    }
+    return false;
+}
+//获取jenkins build number
+def getJenkinsBuild() {
+    boolean  flag = isInJeknins();
+    if(flag){
+        ext.env = System.getenv()
+        ext.buildNumber = env.get("BUILD_NUMBER");
+        return "#" + "$buildNumber"
+    }else{
+        return ""
+    }
+}
+
+android {
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+    buildToolsVersion rootProject.ext.android.buildToolsVersion
+    defaultConfig {
+        applicationId "com.ubtechinc.alphatranslation"
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        versionCode rootProject.ext.alpha_translation.versionCode
+        versionName rootProject.ext.alpha_translation.versionName
+        compileOptions {
+            sourceCompatibility JavaVersion.VERSION_1_7
+            targetCompatibility JavaVersion.VERSION_1_7
+        }
+        ndk {
+            abiFilters 'armeabi-v7a'
+        }
+    }
+
+    signingConfigs {
+        release {
+//            storeFile file("rk-debug.keystore")
+//            storePassword "ubt83474428"
+//            keyAlias "androiddebugkey"
+//            keyPassword "ubt83474428"
+
+            keyAlias 'alphatranslation'
+            keyPassword 'ubt83474428'
+            storeFile file('AlphaTranslation.jks')
+            storePassword 'ubt83474428'
+        }
+
+
+    }
+
+    applicationVariants.all { variant ->
+        variant.outputs.each { output ->
+            def oldFile = output.outputFile
+            if (variant.buildType.name.equals('release')) {
+                def releaseApkName = getProductName() + "_${releaseTime()}_"  + 'release.apk'
+                output.outputFile = new File(oldFile.parent, releaseApkName)
+            }
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            signingConfig signingConfigs.release
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+        ignoreWarnings true
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: '*.jar')
+    compile 'com.umeng.analytics:analytics:latest.integration'
+    compile project(path: ':servicesdk')
+    compile project(':servicemodel')
+    //bugly
+    compile 'com.tencent.bugly:crashreport:latest.release'
+//  compile 'com.tencent.bugly:nativecrashreport'
+
+}

@@ -1,0 +1,13 @@
+syntax = "proto3";
+option java_package = "com.ubtechinc.alpha";
+message CmLoginAlphaRequest {
+
+    string mStrPassword = 1;
+
+}
+
+message CmLoginAlphaResponse {
+
+    string mStrPassword = 1;
+
+}

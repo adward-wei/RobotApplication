@@ -1,0 +1,13 @@
+syntax = "proto3";
+option java_package = "com.ubtechinc.alpha";
+message CmGetChargeAndPlayDataRequest {
+
+
+
+}
+
+message CmGetChargeAndPlayDataResponse {
+
+    bool isOpen = 1;
+
+}

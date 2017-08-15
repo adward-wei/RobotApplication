@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">乐拍</string>
+    <string name="storage_less_100_0">内存不足，不能拍照，请先清理下巴</string>
+    <string name="storage_less_100_1">内存不足拉，请先删掉一些照片或者应用巴</string>
+    <string name="storage_more_100_0">好的，我们来拍照巴</string>
+    <string name="storage_more_100_1">好欧，准备好拍照巴</string>
+    <string name="sound_invalid_domain_0">请站在我前面，不然我看不到你拉</string>
+    <string name="sound_invalid_domain_1">我看不到你，请站在我面前</string>
+    <string name="sound_invalid_domain_2">请保持在我面前的位置，不然我看不到欧</string>
+    <string name="sound_invalid_domain_3">害，请保持在我面前的位置，我才能拍的更好欧</string>
+    <string name="enter_face_detection">请摆好姿势</string>
+    <string name="not_found_face">我无法看到你，请站在摄像头前面欧</string>
+    <string name="detection_face_0">正在聚焦，请保持酷酷的姿势 </string>
+    <string name="detection_face_1">我在调焦距啦，请不要动</string>
+    <string name="take_photo_0">说茄子</string>
+    <string name="take_photo_1">站好啦，说茄子</string>
+    <string name="take_photo_2">不要动，微笑欧</string>
+    <string name="take_photo_completion_0">照的不错，现在你可以在手机应用上查看啦</string>
+    <string name="take_photo_completion_1">我照完啦，请登录手机应用看看巴</string>
+    <string name="take_photo_completion_2">照的棒极了，你可以登录手机应用查看了哟</string>
+    <string name="exit_smartphoto">好的，拍照模式已经退出</string>
+
+</resources>

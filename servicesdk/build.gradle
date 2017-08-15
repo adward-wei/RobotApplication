@@ -1,0 +1,67 @@
+/*
+ *
+ *  *
+ *  * Copyright (c) 2008-2016 UBT Corporation.  All rights reserved.  Redistribution,
+ *  *  modification, and use in source and binary forms are not permitted unless otherwise authorized by UBT.
+ *  *
+ *
+ */
+
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+    buildToolsVersion rootProject.ext.android.buildToolsVersion
+    defaultConfig {
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        versionCode 1
+        versionName "1.0.0"
+        compileOptions {
+            sourceCompatibility JavaVersion.VERSION_1_7
+            targetCompatibility JavaVersion.VERSION_1_7
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    provided rootProject.ext.deps.supportAnnotations
+    compile project(':servicemodel')
+    testCompile 'junit:junit:4.12'
+}
+
+task makeJar(type: Copy) {
+    delete 'build/libs/service_sdk.jar'
+    from('build/intermediates/bundles/default/')
+    into('build/libs/')
+    include('classes.jar')
+    rename('classes.jar', 'service_sdk.jar')
+}
+
+makeJar.dependsOn(build)
+
+task buildJar(dependsOn: ['compileReleaseJavaWithJavac'], type: Jar) {
+    appendix = "sdk_api"
+    baseName = "alpha"
+    version = "1.0.0"
+    classifier = "release"
+    extension = "jar"
+    archiveName = baseName + "_" + appendix + "_" + version + "-" + classifier + "." + extension;
+    def srcClassDir = [project.buildDir.absolutePath + "/intermediates/classes/release"];
+    from srcClassDir
+    exclude "com/ubtechinc/alpha/sdk/BuildConfig.class"
+    exclude "com/ubtechinc/alpha/sdk/R.class"
+    exclude "com/ubtechinc/alpha/sdk/BuildConfig\$*.class"
+    exclude "com/ubtechinc/alpha/sdk/R\$*.class"
+    exclude "com/ubtechinc/alpha/model/**/*.class"
+    include "com/ubtechinc/alpha/sdk/**/*.class"
+    include "com/ubtechinc/alpha/serverlibutil/**/*.class"
+}

@@ -1,0 +1,887 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- common start -->
+    <string name="app_name">Alpha2</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="common_btn_back">返回</string>
+    <string name="common_btn_cancel">取消</string>
+    <string name="common_btn_confirm">确定</string>
+    <string name="common_btn_edit">编辑</string>
+    <string name="common_btn_skip">跳过</string>
+    <string name="common_btn_finish">完成</string>
+    <string name="common_btn_start">开始 </string>
+    <string name="common_btn_next">下一步</string>
+    <string name="common_btn_submit">提交</string>
+    <string name="common_search_text">搜索</string>
+    <string name="common_update_text">更新</string>
+    <string name="common_btn_close">关闭</string>
+    <string name="common_btn_retry">重试</string>
+    <string name="common_input_search_content">请输入搜索关键字</string>
+    <string name="common_sel_country">选择国家</string>
+    <!-- movement activity beging -->
+    <string name="local_action_list_disconnect">断开连接</string>
+    <string name="local_action_list_start">播放</string>
+    <string name="local_action_list_stop">停止</string>
+    <string name="local_action_list_refresh">刷新</string>
+    <string name="local_action_list_reset">复位</string>
+    <string name="local_action_list_power_off">掉电</string>
+    <string name="local_action_list_title">动作表</string>
+    <string name="local_action_uninstall_action_tips">要删除此动作么？</string>
+    <string name="local_action_uninstall_action_tips_success">删除动作成功</string>
+    <string name="local_action_uninstall_action_tips_failed">删除动作失败</string>
+
+    <!-- nxy add 2015-8-18 -->
+    <!-- 声波联网界面 -->
+    <string name="sonic_open_power_button_tips">长按阿尔法头部如上图所示红色按钮\n 松开后可看到指示灯闪烁\n 并听到声波已开启</string>
+    <string name="sonic_keep_far_tips">请确保机器人和手机距离在1m以内</string>
+    <string name="sonic_voice_open">声波已开启</string>
+    <string name="sonic_open_voice">打开声波</string>
+    <string name="sonic_send_voice">发送声波</string>
+    <string name="sonic_choose_other_model">选择其他方式</string>
+
+    <!-- 输入wifi 界面 -->
+    <string name="set_wifi_title">为机器人设置wifi</string>
+    <string name="wifi_title">输入</string>
+    <string name="wifi_input_name">请输入wifi名称</string>
+    <string name="wifi_input_psw">请输入wifi密码</string>
+    <string name="wifi_psw_isempty">wifi密码不能为空</string>
+    <string name="wifi_name_isempty">wifi名称不能为空</string>
+    <string name="wifi_show_psw">显示密码</string>
+    <string name="wifi_confirm_name">请确认输入得wifi名称正确</string>
+    <string name="wifi_input_wifi_tips">请使用和手机相同wifi,并确保名称和密码输入正确</string>
+    <string name="wifi_scan">扫描wifi网络</string>
+    <string name="wifi_open_location_permission">请确认是否开放Alpha2的定位权限？</string>
+    <string name="wifi_closed">请打开wifi</string>
+    <string name="wifi_psw_inccrect">密码至少应包含8个字符</string>
+    <string name="wifi_guide_open_persion_wifi_tips1">您目前还没有设置个人热点</string>
+    <string name="wifi_guide_open_persion_wifi_tips2">如何开启热点</string>
+    <string name="wifi_guide_open_persion_wifi_tips3">请前往设置-个人热点页面开启</string>
+    <string name="wifi_guide_open_persion_wifi_tips4">开启后会显示你的个人热点名称，请记住你的个人热点名称和密码</string>
+    <string name="wifi_guide_go_setting">前往开启</string>
+    <string name="wifi_name_too_long">wifi 名称太长</string>
+    <string name="wifi_psw_too_long">wifi 密码太长</string>
+    <string name="wifi_info_sending_by_sonic">正在通过声波发此信息给Alpha.</string>
+    <string name="wifi_info_sending_time"> 此过程需要</string>
+    <string name="wifi_info_sending_wait">，请耐心等候...</string>
+    <string name="wifi_add_tips">请输入你的网络信息，将Alpha2 加入网络</string>
+    <string name="wifi_free_wifi">免费WiFi</string>
+    <string name="wifi_error">联网失败，\n请重新选择wifi或输入密码</string>
+    <!-- 网络监听 -->
+    <string name="net_listener_title">开启网络监听功能</string>
+    <string name="net_connecting">设备正在连接网络</string>
+    <string name="net_connect_title">连接网络</string>
+    <string name="net_failed_cooee_tips">1.请检查你输入的WIFI 信息是否正确\n2.请确认手机和Alpha的距离不超过1m\n3.请确认已经开启Alpha 的网络监听 \n4.联网超时</string>
+    <string name="net_failed_sonic_tips">1.请检查你输入的WIFI 信息是否正确\n2.请确认手机和Alpha的距离不超过1m\n3.请确认已经开启Alpha 的声波 \n4.联网超时</string>
+    <string name="net_connected_failed">联网失败！</string>
+    <!-- 扫描二维码界面 -->
+    <string name="qr_scan">扫描二维码</string>
+    <string name="qr_scan_success">扫码成功</string>
+    <string name="qr_scan_encode_qr">即将生成二维码</string>
+    <string name="qr_scan_tips">请将二维码放在机器人摄像头前约20c--40m处，直至听到提示音</string>
+    <string name="qr_scan_tips_rule">1.请将二维码放在机器人摄像头前约20c--40m处，直至听到提示音</string>
+    <string name="qr_scan_tips_content">扫码成功率与距离远近及角度直接相关</string>
+    <string name="qr_scan_open_cameral_tips">2.重新开启摄像头</string>
+    <string name="qr_scan_low_light_tips">2.确认灯光是否过暗</string>
+    <string name="qr_scan_low_light_tips_content">灯光过暗，机器人也无法识别到二维码</string>
+    <string name="qr_scan_do_others_tip_content">此过程你可以干点别的</string>
+    <string name="qr_scan_do_others_tip">干点别的</string>
+
+    <!-- 网络连接向导 -->
+    <string name="connect_guide_title">连接向导</string>
+    <string name="connect_guide_tips1">1.请确认您输入的网络账号及密码正确 </string>
+    <string name="connect_guide_tips2"> 2.请确保当前的网络流畅</string>
+    <string name="connect_guide_tips3"> 3.确认手机未处于静音状态,跳大手机音量</string>
+    <string name="connect_guide_tips4"> 4.发送网络信号机连接网络时,确认手机尽量靠近机器人（图1）</string>
+    <string name="connect_guide_tips5">5.发送网络信息后,机器人开启监听(图2)</string>
+    <string name="connect_guide_open_tips">长按机器人如图位置按键，直至听到开启监听成功提示音</string>
+    <string name="connect_guide_tips6">6.开启监听后,请在20s内发送网络信息</string>
+    <string name="connect_net_success">联网成功</string>
+    <string name="connect_net_resend">重新发送</string>
+    <string name="connect_net_disable_net">无法连接网络？</string>
+    <string name="connect_guide_icon_1">(图1)</string>
+    <string name="connect_guide_icon_2">(图2)</string>
+    <string name="connect_guide_icon_3">(图3)</string>
+    <string name="connect_guide_tips7">7.联系我们</string>
+    <string name="connect_guide_tips7_tips">* 若问题仍未解决，您可以通过以下方式找到我们</string>
+    <string name="connect_guide_our_email">客服邮箱：service@ubtrobot.com</string>
+    <string name="connect_guide_our_phone">客服电话：400 807 3125</string>
+    <string name="connect_guide_tips6_tips">机器人在开启监听后，应20s内发送网络信息，若发送超出监听失效，可再次长按（图2）按键开启监听重新发送网络信息</string>
+    <string name="connect_disable_voice">没有听到提示音？</string>
+    <string name="connect_guide_disable_voice_tips1">对机器人说“你好，阿尔法”\n机器人回答“啥”或“干啥”</string>
+    <string name="connect_guide_disable_voice_tips1_tips">说明机器人已经被唤醒</string>
+    <string name="connect_guide_disable_voice_tips2">请确认您在说“我要联网”时环境不会太嘈杂</string>
+    <string name="connect_guide_disable_voice_tips2_tips">如机器人无法被唤醒，或提示电量低，请给机器人充电</string>
+    <string name="connect_guide_disable_voice_tips3">若还是听不到机器人提示音，则可尝试以下方法进行连接    </string>
+    <string name="connect_guide_disable_voice_tips3_tips">机器人被唤醒后，长按头顶前灯</string>
+    <string name="connect_guide_disable_voice_tips4_tips">直到机器人语音提示“开始联网”</string>
+    <string name="connect_guide_open_alpha_net_listener">机器人开机状态，长按头顶如图位置，\n直至听到提示音</string>
+    <string name="connect_guide_keep_close">* 请保持机器人与手机的距离在1米以内</string>
+    <string name="connect_guide_close_tips1">* 调大手机音量,请将手机靠近机器人</string>
+    <string name="connect_open_next">已开启，下一步</string>
+    <string name="connect_guide_tips_listent">4.联系我们</string>
+    <string name="connect_net_success_tips">联网成功！</string>
+    <string name="connect_page_skip">页面跳转中...</string>
+    <string name="connect_sending_net_info">当前正在为机器人联网...</string>
+    <string name="connect_exist_send_net_info">确定中断联网过程吗?</string>
+    <string name="connect_btn_exist">退出</string>
+    <string name="connect_btn_countine_wait">继续等待</string>
+    <!-- 登录注册通用的一些 -->
+    <string name="ui_login">登录</string>
+    <string name="ui_register">注册</string>
+    <string name="ui_phone_empty_note">手机号不可为空</string>
+    <string name="ui_pass_empty_note">密码不可为空</string>
+    <string name="ui_re_pass_empty_note">重复密码不可为空</string>
+    <string name="ui_by_phone">手机</string>
+    <string name="ui_by_email">邮箱</string>
+    <string name="ui_email_empty_note">邮箱不可为空</string>
+    <string name="ui_email_input">请输入注册邮箱</string>
+    <string name="ui_phone_input">请输入手机号</string>
+    <string name="ui_verification_input">输入验证码</string>
+    <string name="ui_passwd_no_equal">两次输入的密码不一致</string>
+    <string name="ui_email_address">邮箱</string>
+    <string name="ui_email_address_input">请输入您的邮箱</string>
+    <string name="ui_set_verify_send">%1$s秒后可重新发送</string>
+    <string name="ui_set_verify_resend">重新获取验证码</string>
+    <string name="ui_error_msg_code_input_tips">验证码错误</string>
+    <string name="ui_error_code_input_tips">输入的验证码错误！</string>
+    <string name="ui_check_msg">验证码已经发送到你输入的手机号中，请查看</string>
+    <string name="ui_error_get_msg_code">获取验证码失败,请重试</string>
+    <string name="ui_input_correct_phone">请输入正确的手机号</string>
+    <string name="ui_input_correct_mial">邮箱格式不正确</string>
+    <string name="ui_user_length">用户名长度为3-20位！</string>
+    <string name="ui_user_phone">请输入正确的手机号码！</string>
+    <string name="ui_user_pwd">密码长度为6-15位！</string>
+    <string name="ui_user_wrong">用户名以英文字母,英文数字或下划线的组合！</string>
+    <string name="ui_pwd_wrong">密码由英文字母,英文数字或_符号的组合！</string>
+    <string name="ui_sel_contory">国家或地区</string>
+    <string name="ui_login_fail">登录失败，请检查您的登录信息</string>
+    <string name="ui_weixin_not_install">您尚未安装微信！</string>
+    <string name="ui_share_to_other">分享至其他应用</string>
+    <string name="ui_share_to_qq">QQ</string>
+    <string name="ui_share_to_qq_kongjian">QQ空间</string>
+    <string name="ui_share_to_weixin">微信</string>
+    <string name="ui_share_to_weixin_pengyouquan">朋友圈</string>
+    <string name="ui_share_to_weibo">微博</string>
+    <string name="ui_weibo_not_install">您尚未安装新浪微博客户端！</string>
+    <string name="ui_welcome_title">Dream With Robots</string>
+    <string name="ui_welcom_bottom">很高兴 遇到你</string>
+    <string name="ui_robot_share_twitter">您尚未安装推特</string>
+    <string name="ui_china">中国</string>
+    <string name="ui_user_name">用户名</string>
+    <!-- 找回密码 -->
+    <string name="find_psw_intput_name">请输入注册邮箱或手机号</string>
+    <string name="find_psw_start">开始找回</string>
+    <string name="find_psw_title">找回密码</string>
+    <string name="find_psw_get_verification_phone">点击获取验证码，您的手机“?”将会收到一条包含验证码的短消息</string>
+    <string name="find_psw_get_verification_email">您的邮箱“?”将会收到一封重置密码的邮件，敬请查收</string>
+    <string name="find_psw_get_verification">获取验证码</string>
+    <string name="find_psw_login_email">登录我的邮箱</string>
+    <string name="find_reset_pwd">重设密码</string>
+    <string name="find_reset_pwd_success">重设密码成功</string>
+    <string name="find_reset_pwd_fail">重设密码失败</string>
+
+    <!-- 注册 -->
+    <string name="regist_input_passwd">请输入密码（不少于六位字符）</string>
+    <string name="regist_input_re_passwd">请再次输入密码</string>
+    <string name="regist_agree_contract">单击“注册”即表示您已阅读并同意服务条款和隐私策略</string>
+    <string name="regist_third_party">使用第三方注册</string>
+    <string name="regist_verification_get">获取</string>
+    <!-- 登录 -->
+    <string name="login_forget_passwd">忘记密码？</string>
+    <string name="login_third_party">使用第三方登录</string>
+    <string name="login_passwd_short">您的密码过短</string>
+    <string name="login_by_other">你的账号在另一台设备上登录</string>
+    <!-- 完善用户信息 -->
+    <string name="private_info_titile">完善个人信息</string>
+    <string name="private_info_user_name">设置您的用户名</string>
+    <string name="private_info_gender">性别</string>
+    <string name="private_info_gender_m">男</string>
+    <string name="private_info_gender_f">女</string>
+    <string name="private_info_set_nick_name">请设置您的昵称</string>
+    <string name="private_info_set_head">请设置您头像</string>
+    <!-- 绑定ALPHA -->
+    <string name="bind_start">开始绑定</string>
+    <string name="bind_not_now">以后再说</string>
+    <string name="bind_alpha">绑定Alpha2</string>
+    <string name="open_connection_title">开启机器人连接</string>
+    <string name="scan_describe">请找到机器人身后的二维码并扫描</string>
+    <string name="bind_tips">绑定设备后，你可以获取的机器的管理和控制权限，\n还可以授权给你信任的人使用。</string>
+    <string name="bind_redo">重试</string>
+    <string name="bind_success">绑定成功</string>
+    <string name="bind_failed">绑定失败</string>
+    <string name="bind_check_sn_failed">查询序列号失败</string>
+    <string name="bind_open_camera_pemission">请打开拍照权限！</string>
+    <string name="bind_scan_robot_qr">找到并扫描此处二维码</string>
+    <!-- Alpha设置界面 -->
+    <string name="alpha_setting_debug_mode">调试模式</string>
+    <!-- 添加授权界面 -->
+    <string name="authorize_title">授权</string>
+    <string name="authorize_add">添加授权</string>
+    <!-- 解除绑定 -->
+    <string name="release_succes">解除绑定成功</string>
+    <string name="release_failed">解除绑定失败</string>
+    <string name="release_alpha_tips">注意！\n 该操作会让你失去设备的控制权，并清空所有授权</string>
+    <string name="release_other_alpha_tips">注意！\n 该操作会让他失去设备的控制权</string>
+    <string name="authorize_delete_tip">您确定要删除与该机器人的授权关系吗</string>
+    <string name="release_text">解除绑定</string>
+    <string name="authorize_delete_success">删除授权成功</string>
+    <string name="authorize_delete_failed">删除授权失败</string>
+    <string name="authorize_delete">删除授权</string>
+    <string name="authorize_cancel">取消授权</string>
+    <string name="authorize_cancel_success">取消授权成功</string>
+    <string name="authorize_cancel_failed">取消授权失败</string>
+    <string name="authorize_delete_want">是否要删除对</string>
+    <string name="authorize_delete_to">的授权?</string>
+    <!-- 搜索邀请授权 -->
+    <string name="search_invite_by_phone">发送短信邀请</string>
+    <string name="search_invite_by_email">发送邮件邀请</string>
+    <string name="search_invite_name_empty_note">用户名不可为空</string>
+    <string name="search_tips">没有此用户，\n请输入邮箱号或者手机号\n以发送授权邀请。</string>
+    <string name="search_invite_yourselef">您不需要给自己授权</string>
+    <string name="search_input_error_invate_name">您的输入格式不正确</string>
+    <string name="search_input_mobile">请输入手机号码</string>
+    <string name="search_input_mail">请输入邮箱</string>
+    <string name="search_choose_search_type">请选择搜索类型</string>
+    <!-- 设备列表界面 -->
+    <string name="devices_wait_confirmed_user">待通过用户</string>
+    <string name="devices_confirmed_user">已授权用户</string>
+    <!-- 接受授权 -->
+    <string name="authorize_ingnore">忽略</string>
+    <string name="authorize_accept">接受</string>
+    <string name="authorize_accept_login">授权登录</string>
+    <string name="authorize_invate_tips">邀请您一起使用</string>
+
+    <!-- 主界面 -->
+    <string name="main_page_current_model">当前模式</string>
+    <string name="main_page_my">我的</string>
+    <string name="main_page_shop">商店</string>
+    <string name="main_page_app">应用</string>
+    <string name="main_page_activite">动作</string>
+    <string name="main_page_msg">消息</string>
+    <string name="main_page_update">更新</string>
+    <string name="main_page_connect_alpha_tips">请连接您的Alpha2</string>
+    <string name="main_page_disconnected">Alpha2断开连接</string>
+    <string name="main_page_connect_then_download">您需要连接Alpha2，才能为他下载应用并控制他</string>
+    <string name="main_page_alpha2_offline">Alpha2已经掉线</string>
+    <string name="main_page_exist_tip">再按一次退出</string>
+    <string name="main_page_no_friend">您已经没有权限使用该机器人</string>
+    <string name="main_page_lost_authorize">您已经被取消该机器人的授权</string>
+    <string name="main_page_confirm_find_phone">已经找到手机？</string>
+    <string name="main_page_uninstall_failed_6">系统应用不能卸载</string>
+    <string name="main_page_uninstall">卸载</string>
+    <!-- 指令帮助-->
+    <string name="main_voice_greet_cmd">问候</string>
+    <string name="main_voice_basic_cmd">基本</string>
+    <string name="main_voice_cmd">指令</string>
+    <string name="main_voice_action_cmd">动作</string>
+    <string name="main_voice_chat_cmd">闲聊</string>
+    <string name="main_voice_perform_cmd">表演</string>
+    <!-- 指令类-->
+    <string name="main_voice_cmd_one">跳个舞吧</string>
+    <string name="main_voice_cmd_two">我想听笑话</string>
+    <string name="main_voice_cmd_three">我想听故事</string>
+
+    <!-- 动作列表 -->
+    <string name="shop_page_base_action">基本动作</string>
+    <string name="shop_page_dance_action">音乐舞蹈</string>
+    <string name="shop_page_story_action">寓言故事</string>
+    <string name="shop_page_more">全部</string>
+    <string name="shop_page_new">最近更新</string>
+    <string name="shop_page_action_list">动作表</string>
+    <string name="shop_page_download">下载</string>
+    <string name="shop_page_downloading">下载中...</string>
+    <string name="shop_page_open">打开</string>
+    <string name="shop_page_install">安装中</string>
+    <string name="shop_page_download_falied">下载失败</string>
+    <string name="shop_page_download_success">下载成功</string>
+    <string name="shop_page_installed_failed">安装失败</string>
+    <string name="shop_page_installed_success">安装成功</string>
+    <string name="shop_page_installeding">安装中...</string>
+
+    <string name="shop_app_type_family_entertainment">家庭娱乐</string>
+    <string name="shop_app_type_education">教育教学</string>
+    <string name="shop_app_type_commercial_perfor">商业演出</string>
+    <string name="shop_app_type_medical_care">医疗看护</string>
+    <string name="shop_app_type_office_assistant">办公助手</string>
+    <string name="shop_app_type_other">其他</string>
+    <string name="shop_app_language_chinese">中文</string>
+    <string name="shop_app_language_english">英文</string>
+    <string name="shop_app_language_multi_language">多语言</string>
+
+    <!-- 动作详情 -->
+    <string name="shop_page_praise">点赞</string>
+    <string name="shop_page_share">分享</string>
+    <string name="shop_page_collection">收藏</string>
+    <string name="shop_page_comment_note">发表你的评论</string>
+    <string name="shop_page_comment_index">楼</string>
+    <string name="shop_page_comment_send">发送</string>
+    <string name="shop_page_comment_send_fail">评论失败</string>
+    <string name="shop_page_add_comment_success">评论成功</string>
+    <string name="shop_page_zan_success">点赞成功</string>
+    <string name="shop_page_zan_failed">点赞失败</string>
+    <string name="shop_page_content_no_empty">评论内容不能为空</string>
+    <string name="shop_page_collect_success">收藏成功</string>
+    <string name="shop_page_collect_failed">收藏失败</string>
+    <string name="shop_page_no_collectt">您还没有收藏</string>
+    <string name="shop_page_cancel_collect_success">取消收藏成功</string>
+    <string name="shop_page_cancel_collect_failed">取消收藏失败</string>
+    <string name="shop_page_share_success">分享成功</string>
+    <string name="shop_page_share_error">分享失败</string>
+    <string name="shop_page_praised">您已经点赞过</string>
+    <string name="shop_page_disable_download">资源不可下载</string>
+    <string name="news_storage_title">机器人存储空间不足</string>
+    <string name="shop_page_no_description">暂无描述</string>
+    <string name="shop_page_no_search">搜索内容空</string>
+    <string name="shop_page_get_more">加载更多</string>
+    <!-- alpha设置 -->
+    <string name="device_set_name">名称</string>
+    <string name="device_id">ID</string>
+    <string name="device_sets_title">Alpha2 设置</string>
+    <string name="device_robot_storage_manager">机器人存储空间</string>
+    <string name="device_robot_storage_manager_used">已用</string>
+    <string name="device_robot_storage_manager_free">可用</string>
+    <string name="device_robot_common_dialog_first_content">确定将这 </string>
+    <string name="device_robot_common_dialog_last_content"> 个应用卸载？</string>
+    <string name="device_robot_dialog_unstalling">卸载中</string>
+    <string name="device_robot_manager">管理</string>
+    <string name="device_connect_bluetooth">连接蓝牙设备</string>
+    <string name="device_system_update">系统更新</string>
+    <string name="device_developer">开发者选项</string>
+    <string name="device_status">状态信息</string>
+    <string name="device_layer">法律信息</string>
+    <string name="device_delevoper_submit">确认发送</string>
+
+    <!--中英互译 -->
+    <string name="app_tranlate_title">中英互译</string>
+    <string name="app_tranlate_tip_ch_true">现在你可以对机器人说<font color='#9a9a9a'>中文</font>,机器人将翻译成<font color='#9a9a9a'>英文</font></string>
+    <string name="app_tranlate_tip_en_true">Now speak <font color='#9a9a9a'>Chinese</font> to the robot, and words will be translated into <font color='#9a9a9a'>English</font></string>
+
+    <string name="app_tranlate_tip_ch_false">现在你可以对机器人说<font color='#9a9a9a'>英文</font>,机器人将翻译成<font color='#9a9a9a'>中文</font>.</string>
+    <string name="app_tranlate_tip_en_false">Now speak <font color='#9a9a9a'>English</font> to the robot, and words will be translated into <font color='#9a9a9a'>Chinese</font>.</string>
+    <!-- 侧边栏 -->
+    <string name="left_menu_my_robot">我的设备</string>
+    <string name="left_menu_setting">设置</string>
+    <string name="left_menu_about">关于</string>
+    <string name="left_menu_my_like">我的收藏</string>
+    <string name="left_menu_exsit">退出</string>
+    <!-- 应用设置 -->
+    <string name="app_setting_clear_cache">清除缓存</string>
+    <string name="app_setting_down_load_only_wifi">仅适用于wifi网络下载</string>
+    <string name="app_setting_nott">消息提醒</string>
+    <string name="app_setting_app_update">应用更新</string>
+    <string name="app_setting_feedback">反馈</string>
+    <string name="app_setting_smart_home">智能家居</string>
+    <string name="app_setting_appconfig">应用配置信息</string>
+    <string name="app_setting_newest">版本：</string>
+    <string name="app_setting_has_new">有新版本：</string>
+    <string name="app_setting_find_version_failed">没有查询到最新版本信息</string>
+    <string name="app_setting_now_newest">当前已是最新版本</string>
+    <string name="app_setting_apk_download_success">下载成功</string>
+    <string name="app_setting_apk_download_falied">apk 下载失败</string>
+    <string name="app_setting_apk_unnomal">网络文件异常</string>
+    <string name="app_setting_low_size">内存不够</string>
+    <string name="app_setting_read_file_exception">服务器端文件异常</string>
+    <string name="app_setting_mobile_net">您当前是非wifi 网络，下载将会耗费流量，是否下载？</string>
+    <string name="app_setting_mobile_net_download">您设置的是wifi网络下载，是否下载？</string>
+    <string name="app_setting_clean_data_failed">清除缓存失败，请重试</string>
+
+    <!-- 关于 -->
+    <string name="about_app_coryright">Copyright © 2015-2017 UBTECH. \n All Rights Reserved.</string>
+    <string name="about_app_net">http://www.ubtrobot.com</string>
+    <string name="about_app_version">版本:</string>
+    <!-- 修改用户信息 -->
+    <string name="edit_info_success">编辑信息成功</string>
+    <string name="edit_info_failed">编辑信息失败</string>
+
+    <!-- 应用详情 -->
+    <string name="app_detail_title">应用详情</string>
+    <string name="app_detail_function_title">功能介绍</string>
+    <string name="app_detail_zhankai">展开 </string>
+    <string name="app_detail_shouqi">收起</string>
+    <string name="app_detail_version">版本：</string>
+    <string name="app_detail_size">大小：</string>
+    <string name="app_detail_comment">评论</string>
+    <string name="app_detail_comment_hint">我要评论</string>
+    <string name="app_detail_viewpager_indicator">%1$d/%2$d</string>
+    <string name="app_detail_downloadtime">次下载</string>
+    <string name="app_detail_cmd_label">试着对Alpha说以下指令</string>
+    <string name="app_detail_no_robot_tip">连接机器人后，才能下载使用此功能</string>
+    <string name="app_detail_cmd_no_robot_tip">以下指令需要在机器人联网情况下才能使用</string>
+    <!--动作 -->
+    <string name="app_detail_action_cmd_one">向前走</string>
+    <string name="app_detail_action_cmd_two">给大家鞠个躬</string>
+    <string name="app_detail_action_cmd_three">点头</string>
+    <!--跳舞 -->
+    <string name="app_detail_dance_cmd_one">跳个舞吧</string>
+    <string name="app_detail_dance_cmd_two">跳舞给我看</string>
+    <!--闹钟 -->
+    <string name="app_detail_clock_cmd_one">提醒我十分钟之后吃药</string>
+    <string name="app_detail_clock_cmd_two">提醒我十点给宝宝买个蛋糕</string>
+    <!--闲聊 -->
+    <string name="app_detail_chat_cmd_one">世界上最美丽的人是谁?</string>
+    <string name="app_detail_chat_cmd_two">你有女朋友吗?</string>
+    <string name="app_detail_chat_cmd_three">你喜欢吃什么菜?</string>
+    <!--音乐 -->
+    <string name="app_detail_music_cmd_two">我想听陈奕迅的歌</string>
+    <string name="app_detail_music_cmd_three">我想听光年之外</string>
+
+    <!--故事 -->
+    <string name="app_detail_story_cmd_one">给我讲个故事</string>
+    <string name="app_detail_story_cmd_two">讲个小红帽的故事吧</string>
+
+    <!--笑话 -->
+    <string name="app_detail_joke_cmd_one">我想听笑话</string>
+    <string name="app_detail_joke_cmd_two">给我讲个笑话</string>
+
+    <!--天气 -->
+    <string name="app_detail_weather_cmd_one">深圳明天天气怎么样?</string>
+    <string name="app_detail_weather_cmd_two">上海今天天气怎么样?</string>
+
+    <!--时间 -->
+    <string name="app_detail_time_cmd_one">现在几点了?</string>
+    <string name="app_detail_time_cmd_two">伦敦现在几点?</string>
+
+    <!--汇率 -->
+    <string name="app_detail_parities_cmd_one">一美元等于多少人民币?</string>
+    <string name="app_detail_parities_cmd_two">港币和人民币的汇率是多少?</string>
+
+    <!--计算 -->
+    <string name="app_detail_calculate_cmd_one">1857的三次方等于多少?</string>
+    <string name="app_detail_calculate_cmd_two">38乘以41等于多少?</string>
+    <string name="app_detail_calculate_cmd_three">根号3951等于多少?</string>
+    <!--诗词 -->
+    <string name="app_detail_poem_cmd_one">水调歌头</string>
+    <string name="app_detail_poem_cmd_two">日照香炉生紫烟</string>
+
+    <!--百科 -->
+    <string name="app_detail_cyclopedia_cmd_one">美国总统是谁?</string>
+    <string name="app_detail_cyclopedia_cmd_two">西游记是谁写的?</string>
+    <!--拍照 -->
+    <string name="app_detail_photo_cmd_one">给我拍张美美的照片</string>
+    <string name="app_detail_photo_cmd_two">给我照相呗</string>
+    <string name="app_detail_photo_cmd_three">可不可以给我拍张照呀?</string>
+    <!-- 评论 -->
+    <string name="comment_floor">楼</string>
+    <string name="comment_inssued">发布于</string>
+    <string name="comment_before">前</string>
+    <string name="comment_day">天</string>
+    <string name="comment_hour">小时</string>
+    <string name="comment_minitus">分钟</string>
+    <string name="comment_second">秒</string>
+
+    <!-- 消息 -->
+    <string name="msg_pic_receive_tip">您收到"?"张机器人发送的图片</string>
+    <string name="msg_title">消息</string>
+    <string name="msg_scan_pic">图片浏览</string>
+    <string name="msg_pic">图片接收</string>
+    <string name="msg_more_invite">个人等邀请你使用他们的机器人</string>
+    <string name="msg_authorize">授权消息</string>
+    <string name="msg_photo">新照片</string>
+    <string name="msg_system">系统消息</string>
+    <string name="msh_reply_comments">评论回复</string>
+    <string name="msg_no_message">没有新消息</string>
+    <!-- 应用相关 -->
+    <string name="app_list">应用列表</string>
+    <string name="app_details">应用详情</string>
+    <string name="app_update_all">全部更新</string>
+    <string name="app_uninstall_tips">要卸载此应用么？</string>
+    <string name="app_uninstall_failed">卸载失败</string>
+    <string name="app_uninstall_success">卸载完成</string>
+    <string name="app_updated_all_app">应用已经全部更新完</string>
+
+    <!-- Alarmactivity -->
+    <string name="alarm_name">闹钟名称</string>
+    <string name="alarm_time">时间</string>
+    <string name="alarm_active">动作</string>
+    <string name="alarm_tip">提醒</string>
+    <string name="alarm_repeat_week">每周</string>
+    <string name="alarm_repeat_month">"每月（<xliff:g id="day_of_month">%s</xliff:g> 日）</string>
+    <string name="alarm_repeat_no">不重复</string>
+    <string name="alarm_on_time">准时</string>
+    <string name="alarm_no">不提醒</string>
+    <string name="alarm_ten_m">提前10分钟</string>
+    <string name="alarm_one_day">提前1天</string>
+    <string name="alarm_one_hour">提前1小时</string>
+    <string name="alarm_add_success">添加闹钟成功</string>
+    <string name="alarm_add_failed">添加闹钟失败</string>
+    <string name="alarm_delete_tips">是否要删除闹钟？</string>
+    <string name="alarm_delete_success">删除闹钟成功</string>
+    <string name="alarm_delete_failed">删除闹钟失败</string>
+    <string name="alarm_update_success">更新闹钟成功</string>
+    <string name="alarm_update_failed">更新闹钟失败</string>
+    <string name="alarm_choose_active">选择闹钟动作</string>
+    <string name="alarm_set_name">请设置闹钟名称</string>
+    <string name="alarm_set_time">设置闹钟时间</string>
+    <string name="alarm_year">年</string>
+    <string name="alarm_month">月</string>
+    <string name="alarm_day">日</string>
+    <string name="alarm_hour">时</string>
+    <string name="alarm_minute">分</string>
+    <string name="alarm_day_concat" msgid="971998564991636532">", "</string>
+    <string name="alarm_every_day" msgid="1058994798884544691">"每天"</string>
+    <string name="alarmname_length">最大长度20位！</string>
+    <string name="alarm_repeate">重复</string>
+    <string name="alarm_remind">提醒</string>
+    <string name="alarm_add">添加</string>
+    <string name="activity_more_alarm_sava">更新 </string>
+    <string name="activity_more_alarm_detail_title">设置提醒</string>
+    <string name="activity_more_alarm_detail_repeat">重复</string>
+    <string name="alarm_title">闹钟</string>
+    <string name="alarm_usable_on">开启</string>
+    <string name="alarm_usable_off">关闭</string>
+    <string name="alarm_repeat">重复</string>
+    <string name="alarm_repeat_once">仅一次</string>
+    <string name="alarm_repeat_everyday">每天</string>
+    <string name="alarm_repeat_everyweek">每周</string>
+    <string name="alarm_repeat_everymonth">每月</string>
+    <string name="alarm_weekend">周末</string>
+    <string name="alarm_workday">工作日</string>
+    <string name="alarm_hh">时</string>
+    <string name="alarm_mm">分</string>
+    <string name="alarm_sava">保存</string>
+    <string name="alarm_btn_ok">确定</string>
+    <string name="alarm_delete">删除</string>
+    <string name="alarm_prompt">提醒</string>
+    <string name="alarm_null_prompt">暂时还没有提醒</string>
+    <string name="alarm_add_prompt1">试试和机器人说:“提醒我明天7点起床”</string>
+    <string name="alarm_add_prompt1_tips">提醒我明天7点起床</string>
+    <string name="alarm_add_prompt2">或者点击右上角 " + "手动添加提醒</string>
+    <string name="alarm_content">内容</string>
+    <string name="alarm_monday">周一</string>
+    <string name="alarm_tuesday">周二</string>
+    <string name="alarm_wednesday">周三 </string>
+    <string name="alarm_thursday">周四 </string>
+    <string name="alarm_friday">周五 </string>
+    <string name="alarm_saturday">周六</string>
+    <string name="alarm_sunday">周日</string>
+    <string name="alarm_create">创建提醒</string>
+    <string name="alarm_remark">闹钟备注</string>
+    <string name="alarm_detail">提醒详情</string>
+    <string name="alarm_null_msg">闹钟内容不能为空</string>
+    <string name="alarm_del_forever">永久删除本次提醒</string>
+    <string name="alarm_remind_select_all">全选</string>
+    <string name="alarm_remind_histroy">历史提醒</string>
+    <!-- Alarmactitivy end -->
+    <!-- 设备列表界面 -->
+    <string name="devices_no_robot">您还没有机器人</string>
+    <string name="devices_connecting">正在连接</string>
+    <string name="devices_connect">连接</string>
+    <string name="devices_dis_connect">断开</string>
+    <string name="devices_offline">离线</string>
+    <string name="devices_wifi_seting">网络设置</string>
+    <string name="devices_version">机器人版本</string>
+    <string name="devices_no_authorize_permission">这台机器人属于%，\n您没有授权权限</string>
+    <!--<string name="devices_busy">你的机器人正在被%占用,\n你现在不能连接</string>-->
+    <!--<string name="devices_using_master">机器的人的主人%正在使用，您现在不能使用</string>-->
+    <string name="devices_busy">你的机器人正在被%占用</string>
+    <string name="devices_using_master">机器的人的主人%正在使用</string>
+
+    <string name="devices_person_info">用户信息</string>
+    <string name="devices_online_status">在线</string>
+    <string name="devices_using_status">使用中</string>
+    <string name="devices_busy_status">被占用</string>
+    <string name="devices_authorize_pass">已通过</string>
+    <string name="devices_authorize_not_pass">待通过</string>
+    <string name="devices_owner">设备主人</string>
+    <!-- 引导页界面 -->
+    <string name="guide_page1_tips1">不管你身在何方</string>
+    <string name="guide_page1_tips2">Alpha2 都在你的身边</string>
+    <string name="guide_page2_tips1">更多内置应用</string>
+    <string name="guide_page2_tips2">好用好玩好贴心</string>
+    <string name="guide_page3_tips1">分享给家人朋友</string>
+    <string name="guide_page3_tips2">一起发现Alpha2 的乐趣</string>
+    <string name="guide_page4_tips1">海量应用拓展</string>
+    <string name="guide_page4_tips2">尽在VAPP store</string>
+    <string name="guide_go">进入</string>
+    <!-- 意见反馈 -->
+    <string name="feed_back_title">用户反馈</string>
+    <string name="feed_back_tips">请输入您的意见，么么哒</string>
+    <string name="feed_back_tips_to_long">字数不能超过200</string>
+    <string name="feedback_success">反馈成功</string>
+    <string name="feedback_failed">反馈失败</string>
+    <!-- 2015-11-27 -->
+    <!-- 历史绑定记录 -->
+    <string name="device_history">历史绑定</string>
+    <string name="device_history_save_qr">保存二维码</string>
+    <string name="device_history_scan_robot_qr_bind">扫描二维码进行绑定</string>
+    <string name="device_history_qr">二维码</string>
+    <string name="permission_request_camera">无法使用扫码功能，请到设置中开启相机相关权限</string>
+    <string name="encode_code_fail">生成二维码失败，请重试</string>
+    <!-- 下拉刷新和加载更多 -->
+    <string name="list_pull_to_refresh_pull_label">下拉刷新</string>
+    <string name="list_pull_to_refresh_release_label">松开后刷新</string>
+    <string name="list_pull_to_refresh_refreshing_label">刷新\u2026</string>
+    <string name="list_pull_to_refresh_footer_release_label">松开后加载</string>
+    <string name="list_pull_to_refresh_footer_pull_label">上拉加载更多</string>
+    <string name="list_pull_to_refresh_footer_refreshing_label">加载中\u2026</string>
+    <string name="list_pull_to_refresh">下拉可以刷新</string>
+    <string name="list_release_to_refresh">松开可以刷新</string>
+    <string name="list_lastUpdateTime">最近更新：%s</string>
+    <string name="list_load_full">已加载全部</string>
+    <string name="list_no_data">暂无数据</string>
+    <string name="list_more">加载中</string>
+    <!-- 相册 -->
+    <string name="image_galley">相册</string>
+    <string name="image_delete_phototips">是否要删除这%张照片？</string>
+    <string name="image_has_new_photo">有%张新图，请下拉刷新获取</string>
+    <string name="image_no_photo">机器人拍照的照片会显示在这里,\n 和机器人说：“我想拍照” 试试。</string>
+    <string name="image_photo_no_exist">图片不存在</string>
+    <string name="image_delete_photo_failed">删除图片失败</string>
+    <string name="image_load_photo_failed">图片%文件加载异常，请重试</string>
+    <string name="image_get_photo_failed">图片%加载异常，请重试</string>
+    <string name="image_save_pic">保存成功%</string>
+    <string name="image_save_failed">保存失败，请重试</string>
+    <string name="image_no_pic">本地没有文件</string>
+    <!-- 新手指引 -->
+    <string name="guide_home_drawer">点击这里可以查看我的机器人，我的信息等</string>
+    <string name="guide_home_change_App">点击上面的图标可以切换应用，长按可以卸载应用（系统应用不可以卸载）</string>
+    <string name="guide_home_bar">当前正在运行的应用在这里显示</string>
+    <string name="guide_button2">下一条</string>
+    <string name="guide_button1">知道了</string>
+    <string name="guide_robot_invite">点击这里可以把机器人授权给好友哦</string>
+    <string name="guide_robot_add">点击这里添加更多的机器人</string>
+    <string name="guide_home_actionlist">动作表中的动作越多，机器人的肢体动作就越丰富哦。快去商店下载吧</string>
+    <string name="guide_binding_start">点击这里开始绑定机器人！</string>
+    <string name="guide_binding_Qrcode">二维码在机器人身后</string>
+    <!-- 边充边玩 -->
+    <string name="device_charge_while_playing_title">边充边玩</string>
+    <string name="device_charge_while_playing_describe">此功能可能会对机器人舵机及电池损耗加大，请慎重开启。同时对机器人说“开启/关闭边充边玩”也可以操作此功能。</string>
+    <string name="device_chat_action_title">闲聊动作</string>
+    <string name="device_chat_action_title_tip">开启后，机器人闲聊时有随机动作，更拟人，但更耗电</string>
+    <string name="device_upload_log_title">上传错误日志</string>
+    <string name="device_upload_log_tip">开启后，机器人上传错误日志，帮助alpha不断进步成长!</string>
+    <string name="device_soft_hardwareinfo">软硬件信息</string>
+    <string name="device_soft_hard_ware_info_software">软件信息</string>
+    <string name="device_soft_hard_ware_info_details">主服务版本</string>
+    <string name="device_soft_hard_ware_info_chest">胸版</string>
+    <string name="device_soft_hard_ware_info_head">头版</string>
+    <string name="device_soft_hard_ware_info_android">安卓系统版本</string>
+    <string name="device_soft_hard_ware_info_hardware">硬件信息</string>
+    <string name="device_soft_hard_ware_info_sdcard">SD卡容量/SD卡余量</string>
+    <string name="device_soft_hard_ware_info_details_sd_less">SD卡余量</string>
+    <string name="home_battery">机器人电量:</string>
+    <string name="home_battery_charge">充电中</string>
+    <string name="home_battery_need_charge">需充电</string>
+
+    <string name="home_battery_charge_full">已充满</string>
+    <string name="settings_connect_title">自动连接机器人</string>
+    <string name="settings_connect_describe">开启此功能，机器人在联网成功后，会自动与手机连接。</string>
+    <string name="apps_action_result_tips">搜索结果</string>
+    <!-- 动作表新增 -->
+    <string name="apps_action_list_blank_result">没找到你要的结果</string>
+    <string name="apps_action_list_blank_input_data">请输入搜索关键字</string>
+    <string name="apps_action_list_blank_network">网络不太给力哦</string>
+    <string name="apps_action_list_blank_date">您还没有下载任何动作</string>
+    <string name="apps_action_list_blank_reload">重新加载</string>
+    <string name="apps_action_list_blank_download">立即下载</string>
+    <string name="apps_actionklist_category_nursery">儿歌</string>
+    <string name="apps_actionklist_category_story">故事</string>
+    <string name="apps_actionklist_category_dance">舞蹈</string>
+    <string name="apps_actionklist_category_education">教育</string>
+    <string name="apps_actionklist_category_sport">运动</string>
+    <string name="apps_actionklist_warning_title">请用手扶稳机器人！</string>
+    <string name="qpps_actionklist_warning_describe">掉电后，机器人会有摔倒的可能，同时请注意手指夹伤危险</string>
+    <string name="apps_actionklist_slacken">松弛</string>
+    <string name="apps_actionklist_stand">复位</string>
+    <string name="apps_actionklist_stop">停止</string>
+    <!--我的消息模块-->
+    <string name="news_title_comment_reply">评论回复</string>
+    <string name="news_title_new_photos">新照片</string>
+    <string name="news_title_authorization">授权消息</string>
+    <string name="news_title_system">系统消息</string>
+    <string name="news_comment_reply_none">暂时没有回复</string>
+    <string name="news_comment_reply">XX回复了你</string>
+    <string name="news_new_photos_none">暂时没有新照片</string>
+    <string name="news_new_photos">Alpha 2 传了N张新照片给你</string>
+    <string name="news_authorization_none">暂时没有授权消息</string>
+    <string name="news_authorization_cancel">XX取消了对你的授权</string>
+    <string name="news_authorization_invite">XX邀请你使用他的Alpha 2 </string>
+    <string name="news_authorization_agree">XX接受了您的邀请</string>
+    <string name="news_authorization_refuse">XX拒绝了您的邀请</string>
+    <string name="news_authorization_relieve">XX解除了对Alpha 2的使用权限</string>
+    <string name="news_system_none">暂时没有系统消息</string>
+    <string name="news_describe_authorization_relieve">XX解除了对你的Alpha 2的使用权限，他将无法再使用您的Alpha 2，并将不会再出现在你的好友列表中。</string>
+    <string name="news_describe_authorization_cancel">XX取消了对您的授权，您将无法再连接他的Alpha 2。</string>
+    <string name="news_describe_authorization_invite">XX邀请您使用他的Alpha2，接受后你将有连接他的Alpha2的权限，你也可以进入机器人主页解除绑定。</string>
+    <string name="news_describe_authorization_agree">XX接受了您的邀请</string>
+    <string name="news_describe_authorization_refuse">XX拒绝了您的邀请</string>
+    <string name="news_button_agree">接受</string>
+    <string name="news_button_refuse">拒绝</string>
+    <string name="news_button_all">全选</string>
+    <string name="news_button_delete">删除</string>
+    <string name="news_button_done">完成</string>
+    <string name="news_warning_title">确定删除？</string>
+    <string name="news_warning_describe">删除后您将无法看到这些消息</string>
+    <string name="news_please_select_delete">请选择删除项</string>
+    <!--蓝牙设备连接-->
+    <string name="bt_searching">正在搜索附近的蓝牙设备...</string>
+    <string name="bt_history">历史记录连接</string>
+    <string name="bluetooth_matching_failed">配对失败...</string>
+    <string name="bluetooth_not_found_the_device">未找到该设备</string>
+    <string name="bt_results">搜索结果</string>
+    <string name="bt_name">连接蓝牙设备</string>
+    <string name="bluetooth_matching_request">蓝牙配对请求</string>
+    <string name="bluetooth_device">设备：</string>
+    <string name="bluetooth_want_to_connect_the_device">要与设备XX连接吗？</string>
+    <string name="bluetooth_matching">配对</string>
+    <string name="bt_ing">当前连接设备</string>
+    <string name="bt_none">当前未连接任何蓝牙设备！</string>
+    <string name="bt_tip">未连接</string>
+    <string name="bt_connected">已连接</string>
+    <string name="bt_refresh">刷新</string>
+    <string name="bt_button_connect">连接</string>
+    <string name="bt_button_breake">断开</string>
+    <string name="bt_disconnect_warning_title">确定断开连接？</string>
+    <string name="bt_connect_warning_title">确定连接？</string>
+    <string name="bt_warning_describe">断开后机器人将不再占用该设备</string>
+    <string name="bt_button_searching">搜索</string>
+    <string name="bt_lose">蓝牙设备失去连接</string>
+    <string name="bt_no_results">暂时没有搜索到任何蓝牙设备</string>
+    <string name="bt_button_re">重新搜索</string>
+    <string name="bt_connect_fail">连接失败</string>
+    <string name="bt_disconnect_fail">断开失败</string>
+
+    <!-- 使用帮助 -->
+    <string name="drawer_help">使用帮助</string>
+    <!-- 多语言 -->
+    <string name="language_setting">多语言</string>
+    <string name="language_system">跟随系统</string>
+    <string name="language_cn">简体中文</string>
+    <string name="language_en">English</string>
+    <!--崩溃日志 -->
+    <string name="crash_hint">很抱歉,程序出现异常,即将退出</string>
+    <!--称呼设置相关界面-->
+    <string name="robot_alpha_nickname_setting">名称设置</string>
+    <string name="robot_address_setting">称呼设置</string>
+    <string name="address_setting_note_cn">称呼只能由汉字，字母，数字组成，不能包含特殊符号，且不能超过10个字符。</string>
+    <string name="address_setting_note_en">称呼只能由字母，数字组成，不能包含特殊符号，且不能超过10个字符。</string>
+    <string name="address_setting_error_sinogram">不能包含汉字</string>
+    <string name="address_setting_error_symbol">不能包含特殊字符</string>
+    <string name="address_setting_error_character">不能超过10个字符</string>
+    <!--异常报告-->
+    <string name="abnormal_name">机器人异常报告 </string>
+    <string name="abnormal_nav">异常报告</string>
+    <string name="abnormal_warning">删除后您将无法看到这些报告 </string>
+
+    <string name="versionchange_version">机器人版本</string>
+    <string name="versionchange_change_confirm">确认</string>
+    <string name="versionchange_change_require">确定重新配置机器人版本么？</string>
+    <string name="versionchange_change_reset_disconnected">配置成功后机器人将重启系统，断开连接8-10s</string>
+    <string name="versionchange_change_reset_success">版本配置成功，机器人即将重启</string>
+    <string name="versionchange_change_reset_fail">版本配置失败，请重试</string>
+    <string name="versionchange_change_reset">即将重启，断开连接</string>
+    <string name="versionchange_version_chinese">当前已是中文版</string>
+    <string name="versionchange_version_english">当前已是英文版</string>
+    <string name="versionchange_change_close">关闭</string>
+    <string name="versionchange_change_retry">重试</string>
+
+    <!-- 更新对话框提示文字 -->
+    <string name="upgrade_dialog_title">重要提醒!</string>
+    <string name="upgrade_dialog_hint_text">您的APP是旧版本，会导致某些功能无法使用，请先下载最新版本！</string>
+    <!--Spotify相关-->
+    <string name="tip_spotify_not_login">Spotify没有登陆，请先登录</string>
+    <string name="tip_spotify_have_login">Spotify已经登陆</string>
+    <string name="tip_spotify_login_failed">获取Spotify登陆状态失败!</string>
+    <string name="tip_spotify_configinfo_complete"> Spotify登录配置信息发送完成</string>
+    <!--网络异常提示退出-->
+    <string name="error_logout_tips">%1$s秒后退出</string>
+
+    <string name="error_none">无</string>
+
+
+    <!-- 视频监控字符串 -->
+    <string name="surveillance_introduce">开启监控，\n手机显示机器人摄像头获得的画面</string>
+    <string name="connect_network_reminder">请连接网络</string>
+    <string name="querying_power">查询电量...</string>
+    <string name="robot_power">电量</string>
+    <string name="start_surveillance">开启监控</string>
+    <string name="title_surveillance">监控</string>
+    <string name="title_open_surveillance">开启监控</string>
+    <string name="robot_power_text">"电量: "</string>
+    <string name="action_hug">拥抱</string>
+    <string name="action_hi">Hi</string>
+    <string name="action_playing_cute">卖萌</string>
+    <string name="action_handshake">握手</string>
+    <string name="turn_off_phone_mic">关闭语音</string>
+    <string name="turn_on_phone_mic">开启语音</string>
+    <string name="user_voice_record">语音使用记录</string>
+    <string name="surveillance_network_unavailable_prompt">网络断开，请检查网络</string>
+    <string name="surveillance_first_use_hint">监控开启，机器人将恢复站立，头部直视前方</string>
+    <string name="connect_failed">连接失败</string>
+    <string name="surveillance_download_tips">新增监控应用，随处可见家里情况</string>
+    <string name="go_to_download">去下载</string>
+    <string name="update_service_tips">发现新版本，请重启机器人升级</string>
+    <!--增加联系我们-->
+    <string name="left_contact_us">联系我们</string>
+    <string name="contact_us_mainland">售后（中国大陆）</string>
+    <string name="contact_us_mainland_phone">客服热线：400-6666-700\ne-mail:ucare@ubtrobot.com\n微信公众号：szybxkj或优必选科技</string>
+    <string name="contact_us_abroad">售后（国外及港澳台）</string>
+    <string name="contact_us_abroad_way">e-mail:aftersales@ubtrobot.com\nskype:aftersales@ubtrobot.com</string>
+
+    <string name="connect_to_wifi">连接WIFI</string>
+    <string name="go_to_network_mode">进入联网模式</string>
+    <string name="scan_qrcode">扫描二维码</string>
+    <string name="wifi_connect_success">连接成功</string>
+    <string name="wifi_connect_failed">连接失败</string>
+
+    <string name="network_configure_hint_view_1_str">机器人被唤醒后，对机器人说</string>
+    <string name="network_configure_hint_view_2_str">“我要联网”</string>
+    <string name="network_configure_hint_view_3_str">直到机器人语音提示</string>
+    <string name="network_configure_hint_view_4_str">“开始联网”</string>
+    <string name="confirm_step_1_str">已听到“开始联网”</string>
+    <string name="scan_hint_view_str">没有听到机器人语音提示“开始联网”？</string>
+    <string name="step_3_hint_view_str">机器人没有提示“二维码扫描成功”</string>
+    <string name="connection_failed">连接失败</string>
+    <string name="connection_successful">连接成功</string>
+    <string name="reconnect">重新连接</string>
+    <string name="network_configure_redirecting">正在为您跳转首页</string>
+    <string name="network_configure_scan_tips_1">1. 确认手机屏幕保持足够光亮</string>
+    <string name="network_configure_scan_tips_content_1">使机器人可以扫描清晰的二维码。</string>
+    <string name="network_configure_scan_tips_2">2. 保持手机位置与机器人平行</string>
+    <string name="network_configure_scan_tips_content_2">避免手机出现反光现象无法扫描二维码。</string>
+    <string name="network_configure_scan_tips_3">3. 请确认二维码放在机器人摄像头前</string>
+    <string name="network_configure_scan_tips_content_3">放置的距离约一个机器人手臂长度，大约20cm~30cm处</string>
+
+    <string name="robot_serial_number">机器人序列号</string>
+    <string name="register_robot">绑定机器人</string>
+    <string name="robot_registered">该机器人已被他人绑定</string>
+    <string name="contact_to_deregister">请联系用户 %1$s 解绑</string>
+
+    <string name="bind_unknown_error">未知异常情况，请重新扫码绑定</string>
+    <string name="bind_invalid_sn">该机器人序列号不存在\n请联系客服：400 - 6666 -700</string>
+
+    <!--语音合成 -->
+    <string name="voice_compound_title">智能传译</string>
+    <string name="voice_compound_edit_hint">在此输入文字，让机器人播报</string>
+    <string name="voice_compound_edit_size">0/50字</string>
+    <string name="voice_compound_edit_symbol">逗号可以短暂停顿</string>
+    <string name="voice_compound_tv_speack_ch">中文</string>
+    <string name="voice_compound_tv_speack_en">英文</string>
+    <string name="voice_compound_tv_speack">机器人语音播报</string>
+    <string name="voice_compound_tv_action">附加动作</string>
+    <string name="voice_compound_tv_action_none">无</string>
+    <string name="voice_compound_tv_btn_send">发送</string>
+    <string name="voice_compound_tv_btn_time">秒</string>
+    <string name="upload_success">上传成功</string>
+    <string name="disconnect_robot">与机器人断开连接</string>
+    <string name="try_connect_robot">重新连接</string>
+    <string name="tv_upload_log_cmd">报错</string>
+    <string name="ble_choose_to_connect">请选择Alpha2进行连接</string>
+    <string name="ble_connect">连接</string>
+    <string name="ble_connect_to_the_internet">连接网络</string>
+    <string name="ble_connect_to_device">连接Alpha</string>
+    <string name="ble_connect_to_wifi">连接WIFI</string>
+    <string name="ble_connect_failed">蓝牙连接失败，请重新连接</string>
+    <string name="ble_dialog_ok">好的</string>
+    <string name="ble_try_other_ways">尝试其他联网方式</string>
+    <string name="ble_connect_title">请对%1$s进行Wi-Fi连接</string>
+    <string name="ble_connect_error">连接失败，请重新连接</string>
+    <string name="ble_connecting">连接中...</string>
+    <string name="ble_connect_robot">连接设备</string>
+    <string name="upload_log_error_top">请过</string>
+    <string name="upload_log_error_bottom">分钟再试</string>
+    <string name="time_yesterday">昨天</string>
+    <string name="toast_no_repeat_play">5秒内请勿重复点击</string>
+    <string name="force_offline">你已经被强制踢出了</string>
+</resources>

@@ -1,0 +1,25 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/dialog_bg"
+    android:padding="10dp" >
+
+    <com.ubtechinc.alpha2ctrlapp.widget.dialog.ThreePointLoadingView
+        android:id="@+id/img_dia_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitCenter"
+        android:layout_centerInParent="true"
+        android:background="@drawable/loading_bg"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/txt_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text_color_t2"
+        android:textSize="16dp"
+        android:visibility="gone" >
+    </TextView>
+
+</RelativeLayout>

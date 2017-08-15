@@ -1,0 +1,20 @@
+syntax = "proto3";
+option java_package = "com.ubtechinc.alpha";
+message DeskClock {
+
+    int32 type = 1;
+    int32 clockID = 2;
+    int32 hour = 3;
+    int32 minutes = 4;
+    int32 daysofweek = 5;
+    int64 alarmtime = 6;
+    bool enabled = 7;
+    int32 vibrate = 8;
+    string message = 9;
+    string alert = 10;
+    string dtstart = 11;
+    bool iscomplete = 12;
+
+}
+
+

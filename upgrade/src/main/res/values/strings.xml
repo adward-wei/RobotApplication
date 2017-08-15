@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">upgrade</string>
+    <string name="download_condition_hint">固件有新版本，请插上电源，保证SD卡有%s兆空间，重启后升级</string>
+    <string name="downloading_hint">固件下载中，当前进度百分之%s，请保持插上电源</string>
+    <string name="upgrade_condition_hint">请保持Lynx电量高于50%并插上电源，重启后升级</string>
+    <string name="upgrade_android_hint">准备重启机器人进行固件升级</string>
+    <string name="upgrade_finish_hint">固件升级完成</string>
+    <string name="upgrade_tts_tips">升级文件已下载，是否立即安装</string>
+    <string name="wake_up_tips">升级请先通过你好阿尔法唤醒我噢</string>
+    <string name="unzip_error">解压失败</string>
+    <string name="md5_error">MD5 校验失败</string>
+</resources>

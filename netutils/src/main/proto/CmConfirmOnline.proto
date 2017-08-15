@@ -1,0 +1,11 @@
+syntax = "proto3";
+option java_package = "com.ubtechinc.alpha";
+message CmConfirmOnlineRequest {
+
+}
+
+message CmConfirmOnlineResponse {
+
+    int32 isOnline = 1;
+
+}

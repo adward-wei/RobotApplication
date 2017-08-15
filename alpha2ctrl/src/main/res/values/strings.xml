@@ -1,0 +1,869 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- common start -->
+    <string name="app_name">Alpha2</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="common_btn_back">Back</string>
+    <string name="common_btn_cancel">Cancel </string>
+    <string name="common_btn_confirm">Confirm</string>
+    <string name="common_btn_edit">Edit</string>
+    <string name="common_btn_skip">Skip </string>
+    <string name="common_btn_finish">Complete</string>
+    <string name="common_btn_start">Start</string>
+    <string name="common_btn_next">Next</string>
+    <string name="common_btn_submit">Submit </string>
+    <string name="common_search_text">Search</string>
+    <string name="common_update_text">Update</string>
+    <string name="common_input_search_content">Enter a keyword</string>
+    <string name="common_sel_country">Select</string>
+    <string name="common_btn_close">Close</string>
+    <string name="common_btn_retry">Retry</string>
+    <!-- 本地动作列表 mMainPageActivity beging -->
+    <string name="local_action_list_disconnect">Disconnecting</string>
+    <string name="local_action_list_start">Start</string>
+    <string name="local_action_list_stop">Stop</string>
+    <string name="local_action_list_refresh">Refresh</string>
+    <string name="local_action_list_reset">Reset</string>
+    <string name="local_action_list_power_off">Power Off</string>
+    <string name="local_action_list_title">Action List</string>
+    <string name="local_action_uninstall_action_tips">Do you want to delete this action?</string>
+    <string name="local_action_uninstall_action_tips_success">deleted</string>
+    <string name="local_action_uninstall_action_tips_failed">Delete failed</string>
+    <string name="main_page_uninstall">uninstall</string>
+    <!-- movement mMainPageActivity end -->
+
+
+    <!-- nxy add 2015-8-18 -->
+    <!-- 声波联网界面 -->
+    <string name="sonic_open_power_button_tips">Press and hold the RED button on Alpha’s head (see previous figure). \n Then, release the button. The indicator will flash and \n Alpha will announce, “Sonar has started.”</string>
+    <string name="sonic_keep_far_tips">Keep Alpha and the mobile phone within 1m of each other</string>
+    <string name="sonic_voice_open">Sonar has started</string>
+    <string name="sonic_open_voice">Start Sonar</string>
+    <string name="sonic_send_voice">Send sonar signals</string>
+    <string name="sonic_choose_other_model">Select another method</string>
+
+    <!-- 输入wifi 界面 -->
+    <string name="set_wifi_title">Set wifi for the robot</string>
+    <string name="wifi_title">Enter</string>
+    <string name="wifi_input_name"> WiFi Name</string>
+    <string name="wifi_input_psw">WiFi Password</string>
+    <string name="wifi_psw_isempty">The WiFi password cannot be blank.</string>
+    <string name="wifi_name_isempty">The WiFi name cannot be blank.</string>
+    <string name="wifi_show_psw">Show password</string>
+    <string name="wifi_confirm_name">Check if the WiFi name is correct.</string>
+    <string name="wifi_input_wifi_tips">Please connect to the same WiFi network as on your mobile phone. Also, make sure the name and password are correct.</string>
+    <string name="wifi_scan">Scan for the WiFi network.</string>
+    <string name="wifi_open_location_permission"> open location authority for Alpha 2?</string>
+    <string name="wifi_closed">open wifi</string>
+    <string name="wifi_psw_inccrect">The password must contain at least 8 characters.</string>
+    <string name="wifi_guide_open_persion_wifi_tips1">You have not set your personal hotspot.</string>
+    <string name="wifi_guide_open_persion_wifi_tips2">How to Start Your Hotspot</string>
+    <string name="wifi_guide_open_persion_wifi_tips3">Please choose “Settings >Portale WLANL hostpot” to start your hotspot.</string>
+    <string name="wifi_guide_open_persion_wifi_tips4">Your hotspot will be shown after it is started. Remember its name and password.</string>
+    <string name="wifi_guide_go_setting">Go to Start</string>
+    <string name="wifi_name_too_long">Wi-Fi name is too long</string>
+    <string name="wifi_psw_too_long">Wi-Fi password is too long</string>
+    <string name="wifi_info_sending_by_sonic">Sending ...</string>
+    <string name="wifi_info_sending_time"> This procedure will take</string>
+    <string name="wifi_info_sending_wait">, please be patient...</string>
+    <string name="wifi_add_tips">Enter the network information </string>
+    <string name="wifi_free_wifi">free WiFi</string>
+    <string name="wifi_error">connection failed,\n could you reselect a wifi or input the password</string>
+    <!-- 网络监听 -->
+    <string name="net_listener_title">Enabling Network</string>
+    <string name="net_connecting">The device is connecting to the network</string>
+    <string name="net_connect_title">Connect</string>
+    <string name="net_failed_cooee_tips">1. Please check if the Wi-Fi information you have entered is correct \n2. Please make sure your mobile phone is within 1 meter from the Alpha \n3. Please ensure you have enabled the Network Monitoring on Alpha \n4. Network connection timeout</string>
+    <string name="net_failed_sonic_tips">1. Please check if the Wi-Fi information you entered is correct \n2. Please make sure your mobile phone is within 1 meter from the Alpha \n3. Please ensure you have enabled the Sound Wave on Alpha \n4. Network connection timeout</string>
+    <string name="net_connected_failed">Failed</string>
+
+    <!-- 扫描二维码界面 -->
+    <string name="qr_scan">Scan QR code</string>
+    <string name="qr_scan_success">Scanned sccessful</string>
+    <string name="qr_scan_encode_qr">The qr code will be generated </string>
+    <string name="qr_scan_tips">Keep the QR code within 20cm-40cm of the robot\'s camera until heard the tone</string>
+    <string name="qr_scan_tips_rule">1.Keep the QR code within 20cm-40cm of the robot\'s camera until heard the tone</string>
+    <string name="qr_scan_tips_content">Distance and angle are related to the success rate of scanning</string>
+    <string name="qr_scan_open_cameral_tips">2.restart camera</string>
+    <string name="qr_scan_low_light_tips">2.Is the light too dark?</string>
+    <string name="qr_scan_low_light_tips_content">the light is too dark,robot can\'t scan the QR code</string>
+    <string name="qr_scan_do_others_tip_content">You can do other things ,during the process</string>
+    <string name="qr_scan_do_others_tip">Do ohter things</string>
+    <string name="permission_request_camera">Can not use the sweep function, please turn on the camera to set the relevant permissions</string>
+    <string name="encode_code_fail">Failed to generate QR code. Please try again</string>
+    <!-- 网络连接向导 -->
+    <string name="connect_guide_title">Connection Wizard</string>
+    <string name="connect_guide_tips1">1. Please make sure the WiFi name and password are correct.</string>
+    <string name="connect_guide_tips2"> 2. Please check your network status.</string>
+    <string name="connect_guide_tips3"> 3. Please confirm that your mobile phone is not  muted and that the volume is turned up.</string>
+    <string name="connect_guide_tips4"> 4. When connecting to the network, make sure your mobile phone is  close to the robot  (Fig. 1).</string>
+    <string name="connect_guide_tips5">5. After sending the network information, press the button located on the robot\'s head as indicated on the picture below (Fig. 2).</string>
+    <string name="connect_guide_open_tips">Press and hold the button of the robot as shown in the figure until you hear the tone, which indicates the start of the monitoring function.</string>
+    <string name="connect_guide_tips6">6. After doing so, please send the network infromation within 20 seconds. </string>
+    <string name="connect_net_success">Are you unable to connect to a network?</string>
+    <string name="connect_net_resend">Resend</string>
+    <string name="connect_net_disable_net">Unable to connect to the network?</string>
+    <string name="connect_guide_icon_1">(Fig. 1)</string>
+    <string name="connect_guide_icon_2">(Fig. 2)</string>
+    <string name="connect_guide_icon_3">(Fig. 3)</string>
+    <string name="connect_guide_tips7">7. Contact Us</string>
+    <string name="connect_guide_tips7_tips">* If the problem persists, contact us at:</string>
+    <string name="connect_guide_our_email">Customer Service E-mail: service@ubtrobot.com</string>
+    <string name="connect_guide_our_phone">Customer Service Hotline: 0755-8888 8888</string>
+    <string name="connect_guide_tips6_tips">If 20 seconds have passed, repeat step 5</string>
+    <string name="connect_disable_voice">Didn\'t hear the notification tone?</string>
+    <string name="connect_guide_disable_voice_tips1">If Alpha answers \"whats up\" when you say "hello Alpha" to it.</string>
+    <string name="connect_guide_disable_voice_tips1_tips">That means the robot is awakened.</string>
+    <string name="connect_guide_disable_voice_tips2">Please keep your ambient environment quiet when saying \"connect to wifi\".</string>
+    <string name="connect_guide_disable_voice_tips2_tips">If Alpha cannot be waken up or low battery，please recharge Alpha</string>
+    <string name="connect_guide_disable_voice_tips3">If you still can\'t heard alpha\'s response，you can try this</string>
+    <string name="connect_guide_disable_voice_tips3_tips">After wake Alpha up，long press the light which in front of its head</string>
+    <string name="connect_guide_disable_voice_tips4_tips">Until Alpha say \"start to connect wifi\"</string>
+    <string name="connect_guide_open_alpha_net_listener">While the robot is on,\n press and hold the location on its head as shown in the figure until a tone is heard.</string>
+    <string name="connect_guide_keep_close">* keep the robot within 1 meter from your mobile device</string>
+    <string name="connect_guide_close_tips1">* to raise the volume of your phone, move your phone close to the robot</string>
+    <string name="connect_guide_tips_listent">4.Contact us</string>
+    <string name="connect_open_next">Next</string>
+    <string name="connect_net_success_tips">network connection successful!</string>
+    <string name="connect_page_skip">Skip...</string>
+    <string name="connect_sending_net_info">robot connecting to network...</string>
+    <string name="connect_exist_send_net_info">Exit network connect?</string>
+    <string name="connect_btn_exist">exit</string>
+    <string name="connect_btn_countine_wait">wait</string>
+    <!-- 登录注册通用的一些- -->
+    <string name="ui_login">Login </string>
+    <string name="ui_register">Sign Up</string>
+    <string name="ui_email_empty_note">The e-mail address cannot be blank</string>
+    <string name="ui_phone_empty_note">The mobile number cannot be blank</string>
+    <string name="ui_pass_empty_note">The password cannot be blank</string>
+    <string name="ui_re_pass_empty_note">The re-entered password cannot be blank</string>
+    <string name="ui_by_phone">Phone</string>
+    <string name="ui_by_email">E-mail</string>
+    <string name="ui_email_input"> E-mail address </string>
+    <string name="ui_phone_input"> Mobile number</string>
+    <string name="ui_verification_input">Captcha</string>
+    <string name="ui_passwd_no_equal">The passwords do not match</string>
+    <string name="ui_email_address">E-mail address</string>
+    <string name="ui_email_address_input"> E-mail address</string>
+    <string name="ui_set_verify_send">Resend %1$s later</string>
+    <string name="ui_set_verify_resend">Get a new verification code.</string>
+    <string name="ui_error_msg_code_input_tips">The verification code is incorrect.</string>
+    <string name="ui_error_code_input_tips">The verification code is incorrect. Please try again.</string>
+    <string name="ui_check_msg">A verification code has been sent to your mobile phone. Please check.</string>
+    <string name="ui_error_get_msg_code">Unable to obtain a verification code. Please try again.</string>
+    <string name="ui_input_correct_phone">Please enter the correct mobile number.</string>
+    <string name="ui_input_correct_mial">The format of the e-mail address is incorrect.</string>
+    <string name="ui_user_length">The username must contain 3 to 20 characters!</string>
+    <string name="ui_user_phone">Please enter the correct mobile number!</string>
+    <string name="ui_user_pwd">The password must contain 6 to 15 characters!</string>
+    <string name="ui_user_wrong">The user name must be a combination of English letters, English numbers, or underscores</string>
+    <string name="ui_pwd_wrong">The password may consist of letters, digits, and an underscore!</string>
+    <string name="ui_sel_contory"> Country/Region</string>
+    <string name="ui_login_fail">You have failed to login. Please check your login information.</string>
+    <string name="ui_weixin_not_install">You haven \'t installed WeChat!</string>
+    <string name="ui_share_to_other">Share to </string>
+    <string name="ui_share_to_qq">QQ</string>
+    <string name="ui_share_to_qq_kongjian">Qzone</string>
+    <string name="ui_share_to_weixin">WeChat</string>
+    <string name="ui_share_to_weixin_pengyouquan">Friends </string>
+    <string name="ui_share_to_weibo">Weibo</string>
+    <string name="ui_weibo_not_install">You have not installed Sina Weibo!</string>
+    <string name="ui_welcome_title">Dream With Robots</string>
+    <string name="ui_welcom_bottom">Nice to meet you</string>
+    <string name="ui_robot_share_twitter">Twitter app not Insatlled in your mobile</string>
+    <string name="ui_china">CN</string>
+    <string name="ui_user_name">UserName</string>
+    <!-- 找回密码 -->
+    <string name="find_psw_intput_name"> Mobile number/E-mail address </string>
+    <string name="find_psw_start">Start retrieving</string>
+    <string name="find_psw_title">Retrieve password</string>
+    <string name="find_psw_get_verification_phone">Click “Obtain” for a verification code. A message containing the verification code will be sent to your mobile phone “?”</string>
+    <string name="find_psw_get_verification_email">An e-mail containing a password to reset will be sent to your e-mail address “?”</string>
+    <string name="find_psw_get_verification">Obtain </string>
+    <string name="find_psw_login_email">Log in to my e-mail address.</string>
+    <string name="find_reset_pwd">Reset Password</string>
+    <string name="find_reset_pwd_success">The password has been reset.</string>
+    <string name="find_reset_pwd_fail">Resetting the password has failed.</string>
+    <!-- 注册 -->
+    <string name="regist_input_passwd"> Password </string>
+    <string name="regist_input_re_passwd">Confirm Password</string>
+    <string name="regist_agree_contract">Click “Sign Up” to agree to the service terms and privacy policy </string>
+    <string name="regist_third_party">Register by a third-party device</string>
+    <string name="regist_verification_get">Obtain</string>
+    <!-- 登录 -->
+    <string name="login_forget_passwd">Forgot your password?</string>
+    <string name="login_third_party">Login in  other ways</string>
+    <string name="login_passwd_short">The password is too short.</string>
+    <string name="login_by_other">Your account login on another device</string>
+    <!-- 完善用户信息 -->
+    <string name="private_info_titile">Fill in information</string>
+    <string name="private_info_user_name">Set a username</string>
+    <string name="private_info_gender">Sex</string>
+    <string name="private_info_gender_m">Male</string>
+    <string name="private_info_gender_f">Female</string>
+    <string name="private_info_set_nick_name">Please set your Nickname</string>
+    <string name="private_info_set_head">Please set your profile image</string>
+    <!-- 绑定ALPHA -->
+    <string name="bind_start">Start</string>
+    <string name="bind_not_now">Later</string>
+    <string name="bind_alpha">Bind Alpha2</string>
+    <string name="open_connection_title">Open the robot connection</string>
+    <string name="scan_describe">Please find the QR code on the robot\'s back and scan it</string>
+
+    <string name="bind_tips">After Alpha is bound, you can manage and control it and authorize others to use it. </string>
+    <string name="bind_redo">Retry</string>
+    <string name="bind_success">Bound</string>
+    <string name="bind_failed">It has failed to bind.</string>
+    <string name="bind_check_sn_failed">Querying the SN has failed.</string>
+    <string name="bind_open_camera_pemission">Please turn on camera permission!</string>
+    <string name="bind_scan_robot_qr">Scan the QR code of Alpha</string>
+    <!-- Alpha设置界面 -->
+    <string name="alpha_setting_debug_mode">Debug Mode</string>
+    <!-- 添加授权界面 -->
+    <string name="authorize_title">Authorize </string>
+    <string name="authorize_add">Invite</string>
+    <!-- 解除绑定 -->
+    <string name="release_succes">Unbound</string>
+    <string name="release_failed">Unbinding has failed</string>
+    <string name="release_alpha_tips">Attention! \n This operation will result in this device losing its ability to control and will erase all authorizations.</string>
+    <string name="release_other_alpha_tips">Attention! \n The operation will make him lose control of the device.</string>
+    <string name="release_text">Unbind</string>
+    <string name="authorize_delete_tip">Are you sure you want to delete your authorization with Alpha2?</string>
+    <string name="authorize_delete_success">The authorization has been deleted.</string>
+    <string name="authorize_delete_failed">Deleting the authorization has failed.</string>
+    <string name="authorize_delete">authorize deletion</string>
+    <string name="authorize_cancel">cancel authority</string>
+    <string name="authorize_cancel_success">Successfully cancelled authority</string>
+    <string name="authorize_cancel_failed">Failed to cancel authority</string>
+    <string name="authorize_delete_want">Do you want to delete the authorization of</string>
+    <string name="authorize_delete_to">\?</string>
+    <!-- 搜索授权 -->
+    <string name="search_invite_by_phone">Send an invitation by SMS</string>
+    <string name="search_invite_by_email">Send an invitation by e-mail</string>
+    <string name="search_invite_name_empty_note">The username cannot be blank</string>
+    <string name="search_tips">The user does not exist. \n Please enter e-mail address or mobile number \n to send an invitation for authorization</string>
+    <string name="search_invite_yourselef">You do not need to authorize yourself.</string>
+    <string name="search_input_error_invate_name">Your input format is incorrect</string>
+    <string name="search_input_mobile">Please enter a mobile number</string>
+    <string name="search_input_mail">Please enter an email address</string>
+    <string name="search_choose_search_type">Please choose type</string>
+    <!-- 设备列表界面 -->
+    <string name="devices_wait_confirmed_user">User with authorization pending</string>
+    <string name="devices_confirmed_user">Authorized users</string>
+    <!-- 接受授权 -->
+    <string name="authorize_ingnore">Ignore </string>
+    <string name="authorize_accept">Accept </string>
+    <string name="authorize_invate_tips">You are invited to use it</string>
+    <!-- 主界面 -->
+    <string name="main_page_current_model">Current Mode</string>
+    <string name="main_page_my">My </string>
+    <string name="main_page_shop">Store</string>
+    <string name="main_page_app">App </string>
+    <string name="main_page_activite">Action</string>
+    <string name="main_page_msg">Message </string>
+    <string name="main_page_update">Update</string>
+    <string name="main_page_connect_alpha_tips">Connect your Alpha2</string>
+    <string name="main_page_disconnected">Alpha2 is disconnected. </string>
+    <string name="main_page_connect_then_download">You need to connect Alpha2 to control it  and  download the Apps.</string>
+    <string name="main_page_alpha2_offline">Alpha 2 is already offline.</string>
+    <string name="main_page_exist_tip">Tap again to exit</string>
+    <string name="main_page_no_friend">You have no permission to use this robot</string>
+    <string name="main_page_lost_authorize">You have been removed from the authorization of this robot</string>
+    <string name="main_page_confirm_find_phone">find the phone?</string>
+    <string name="main_page_uninstall_failed_6">System app can\'t be uninstalled</string>
+
+    <string name="shop_app_type_family_entertainment">family entertainment</string>
+    <string name="shop_app_type_education">education</string>
+    <string name="shop_app_type_commercial_perfor">commercial performance</string>
+    <string name="shop_app_type_medical_care">medical care</string>
+    <string name="shop_app_type_office_assistant">office assistant</string>
+    <string name="shop_app_type_other">other</string>
+    <string name="shop_app_language_chinese">Chinese</string>
+    <string name="shop_app_language_english">English</string>
+    <string name="shop_app_language_multi_language">Multi-Language</string>
+    <!-- 动作列表 -->
+    <string name="shop_page_base_action">Basic Actions</string>
+    <string name="shop_page_dance_action">Music &#038; Dance</string>
+    <string name="shop_page_story_action">Stories &#038; Fables</string>
+    <string name="shop_page_more">All </string>
+    <string name="shop_page_new">Latest Updates</string>
+    <string name="shop_page_action_list">Action List</string>
+    <string name="shop_page_download">Download</string>
+    <string name="shop_page_downloading">Downloading</string>
+    <string name="shop_page_open">Start</string>
+    <string name="shop_page_install">Installing</string>
+    <string name="shop_page_download_falied">The download has failed</string>
+    <string name="shop_page_download_success">Downloaded</string>
+    <string name="shop_page_installed_failed">The installation has failed</string>
+    <string name="shop_page_installed_success">Installed</string>
+    <string name="shop_page_installeding">Installing</string>
+    <!-- 动作详情 -->
+    <string name="shop_page_praise">Like</string>
+    <string name="shop_page_share">Share</string>
+    <string name="shop_page_collection">Favorite</string>
+    <string name="shop_page_comment_note">Post your comment</string>
+    <string name="shop_page_comment_index">Floor</string>
+    <string name="shop_page_comment_send">Send</string>
+    <string name="shop_page_comment_send_fail">The comment has failed.</string>
+    <string name="shop_page_add_comment_success">Commented.</string>
+    <string name="shop_page_zan_success">Liked.</string>
+    <string name="shop_page_zan_failed">Your “Like” has failed.</string>
+    <string name="shop_page_content_no_empty">Your comment cannot be blank.</string>
+    <string name="shop_page_collect_success">Added to your favorites.</string>
+    <string name="shop_page_collect_failed">You have failed to add it to your favorites.</string>
+    <string name="shop_page_no_collectt">You have no favorites yet.</string>
+    <string name="shop_page_cancel_collect_success">It has been removed from your favorites.</string>
+    <string name="shop_page_cancel_collect_failed">Unable to remove from your favorites.</string>
+    <string name="shop_page_share_success">Shared</string>
+    <string name="shop_page_share_error">Sharing has failed</string>
+    <string name="shop_page_praised">Praise</string>
+    <string name="news_storage_title">The robot has no enough storage is available</string>
+    <string name="shop_page_disable_download">Resources are not available to download</string>
+    <string name="shop_page_no_description">No description yet</string>
+    <string name="shop_page_no_search">No search for content</string>
+    <string name="shop_page_get_more">More</string>
+    <!--动作 -->
+    <string name="app_detail_action_cmd_one">向前走</string>
+    <string name="app_detail_action_cmd_two">给大家鞠个躬</string>
+    <string name="app_detail_action_cmd_three">点头</string>
+    <!--跳舞 -->
+    <string name="app_detail_dance_cmd_one">跳个舞吧</string>
+    <string name="app_detail_dance_cmd_two">跳舞给我看</string>
+    <!--闹钟 -->
+    <string name="app_detail_clock_cmd_one">提醒我十分钟之后吃药</string>
+    <string name="app_detail_clock_cmd_two">提醒我十点给宝宝买个蛋糕</string>
+    <!--闲聊 -->
+    <string name="app_detail_chat_cmd_one">世界上最美丽的人是谁?</string>
+    <string name="app_detail_chat_cmd_two">你有女朋友吗?</string>
+    <string name="app_detail_chat_cmd_three">你喜欢吃什么菜?</string>
+    <!--音乐 -->
+    <string name="app_detail_music_cmd_two">我想听陈奕迅的歌</string>
+    <string name="app_detail_music_cmd_three">我想听光年之外</string>
+
+    <!--故事 -->
+    <string name="app_detail_story_cmd_one">给我讲个故事</string>
+    <string name="app_detail_story_cmd_two">讲个小红帽的故事吧</string>
+
+    <!--笑话 -->
+    <string name="app_detail_joke_cmd_one">我想听笑话</string>
+    <string name="app_detail_joke_cmd_two">给我讲个笑话</string>
+
+    <!--天气 -->
+    <string name="app_detail_weather_cmd_one">深圳明天天气怎么样?</string>
+    <string name="app_detail_weather_cmd_two">上海今天天气怎么样?</string>
+
+    <!--时间 -->
+    <string name="app_detail_time_cmd_one">现在几点了?</string>
+    <string name="app_detail_time_cmd_two">伦敦现在几点?</string>
+
+    <!--汇率 -->
+    <string name="app_detail_parities_cmd_one">一美元等于多少人民币?</string>
+    <string name="app_detail_parities_cmd_two">港币和人民币的汇率是多少?</string>
+
+    <!--计算 -->
+    <string name="app_detail_calculate_cmd_one">1857的三次方等于多少?</string>
+    <string name="app_detail_calculate_cmd_two">38乘以41等于多少?</string>
+    <string name="app_detail_calculate_cmd_three">根号3951等于多少?</string>
+    <!--诗词 -->
+    <string name="app_detail_poem_cmd_one">床前明月光</string>
+    <string name="app_detail_poem_cmd_two">锄禾日端午的下一句是什么?</string>
+
+    <!--百科 -->
+    <string name="app_detail_cyclopedia_cmd_one">美国总统是谁?</string>
+    <string name="app_detail_cyclopedia_cmd_two">西游记是谁写的?</string>
+    <!--拍照 -->
+    <string name="app_detail_photo_cmd_one">给我拍张美美的照片</string>
+    <string name="app_detail_photo_cmd_two">给我照相呗</string>
+    <string name="app_detail_photo_cmd_three">可不可以给我拍张照呀?</string>
+    <!--中英互译 -->
+    <string name="app_tranlate_title">Translation </string>
+    <string name="app_tranlate_tip_ch_true">现在你可以对机器人说<font color='#9a9a9a'>中文</font>,机器人将翻译成<font color='#9a9a9a'>英文</font></string>
+    <string name="app_tranlate_tip_en_true">Now speak <font color='#9a9a9a'>Chinese</font> to the robot, and words will be translated into <font color='#9a9a9a'>English</font></string>
+
+    <string name="app_tranlate_tip_ch_false">现在你可以对机器人说<font color='#9a9a9a'>英文</font>,机器人将翻译成<font color='#9a9a9a'>中文</font>.</string>
+    <string name="app_tranlate_tip_en_false">Now speak <font color='#9a9a9a'>English</font> to the robot, and words will be translated into <font color='#9a9a9a'>Chinese</font>.</string>
+
+    <!-- alpha设置 -->
+    <string name="device_set_name">Name</string>
+    <string name="device_id">ID</string>
+    <string name="device_sets_title">Alpha2 Settings</string>
+    <string name="device_robot_storage_manager">Robot storage space</string>
+    <string name="device_robot_storage_manager_used">Used</string>
+    <string name="device_robot_storage_manager_free">Free</string>
+    <string name="device_robot_common_dialog_first_content">Are you sure to uninstall these </string>
+    <string name="device_robot_common_dialog_last_content">Apps?</string>
+    <string name="device_robot_dialog_unstalling">Uninstalling</string>
+    <string name="device_robot_manager">manage</string>
+    <string name="device_connect_bluetooth">Connect Bluetooth</string>
+    <string name="device_system_update">System Update</string>
+    <string name="device_developer">Developer Options</string>
+    <string name="device_status">Status Information</string>
+    <string name="device_layer">Legal information</string>
+    <string name="device_delevoper_submit">Send now</string>
+    <!-- 侧边栏 -->
+    <string name="left_menu_my_robot">My Devices</string>
+    <string name="left_menu_setting">Settings</string>
+    <string name="left_menu_about">About</string>
+    <string name="left_menu_my_like">My Favorites</string>
+    <string name="left_menu_exsit">Exit</string>
+    <!-- 应用设置 -->
+    <string name="app_setting_clear_cache">Clear Cache</string>
+    <string name="app_setting_down_load_only_wifi">Download via WiFi-only </string>
+    <string name="app_setting_nott">Text reminder</string>
+    <string name="app_setting_app_update">App Update</string>
+    <string name="app_setting_feedback">Feedback</string>
+    <string name="app_setting_smart_home">Smart home</string>
+    <string name="app_setting_appconfig">App Configuration Information</string>
+    <string name="app_setting_newest">Version:</string>
+    <string name="app_setting_has_new">New Version:</string>
+    <string name="app_setting_find_version_failed">Information on the latest version is not found.</string>
+    <string name="app_setting_now_newest">You are currently running the latest version.</string>
+    <string name="app_setting_apk_download_success">Downloaded.</string>
+    <string name="app_setting_apk_download_falied">You have failed to download the APK.</string>
+    <string name="app_setting_apk_unnomal">Network file error.</string>
+    <string name="app_setting_low_size">Insufficient memory.</string>
+    <string name="app_setting_read_file_exception">Server file error.</string>
+    <string name="app_setting_mobile_net">You are not currently using WiFi. Downloading will consume data. Do you still wish to download?</string>
+    <string name="app_setting_mobile_net_download">You have set downloading to the WiFi mode. Do you still wish to download?</string>
+    <string name="app_setting_clean_data_failed">Clearing of cache failed, please try again</string>
+    <!-- 关于 -->
+    <string name="about_app_coryright">Copyright © 2015-2017 UBTECH. \n All Rights Reserved.</string>
+    <string name="about_app_net">http://www.ubtrobot.com</string>
+    <string name="about_app_version">Version:</string>
+    <!-- 修改用户信息 -->
+    <string name="edit_info_success">Information edited.</string>
+    <string name="edit_info_failed">The information has failed to be edited.</string>
+
+    <!-- 应用详情 -->
+    <string name="app_detail_title">App Details</string>
+    <string name="app_detail_function_title">Introduction</string>
+    <string name="app_detail_zhankai">Unfold</string>
+    <string name="app_detail_shouqi">Fold</string>
+    <string name="app_detail_version">Version:</string>
+    <string name="app_detail_size">size：</string>
+    <string name="app_detail_comment">Comments</string>
+    <string name="app_detail_comment_hint">Comment</string>
+    <string name="app_detail_viewpager_indicator">%1$d/%2$d</string>
+    <string name="app_detail_downloadtime">Downloads </string>
+    <string name="app_detail_cmd_label">You can try</string>
+    <string name="app_detail_no_robot_tip">You can download this only connecting the robot</string>
+    <string name="app_detail_cmd_no_robot_tip">The following instructions need to be used in the case of robot networking</string>
+    <!-- 评论 -->
+    <string name="comment_floor">Floor</string>
+    <string name="comment_inssued">Released on</string>
+    <string name="comment_before">Before </string>
+    <string name="comment_day">Day </string>
+    <string name="comment_hour">H</string>
+    <string name="comment_minitus">M</string>
+    <string name="comment_second">S</string>
+
+    <!-- 消息 -->
+    <string name="msg_pic_receive_tip">Have you received a picture from Alpha "?"</string>
+    <string name="msg_title">Message </string>
+    <string name="msg_scan_pic">Browse Pictures</string>
+    <string name="msg_pic">Receive picture</string>
+    <string name="msg_more_invite">A user invites you to use their Alpha.</string>
+    <string name="msg_authorize">Authorization</string>
+    <string name="msg_photo">Photo</string>
+    <string name="msg_system">System</string>
+    <string name="msg_no_message">No message</string>
+    <!-- 应用相关 -->
+    <string name="app_list">App list</string>
+    <string name="app_details">App details</string>
+    <string name="app_update_all">Update all</string>
+    <string name="app_uninstall_tips">Do you wish to uninstall this app?</string>
+    <string name="app_uninstall_failed">uninstall failed.</string>
+    <string name="app_uninstall_success">Uninstall complete.</string>
+    <string name="app_updated_all_app">All apps have been updated.</string>
+    <!-- 闹钟 -->
+    <string name="alarm_name">Timer Name</string>
+    <string name="alarm_time">Time </string>
+    <string name="alarm_active">Action </string>
+    <string name="alarm_tip">Remind</string>
+    <string name="alarm_repeat_week">Weekly (every <xliff:g id="days_of_week">%s</xliff:g>) </string>
+    <string name="alarm_repeat_month">Monthly (on day <xliff:g id="day_of_month">%s</xliff:g>) </string>
+    <string name="alarm_repeat_no">Do not repeat</string>
+    <string name="alarm_on_time">On time</string>
+    <string name="alarm_no">No reminder</string>
+    <string name="alarm_ten_m">10 minutes in advance</string>
+    <string name="alarm_one_day">1 day in advance</string>
+    <string name="alarm_one_hour">1 hour in advance</string>
+    <string name="alarm_add_success">The timer is added</string>
+    <string name="alarm_add_failed">Adding the timer has failed</string>
+    <string name="alarm_delete_tips">Delete the timer?</string>
+    <string name="alarm_delete_success">The timer is deleted</string>
+    <string name="alarm_delete_failed">Deleting the timer has failed</string>
+    <string name="alarm_update_success">The timer is updated</string>
+    <string name="alarm_update_failed">The timer has failed to update</string>
+    <string name="alarm_choose_active">Select timer action</string>
+    <string name="alarm_set_name">Please set a timer name</string>
+    <string name="alarm_set_time">Set time for timer</string>
+    <string name="alarm_year">Year </string>
+    <string name="alarm_month">Month </string>
+    <string name="alarm_day">Day </string>
+    <string name="alarm_hour">H</string>
+    <string name="alarm_minute">M</string>
+    <string name="alarm_day_concat" msgid="971998564991636532">", "</string>
+    <string name="alarm_every_day" msgid="1058994798884544691">"Daily"</string>
+    <string name="alarmname_length">Maximum length: 20 characters!</string>
+    <string name="alarm_repeate">Repeat</string>
+    <string name="alarm_remind">Reminder</string>
+    <string name="alarm_add">Add</string>
+    <string name="activity_more_alarm_sava">Update </string>
+    <string name="activity_more_alarm_detail_title">Set Timer</string>
+    <string name="activity_more_alarm_detail_repeat">Repeat</string>
+    <string name="alarm_title">Timer</string>
+    <string name="alarm_usable_on">Open</string>
+    <string name="alarm_usable_off">Close</string>
+    <string name="alarm_repeat">repeat</string>
+    <string name="alarm_repeat_once">Once only</string>
+    <string name="alarm_repeat_everyday">Daily</string>
+    <string name="alarm_repeat_everyweek">Weekly</string>
+    <string name="alarm_repeat_everymonth">Monthly</string>
+    <string name="alarm_weekend">weekend</string>
+    <string name="alarm_workday">weekday</string>
+    <string name="alarm_hh">H</string>
+    <string name="alarm_mm">M</string>
+    <string name="alarm_sava">Save</string>
+    <string name="alarm_btn_ok">Ok</string>
+    <string name="alarm_delete">Delete</string>
+    <string name="alarm_prompt">Remind</string>
+    <string name="alarm_null_prompt">no remind</string>
+    <string name="alarm_add_prompt1">try requesting the robot \n \"wake me up at 7 tomorrow\"</string>
+    <string name="alarm_add_prompt1_tips">wake me up at 7 tomorrow</string>
+    <string name="alarm_add_prompt2">or click \" + \" at the top right to add alarm manually</string>
+    <string name="alarm_content">content</string>
+    <string name="alarm_monday">Mon</string>
+    <string name="alarm_tuesday">Tue</string>
+    <string name="alarm_wednesday">Wed</string>
+    <string name="alarm_thursday">Thur</string>
+    <string name="alarm_friday">Fri</string>
+    <string name="alarm_saturday">Sat</string>
+    <string name="alarm_sunday">Sun</string>
+    <string name="alarm_create">Create remind</string>
+    <string name="alarm_remark">Alarm remark</string>
+    <string name="alarm_detail">Alarm detail</string>
+    <string name="alarm_null_msg">alarm content cannot be blank</string>
+    <string name="alarm_del_forever">delete the alarm permanently</string>
+    <string name="alarm_remind_select_all">Select All</string>
+    <string name="alarm_remind_histroy">Histroy Reminds</string>
+    <!-- 闹钟 end -->
+    <!-- 设备列表界面 -->
+    <string name="devices_no_robot">You do not have an Alpha.</string>
+    <string name="devices_connecting">Connecting</string>
+    <string name="devices_connect">Connect</string>
+    <string name="devices_dis_connect">Disconnect </string>
+    <string name="devices_offline">Offline </string>
+    <string name="devices_wifi_seting">Network Settings</string>
+    <string name="devices_version">Robot Version</string>
+    <string name="devices_no_authorize_permission">The robot belongs to %.\n You are not authorized.</string>
+    <string name="devices_busy">The robot belongs to %,\n You are not authorized.</string>
+    <string name="devices_using_master">The robot is in use by the owner %, and you cannot use it right now.</string>
+    <string name="devices_person_info">User Information</string>
+    <string name="devices_online_status">Online</string>
+    <string name="devices_using_status">In use</string>
+    <string name="devices_busy_status">In use</string>
+    <string name="devices_authorize_pass">Passed</string>
+    <string name="devices_authorize_not_pass">Waiting</string>
+    <string name="devices_owner">device owner</string>
+    <!-- 引导页界面 -->
+    <string name="guide_page1_tips1">Wherever you are</string>
+    <string name="guide_page1_tips2">Alpha2 is always with you</string>
+    <string name="guide_page2_tips1">More built-in apps</string>
+    <string name="guide_page2_tips2">Easy to use, extremely funny and very caring</string>
+    <string name="guide_page3_tips1">Share with your family and friends</string>
+    <string name="guide_page3_tips2">Explore the joy of Alpha2 together</string>
+    <string name="guide_page4_tips1">Mass apps development</string>
+    <string name="guide_page4_tips2">All in VAPP store</string>
+    <string name="guide_go">Enter</string>
+    <string name="feed_back_title">Feedback</string>
+    <string name="feed_back_tips">Please enter your comments here</string>
+    <string name="feed_back_tips_to_long">The length shall not exceed 200 words</string>
+    <string name="feedback_success">Feedback was successful</string>
+    <string name="feedback_failed">Feedback failed</string>
+
+    <!-- 2015-11-27 -->
+
+    <string name="facebook_app_id">1060857947279329</string>
+    <!-- 历史绑定记录 -->
+    <string name="device_history">The devices binded</string>
+    <string name="device_history_save_qr">Save QR code</string>
+    <string name="device_history_scan_robot_qr_bind">Scan the QR code to bind equiment</string>
+    <string name="device_history_qr">QR code</string>
+    <!-- 下拉刷新和加载更多 -->
+    <string name="list_pull_to_refresh_pull_label">Pull down to refresh</string>
+    <string name="list_pull_to_refresh_release_label">Release to refresh</string>
+    <string name="list_pull_to_refresh_refreshing_label">Refresh\u2026</string>
+    <string name="list_pull_to_refresh_footer_release_label">Release to load</string>
+    <string name="list_pull_to_refresh_footer_pull_label">Pull up to load more</string>
+    <string name="list_pull_to_refresh_footer_refreshing_label">Loading\u2026</string>
+    <string name="list_pull_to_refresh">pull to refresh</string>
+    <string name="list_release_to_refresh">release to refresh</string>
+    <string name="list_lastUpdateTime">latest update %s</string>
+    <string name="list_load_full">load all</string>
+    <string name="list_no_data">no data</string>
+    <string name="list_more">loading</string>
+    <!-- 相册 -->
+    <string name="image_galley">Album</string>
+    <string name="image_delete_phototips">Do you wish to delete these % pictures?</string>
+    <string name="image_has_new_photo">pull to refresh % new photos</string>
+    <string name="image_no_photo">Pictures taken by robot displayed here, \n talk with robot: "I want to take a photo"</string>
+    <string name="image_photo_no_exist">photo not exist</string>
+    <string name="image_delete_photo_failed">failure to delete photo</string>
+    <string name="image_load_photo_failed">failed to load photo, try again</string>
+    <string name="image_get_photo_failed">failed to load photo, try again</string>
+    <string name="image_save_pic">Saved to%</string>
+    <string name="image_save_failed">failed</string>
+    <string name="image_no_pic">Picture does not exist</string>
+    <!-- 新手指引 -->
+
+    <string name="guide_home_drawer">Click here to check robot and your information</string>
+    <string name="guide_home_change_App">Click here to change App, long press can delete the downloaded apps）</string>
+    <string name="guide_home_bar">The application in the process right here</string>
+    <string name="guide_button2">Next</string>
+    <string name="guide_button1">OK</string>
+    <string name="guide_robot_invite">Click here to authorize robot to your friends</string>
+    <string name="guide_robot_add">Click here to add more robots</string>
+    <string name="guide_home_actionlist">Download more actions from store, the movements of robot can be rich</string>
+    <string name="guide_binding_start">Click here to bound robot</string>
+    <string name="guide_binding_Qrcode">The QR code on the robot\'s back</string>
+    <!-- 边充边玩 -->
+    <string name="device_charge_while_playing_title">Charging while playing</string>
+    <string name="device_charge_while_playing_describe">This function might cause greater battery and servo damage; please use with discretion. You can actuate it by saying\'turn on/ off charging while playing.\'</string>
+    <string name="device_chat_action_title">Chat Actions</string>
+    <string name="device_chat_action_title_tip">After switch it on，there are some random actions will show when chatting，it is more anthropomorphic but the power of consumption is also more serious</string>
+    <string name="device_upload_log_title">Upload error log</string>
+    <string name="device_upload_log_tip">Switch it on，Alpha will upload error logs</string>
+    <string name="device_soft_hardwareinfo">Information of software and hardware</string>
+    <string name="device_soft_hard_ware_info_software">software information</string>
+    <string name="device_soft_hard_ware_info_details">main service version</string>
+    <string name="device_soft_hard_ware_info_chest">chest</string>
+    <string name="device_soft_hard_ware_info_head">head</string>
+    <string name="device_soft_hard_ware_info_android">Android system version</string>
+    <string name="device_soft_hard_ware_info_hardware">Information of hardware</string>
+    <string name="device_soft_hard_ware_info_sdcard">SD card capacity/available capacity</string>
+    <string name="device_soft_hard_ware_info_details_sd_less">available capacity of SD card</string>
+    <string name="home_battery">Battery status: </string>
+    <string name="home_battery_charge_full">Fully charged</string>
+    <string name="home_battery_charge">Charging</string>
+    <string name="home_battery_need_charge">Charging is required</string>
+    <string name="settings_connect_title">Automatic connection to robots </string>
+    <string name="settings_connect_describe">When this function is actuated, the robot will be connected to your cellphone automatically after it gets access to the Internet.</string>
+    <!-- 动作表新增 -->
+    <string name="apps_action_list_blank_result">results not found</string>
+    <string name="apps_action_list_blank_input_data">Please enter search keywords</string>
+    <string name="apps_action_list_blank_network">network unavailable</string>
+    <string name="apps_action_list_blank_date"> You haven\'t downdloaded any actions</string>
+    <string name="apps_action_list_blank_reload">reload</string>
+    <string name="apps_action_list_blank_download">download </string>
+    <string name="apps_actionklist_category_nursery">nursery rhymes</string>
+    <string name="apps_actionklist_category_story">stories</string>
+    <string name="apps_actionklist_category_dance">dance</string>
+    <string name="apps_actionklist_category_education">education</string>
+    <string name="apps_actionklist_category_sport">sports</string>
+    <string name="apps_actionklist_warning_title">Please hold the robot with your hands!</string>
+    <string name="qpps_actionklist_warning_describe">After joints slacken, the robot might fall down. And might your fingers please. </string>
+    <string name="apps_actionklist_slacken">slacken</string>
+    <string name="apps_actionklist_stand">stand</string>
+    <string name="apps_actionklist_stop">stop</string>
+    <string name="apps_action_result_tips">The best match result</string>
+
+    <!--我的消息模块-->
+    <string name="news_title_comment_reply">Comment Replys</string>
+    <string name="news_title_new_photos">New Photos</string>
+    <string name="news_title_authorization">Messages about Authorization</string>
+    <string name="news_title_system">System Messages</string>
+    <string name="news_comment_reply_none">No replys</string>
+    <string name="news_comment_reply">XX has replied you.</string>
+    <string name="news_new_photos_none">No news photos</string>
+    <string name="news_new_photos">Alpha 2 has sent you N new photos.</string>
+    <string name="news_authorization_none">No messages about authorization</string>
+    <string name="news_authorization_cancel">XX has canceled the authorization given to you. </string>
+    <string name="news_authorization_invite">XX invites you to use his/her Alpha 2. </string>
+    <string name="news_authorization_agree">XX has accepted your invitation.</string>
+    <string name="news_authorization_refuse">XX has rejected your invitation.</string>
+    <string name="news_authorization_relieve">XX has revoked his/her permission to use Alpha 2.</string>
+    <string name="news_system_none">No system messages</string>
+    <string name="news_describe_authorization_relieve">XX has revoked his/her permission to use Alpha 2. He/she won\'t be able to use your Alpha 2 anymore and won\'t be in your friend list. </string>
+    <string name="news_describe_authorization_cancel">XX has canceled the authorization given to you. You won\'t be able to connect to his Alpha 2 anymore. </string>
+    <string name="news_describe_authorization_invite"> XX invites you to use his/her Alpha 2. You will get permission to use his/her Alpha 2 after accepting the inviation. You can also unbind the robot on the its main page. </string>
+    <string name="news_describe_authorization_agree">XX has accepted your invitation.</string>
+    <string name="news_describe_authorization_refuse">XX has rejected your invitation.</string>
+    <string name="news_button_agree">Accept </string>
+    <string name="news_button_refuse">Reject </string>
+    <string name="news_button_all">Select all</string>
+    <string name="news_button_delete">Delete</string>
+    <string name="news_button_done">Done</string>
+    <string name="news_warning_title">Are you sure you want to delete it?</string>
+    <string name="news_warning_describe">You won\'t be able to see these messages after deleting them.  </string>
+    <string name="news_please_select_delete">Please select delete item.</string>
+    <!--蓝牙设备连接-->
+    <string name="bt_searching">Searching for Bluetooth devices nearby</string>
+    <string name="bt_history">Connection Records</string>
+    <string name="bluetooth_matching_failed">matching failed...</string>
+    <string name="bluetooth_not_found_the_device">have not found the device</string>
+    <string name="bt_results">Search Results</string>
+    <string name="bt_name">Connect to Bluetooth Device</string>
+    <string name="bluetooth_matching_request">bluetooth matching request</string>
+    <string name="bluetooth_device">device：</string>
+    <string name="bluetooth_want_to_connect_the_device">Do you want to connect the device XX</string>
+    <string name="bluetooth_matching">matching</string>
+    <string name="bt_ing">Connect to the current device</string>
+    <string name="bt_none">The robot isn\'t connected to any Bluetooth device now. </string>
+    <string name="bt_tip">Not connected</string>
+    <string name="bt_button_connect">Connect</string>
+    <string name="bt_refresh">Refresh</string>
+    <string name="bt_button_breake">Disconnect</string>
+    <string name="bt_disconnect_warning_title">Are you sure you want to disconnect?</string>
+    <string name="bt_warning_describe">The robot won\'t occupy the device after disconnecting.</string>
+    <string name="bt_button_searching">Search</string>
+    <string name="bt_lose">Bluetooth connection failed.</string>
+    <string name="bt_no_results">Can not find any Bluetooth device.</string>
+    <string name="bt_button_re">Search again </string>
+    <string name="bt_connect_fail">Connect failed</string>
+    <string name="bt_connected">Connected</string>
+    <string name="bt_disconnect_fail">DisConect failed</string>
+    <string name="event_title_name">show</string>
+    <!-- 使用帮助 -->
+    <string name="drawer_help">Help</string>
+    <!-- 多语言 -->
+    <string name="language_setting">Language</string>
+    <string name="language_system">Auto</string>
+    <string name="language_cn">简体中文</string>
+    <string name="language_en">English</string>
+    <!-- 崩溃日志 -->
+    <string name="crash_hint">Sorry,there something wrong with the Aplication.</string>
+    <!--称呼设置相关界面-->
+    <string name="robot_alpha_nickname_setting">Name Setting</string>
+    <string name="robot_address_setting">Alias Setting</string>
+    <string name="address_setting_note_cn">The robot is in Chinese version, your name can only consist of chinese characters，alphabets or numbers. Special symbols are not allowed. The maximum number of characters are 10.</string>
+    <string name="address_setting_note_en">Your name can only consist of alphabets or numbers. Special symbols are not allowed. The maximum number of characters are 10</string>
+    <string name="address_setting_error_sinogram">Chinise characters are not allowed.</string>
+    <string name="address_setting_error_symbol">Special symbols are not allowed.</string>
+    <string name="address_setting_error_character">The maximum number of characters are 10.</string>
+    <!--异常报告-->
+    <string name="abnormal_name">Robot Abnormalities </string>
+    <string name="abnormal_nav">Abnormalities  </string>
+    <string name="abnormal_warning">You wont\'t be able to see these reports after deleting them. </string>
+
+    <string name="versionchange_version">Robot Version</string>
+    <string name="versionchange_change_confirm">Confirm</string>
+    <string name="versionchange_change_require"> Are you sure you want to reset the robot version?</string>
+    <string name="versionchange_change_reset_disconnected"> The robot will be rebooted and disconnected from your cell phone for 8 to 10 seconds after resetted successfully</string>
+    <string name="versionchange_change_reset_success">Version resetting succeeded. The robot will be rebooted.</string>
+    <string name="versionchange_change_reset_fail">Robot version resetting failed. Please try again.</string>
+    <string name="versionchange_change_reset">Alpha 2 will be restarted in xx seconds.</string>
+    <string name="versionchange_version_chinese">It is the Chinese version now</string>
+    <string name="versionchange_version_english">It is the English version now</string>
+
+    <!-- 更新对话框提示文字 -->
+    <string name="upgrade_dialog_title">IMPORTANT!</string>
+    <string name="upgrade_dialog_hint_text">Some important functions are not available on this version. It may affect your use of the robot. Please download the latest version first.</string>
+    <!--Spotify相关-->
+    <string name="tip_spotify_not_login">Spotify not login, please login first</string>
+    <string name="tip_spotify_have_login">Spotify is logged in</string>
+    <string name="tip_spotify_login_failed">Failed to get Spotify login status!"</string>
+    <string name="tip_spotify_configinfo_complete"> Spotify登录配置信息发送完成"</string>
+    <!--网络异常提示退出-->
+    <string name="error_logout_tips">Exit %1$s later</string>
+    <string name="error_none">None</string>
+
+    <!-- 视频监控字符串 -->
+    <string name="surveillance_introduce">Turn on surveillance,\nyou can see whats going on through the robot\'s camera.</string>
+    <string name="connect_network_reminder">Please connect the network for the robot.</string>
+    <string name="querying_power">Checking the battery...</string>
+    <string name="robot_power">Battery</string>
+    <string name="start_surveillance">Open the surveillance</string>
+    <string name="title_surveillance">Surveillance</string>
+    <string name="title_open_surveillance">Open Surveillance</string>
+    <string name="robot_power_text">"Battery: "</string>
+    <string name="action_hug">Hug</string>
+    <string name="action_hi">Hi</string>
+    <string name="action_playing_cute">Playing Cute</string>
+    <string name="action_handshake">Handshake</string>
+    <string name="turn_off_phone_mic">Close the microphone</string>
+    <string name="turn_on_phone_mic">Open the microphone</string>
+    <string name="user_voice_record">语音使用记录</string>
+    <string name="surveillance_network_unavailable_prompt">Mobile network disconnected, please check the network.</string>
+    <string name="surveillance_first_use_hint">The surveillance is on,your robot will restore standing</string>
+    <string name="connect_failed">Connect failed</string>
+
+    <string name="surveillance_download_tips">Surveillance function is added to help you see what is happening at home.</string>
+    <string name="go_to_download">Update</string>
+    <string name="update_service_tips">To find a new version, please restart the robot upgrade </string>
+    <!--增加联系我们-->
+    <string name="left_contact_us">Contact Us</string>
+    <string name="contact_us_mainland">After-sale service\nMainland China</string>
+    <string name="contact_us_mainland_phone">Tel：400-6666-700\ne-mail:ucare@ubtrobot.com\nWeChat：szybxkj</string>
+    <string name="contact_us_abroad">After-sale service\nabroad,HK,Macao and Taiwan</string>
+    <string name="contact_us_abroad_way">e-mail:aftersales@ubtrobot.com\nskype:aftersales@ubtrobot.com</string>
+
+    <string name="connect_to_wifi">Connect to WIFI</string>
+    <string name="go_to_network_mode">Networking mode</string>
+    <string name="scan_qrcode">Scan QRCode</string>
+    <string name="wifi_connect_success">Connect success</string>
+    <string name="wifi_connect_failed">Connect failed</string>
+
+    <string name="network_configure_hint_view_1_str">After wake Alpha up,try to say</string>
+    <string name="network_configure_hint_view_2_str">\"connect to wifi\"</string>
+    <string name="network_configure_hint_view_3_str">Until Alpha say</string>
+    <string name="network_configure_hint_view_4_str">\"Start to connect wifi\"</string>
+    <string name="confirm_step_1_str">Have heard \"Start to connect wifi\"</string>
+    <string name="scan_hint_view_str">Haven\'t heard \"Start to connect wifi\"?</string>
+    <string name="step_3_hint_view_str">Robot didn\'t prompt \"QR code scanned successful\"</string>
+    <string name="connection_failed">Connection failed</string>
+    <string name="connection_successful">Connection successful</string>
+    <string name="reconnect">Reconnect</string>
+    <string name="network_configure_redirecting">Now redirecting to the home page</string>
+    <string name="network_configure_scan_tips_1">1.Ensure the phone\'s screen enough light</string>
+    <string name="network_configure_scan_tips_content_1">Robot can scan a clear QR code</string>
+    <string name="network_configure_scan_tips_2">2.Ensure your phone is in parallel with robot</string>
+    <string name="network_configure_scan_tips_content_2">Please avoid reflections on the phone for it may prevent the robot from scanning the QR code.</string>
+    <string name="network_configure_scan_tips_3">3.Ensure the QR code is put in front of robot\'s camera</string>
+    <string name="network_configure_scan_tips_content_3">Keep the QR code within 20cm~30cm of the robot\'s camera</string>
+
+    <string name="robot_serial_number">Robot Serial Number</string>
+    <string name="register_robot">Register the robot</string>
+    <string name="robot_registered">This robot was registered</string>
+    <string name="contact_to_deregister">Please contact %1$s to deregister</string>
+
+    <string name="bind_unknown_error">Something went wrong，please rescan to register</string>
+    <string name="bind_invalid_sn">Serial number doesn\'t exist, \nPlease contact customer service 400-6666-700</string>
+
+    <!--语音合成 -->
+    <string name="voice_compound_title">Text to Speech</string>
+    <string name="voice_compound_edit_hint">Input words for robot to speak</string>
+    <string name="voice_compound_edit_size">0/50字</string>
+    <string name="voice_compound_edit_symbol">Comma serves as a pause of TTS.</string>
+    <string name="voice_compound_tv_speack_ch">Chinese</string>
+    <string name="voice_compound_tv_speack_en">English</string>
+    <string name="voice_compound_tv_speack">Speech Language</string>
+    <string name="voice_compound_tv_action">Speech Action</string>
+    <string name="voice_compound_tv_action_none">none</string>
+    <string name="voice_compound_tv_btn_send">send</string>
+    <string name="disconnect_robot">disconnected with robot</string>
+    <string name="voice_compound_tv_btn_time">s</string>
+    <string name="try_connect_robot">Reconnect </string>
+    <string name="tv_upload_log_cmd">error</string>
+    <string name="upload_success">Upload Successs</string>
+    <string name="ble_choose_to_connect">Please choose an alpha to connect</string>
+    <string name="ble_connect">Connect</string>
+    <string name="ble_connect_to_the_internet">Connect to wifi</string>
+    <string name="ble_connect_to_device">Connect to Alpha</string>
+    <string name="ble_connect_to_wifi">Connect to wifi</string>
+    <string name="ble_connect_failed">Connect to bluetooth failed, please reconnect</string>
+    <string name="ble_dialog_ok">OK</string>
+    <string name="ble_try_other_ways">Try other way of network connecting</string>
+    <string name="ble_connect_title">Connect to %1$s with WIFI info</string>
+    <string name="ble_connect_error">Connection failed, please reconnect</string>
+    <string name="ble_connecting">Connecting...</string>
+    <string name="ble_connect_robot">Connect to Alpha</string>
+    <string name="upload_log_error">Please try again in</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="time_yesterday">yesterday</string>
+    <string name="toast_no_repeat_play">Please do not click again within 5 seconds! </string>
+    <string name="force_offline">You\'ve been forced to kick it out</string>
+</resources>

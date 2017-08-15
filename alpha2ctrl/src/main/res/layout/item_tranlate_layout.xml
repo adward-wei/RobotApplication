@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/btn_cancel_margin"
+    android:layout_marginLeft="@dimen/btn_back_margin_left"
+    android:layout_marginRight="@dimen/btn_back_margin_left"
+    android:layout_marginTop="@dimen/btn_cancel_margin"
+    android:background="@color/list_background"
+    android:orientation="horizontal"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/record_item_background"
+        android:padding="15dp">
+
+        <LinearLayout
+            android:id="@+id/ll_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/btn_cancel_margin"
+            android:layout_toLeftOf="@+id/rl_play"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/tv_tranlate_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_color_t2"
+                android:textSize="@dimen/text_third_size"
+                />
+
+            <TextView
+                android:id="@+id/tv_tranlate_robot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/btn_cancel_margin"
+                android:textColor="@color/bg_color_b7"
+                android:textSize="@dimen/text_click_size"
+
+                />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_play"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignBottom="@+id/ll_content"
+            android:layout_alignParentEnd="true">
+
+            <ImageView
+                android:id="@+id/iv_play"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentBottom="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/record_play"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

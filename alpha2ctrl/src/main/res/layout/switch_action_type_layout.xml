@@ -1,0 +1,152 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   xmlns:android_custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg_color_b3"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/main_second_height"
+        android:layout_marginLeft="@dimen/input_wifi_edittext_margin_right"
+        android:layout_marginRight="@dimen/input_wifi_edittext_margin_right"
+        android:weightSum="3" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="@dimen/input_wifi_edittext_margin_right"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/btn_nursery"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="@string/shop_page_base_action"
+                android:textColor="@color/text_color_t5"
+                android:textSize="@dimen/text_second_size" />
+
+            <ImageView
+                android:id="@+id/nursery_line"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/text_color_t5" />
+        </RelativeLayout>
+ <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="@dimen/input_wifi_edittext_margin_right"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/btn_dance"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="@string/shop_page_dance_action"
+                android:textColor="@color/text_color_t1"
+                android:textSize="@dimen/text_second_size" />
+
+            <ImageView
+                android:id="@+id/dance_line"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/transparent_background" />
+        </RelativeLayout>
+        
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="@dimen/input_wifi_edittext_margin_right"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/btn_story"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="@string/shop_page_story_action"
+                android:textColor="@color/text_color_t1"
+                android:textSize="@dimen/text_second_size" />
+
+            <ImageView
+                android:id="@+id/story_line"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/transparent_background" />
+        </RelativeLayout>
+
+       
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="@dimen/input_wifi_edittext_margin_right"
+            android:layout_weight="1" 
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/btn_education"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="@string/apps_actionklist_category_education"
+                android:textColor="@color/text_color_t1"
+                android:textSize="@dimen/text_second_size" />
+
+            <ImageView
+                android:id="@+id/education_line"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/transparent_background" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" 
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/btn_sport"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/apps_actionklist_category_sport"
+                android:textColor="@color/text_color_t1"
+                android:textSize="@dimen/text_second_size" />
+
+            <ImageView
+                android:id="@+id/sport_line"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/transparent_background" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

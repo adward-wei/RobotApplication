@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/tankuang"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/input_wifi_edittext_margin_right"
+        android:orientation="vertical" >
+
+        <com.ubtechinc.alpha2ctrlapp.widget.RoundImageView
+            android:id="@+id/user_header"
+            android:layout_width="@dimen/authorize_small_header"
+            android:layout_height="@dimen/authorize_small_header"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:src="@drawable/no_heard" />
+
+        <TextView
+            android:id="@+id/user_name"
+            style="@style/contentTitleText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:padding="5dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/scan_qrcode_tips_margin_top"
+            android:clickable="true"
+            android:gravity="center"
+            android:textColor="@color/black" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="@dimen/authorize_small_header"
+                android:layout_height="@dimen/authorize_small_header"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/authorize_small_header"
+                android:src="@drawable/main_header" />
+
+            <TextView
+                android:id="@+id/alpha2_name"
+                style="@style/thirdTitleText"
+                android:layout_width="wrap_content"
+                   android:layout_marginTop="@dimen/current_model_tips_margin_top"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/image"
+                android:layout_marginLeft="@dimen/model_to_choose_text_margin_left"
+                android:layout_toRightOf="@id/image"
+                android:gravity="center_vertical"
+                android:lineSpacingExtra="5dp"
+                android:text="alpha2"
+                android:textColor="@color/text_gray" />
+
+            <TextView
+                android:id="@+id/alpha2_id"
+                style="@style/contentTitleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/alpha2_name"
+                  android:layout_marginTop="@dimen/current_model_tips_margin_top"
+                android:layout_marginLeft="@dimen/model_to_choose_text_margin_left"
+                android:layout_toRightOf="@id/image"
+                android:gravity="center_vertical"
+                android:lineSpacingExtra="5dp"
+                android:text="id"
+                android:textColor="@color/text_gray" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/btn_cancel_height"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/btn_cancel_margin"
+        android:layout_marginLeft="@dimen/btn_cancel_margin"
+        android:layout_marginRight="@dimen/btn_cancel_margin"
+        android:onClick="onBack"
+        android:orientation="horizontal"
+        android:textColor="@color/white" >
+
+        <Button
+            android:id="@+id/btn_ignose"
+            style="@style/contentTitleText"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/btn_cancel_height"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/btn_cancel_margin"
+            android:layout_marginLeft="@dimen/btn_cancel_margin"
+            android:layout_marginRight="@dimen/btn_cancel_margin"
+            android:layout_weight="1"
+            android:background="@drawable/btn_igmore_selector"
+            android:text="@string/authorize_ingnore"
+            android:textColor="@color/black" />
+
+        <Button
+             android:id="@+id/btn_accept"
+            style="@style/contentTitleText"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/btn_cancel_height"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/btn_cancel_margin"
+            android:layout_marginLeft="@dimen/btn_cancel_margin"
+            android:layout_marginRight="@dimen/btn_cancel_margin"
+            android:layout_weight="1"
+            android:background="@drawable/btn_button_able"
+            android:text="@string/authorize_accept"
+            android:textColor="@color/text_color_t3" />
+    </LinearLayout>
+</RelativeLayout>

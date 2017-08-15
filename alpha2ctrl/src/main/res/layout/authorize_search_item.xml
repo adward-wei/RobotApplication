@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="@dimen/search_item_height"
+    android:layout_marginTop="@dimen/search_item_margin"
+    android:background="@color/model_funciton_bg"
+    android:orientation="horizontal"
+    android:padding="@dimen/search_item_margin" >
+
+    <com.ubtechinc.alpha2ctrlapp.widget.RoundImageView
+        android:id="@+id/user_header"
+        android:layout_width="@dimen/search_item_image_height"
+        android:layout_height="@dimen/search_item_image_height"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/search_item_margin" />
+
+    <ImageButton
+        android:id="@+id/btn_add_authorize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/search_item_margin"
+        android:background="@drawable/icon_add" />
+
+    <TextView
+        android:id="@+id/user_name"
+        style="@style/thirdTitleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/search_item_name_margin"
+        android:layout_toLeftOf="@id/btn_add_authorize"
+        android:layout_toRightOf="@+id/user_header"
+        android:text="wenolywwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww"
+        android:textColor="@color/black"
+        android:layout_centerVertical="true" />
+
+</RelativeLayout>

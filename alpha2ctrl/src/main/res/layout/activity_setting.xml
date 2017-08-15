@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="@color/model_funciton_bg"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/pwower_stastuLay"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/input_wifi_check_box_height"
+        android:visibility="gone">
+
+        <View
+            android:id="@+id/pwower_bg"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:alpha="0.1"
+            android:background="@color/text_color_t6"/>
+
+        <TextView
+            android:id="@+id/pwower_stastus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical|left"
+            android:paddingLeft="@dimen/input_wifi_edittext_margin_right"
+            android:text="10%"
+            android:textColor="@color/text_color_t6"
+            android:textSize="@dimen/text_third_size"/>
+
+        <TextView
+            android:id="@+id/pwower_charge_statu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:gravity="center_vertical|left"
+            android:paddingLeft="@dimen/input_wifi_edittext_margin_right"
+            android:text="@string/home_battery_charge"
+            android:textColor="@color/text_color_t5"
+            android:textSize="@dimen/text_third_size"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/updateLay"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/input_wifi_edittext_height"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/update_tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/input_wifi_edittext_margin_right"
+            android:text="@string/app_setting_app_update"
+            android:textColor="@color/text_color_t2"
+            android:textSize="@dimen/text_second_size"/>
+
+        <ImageView
+            android:id="@+id/updateCountIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/update_tips"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/update_tips"
+            android:background="@drawable/red_point"
+            android:textColor="@color/white"
+            android:textSize="10dp"/>
+
+        <ImageView
+            android:id="@+id/btn_go_update"
+            style="@style/SecondTitleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/arra"
+            android:textColor="@color/white"/>
+
+        <ImageView
+
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/bg_color_b5"/>
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/actionlistView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="@dimen/app_list_margin_top"
+        android:cacheColorHint="@null"
+        android:divider="@color/setting_fragment_white"
+        android:fadingEdge="none"
+        android:horizontalSpacing="5dp"
+        android:listSelector="@color/transparent_background"
+        android:numColumns="4"
+        android:overScrollMode="never"
+        android:verticalSpacing="15dp"
+        android:visibility="visible"/>
+
+    <LinearLayout
+        android:id="@+id/connected_robot_tips"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/main_page_active_select_bg"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:visibility="gone">
+        <ImageView
+            style="@style/thirdTitleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|center_vertical"
+            android:src="@drawable/no_robot_bg"/>
+        <TextView
+            android:id="@+id/connect_device_btn"
+            android:layout_width="275dip"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dip"
+            android:paddingRight="20dip"
+            android:paddingTop="10dip"
+            android:paddingBottom="10dip"
+            android:layout_gravity="center_horizontal"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="30dip"
+            android:layout_marginBottom="40dip"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/btn_button_able"
+            android:gravity="center"
+            android:text="@string/ble_connect_robot"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+</LinearLayout>

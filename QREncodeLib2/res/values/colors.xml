@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="dark">#FF222222</color>
+    <color name="light">#FFEEEEEE</color>
+    <color name="listview_item_bg">#bf6131</color>
+    <color name="black">#ff000000</color>
+    <color name="white">#ffffff</color>
+    <color name="sort_list_item_header">#E0E0E0</color>
+    <color name="sort_list_select">#CCCCCC</color>
+    <color name="setting_fragment_white">#f2f2f2</color>
+    <color name="transparent_background">#00000000</color>
+    <color name="more_item_click">#faf9f7</color>
+    <color name="text_datail_grey">#999999</color>
+    <!-- add 2015-8-18 -->
+    <color name="main_bg_black">#040f1e</color>
+    <color name="text_gray">#989898</color>
+    <color name="text_green">#44b55a</color>
+    <!-- add 2015-8-22 -->
+    <color name="main_funciton_bg">#071f34</color>
+    <color name="model_funciton_bg">#0c2d49</color>
+    <color name="white2">#dddddd</color>
+    <color name="red">#b53b39</color>
+    <color name="black2">#424242</color>
+    <color name="item_bg">#eeeeee</color>
+    <color name="top_title_red">#8C94A7</color>
+    <color name="page_main_bg">#030f18</color>
+    <color name="page_bottom_bg">#153b5b</color>
+    <color name="page_gray_line">#667f94</color>
+    <color name="actions_lib_spi">#2a3d4e</color>
+    <color name="bottom">#051326</color>
+    <color name="actions_lib_video_crl">#47000000</color>
+    <color name="txt_hint">#999898</color>
+    <color name="actions_lib_line">#404a54</color>
+    <color name="actions_lib_news">#0bffffff</color>
+    <color name="actions_lib_input">#44ffffff</color>
+    <color name="color_setting">#1b3144</color>
+    <color name="color_active_bg">#142a3d</color>
+    <!-- 菜单界面 -->
+    <color name="menu_bg">#e5e5e5</color>
+    <color name="menu_text_color">#464646</color>
+    <!-- 完善用户资料界面 -->
+    <color name="page_title">#040f1e</color>
+    <color name="page_title_remote">#0c2d49</color>
+    <!-- 找回密码界面 -->
+    <color name="txt_nums">#dedede</color>
+    <!-- 图片浏览 -->
+    <color name="pic_scan">#ba1b1b1b</color>
+
+    <!-- wheel -->
+
+    <color name="main_hite">#cc1b1b1b</color>
+    <color name="txt_title_red">#f53d3a</color>
+    <color name="txt_title_green">#45b655</color>
+<color name="finder_mask">#28000000</color>
+</resources>

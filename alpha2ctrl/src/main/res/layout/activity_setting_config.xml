@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e5e5e5"
+    tools:context="com.ubtechinc.alpha2ctrlapp.activity.client.SettingConfigActivity" >
+
+    <include
+        android:id="@+id/top_title"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/top_title_heigh"
+        layout="@layout/authorize_top_title" />
+
+    <ImageView
+        android:id="@+id/header"
+        android:layout_width="@dimen/header_image_width"
+        android:layout_height="@dimen/header_image_width"
+        android:layout_below="@id/top_title"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/main_header" />
+
+    <com.ubtechinc.alpha2ctrlapp.widget.ConfigView
+        android:id="@+id/configView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header"
+        android:orientation="vertical" />
+
+    <Button
+        android:id="@+id/savaBt"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/configView"
+        android:layout_marginTop="@dimen/btn_start_height"
+        android:background="@drawable/btn_button_able"
+        android:clickable="false"
+        android:text="@string/device_delevoper_submit"
+        android:textSize="20sp"
+        android:layout_margin="@dimen/input_wifi_edittext_margin_right"
+        android:textColor="@color/white" />
+
+</RelativeLayout>

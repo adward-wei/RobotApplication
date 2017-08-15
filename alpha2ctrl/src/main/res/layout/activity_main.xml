@@ -1,0 +1,87 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <TextView
+        android:id="@+id/welecom_tips"
+        style="@style/thirdTitleText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/ui_welcome_title"
+        android:textColor="@color/welcome_black"
+        android:textSize="45sp"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/welecom_icon"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/welecom_tips"
+        android:layout_marginBottom="150dp"
+        android:src="@drawable/icon_main_page_robot" />
+
+    <LinearLayout
+        android:id="@+id/lay_login_info"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:weightSum="2" >
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="130dp"
+            android:layout_height="@dimen/btn_start_height"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="70dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_login_main"
+            android:text="@string/ui_login"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="130dp"
+            android:layout_height="@dimen/btn_start_height"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_regist_main"
+            android:text="@string/ui_register"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+    </LinearLayout>
+     <TextView
+            style="@style/TopTitleText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_below="@id/lay_login_info"
+            android:text="ALPHA2"
+            android:textColor="@color/welcome_name_gray"
+            android:textSize="20dp"
+            android:layout_marginTop="15dp"
+            android:visibility="visible" />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="140dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical" >
+
+   
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:src="@drawable/welcome_line" />
+    </LinearLayout>
+
+</RelativeLayout>

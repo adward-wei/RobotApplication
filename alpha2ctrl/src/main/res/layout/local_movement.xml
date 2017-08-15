@@ -1,0 +1,160 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android_custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_color_b3"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/top_title_heigh"
+        android:layout_alignParentTop="true"
+       
+        android:background="@color/bg_color_b3" >
+
+        <TextView
+            android:id="@+id/btn_back"
+            style="@style/top_back_button_style"
+            android:clickable="true"
+             android:minWidth="100dp" />
+
+        <TextView
+            android:id="@+id/alphaName_tv"
+            style="@style/top_title_text_style"
+            android:text="@string/local_action_list_title" />
+
+        <ImageView
+            android:id="@+id/btn_search"
+            style="@style/top_right_button_style"
+            android:clickable="true"
+            android:src="@drawable/top_search_icon" />
+    </RelativeLayout>
+
+    <com.ubtechinc.alpha2ctrlapp.widget.SwitchActionTypeButton
+        android:id="@+id/switch_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout1" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/relativeLayout2"
+        android:layout_below="@id/switch_button"
+        android:background="@color/bg_color_b6" >
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <ListView
+                android:id="@+id/actionlistView"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:cacheColorHint="@null"
+                android:divider="@color/transparent_background"
+                android:dividerHeight="0dp"
+                android:overScrollMode="never"
+                android:visibility="visible" >
+            </ListView>
+
+            <LinearLayout
+                android:id="@android:id/empty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/header_heigh"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/no_action_icon" />
+
+                <TextView
+                    style="@style/nomal_text_style"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/input_wifi_edittext_margin_right"
+                    android:text="@string/apps_action_list_blank_date" />
+
+                <TextView
+                    android:id="@+id/tips1"
+                    style="@style/click_text_style"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/input_wifi_edittext_margin_top"
+                    android:text="@string/apps_action_list_blank_download" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/dialog"
+                android:layout_width="80.0dip"
+                android:layout_height="80.0dip"
+                android:layout_gravity="center"
+                android:background="@drawable/sorlistview_show_head_toast_bg"
+                android:gravity="center"
+                android:textColor="@color/text_color_t2"
+                android:textSize="@dimen/text_click_size"
+                android:visibility="invisible" />
+
+            <com.ubtechinc.alpha2ctrlapp.widget.SideBar
+                android:id="@+id/sidrbar"
+                android:layout_width="30.0dip"
+                android:layout_height="fill_parent"
+                android:layout_gravity="right|center" />
+        </FrameLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/bg_color_b3"
+        android:paddingBottom="@dimen/button_lay_margin_top" >
+        <ImageView
+            android:id="@+id/status_shadow"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/bottom_shadow_icon" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bottom_height"
+            android:layout_below="@+id/status_shadow"
+            android:layout_marginTop="@dimen/button_lay_margin_top"
+            android:background="@color/bg_color_b3"
+            android:orientation="horizontal" >
+
+            <Button
+                style="@style/movementBt"
+                android:layout_height="match_parent"
+                android:drawableTop="@drawable/icon_disconnected"
+                android:onClick="shutdownClient"
+                android:text="@string/local_action_list_disconnect"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btn_stop"
+                style="@style/movementBt"
+                android:drawableTop="@drawable/btn_start_action"
+                android:text="@string/local_action_list_start" />
+
+            <Button
+                android:id="@+id/btn_reset"
+                style="@style/movementBt"
+                android:drawableTop="@drawable/icon_reset"
+                android:text="@string/local_action_list_reset" />
+
+            <Button
+                android:id="@+id/btn_diaoDian"
+                style="@style/movementBt"
+                android:drawableTop="@drawable/icon_diaodian"
+                android:text="@string/apps_actionklist_slacken" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

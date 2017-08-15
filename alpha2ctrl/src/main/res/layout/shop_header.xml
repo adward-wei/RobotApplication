@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent_background"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/search_lay"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/input_wifi_edittext_height"
+        android:background="@color/white_05"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/input_adder"
+            style="@style/contentTitleText"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="@dimen/input_wifi_edittext_margin_right"
+            android:layout_marginRight="@dimen/input_wifi_edittext_margin_right"
+            android:background="@drawable/search_input_shape"
+            android:gravity="left|center_vertical"
+            android:hint="@string/common_search_text"
+            android:paddingLeft="@dimen/input_wifi_edittext_margin_right"
+            android:singleLine="true"
+            android:textColor="@color/text_black"
+            android:drawableLeft="@drawable/search_hint_icon"
+            android:textColorHint="@color/text_gray" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/lay_top_introduce"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/recom_pic_height"
+        android:visibility="visible"
+        android:minHeight="@dimen/recom_pic_height">
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal"
+            android:weightSum="5">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/img_1"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:background="@drawable/sel_point" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/img_2"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:background="@drawable/sel_point" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/img_3"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:background="@drawable/sel_point" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/img_4"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:background="@drawable/sel_point" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:visibility="invisible">
+
+                <ImageView
+                    android:id="@+id/img_5"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:background="@drawable/sel_point" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <com.ubtechinc.alpha2ctrlapp.widget.ScollViewPager
+            android:id="@+id/app_view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent" />
+    </RelativeLayout>
+    <com.ubtechinc.alpha2ctrlapp.widget.SwitchChangeActiveButton
+        android:id="@+id/btn_swich_active"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/main_second_height" />
+</LinearLayout>

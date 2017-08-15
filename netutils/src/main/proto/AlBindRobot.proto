@@ -1,0 +1,16 @@
+syntax = "proto3";
+option java_package = "com.ubtechinc.alpha";
+message AlBindRobotRequest {
+
+    string userId = 1;
+    string robotId = 2;
+    int32 type = 3;
+
+}
+message AlBindRobotResponse {
+
+    string userId = 1;
+    string robotId = 2;
+    int32 type = 3;
+
+}

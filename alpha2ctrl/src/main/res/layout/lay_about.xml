@@ -1,0 +1,189 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android_custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg_color_b6"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true">
+
+    <include
+        android:id="@+id/top_title"
+        layout="@layout/authorize_top_title"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/top_title_heigh"
+        android:layout_alignParentTop="true" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top_title"
+        android:layout_weight="5"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/input_wifi_edittext_height"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/app_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/alpha2_ic_launcher" />
+
+            <TextView
+                android:id="@+id/app_name"
+                style="@style/contentTitleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/app_icon"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/input_wifi_edittext_margin_right"
+                android:text="@string/app_name"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/app_version"
+                style="@style/contentTitleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/app_name"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/input_wifi_edittext_margin_right"
+                android:text="nwnowwo"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/about_menu"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bg_color_b3"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:id="@+id/app_update_lay"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/input_wifi_edittext_height"
+                android:background="@drawable/menu_bg_selector"
+                android:paddingLeft="@dimen/input_wifi_edittext_margin_right"
+                android:paddingRight="@dimen/input_wifi_edittext_margin_right">
+
+                <TextView
+                    android:id="@+id/app_version_tip"
+                    style="@style/contentTitleText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/app_setting_app_update"
+                    android:textColor="@color/text_black" />
+                <ImageView
+                    android:id="@+id/has_new_icon"
+                    android:layout_width="5dp"
+                    android:layout_height="5dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/app_version_tip"
+                    android:background="@drawable/busy"
+                    android:layout_alignTop="@id/app_version_tip"
+                    android:visibility="gone"
+                    android:textColor="@color/menu_text_color" />
+
+                <TextView
+                    android:id="@+id/newVersion"
+                    style="@style/smallTitleText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="V1.0.0.0"
+                    android:textColor="@color/black" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/input_wifi_edittext_margin_right"
+                android:layout_marginRight="@dimen/input_wifi_edittext_margin_right"
+                android:background="@color/bg_color_b5" />
+
+            <RelativeLayout
+                android:id="@+id/lay_help"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/input_wifi_edittext_height"
+                android:background="@drawable/menu_bg_selector"
+                android:paddingLeft="@dimen/input_wifi_edittext_margin_right"
+                android:paddingRight="@dimen/input_wifi_edittext_margin_right">
+
+                <TextView
+                    style="@style/contentTitleText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/drawer_help"
+                    android:textColor="@color/text_black" />
+
+
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/input_wifi_edittext_margin_right"
+                android:layout_marginRight="@dimen/input_wifi_edittext_margin_right"
+                android:background="@color/bg_color_b5" />
+
+            <RelativeLayout
+                android:id="@+id/feedback_lay"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/input_wifi_edittext_height"
+                android:background="@drawable/menu_bg_selector"
+                android:paddingLeft="@dimen/input_wifi_edittext_margin_right"
+                android:paddingRight="@dimen/input_wifi_edittext_margin_right">
+
+                <TextView
+                    style="@style/contentTitleText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/app_setting_feedback"
+                    android:textColor="@color/text_black" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/net"
+        style="@style/contentTitleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:text="@string/about_app_net"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/copyRight"
+        style="@style/contentTitleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="40dp"
+        android:gravity="center"
+        android:text="@string/about_app_coryright"
+        android:textColor="@color/text_gray" />
+</LinearLayout>

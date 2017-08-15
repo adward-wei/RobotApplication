@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   xmlns:android_custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+     android:background="@color/main_bg_black"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/top_title"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/top_title_heigh"
+        android:layout_alignParentTop="true"
+        layout="@layout/authorize_top_title" />
+
+    <com.ubtechinc.alpha2ctrlapp.widget.SwtichChangeListButton
+        android:id="@+id/btn_swich_list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top_title" />
+
+    <ListView
+        android:id="@+id/lst_actions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_swich_list"
+        android:divider="@null"
+        android:listSelector="@color/transparent_background" />
+
+    <LinearLayout
+        android:id="@+id/no_collect_tip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/no_collect" />
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            style="@style/thirdTitleText"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/text_black"
+            android:text="@string/shop_page_no_collectt"/>
+    </LinearLayout>
+
+</RelativeLayout>

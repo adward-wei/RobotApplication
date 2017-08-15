@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg_color_b6"
+    android:orientation="vertical" >
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+    <TextView
+        android:id="@+id/menu_title"
+        style="@style/thirdTitleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="@dimen/input_wifi_edittext_margin_right"
+        android:gravity="left"
+            android:layout_marginLeft="@dimen/input_wifi_edittext_margin_right"
+        android:textColor="@color/text_color_t2" />
+
+    <ImageView
+        android:id="@+id/btn_setting"
+        style="@style/smallTitleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/input_wifi_edittext_margin_right"
+        android:layout_marginTop="@dimen/input_wifi_edittext_margin_right"
+        android:src="@drawable/main_footbar_item_setting"
+        android:visibility="gone"/>
+    <ImageView
+        android:id="@+id/btn_close"
+        style="@style/smallTitleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/input_wifi_edittext_margin_right"
+        android:layout_marginTop="@dimen/input_wifi_edittext_margin_right"
+        android:src="@drawable/icon_delete"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/menu_tips"
+        style="@style/thirdTitleText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/menu_title"
+        android:layout_marginLeft="@dimen/input_wifi_edittext_margin_right"
+        android:layout_marginTop="@dimen/input_wifi_edittext_margin_right"
+        android:gravity="left"
+        android:textColor="@color/text_color_t1" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/menu_tips"
+        android:orientation="vertical"
+        android:background="@color/transparent_background">
+    <Button
+        android:id="@+id/btn_spotify_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Spotify Login"
+        android:paddingLeft="@dimen/input_wifi_edittext_margin_right"
+        android:paddingRight="@dimen/input_wifi_edittext_margin_right"
+        android:textColor="@color/text_color_t3"
+        android:background="@drawable/btn_button_able"/>
+    <GridView
+        android:id="@+id/menu_grid"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/menu_tips"
+        android:layout_marginTop="@dimen/input_wifi_edittext_margin_right"
+        android:background="@color/transparent_background"
+        android:horizontalSpacing="@dimen/input_wifi_edittext_margin_right"
+        android:padding="@dimen/input_wifi_edittext_margin_right"
+        android:verticalSpacing="@dimen/input_wifi_edittext_margin_right"
+        android:scrollbars="@null" />
+    </LinearLayout>
+    </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

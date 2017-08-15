@@ -1,0 +1,21 @@
+syntax = "proto3";
+option java_package = "com.ubtechinc.alpha";
+message CmReplayInfoRequest {
+
+    string content = 1;
+    string contentLinks = 2;
+    int32 labelId = 3;
+    string msgLanguage = 4;
+    string recordId = 5;
+
+}
+
+message CmReplayInfoResponse {
+
+    string content = 1;
+    string contentLinks = 2;
+    int32 labelId = 3;
+    string msgLanguage = 4;
+    string recordId = 5;
+
+}

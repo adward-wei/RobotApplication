@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/edt_pwd_lay"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/input_wifi_edittext_height"
+        android:layout_marginLeft="@dimen/input_wifi_edittext_margin_right"
+        android:layout_marginRight="@dimen/input_wifi_edittext_margin_right"
+        android:layout_marginTop="@dimen/input_wifi_edittext_margin_right"
+        android:background="@drawable/input_nomal" >
+
+        <EditText
+            style="@style/contentTitleText"
+            android:id="@+id/edt_pwd"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/input_wifi_edittext_margin_right"
+            android:layout_marginTop="@dimen/scan_qrcode_tips_margin_top"
+            android:background="@color/transparent_background"
+            android:gravity="left|center_vertical"
+            android:hint="@string/regist_input_passwd"
+            android:inputType="textPassword"
+            android:paddingLeft="10dp"
+            android:singleLine="true"
+            android:textColor="@color/text_color_t2"
+            android:textColorHint="@color/text_color_t4" />
+
+        <ImageView
+            android:id="@+id/btn_show_psw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/icon_eye_nomal" />
+    </RelativeLayout>
+
+    <EditText
+        style="@style/contentTitleText"
+        android:id="@+id/edt_re_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/input_wifi_edittext_height"
+        android:layout_below="@+id/edt_pwd_lay"
+        android:layout_marginLeft="@dimen/input_wifi_edittext_margin_right"
+        android:layout_marginRight="@dimen/input_wifi_edittext_margin_right"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/input_nomal"
+        android:gravity="left|center_vertical"
+        android:hint="@string/regist_input_re_passwd"
+        android:inputType="textPassword"
+        android:paddingLeft="10dp"
+
+        android:textColor="@color/text_color_t2"
+        android:textColorHint="@color/text_color_t4" />
+
+    <TextView
+        android:id="@+id/btn_start_find"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btn_start_height"
+        android:layout_below="@+id/edt_re_pwd"
+        android:layout_marginLeft="@dimen/btn_start_margin"
+        android:layout_marginRight="@dimen/btn_start_margin"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/button_disable"
+        android:gravity="center"
+        android:text="@string/find_reset_pwd"
+        android:textColor="@android:color/white"
+        android:textSize="18dp" />
+
+</RelativeLayout>

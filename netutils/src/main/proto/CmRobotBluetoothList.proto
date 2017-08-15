@@ -1,0 +1,15 @@
+syntax = "proto3";
+option java_package = "com.ubtechinc.alpha";
+import "CmRobotBluetooth.proto";
+
+message CmRobotBluetoothListRequest {
+
+    repeated CmRobotBluetoothRequest list = 1;
+
+}
+
+message CmRobotBluetoothListResponse {
+
+    repeated CmRobotBluetoothResponse list = 1;
+
+}

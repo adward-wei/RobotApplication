@@ -1,0 +1,34 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <string name="error_message_network_unavailable">The network is unavailable</string>
+    <string name="error_message_network_error">Network error</string>
+    <string name="error_message_net_dis_connect">Network has been disconnected</string>
+    <string name="error_message_connect_time_out">Connection timed out</string>
+    <string name="error_message_error_client">The server is not responding</string>
+    <string name="error_message_loading">Loading...</string>
+    <string name="error_message_loging">Logging in...</string>
+    <string name="error_message_registing">Registering...</string>
+    <string name="error_message_authorize_success">An invitation has been sent</string>
+    <string name="error_message_outLogin">Please log in again</string>
+    <string name="error_message_server_unavailable">Connection to the server has failed</string>
+    <string name="error_message_unrecoverable_error">Unknown error</string>
+ 	<string name="error_message_9999">Background system error</string>
+    <string name="error_message_1001">The username or password is incorrect</string>
+    <string name="error_message_1002">The password is incorrect</string>
+    <string name="error_message_1003">The username has already been used</string>
+    <string name="error_message_1004">The user has not been activated</string>
+    <string name="error_message_1005">ThThe user has already been deactivated</string>
+    <string name="error_message_1006">The user does not exist</string>
+    <string name="error_message_1008">The email address has been registered</string>
+    <string name="error_message_1009">The mobile phone number has been registered</string>
+    <string name="error_message_2001">The device SN does not exist</string>
+    <string name="error_message_2002">The device has already been activated</string>
+    <string name="error_message_3001">The user does not exist</string>
+    <string name="error_message_5001">Authorized</string>
+    <string name="error_message_5002">The robot is already bound to another user</string>
+    <string name="error_message_5003">The SN does not exist</string>
+    <string name="error_message_5005">You have registered this Alpha</string>
+
+    <string name="error_message_4002">You have already added it to your favorites</string>
+    <string name="error_message_5009">The SN does not exist</string>
+</resources>

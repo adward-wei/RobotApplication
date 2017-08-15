@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_led"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请选择颜色"
+            android:textColor="@color/red"
+            android:textSize="24dp" />
+
+        <Spinner
+            android:id="@+id/select_color"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/getLedList"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="getLedList"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/turnOnEyeBlink"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="turnOnEyeBlink"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/turnOffEyeBlink"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="turnOffEyeBlink"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/turnOnEyeFlash"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="turnOnEyeFlash"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/turnOffEyeFlash"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="turnOffEyeFlash"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/turnOnEyeMarquee"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="turnOnEyeMarquee"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/turnOffEyeMarquee"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="turnOffEyeMarquee"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/turnOnHeadFlash"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="turnOnHeadFlash"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/turnOffHeadFlash"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="turnOffHeadFlash"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/turnOnHeadMarquee"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="turnOnHeadMarquee"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/turnOffHeadMarquee"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="turnOffHeadMarquee"
+        android:textAllCaps="false" />
+
+
+</LinearLayout>

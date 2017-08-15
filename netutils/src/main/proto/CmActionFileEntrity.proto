@@ -1,0 +1,23 @@
+syntax = "proto3";
+option java_package = "com.ubtechinc.alpha";
+message CmActionFileEntrityRequest {
+
+    int32 actionId = 1;
+    int32 actionType = 2;
+    string actionName = 3;
+    string actionFilePath = 4;
+    int32 downloadState = 5;
+    string actionOriginalId = 6;
+
+}
+
+message CmActionFileEntrityResponse {
+
+    int32 actionId = 1;
+    int32 actionType = 2;
+    string actionName = 3;
+    string actionFilePath = 4;
+    int32 downloadState = 5;
+    string actionOriginalId = 6;
+
+}

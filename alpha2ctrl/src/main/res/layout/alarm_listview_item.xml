@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/more_liseview_item_style"
+    android:descendantFocusability="blocksDescendants"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/lvbackground"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/time_tv"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:text="8:12"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/alarm_usable_tg"
+            android:layout_toRightOf="@id/time_tv"
+            android:orientation="vertical"
+            android:paddingLeft="5dp" >
+
+            <TextView
+                android:id="@+id/repeat_tv"
+                style="@style/alarm__textview_weight_style"
+                android:text="xxxxxxxxxxxxxxx" />
+
+            <TextView
+                android:id="@+id/action_tv"
+                style="@style/alarm__textview_weight_style"
+                android:layout_centerVertical="true"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" />
+        </LinearLayout>
+        <!-- android:background="@drawable/button_tg_sel" -->
+
+        <ToggleButton
+            android:id="@+id/alarm_usable_tg"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            android:checked="true"
+            android:text=""
+            android:textOff="@string/alarm_usable_off"
+            android:textOn="@string/alarm_usable_on" />
+    </RelativeLayout>
+
+</LinearLayout>

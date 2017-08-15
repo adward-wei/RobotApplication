@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   xmlns:android_custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/main_funciton_bg"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/top_title"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/top_title_heigh"
+        layout="@layout/authorize_top_title" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/main_funciton_bg"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/input_wifi_edittext_margin_right"
+        android:paddingRight="@dimen/input_wifi_edittext_margin_right" >
+
+        <com.ubtechinc.alpha2ctrlapp.widget.RoundImageView
+            android:id="@+id/user_header"
+            android:layout_width="@dimen/header_heigh"
+            android:layout_height="@dimen/header_heigh"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/no_head" />
+
+        <TextView
+            android:id="@+id/edt_nick_name"
+            style="@style/thirdTitleText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/input_wifi_edittext_margin_right"
+            android:layout_marginRight="@dimen/input_wifi_edittext_margin_right"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="@color/black" />
+
+        <RelativeLayout
+            android:id="@+id/lay_gender_show"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/input_wifi_edittext_height"
+            android:layout_marginTop="35dp"
+            android:background="@drawable/rounder_white_bg" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/input_wifi_edittext_margin_right"
+                android:gravity="center_vertical"
+                android:text="@string/private_info_gender"
+                android:textColor="@color/edit_hint"
+                android:textSize="18dp" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/txt_gender"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/input_wifi_edittext_margin_right"
+                android:gravity="center_vertical"
+                android:text="@string/private_info_gender"
+                android:textColor="@color/black"
+                android:textSize="18dp" >
+            </TextView>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/rounder_white_bg"
+            android:orientation="vertical"
+            android:weightSum="2" >
+
+            <RelativeLayout
+                android:id="@+id/emailLay"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/input_wifi_edittext_height"
+                android:layout_weight="1"
+                android:background="@drawable/rounder_white_bg" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="@dimen/input_wifi_edittext_margin_right"
+                    android:gravity="center_vertical"
+                    android:text="@string/ui_by_email"
+                    android:textColor="@color/edit_hint"
+                    android:textSize="18dp" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/edt_email_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/input_wifi_edittext_height"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/lay_gender"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/input_wifi_edittext_margin_right"
+                    android:background="@color/transparent_background"
+                    android:gravity="center_vertical|left"
+                    android:paddingLeft="@dimen/input_wifi_edittext_margin_right"
+                    android:textColor="@color/black"
+                    android:textSize="14dp" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/line"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/input_wifi_edittext_margin_right"
+                android:layout_marginRight="@dimen/input_wifi_edittext_margin_right"
+                android:background="@color/text_gray2" />
+
+            <RelativeLayout
+                android:id="@+id/phoneLay"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/input_wifi_edittext_height"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="@dimen/input_wifi_edittext_margin_right"
+                    android:gravity="center_vertical"
+                    android:text="@string/ui_by_phone"
+                    android:textColor="@color/edit_hint"
+                    android:textSize="18dp" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/edt_phone_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/input_wifi_edittext_height"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/input_wifi_edittext_margin_right"
+                    android:background="@color/transparent_background"
+                    android:gravity="center_vertical|left"
+                    android:paddingLeft="@dimen/input_wifi_edittext_margin_right"
+                    android:phoneNumber="true"
+                    android:textColor="@color/black"
+                    android:textSize="14dp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/authorize_cancel"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/input_wifi_edittext_height"
+            android:layout_marginTop="@dimen/input_wifi_edittext_margin_top"
+            android:background="@drawable/invitation_btn"
+            android:text="@string/authorize_cancel"
+            android:textColor="@color/text_gray"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>

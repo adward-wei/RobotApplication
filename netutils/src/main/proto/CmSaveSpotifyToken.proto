@@ -1,0 +1,13 @@
+syntax = "proto3";
+option java_package = "com.ubtechinc.alpha";
+message CmSaveSpotifyTokenRequest {
+
+    string mToken = 1;
+
+}
+
+message CmSaveSpotifyTokenResponse {
+
+    string mToken = 1;
+
+}

@@ -1,0 +1,18 @@
+syntax = "proto3";
+option java_package = "com.ubtechinc.alpha";
+message AlEmulatingLed {
+
+	int32 part = 1;
+	int32 runTime =2;
+	int32 leftLed =3;
+	int32 rightLed =4;
+	int32 bright =5;
+	int32 ledLightUpTime =6;
+	int32 ledLightDownTime =7;
+}
+
+message AlEmulatingLedResponse {
+
+	int32 status =1;
+
+}

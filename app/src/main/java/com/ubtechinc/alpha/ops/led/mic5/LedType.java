@@ -1,0 +1,26 @@
+package com.ubtechinc.alpha.ops.led.mic5;
+
+/**
+ * Created by Administrator on 2017/6/28 0028.
+ */
+
+public enum LedType {
+
+    NETWORK_DISCONNECTION,
+    NETWORK_CONNECTING,
+    NETWORK_CONNECT_FAILURE,
+    NETWORK_CONNECTED,
+    NO_NETWORK,
+    TTSING,
+    TTS_COMPLETE,
+    WAITING_WAKEUP,
+    WAKEUPED,
+    NETWORK_REQUESTING,
+    DESKCLOCK_ALARM,
+    TAKE_PICTURE,
+    VOLUME_UP,
+    VOLUME_DOWN,
+    HEAD_KEY,
+    THIRD_APP_SMART_CAMERA,
+    THIRD_APP_CHAT
+}

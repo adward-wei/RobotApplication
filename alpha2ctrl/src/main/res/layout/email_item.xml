@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/search_item_height"
+    android:background="@color/main_page_active_unselect_bg"
+    android:orientation="horizontal" >
+
+    <ImageView
+          android:layout_width="@dimen/search_item_image_height"
+        android:layout_height="@dimen/search_item_image_height"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/search_item_margin"
+        android:src="@drawable/icon_email" />
+
+    <TextView
+        style="@style/thirdTitleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/search_invite_by_email"
+        android:textColor="@color/black" />
+
+</RelativeLayout>

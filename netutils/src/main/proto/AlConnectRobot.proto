@@ -1,0 +1,15 @@
+syntax = "proto3";
+option java_package = "com.ubtechinc.alpha";
+
+message AlConnectRobotRequest {
+  string userId = 1;
+  string robotId = 2;
+  bool isSuccess = 3;
+}
+
+message AlConnectRobotResponse {
+  string userId = 1;
+  string robotId = 2;
+  bool isSuccess = 3;
+   int32 resultCode = 4;
+}

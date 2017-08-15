@@ -1,0 +1,17 @@
+syntax = "proto3";
+option java_package = "com.ubtechinc.alpha";
+message CmReadMotorAngleRequest {
+
+    int32 motorID = 1;
+
+}
+
+message CmReadMotorAngleResponse {
+
+  int32 motorID = 1;
+  int32 angle = 2;
+  int32 time = 3;
+
+
+}
+

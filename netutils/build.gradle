@@ -1,0 +1,94 @@
+apply plugin: 'com.google.protobuf'
+apply plugin: 'com.android.library'
+protobuf {
+    protoc {
+        // Download from repositories
+        artifact = rootProject.ext.plugin.protocArtifact
+    }
+    plugins {
+        javalite {
+            // The codegen for lite comes as a separate artifact
+            artifact = rootProject.ext.plugin.javaliteArtifact
+        }
+    }
+    generateProtoTasks {
+        all().each { task ->
+            task.plugins {
+                javalite {}
+            }
+        }
+    }
+}
+
+def getProps(String env){
+    def Properties props = new Properties()
+    def proFile = file('filters/'+ env +'/config.properties')
+    if (proFile.canRead()){
+        props.load(new FileInputStream(proFile))
+    }
+    props
+}
+
+android {
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+    buildToolsVersion rootProject.ext.android.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        versionCode 1
+        versionName "1.0.0"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            def props = getProps('release')
+            if (props != null){
+                buildConfigField 'String', 'HOST', props['host']
+                buildConfigField 'String', 'IM_HOST', props['im_host']
+                printf('host=%s,im_host=%s\n',props['host'], props['im_host'])
+            }
+        }
+        debug {
+            def props = getProps('debug')
+            if (props != null){
+                buildConfigField 'String', 'HOST', props['host']
+                buildConfigField 'String', 'IM_HOST', props['im_host']
+                printf('host=%s,im_host=%s\n',props['host'], props['im_host'])
+            }
+        }
+    }
+
+    lintOptions {
+            checkReleaseBuilds false
+            abortOnError false
+            ignoreWarnings true
+        }
+
+    useLibrary 'org.apache.http.legacy'
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile project(':utilcode')
+    compile project(':servicesdk')
+    compile project(path: ':servicemodel')
+    provided rootProject.ext.deps.timber
+    //测试
+    testCompile rootProject.ext.deps.junit
+    testCompile rootProject.ext.deps.truth
+    testCompile rootProject.ext.deps.robolectric
+    //网络
+    compile rootProject.ext.deps.retrofit2
+    compile rootProject.ext.deps.retrofit_gson
+    compile rootProject.ext.deps.rx_retrofit
+    compile rootProject.ext.deps.rxAndroid
+    compile rootProject.ext.deps.okhttp
+    compile rootProject.ext.deps.logging_interceptor
+
+    compile rootProject.ext.deps.protobufLite
+    provided rootProject.ext.deps.supportAnnotations
+    compile rootProject.ext.deps.eventbus
+}

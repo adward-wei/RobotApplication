@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/input_focus_shape" android:state_focused="true"></item>
+    <item android:drawable="@drawable/input_nomal_shape" android:state_focused="false"></item>
+    <item android:drawable="@drawable/input_nomal_shape"></item>
+
+</selector>

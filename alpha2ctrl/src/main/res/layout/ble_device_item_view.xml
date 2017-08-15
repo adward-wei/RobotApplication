@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/device_view"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/input_wifi_edittext_height"
+        android:gravity="left|center_vertical"
+        style="@style/thirdTitleText"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/input_wifi_edittext_margin_right"
+        android:textColor="@drawable/device_text_color"
+        android:layout_marginRight="@dimen/input_wifi_edittext_margin_right"
+        android:layout_alignParentLeft="true" />
+
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/device_loading_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/input_wifi_edittext_margin_right"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_loading"
+        android:layout_alignParentRight="true"
+        android:visibility="gone"/>
+</RelativeLayout>

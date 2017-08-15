@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Smile Camera</string>
+    <string name="storage_less_100_0">Not enough storage to take a picture, please clean up first</string>
+    <string name="storage_less_100_1">I am running out of storage. Please delete some picture or apps first.</string>
+    <string name="storage_more_100_0">ok, let us take a photo</string>
+    <string name="storage_more_100_1">ok, get ready for taking pictures</string>
+    <string name="sound_invalid_domain_0">Please stand in front of me, or I can not catch you.</string>
+    <string name="sound_invalid_domain_1">I cannot see you. Please stand in front of me.</string>
+    <string name="sound_invalid_domain_2">please stay in front of me or I can not see you</string>
+    <string name="sound_invalid_domain_3">Hi, please stay right in front of me for a better quality picture</string>
+    <string name="enter_face_detection">please take a pose</string>
+    <string name="not_found_face">I cannot see you. Please stand in front of me next time. Exit photo-taking.</string>
+    <string name="detection_face_0">Setting the focus.  Keep the cool pose</string>
+    <string name="detection_face_1">I am tuning the focus.  Stay still please</string>
+    <string name="take_photo_0">Say cheese</string>
+    <string name="take_photo_1">Stay still and say cheese!</string>
+    <string name="take_photo_2">Stay still and smile!</string>
+    <string name="take_photo_completion_0">Nice picture!  You can check it on our app on your phone now</string>
+    <string name="take_photo_completion_1">I got the photo, please watch it by logging into the app on your phone</string>
+    <string name="take_photo_completion_2">Well done.  You can check the photo by logging into the app on your phone</string>
+    <string name="exit_smartphoto">well, Exit photo-taking</string>
+
+</resources>

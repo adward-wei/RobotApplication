@@ -1,0 +1,19 @@
+syntax = "proto3";
+option java_package = "com.ubtechinc.alpha";
+message CmSetWifiToConnectRequest {
+
+    string ssid = 1;
+    string psw = 2;
+    string capabilities = 3;
+    string knowWifi = 4;
+
+}
+
+message CmSetWifiToConnectResponse {
+
+    string ssid = 1;
+    string psw = 2;
+    string capabilities = 3;
+    string knowWifi = 4;
+
+}

@@ -1,0 +1,17 @@
+syntax = "proto3";
+option java_package = "com.ubtechinc.alpha";
+message AlPushMessageRequest {
+
+    string robotId = 1;
+    int32 type = 2;
+    bytes data = 3;
+
+}
+
+message AlPushMessageResponse {
+
+    string robotId = 1;
+    int32 type = 2;
+    bytes data = 3;
+
+}

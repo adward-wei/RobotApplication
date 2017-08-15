@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="app_name">Alpha2Services</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="no_cfg_wifi">No wifi</string>
+    <string name="welcome_tips">Welcome to use Alpha2</string>
+    <string name="onScanQR">Two dimensional code allocation network</string>
+    <string name="onScanQRResult">Two dimensional code scanning end</string>
+    <string name="robot_no_signup">Robot have not been activated</string>
+
+    <!-- 提示音文件 -->
+    <string name="audio_start">tone_start_ogg.jet</string>
+    <string name="audio_wait">audio_wait.mp3</string>
+    <string name="audio_error">tone_error_ogg.jet</string>
+    <string name="audio_result">tone_result_ogg.jet</string>
+    <!-- Default label to display for an alarm -->
+    <string name="default_label">Alarm</string>
+    <!--
+         Repeat options that appear under an alarm on main Alarm Clock
+         screen to identify repetition schedule: special case for when
+         the alarm is set to never repeat
+    -->
+    <string name="never">Never</string>
+    <!--
+       Repeat options that appear under an alarm on main Alarm Clock
+         screen to identify repetition schedule: special case for when
+         the alarm is set to repeat every day
+    -->
+    <string name="every_day">every day</string>
+    <string name="day_concat">", "</string>
+    <string name="cooee_wifi_connecting">wifi connecting</string>
+    <string name="cooee_wifi_connecting_erro">Network connection failure</string>
+
+    <string name="hint_not_register">Please use our app to scan my QR code and become my owner</string>
+    <string name="hint_no_network">Please help me connect to network, and i will be able to do more</string>
+    <string name="connect_wifi_suceed">Connection successful</string>
+	<string name="connect_wifi_failed">Connection failed, please help me solve the problem.</string>
+	<string name="hint_have_register">From this day forward, you are my owner and I will always keep you company</string>
+	<string name="hint_wakeup">I heard you calling me, how can I help?</string>
+	<string name="hint_rest">I will just wait here.</string>
+	<string name="hint_low_power">My battery is running low, please help me recharge.</string>
+	<string name="hint_say_bye">I am going to sleep, see you next time.</string>
+
+	<string name="hint_good_moring">Good moring</string>
+	<string name="hint_good_noon">Good noon</string>
+	<string name="hint_good_afternoon">Good afternoon</string>
+	<string name="hint_good_evening">Good evening</string>
+    <!-- 没有网络 -->
+	<string name="hint_no_network_0">My connection was interrupted, please help me connect to network</string>
+	<string name="hint_no_network_1">Please help me connect to network, without a connection, my capabilities are very limited</string>
+	<string name="hint_no_network_2">Please help me connect to network, and i will be able to do more</string>
+    <!-- 网络已连接 -->
+	<string name="hint_connect_wifi_suceed_0">Connection successful</string>
+	<string name="hint_connect_wifi_suceed_1">It feels nice to be connected</string>
+	<string name="hint_connect_wifi_suceed_2">Connection successful, I feel great</string>
+    <!-- 唤醒 -->
+	<string name="hint_wakeup_0">Hello,I am here.</string>
+   	<string name="hint_wakeup_1">Hey,whats up?</string>
+   	<string name="hint_wakeup_2">How can I help?</string>
+    <!-- 动作文件 -->
+    <string name="action_no_network_0">我断网咯，请帮我连接网络吧</string>
+    <string name="action_no_network_1">请帮我联网，让我可以做更多的事情</string>
+    <string name="action_no_network_2">连不上网我只能发挥能力的百分之一</string>
+    <string name="action_connect_wifi_suceed_0">我已经连上了网络</string>
+    <string name="action_connect_wifi_suceed_1">连接网络成功，我感觉充满力量</string>
+    <string name="action_connect_wifi_suceed_2">连上网的感觉真好</string>
+    <string name="action_wakeup_0">Squat and stand up</string>
+    <string name="action_wakeup_1">Squat and stand up</string>
+    <string name="action_wakeup_2">Squat and stand up</string>
+    <string name="action_sit_down">Squat</string>
+    <string name="title_activity_test_sn">TestSnActivity</string>
+    <!-- 体醒 -->
+    <string name="remind_hour">hour</string>
+    <string name="remind_munite">munite</string>
+    <string name="remind_timeup">,</string>
+    <!-- 配置网络过程 -->
+    <string name="start_detect_wifi_trans">voice recognition successful,awaiting instructions</string>
+    <string name="receive_wifi_info_timeout">Connection failed，please try again</string>
+    <string name="rcv_and_connecting_wifi">Attempting to connect,please wait a moment</string>
+    
+    <!-- 升级 -->
+    <string name="mainservice_update">There is a new version for the robot\'s system. It is upgrading now. Please don\'t turn off the robot.</string>
+    <string name="mainservice_update_failed_hint">You can still use the robot. Or you can reboot the robot and restart upgrade.</string>
+    <string name="mainservice_update_success_hint">Upgrade was successful.The robot is restarting. This process may take 30 seconds.</string>
+    <string name="internet_not_access">Your network access is limited, please connect no limited WIFI hotspot</string>
+    <string name="mainservice_update_success_reboot_hint">Successfullly restarted. I am at your service now.</string>
+
+    <!-- <string name="answer_logining">Be patient, I am logining in the server.</string>
+    <string name="answer_not_login">Sorry, I don\'t login in the server.</string> -->
+
+    <!-- <string name="qr_result_timeout">scan time out</string>
+    <string name="qr_result_data_error">incorrect data</string>
+    <string name="qr_result_serialno_error">serial number is not consistent</string>
+    <string name="start_qrcode_tip">Please put the QR codes in front of the camera, until you hear the tone. The distance from 20 to 40 centimeter will be good.</string> -->
+
+    <!-- 登录服务器 -->
+    <string name="answer_have_login_0">I have logged in</string>
+    <string name="answer_have_login_1">I have logined</string>
+    <string name="answer_have_login_2">Login completed</string>
+    <string name="answer_have_login_3">I have logged in the server</string>
+    <string name="answer_logining">I am now conneting to the server</string>
+    <string name="answer_not_login">Not yet. Please connect me the server</string>
+    <!-- 查询网络状况 -->
+    <string name="answer_connect_fail_0">I haven\'t been connected to network. Please help me</string>
+    <string name="answer_connect_fail_1">I am not connected to the internet. Please connect me to the network</string>
+    <string name="answer_connect_success_0">I have been connected to the network</string>
+    <string name="answer_connect_success_1">I am connected to network now</string>
+    <string name="answer_connect_success_2">Network connection successful</string>
+
+    <string name="qr_result_timeout">sanning time out</string>
+    <string name="qr_result_data_error">The data is incorrect</string>
+    <string name="qr_result_serialno_error">the serial number does not match</string>
+    <string name="start_qrcode_tip">Please put the QR code within 20 to 40 centimeters from my camera. You can put it down when you hear the notification </string>
+    <!-- offline  WIFI-->
+    <string name="offline_wifi_0">I am connected to %s</string>
+    <string name="offline_wifi_1">%s,this is the Wifi I am connected to</string>
+    <string name="offline_wifi_2">I have been connected to %s</string>
+    <string name="offline_wifi_3">the Wifi I am connected to is %s</string>
+    <string name="offline_wifi_4">I am connected to %s</string>
+
+
+
+    <!--network connection improvement -->
+    <string name="connection_timeout">Network connection is overtime，please try again</string>
+    <string name="begin_connection_hint">I am waiting for scanning QR code!</string>
+    <string name="begin_connection_qrscan_success">QR scan success,I am conecting to the wifi</string>
+    <string name="begin_connection_0">please use our app to scan my QR code on my back to start networking</string>
+    <string name="begin_connection_1">I am connecting to network, please use the app on your mobile phone to scan the QR code on my back</string>
+    <string name="open_camera_fail_0">fail to open the camera，please contact our customer service</string>
+    <string name="exit_connection">exit connection</string>
+    <string name="open_camera_fail_1">The camera can not work，please contact our customer service</string>
+    <string name="bt_connected_0">Attempting to connect,please waiting for the WiFi password transmission</string>
+    <string name="bt_connected_1">Mobile phone connection succeed, waiting for the WiFi password transmission</string>
+    <string name="wifi_connection_success_0">connection successful</string>
+    <string name="wifi_connection_success_1">yeah I am already on line,feel like being smarter</string>
+    <string name="wifi_connection_success_2">connection successful</string>
+    <string name="wifi_connection_success_3">I have accessed to network, feel so good</string>
+    <string name="wifi_connection_fail_0">connection failed, could you reselect a wifi or input the password</string>
+    <string name="wifi_connection_fail_1">sorry, connection failure, you may reselect a wifi or input the password</string>
+    <string name="wifi_information_error">network password and name not correct</string>
+    <string name="get_wifi_information">get the network configuration information, waiting for network connection</string>
+    <string name="check_bond_serialnumber">please use the mobile phone to bond the robot</string>
+
+    <!-- 还剩存储空间-->
+    <string name="offline_capacity">I still have %s of capacity</string>
+    <!--电量-->
+    <string name="offline_power_normal">I still have %s percent of power</string>
+
+    <string name="offline_power_lower_0">only %s percent of electricity is available. please recharge me</string>
+    <string name="offline_power_lower_1">I only have %s percent of power now. Please recharge me</string>
+    <string name="offline_power_lower_2">I am running out of power. Only %s percnet is left now</string>
+    <string name="offline_power_lower_3">I need recharging. only %s percent of power is left</string>
+
+    <string name="offline_power_higher_0">Plenty. I still have %s percent of power</string>
+
+    <string name="offline_power_chargeing_0">I am charging now</string>
+
+    <string name="offline_power_full_0">I feel powerful</string>
+    <!-- 绑定 -->
+    <string name="bound_to_0">I am now bound to %s</string>
+    <string name="bound_to_1">%s is my owner now</string>
+    <string name="bound_to_2">I have been bound to %s</string>
+    <string name="bound_to_3">I am now bound to %s</string>
+    <string name="bound_to_4">I have been bound to %s</string>
+
+    <string name="unbounded_0">I haven\'t been bound to any one</string>
+    <string name="unbounded_1">I am not bound to anyone currently. You can become my owner by binding me</string>
+    <string name="unbounded_2">No one.</string>
+    <string name="unbounded_3">No one, I am available now</string>
+
+    <!-- 休眠回答-->
+    <string name="offline_sleep_0">ok, see you</string>
+    <string name="offline_sleep_1">sure, see you</string>
+    <string name="offline_sleep_2">ok, talk to you later</string>
+    <string name="offline_sleep_3">Good idea. Bye for now</string>
+    <string name="offline_sleep_4">ok, see you</string>
+    <string name="offline_sleep_5">ok, talk to you later</string>
+
+    <!-- 关机播报-->
+    <string name="offline_poweroff_0">Ok, see you next time</string>
+    <string name="offline_poweroff_1">No problem.Bye for now</string>
+    <string name="offline_poweroff_2">Sure, Good bye</string>
+    <string name="offline_poweroff_3">No problem.Bye for now</string>
+
+    <!-- 正使用的APP播报-->
+    <string name="offline_APP_0">%s is running</string>
+    <string name="offline_APP_1">%s is being used</string>
+    <string name="offline_APP_2">the app I am using is %s</string>
+    <string name="offline_APP_3"> I am using %s</string>
+    <string name="offline_APP_4">%s, this is the app I am using</string>
+    <string name="offline_APP_5">The app I am using is %s</string>
+    <string name="offline_APP_6">The app I am using is %s</string>
+    <string name="offline_APP_7">%s is running</string>
+    <string name="offline_APP_8">I am using %s</string>
+    <string name="offline_APP_9">%s is being used</string>
+
+    <!-- 离线语法查询照片播报-->
+    <string name="offline_HasPicture_0">Sure, iust a minute</string>
+    <string name="offline_HasPicture_1">No problem, wait a moment</string>
+    <string name="offline_HasPicture_2">Ok, just a moment</string>
+    <string name="offline_HasPicture_3">Sure, just a second</string>
+    <string name="offline_HasPicture_4">Sure, here you go</string>
+    <string name="offline_HasPicture_5">No problem.</string>
+    <string name="offline_HasPicture_6">Sure, just a minute</string>
+    <string name="offline_HasPicture_7">Sure, here you go</string>
+    <string name="offline_HasPicture_8">No problem, wait a moment</string>
+    <string name="offline_HasPicture_9">Sure, just a second</string>
+    <string name="offline_HasPicture_10">No problem,hold on</string>
+
+    <!-- update fail -->
+    <string name="mainservice_update_failed">Exception,exit upgrade</string>
+    <!-- start download -->
+    <string name="mainservice_update_start_download">start download</string>
+    <!-- start update -->
+    <string name="mainservice_update_start_install">start upgrade</string>
+    <!-- install fail -->
+    <string name="mainservice_update_failed_install">install fail.</string>
+    <!-- download fail -->
+    <string name="mainservice_update_failed_download">download fail.</string>
+    <!-- insufficient storage -->
+    <string name="mainservice_update_failed_insufficient_storage">Failed to upgrade because of insufficient system storage space. Please uninstall some builted-in applications in your alpha app first and then restart the robot</string>
+
+    <string name="action_stand_up">Squat and stand up</string>
+    <string name="action_squat">Squat</string>
+
+    <string name="forbid_action_hint">The function Using While Charging has been turned off. If you need me to perform an action, please activate the function</string>
+
+    <string name="language_zh_2_en_finish">Now you can talk with me in English，you can say hello alpha to wake me up.</string>
+    <string name="language_en_2_zh_start">I am now changing to the Chinese version. Please hold on a second.</string>
+
+    <string name="language_zh_2_en_start">I am now changing to the English version. Please hold on a second.</string>
+    <string name="language_en_2_zh_finish">Now you can talk with me in Chinese，you can say hello alpha to wake me up.</string>
+
+    <string name="offline_NoPicture">You haven\'t taken new photos recently</string>
+
+    <string name="storage_deficiency">I don\'t have much storage space now. Please  clean it up.</string>
+    <string name="storage_poor">I don\'t have enough storage space now. Please clean it up.</string>
+
+    <string name="action_liftLeftHand">Lift the left hand</string>
+    <string name="robot_SayHello">Hi, I am Alpha. Nice to meet you!</string>
+    <string name="robot_Introduced">Finally you bring me home. I enjoy having fun with you. If I doze off, you can say hello Alpha to wake me up. </string>
+    <string name="robot_DanceIntroduce">I have prepared a dance for you, please enjoy my show.</string>
+    <string name="robot_DanceStopHint">You can stop me by saying Hello alpha or pat my head. </string>
+    <string name="robot_GuideAPP">Thank you! Hope you like my show. Now you can download the Alpha 2 APP from the User guide and help me connect to the Internet. </string>
+
+    <string name="tempreture_too_high">The robot is overheating. Please let it have a rest so that it can cool down. </string>
+
+    <string name="have_get_log_try_later">Sorry, you can only upload log again %d minutes later.</string>
+    <string name="get_log_success">The log has been successfully gotten.</string>
+</resources>

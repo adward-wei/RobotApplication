@@ -1,0 +1,11 @@
+syntax = "proto3";
+option java_package = "com.ubtechinc.alpha";
+message CmQueryPowerDataRequest {
+
+}
+
+message CmQueryPowerDataResponse {
+
+    int32 powerValue = 2;
+
+}

@@ -1,0 +1,10 @@
+syntax = "proto3";
+option java_package = "com.ubtechinc.alpha";
+import "AlphaMessageHeader.proto";
+
+message AlphaMessage {
+
+  AlphaMessageHeader header = 1;
+  bytes bodyData = 2;
+	
+}

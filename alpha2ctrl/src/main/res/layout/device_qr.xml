@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?><LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/main_bg_black"
+    android:orientation="vertical" >
+  <include
+        android:id="@+id/top_title"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/top_title_heigh"
+        layout="@layout/authorize_top_title" />
+    <ImageView
+        android:id="@+id/code_image"
+        android:layout_width="@dimen/qrcode_image_width"
+        android:layout_height="@dimen/qrcode_image_width"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/qrcode_image_margin_top"
+        android:background="@null"
+        android:src="@null"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/alplah_no"
+        style="@style/SecondTitleText"
+        android:layout_width="@dimen/qrcode_image_width"
+        android:layout_height="@dimen/qrcode_image_margin_top"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/qrcode_btn_help_margin_top"
+        android:gravity="center"
+        android:textColor="@color/text_black"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/btn_save"
+        style="@style/SecondTitleText"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/input_wifi_edittext_height"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/btn_geting"
+        android:gravity="center"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="@string/device_history_save_qr"
+        android:textColor="@color/text_black" />
+
+</LinearLayout>

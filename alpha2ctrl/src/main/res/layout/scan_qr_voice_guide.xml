@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/transparent_background"
+    android:paddingBottom="10dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="10dp" >
+
+    <ScrollView
+        android:id="@+id/scoll_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/rounder_white_bg"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@style/thirdTitleText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:gravity="center"
+                android:text="@string/connect_disable_voice"
+                android:textColor="@color/main_page_active_select" />
+
+            <TextView
+                style="@style/contentTitleText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:gravity="left"
+                android:lineSpacingExtra="5dp"
+                android:text="@string/qr_scan_tips_rule"
+                android:textColor="@color/main_page_active_select" />
+
+            <TextView
+                style="@style/smallTitleText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/input_wifi_edittext_margin_right"
+                android:layout_marginTop="25dp"
+                android:gravity="left"
+                android:lineSpacingExtra="5dp"
+                android:text="@string/qr_scan_tips_content"
+                android:textColor="@color/tip_gray" />
+
+            <ImageView
+                android:id="@+id/tips_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/input_wifi_edittext_margin_top"
+                android:background="@null"
+                android:src="@drawable/icon_qr_far" />
+
+            <TextView
+                style="@style/contentTitleText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/input_wifi_edittext_margin_top"
+                android:gravity="center"
+                android:lineSpacingExtra="5dp"
+                android:text="@string/connect_guide_icon_1"
+                android:textColor="@color/tip_gray" />
+
+            <TextView
+                style="@style/contentTitleText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:gravity="left"
+                android:lineSpacingExtra="5dp"
+                android:text="@string/qr_scan_low_light_tips"
+                android:textColor="@color/main_page_active_select" />
+
+            <TextView
+                style="@style/smallTitleText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/input_wifi_edittext_margin_right"
+                android:layout_marginTop="25dp"
+                android:gravity="left"
+                android:lineSpacingExtra="5dp"
+                android:text="@string/qr_scan_low_light_tips_content"
+                android:textColor="@color/tip_gray" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/input_wifi_edittext_margin_top"
+                android:background="@null"
+                android:src="@drawable/icon_down_small" />
+
+            <TextView
+                style="@style/contentTitleText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/input_wifi_edittext_margin_top"
+                android:gravity="center"
+                android:lineSpacingExtra="5dp"
+                android:text="@string/connect_guide_icon_2"
+                android:textColor="@color/tip_gray" />
+
+            <TextView
+                style="@style/contentTitleText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:gravity="left"
+                android:lineSpacingExtra="5dp"
+                android:text="@string/connect_guide_disable_voice_tips3"
+                android:textColor="@color/main_page_active_select" />
+
+            <TextView
+                style="@style/smallTitleText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/input_wifi_edittext_margin_right"
+                android:layout_marginTop="25dp"
+                android:gravity="left"
+                android:lineSpacingExtra="5dp"
+                android:text="@string/connect_guide_disable_voice_tips3_tips"
+                android:textColor="@color/tip_gray" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/input_wifi_edittext_margin_top"
+                android:background="@null"
+                android:src="@drawable/shake_head" />
+
+            <TextView
+                style="@style/contentTitleText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/input_wifi_edittext_margin_top"
+                android:gravity="center"
+                android:lineSpacingExtra="5dp"
+                android:text="@string/connect_guide_icon_3"
+                android:textColor="@color/tip_gray" />
+
+            <TextView
+                style="@style/contentTitleText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:gravity="left"
+                android:lineSpacingExtra="5dp"
+                android:text="@string/connect_guide_tips_listent"
+                android:textColor="@color/main_page_active_select" />
+
+            <TextView
+                style="@style/smallTitleText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="25dp"
+                android:gravity="left"
+                android:lineSpacingExtra="5dp"
+                android:text="@string/connect_guide_tips7_tips"
+                android:textColor="@color/text_color_t4" />
+
+            <TextView
+                style="@style/smallTitleText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="25dp"
+                android:gravity="left"
+                android:lineSpacingExtra="5dp"
+                android:text="@string/connect_guide_our_email"
+                android:textColor="@color/tip_gray" />
+
+            <TextView
+                style="@style/smallTitleText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="left"
+                android:lineSpacingExtra="5dp"
+                android:visibility="invisible"
+                android:text="@string/connect_guide_our_phone"
+                android:textColor="@color/text_color_t2" />
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/btn_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/scoll_view"
+        android:layout_alignTop="@id/scoll_view"
+        android:layout_marginRight="@dimen/input_wifi_edittext_margin_right"
+        android:layout_marginTop="@dimen/input_wifi_edittext_margin_right"
+        android:src="@drawable/icon_delete" />
+
+</RelativeLayout>

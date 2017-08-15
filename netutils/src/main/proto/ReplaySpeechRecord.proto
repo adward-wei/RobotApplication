@@ -1,0 +1,16 @@
+syntax = "proto3";
+option java_package = "com.ubtechinc.alpha";
+
+message ReplaySpeechRecordRequest {
+    string content = 1;
+    string contentLinks=2;
+    int32  labelId = 3;
+    string msgLanguage =4;
+    int32 recordId=5;
+}
+
+message ReplaySpeechRecordResponse{
+    bool isSuccess =1;
+    int32 returnCode = 2;
+}
+

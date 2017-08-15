@@ -1,0 +1,14 @@
+syntax = "proto3";
+option java_package = "com.ubtechinc.alpha";
+message AlAppEntrityInfoRequest {
+
+    string packageName = 1;
+    string name = 2;
+
+}
+message AlAppEntrityInfoResponse {
+
+    string packageName = 1;
+    string name = 2;
+
+}

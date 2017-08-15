@@ -1,0 +1,19 @@
+syntax = "proto3";
+option java_package = "com.ubtechinc.alpha";
+message AlTtsPlayerCommandRequest {
+
+    int32 type = 1;
+    string language = 2;
+    string text = 3;
+    string voiceName = 4;
+
+}
+
+message AlTtsPlayerCommandResponse {
+
+    int32 type = 1;
+    string language = 2;
+    string text = 3;
+    string voiceName = 4;
+
+}

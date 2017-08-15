@@ -1,0 +1,28 @@
+<resources>
+
+   
+   <!-- 一级字体 -->
+   <style name="TopTitleText" >
+          <item name="android:textSize">32sp</item>
+   </style>
+    <!-- 二级字体 -->
+   <style name="SecondTitleText" >
+          <item name="android:textSize">30sp</item>
+   </style>
+     <!-- 正文字体 -->
+   <style name="thirdTitleText" >
+          <item name="android:textSize">28sp</item>
+   </style>
+    <!-- 正文字体 -->
+   <style name="contentTitleText" >
+          <item name="android:textSize">25sp</item>
+   </style>
+      <!-- 小字体 -->
+   <style name="smallTitleText" >
+          <item name="android:textSize">22sp</item>
+   </style>
+   <style name="modelButton">
+       <item name="android:width">80dp</item>
+       <item name="android:height">80dp</item>
+   </style>
+</resources>

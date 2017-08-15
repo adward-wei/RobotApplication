@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:android_custom="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="@color/bg_color_b6"
+              android:fitsSystemWindows="true"
+              android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/top_title_heigh"
+        android:background="@color/text_color_t3">
+
+        <LinearLayout
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/btn_back_margin_left"
+            android:clickable="true"
+            android:minWidth="100dp"
+            android:onClick="onBack"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/btn_back"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/authorize_title"
+            style="@style/top_title_text_style"
+            android:visibility="visible"/>
+
+        <TextView
+            android:id="@+id/btn_top_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/alpha_upload_error_background"
+            android:paddingBottom="5dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingTop="5dp"
+            android:text="@string/tv_upload_log_cmd"
+            android:textColor="@color/app_detail_ll"
+            android:textSize="15sp"
+            android:visibility="visible"/>
+
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_color_b3"
+                android:paddingBottom="@dimen/input_wifi_edittext_margin_right"
+                android:paddingTop="@dimen/input_wifi_edittext_margin_right"
+                android:src="@drawable/device_soft_info_logo"/>
+
+            <TextView
+                style="@style/t2_text_style"
+                android:layout_marginLeft="@dimen/input_wifi_edittext_margin_right"
+                android:layout_marginRight="@dimen/input_wifi_check_box_text_margin_left"
+                android:padding="5dp"
+                android:text="@string/device_soft_hard_ware_info_software"
+                android:textSize="@dimen/text_third_size"/>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_color_b3"
+                android:orientation="vertical"
+                android:padding="@dimen/input_wifi_edittext_margin_right">
+
+                <TextView
+                    style="@style/t2_text_style"
+                    android:padding="5dp"
+                    android:text="@string/device_soft_hard_ware_info_details"
+                    android:textSize="@dimen/text_second_size"/>
+
+                <TextView
+                    android:id="@+id/sevice_version"
+                    style="@style/click_text_style"
+                    android:padding="5dp"
+                    android:text="@string/device_soft_hard_ware_info_software"/>
+
+                <TextView
+                    style="@style/t2_text_style"
+                    android:layout_marginTop="@dimen/input_wifi_edittext_margin_right"
+                    android:padding="5dp"
+                    android:text="@string/device_soft_hard_ware_info_chest"
+                    android:textSize="@dimen/text_second_size"/>
+
+                <TextView
+                    android:id="@+id/chest_version"
+                    style="@style/click_text_style"
+                    android:padding="5dp"
+                    android:text="@string/device_soft_hard_ware_info_software"/>
+
+                <TextView
+                    android:id="@+id/head_tv"
+                    style="@style/t2_text_style"
+                    android:layout_marginTop="@dimen/input_wifi_edittext_margin_right"
+                    android:padding="5dp"
+                    android:text="@string/device_soft_hard_ware_info_head"
+                    android:textSize="@dimen/text_second_size"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/head_version"
+                    style="@style/click_text_style"
+                    android:padding="5dp"
+                    android:text="@string/device_soft_hard_ware_info_software"/>
+
+                <TextView
+                    style="@style/t2_text_style"
+                    android:layout_marginTop="@dimen/input_wifi_edittext_margin_right"
+                    android:padding="5dp"
+                    android:text="@string/device_soft_hard_ware_info_android"
+                    android:textSize="@dimen/text_second_size"/>
+
+                <TextView
+                    android:id="@+id/android_version"
+                    style="@style/click_text_style"
+                    android:padding="5dp"
+                    android:text="@string/device_soft_hard_ware_info_software"/>
+            </LinearLayout>
+
+            <TextView
+                style="@style/t2_text_style"
+                android:layout_marginLeft="@dimen/input_wifi_edittext_margin_right"
+                android:layout_marginRight="@dimen/input_wifi_check_box_text_margin_left"
+                android:padding="5dp"
+                android:text="@string/device_soft_hard_ware_info_hardware"
+                android:textSize="@dimen/text_third_size"/>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_color_b3"
+                android:orientation="vertical"
+                android:padding="@dimen/input_wifi_edittext_margin_right">
+
+                <TextView
+                    style="@style/t2_text_style"
+                    android:padding="5dp"
+                    android:text="@string/device_soft_hard_ware_info_sdcard"
+                    android:textSize="@dimen/text_second_size"/>
+
+                <TextView
+                    android:id="@+id/sd_info"
+                    style="@style/click_text_style"
+                    android:padding="5dp"
+                    android:text="@string/device_soft_hard_ware_info_software"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

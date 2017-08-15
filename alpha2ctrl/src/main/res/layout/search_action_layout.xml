@@ -1,0 +1,111 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:android_custom="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/main_funciton_bg"
+                android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/top_title_heigh"
+        android:background="@color/text_color_t3">
+
+        <LinearLayout
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/btn_back_margin_left"
+            android:clickable="true"
+            android:onClick="onBack"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/btn_back"/>
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/input_text"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/input_wifi_edittext_height"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/input_wifi_edittext_margin_right"
+            android:layout_toRightOf="@+id/btn_back"
+            android:background="@drawable/search_input_shape"
+            android:drawableLeft="@drawable/search_hint_icon"
+            android:drawablePadding="@dimen/input_wifi_edittext_margin_right"
+            android:hint="@string/common_search_text"
+            android:imeOptions="actionSearch"
+            android:paddingLeft="@dimen/input_wifi_edittext_margin_right"
+            android:paddingRight="@dimen/input_wifi_edittext_margin_right"
+            android:singleLine="true"
+            android:textColor="@color/text_color_t2"
+            android:textColorHint="@color/text_color_t4"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relativeLayout1"
+        android:background="@color/bg_color_b6">
+
+        <TextView
+            android:id="@+id/search_result_tips"
+            style="@style/contentTitleText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/bg_color_b6"
+            android:padding="@dimen/input_wifi_edittext_margin_right"
+            android:text="@string/apps_action_result_tips"
+            android:textColor="@color/text_color_t4"
+            android:visibility="gone"/>
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/search_result_tips">
+
+
+            <ListView
+                android:id="@+id/actionlistView"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:cacheColorHint="@null"
+                android:divider="@color/transparent_background"
+                android:dividerHeight="0dp"
+                android:overScrollMode="never"
+                android:scrollbars="none"
+                android:visibility="visible">
+            </ListView>
+
+            <LinearLayout
+                android:id="@android:id/empty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/header_heigh"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/no_search_icon"/>
+
+                <TextView
+                    android:id="@+id/tv_search_result"
+                    style="@style/nomal_text_style"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/input_wifi_edittext_margin_right"
+                    android:text="@string/apps_action_list_blank_input_data"/>
+            </LinearLayout>
+        </FrameLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

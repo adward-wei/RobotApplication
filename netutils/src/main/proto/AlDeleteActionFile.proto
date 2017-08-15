@@ -1,0 +1,11 @@
+syntax = "proto3";
+option java_package = "com.ubtechinc.alpha";
+
+message AlDeleteActionFileRequest {
+    string fileName = 1;
+}
+
+message AlDeleteActionFileResponse {
+    bool isSuccess = 1;
+    int32 resultCode = 2;
+}

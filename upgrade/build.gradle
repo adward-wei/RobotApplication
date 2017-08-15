@@ -1,0 +1,136 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.jakewharton.hugo'
+
+//获取产品的名字
+def getProductName() {
+    return "upgrade_"+rootProject.ext.upgrade.versionName + "${getJenkinsBuild()}"
+
+}
+
+//获取当前系统的时间
+def releaseTime() {
+    return new Date().format("yyyyMMddHHmmss")
+}
+
+boolean isInJeknins() {
+    Map<String, String> map =  System.getenv()
+    if(map == null) {
+        return false
+    }
+//    printf('env=%s\n',map.toMapString())
+    String str
+    Iterator it = map.iterator();
+    while(it.hasNext()) {
+        str = it.next();
+        if(str.contains("jenkins")){
+            return true
+        }
+    }
+    return false;
+}
+//获取jenkins build number
+def getJenkinsBuild() {
+    boolean  flag = isInJeknins();
+    if(flag){
+        ext.env = System.getenv()
+        ext.buildNumber = env.get("BUILD_NUMBER");
+        return "#" + "$buildNumber"
+    }else{
+        return ""
+    }
+}
+
+android {
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+    buildToolsVersion rootProject.ext.android.buildToolsVersion
+
+    defaultConfig {
+        applicationId "com.ubt.alpha2.upgrade"
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        versionCode rootProject.ext.zh_chat.versionCode
+        versionName rootProject.ext.zh_chat.versionName
+        multiDexEnabled  true
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+
+    sourceSets{
+        main{
+            jniLibs.srcDirs=['libs']
+        }
+    }
+
+    signingConfigs {
+        release {
+            storeFile file("rk-debug.keystore")
+            storePassword "ubt83474428"
+            keyAlias "androiddebugkey"
+            keyPassword "ubt83474428"
+        }
+        debug {
+            storeFile file("rk-debug.keystore")
+            storePassword "ubt83474428"
+            keyAlias "androiddebugkey"
+            keyPassword "ubt83474428"
+        }
+    }
+
+    applicationVariants.all { variant ->
+        variant.outputs.each { output ->
+            def oldFile = output.outputFile
+            if (variant.buildType.name.equals('release')) {
+                def releaseApkName = getProductName() + "_${releaseTime()}_"  + 'release.apk'
+                output.outputFile = new File(oldFile.parent, releaseApkName)
+            }
+        }
+    }
+
+    buildTypes {
+        release {
+            manifestPlaceholders=["UMENG_APPKEY":"596ec808f43e483bde000084",
+                                  "UMENG_CHANNEL":"umeng_channel",
+                                  "CATEGORY":"android.intent.category.DEFAULT"]
+            buildConfigField("boolean", "isDebug", "false")
+            buildConfigField("String","BASE_URL","\"http://account.ubtrobot.com:8084\"");
+            buildConfigField("String","ACTION_BASE_URL","\"http://10.10.1.43:8080\"");
+            minifyEnabled false
+            signingConfig signingConfigs.release
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+        debug {
+            minifyEnabled false
+            manifestPlaceholders=["UMENG_APPKEY":"596eca6e717c197aaa0009dd",
+                                  "UMENG_CHANNEL":"umeng_channel",
+                                  "CATEGORY":"android.intent.category.LAUNCHER"]
+            buildConfigField("boolean", "isDebug", "true")
+            buildConfigField("String","BASE_URL","\"http://10.10.20.30:8020\"");
+            buildConfigField("String","ACTION_BASE_URL","\"http://10.10.1.43:8080\"");
+            signingConfig signingConfigs.debug
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+        ignoreWarnings true
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile rootProject.ext.deps.appCompatV7
+    compile rootProject.ext.deps.multidex
+    compile project(':download')
+    compile project(':netutils')
+    compile project(':servicesdk')
+    compile project(':statisticsLibrary')
+
+    //调试
+    compile rootProject.ext.deps.timber
+    compile rootProject.ext.deps.hugo
+}

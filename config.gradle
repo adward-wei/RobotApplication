@@ -1,0 +1,147 @@
+ext {
+    signingConfig = [
+            storeFile : "rk-debug.keystore",
+            storePassword : "ubt83474428",
+            keyAlias : "androiddebugkey",
+            keyPassword : "ubt83474428"
+    ]
+
+    android = [
+            compileSdkVersion : 25,
+            buildToolsVersion : "25.0.0",
+            minSdkVersion     : 19,
+            targetSdkVersion  : 25
+    ]
+
+    alpha_services = [
+            versionCode       : 20,
+            versionName       : "v2.0.0.1"
+    ]
+
+    zh_chat = [
+            versionCode       : 11,
+            versionName       : "v2.0.0.1"
+    ]
+
+    upgrade = [
+            versionCode:  1,
+            versionName:  "v1.0.0.0"
+    ]
+
+    alpha_translation = [
+            versionCode       : 6,
+            versionName       : "v2.0.0.1"
+    ]
+
+    smart_camera = [
+            versionCode       : 6,
+            versionName       : "v2.0.0.1"
+    ]
+
+    alphactrl = [
+            compileSdkVersion : 25,
+            buildToolsVersion : "25.0.0",
+            minSdkVersion     : 19,
+            targetSdkVersion  : 21,
+            versionCode       : 160,
+            versionName       : "2.0.0"
+    ]
+
+    androidSupportVersion = [
+            supportVer :  "25.1.0"
+    ]
+
+    thirdSupprotVersion = [
+            rxJavaVersion : "1.1.6",
+            rxAndroidVersion : "1.2.1",
+
+            retrofitVersion : "2.1.0",
+            okhttpVersion : "3.4.1",
+            okioVersion : "1.11.0",
+
+            hugoVersion : "1.2.1",
+            timberVersion : "4.5.1",
+
+            daggerVersion : "2.7",
+
+            mockitoVersion : "1.10.19",
+            junitVersion : "4.12",
+            robolectricVersion : "3.0",
+            hamcrestVersion : "1.3",
+            guavaVer : "19.0",
+            protobuflite : "3.0.1",
+            protobufjava : "3.0.0",
+            eventbus: "3.0.0",
+    ]
+
+    pluginVersion = [
+
+            protocArtifact : "3.2.0",
+            javaliteArtifact : "3.0.0",
+    ]
+
+    plugin = [
+            //----------------------ProtocolBuffer------------------
+            protocArtifact : "com.google.protobuf:protoc:${pluginVersion.protocArtifact}",
+            javaliteArtifact : "com.google.protobuf:protoc-gen-javalite:${pluginVersion.javaliteArtifact}",
+    ]
+
+    deps = [
+            //-------------------------------Android -----------------------------
+            supportV4 : "com.android.support:support-v4:${androidSupportVersion.supportVer}",
+            appCompatV7 : "com.android.support:appcompat-v7:${androidSupportVersion.supportVer}",
+            design : "com.android.support:design:${androidSupportVersion.supportVer}",
+            cardviewV7 : "com.android.support:cardview-v7:${androidSupportVersion.supportVer}",
+            supportAnnotations: 'com.android.support:support-annotations:25.0.0',
+
+            //--------------------------------RxAndroid----------------------------
+            rxAndroid : "io.reactivex:rxandroid:${thirdSupprotVersion.rxAndroidVersion}",
+            rxJava : "io.reactivex:rxjava:${thirdSupprotVersion.rxJavaVersion}",
+            //--------------------------------ProtocolBuffer-------------------------
+            protobufLite : "com.google.protobuf:protobuf-lite:${thirdSupprotVersion.protobuflite}",
+            protobufLava : "com.google.protobuf:protobuf-java:${thirdSupprotVersion.protobufjava}",
+            eventbus : "org.greenrobot:eventbus:${thirdSupprotVersion.eventbus}",
+            //--------------------------------google Guava-------------------------
+            guava : "com.google.guava:guava:${thirdSupprotVersion.guavaVer}",
+
+            //--------------------------------retrofit/http3/io-----------------------------
+            retrofit2 : "com.squareup.retrofit2:retrofit:${thirdSupprotVersion.retrofitVersion}",
+            retrofit_gson : "com.squareup.retrofit2:converter-gson:${thirdSupprotVersion.retrofitVersion}",
+            rx_retrofit : "com.squareup.retrofit2:adapter-rxjava:${thirdSupprotVersion.retrofitVersion}",
+            okhttp : "com.squareup.okhttp3:okhttp:${thirdSupprotVersion.okhttpVersion}",
+            okio : "com.squareup.okio:okio:${thirdSupprotVersion.okioVersion}",
+            rxAndroid : 'io.reactivex:rxandroid:1.2.1',
+            logging_interceptor : "com.squareup.okhttp3:logging-interceptor:${thirdSupprotVersion.okhttpVersion}",
+
+            //-----------------------------------dagger------------------------------------------
+            dagger_compiler : "com.google.dagger:dagger-compiler:${thirdSupprotVersion.daggerVersion}",
+            dagger : "com.google.dagger:dagger:${thirdSupprotVersion.daggerVersion}",
+
+            //---------------------------------调试相关--------------------------------------
+            timber : "com.jakewharton.timber:timber:${thirdSupprotVersion.timberVersion}",
+            hugo: "com.jakewharton.hugo:hugo-annotations:${thirdSupprotVersion.hugoVersion}",
+
+            //-----------------------------------单元测试相关---------------------------------
+            junit : "junit:junit:${thirdSupprotVersion.junitVersion}",
+            mockito : "org.mockito:mockito-core:${thirdSupprotVersion.mockitoVersion}",
+            robolectric : "org.robolectric:robolectric:${thirdSupprotVersion.robolectricVersion}",
+            hamcrest : "org.hamcrest:hamcrest-core:${thirdSupprotVersion.hamcrestVersion}",
+            truth    : 'com.google.truth:truth:0.29',
+            //------------------------------------图片加载---------------------------
+            glide :'com.github.bumptech.glide:glide:3.8.0',
+            glidehttp :'com.github.bumptech.glide:okhttp-integration:1.5.0',
+            gifdrawable:'pl.droidsonroids.gif:android-gif-drawable:1.2.5',
+
+            //-----------------------------统计-------------------------
+            umeng:'com.umeng.analytics:analytics:6.0.9',
+            //-----------------------------Dex分包-----------------------
+            multidex:'com.android.support:multidex:1.0.1',
+            //---------------------------json解析------------------------
+            gson:'com.google.code.gson:gson:2.7',
+            //---------------------------内存泄漏分析----------------------
+            leakcanary :'com.squareup.leakcanary:leakcanary-android:1.5.1',
+            leakcanary_no_op : 'com.squareup.leakcanary:leakcanary-android-no-op:1.5.1',
+
+            bugly: 'com.tencent.bugly:crashreport:2.6.5',
+    ]
+}

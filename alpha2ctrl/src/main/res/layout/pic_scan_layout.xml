@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#e01b1b1b"
+    android:orientation="vertical" >
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/picviewpager"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent" />
+
+    <LinearLayout
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal"
+        android:weightSum="5" >
+
+        <TextView
+            android:id="@+id/current_pic_num"
+            style="@style/smallTitleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@color/transparent_background"
+            android:gravity="right"
+            android:text="2"
+            android:textColor="@color/white" />
+
+        <TextView
+            style="@style/smallTitleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@color/transparent_background"
+            android:gravity="center"
+            android:text="/"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/pic_count"
+            style="@style/smallTitleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@color/transparent_background"
+
+            android:gravity="left"
+            android:text="5"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</RelativeLayout>

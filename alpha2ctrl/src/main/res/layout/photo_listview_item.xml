@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/dataType"
+        style="@style/thirdTitleText"
+        android:layout_width="wrap_content"
+        android:textColor="@color/text_black"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="@dimen/input_wifi_check_box_text_margin_left"
+        android:layout_height="@dimen/input_wifi_edittext_height" />
+
+    <com.ubtechinc.alpha2ctrlapp.widget.PhotoGridView
+        android:id="@+id/photo_grid"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:button="@drawable/photo_item_check_selector"
+        android:numColumns="4"
+        android:layout_gravity="center_horizontal"
+        android:horizontalSpacing="1dp"
+        android:verticalSpacing="1dp"
+        android:scrollbars="none" />
+
+</LinearLayout>

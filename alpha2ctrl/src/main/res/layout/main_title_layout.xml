@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/titile_layout_ry"
+    android:layout_width="fill_parent"
+    android:layout_height="60dip"
+    android:background="@drawable/top_bar_bg" >
+
+    <RelativeLayout
+        android:layout_width="70dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:background="@color/dark" >
+
+        <com.ubtechinc.alpha2ctrlapp.widget.CircleImageView
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/hugh"
+            app:border_color="@color/light"
+            app:border_width="2dp" />
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dip"
+        android:text="@string/connect_net_resend"
+        android:textColor="#E74C3C" />
+
+</RelativeLayout>

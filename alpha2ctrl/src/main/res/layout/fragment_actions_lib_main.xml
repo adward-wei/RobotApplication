@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/page_main_bg"
+    android:orientation="vertical" >
+
+    <com.ubtechinc.alpha2ctrlapp.widget.RefreshListView
+        android:id="@+id/lst_actions"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="2dp"
+        android:listSelector="@color/transparent_background"
+        android:background="@color/transparent_background"
+        android:divider="@color/transparent_background"
+        android:scrollbars="none" />
+
+</LinearLayout>

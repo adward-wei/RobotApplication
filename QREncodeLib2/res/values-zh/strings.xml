@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="bound_alpha">绑定ALPHA 2</string>
+    <string name="find_and_scan">找到并扫描此处二维码</string>
+    <string name="btn_back">返回</string>
+    <string name="other_bound">使用其他绑定方式</string>
+    <string name="scan_robot_qr">请扫描机器人的二维码</string>
+    <string name="device_history">历史绑定</string>
+    <string name="save_qr">保存二维码</string>
+     <string name="qr">二维码</string>
+       <string name="scan_robot_qr_bind">扫描二维码绑定机器人 </string>
+
+</resources>

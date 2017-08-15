@@ -1,0 +1,17 @@
+syntax = "proto3";
+option java_package = "com.ubtechinc.alpha";
+import "CmrAppSettingSection.proto";
+
+message CmrAppSettingRequest {
+
+    repeated CmrAppSettingSectionRequest models = 1;
+    string version = 2;
+  
+}
+
+message CmrAppSettingResponse {
+
+    repeated CmrAppSettingSectionResponse models = 1;
+    string version = 2;
+
+}

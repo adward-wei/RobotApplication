@@ -1,0 +1,70 @@
+<com.ubtechinc.alpha2ctrlapp.widget.ScrollLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   xmlns:android_custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/search_item_height"
+    android:background="@color/main_funciton_bg"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+         android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true" 
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/search_item_height"
+        android:layout_marginTop="2dp"
+        android:paddingLeft="10dp" >
+
+        <TextView
+            android:id="@+id/alarm_item_time"
+            style="@style/TopTitleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="07:00"
+            android:textColor="#656c71" />
+
+        <TextView
+            android:id="@+id/alarm_item_name"
+            style="@style/contentTitleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/alarm_item_time"
+            android:layout_centerVertical="true"
+            android:ellipsize="end"
+            android:gravity="bottom"
+            android:singleLine="true"
+            android:text="@string/app_setting_nott"
+            android:layout_toLeftOf="@+id/alarm_status"
+            android:textColor="@color/top_title_red" />
+
+        <ToggleButton
+            android:id="@+id/alarm_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/button_tg_sel"
+            android:checked="true"
+            android:text=""
+            android:textOff=""
+            android:textOn="" />
+    </RelativeLayout>
+<Button
+    android:id="@+id/btn_delete"
+    android:layout_width="wrap_content"
+    android:layout_weight="1"
+    android:layout_height="@dimen/search_item_height"
+    android:textColor="@color/white"
+    android:background="#ef6668"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:layout_alignParentRight="true"
+    android:layout_centerVertical="true"
+    android:layout_marginRight="-80dp"
+     android:text="@string/alarm_delete"/>
+</com.ubtechinc.alpha2ctrlapp.widget.ScrollLayout>

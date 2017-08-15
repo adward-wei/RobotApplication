@@ -1,0 +1,200 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/list_background"
+              android:orientation="vertical">
+
+    <include
+        android:id="@+id/top_title"
+        layout="@layout/authorize_top_title"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/top_title_heigh"
+        android:visibility="gone"/>
+
+    <RelativeLayout
+        android:id="@+id/lay_video"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <VideoView
+            android:id="@+id/vvw_main"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            />
+
+        <View
+            android:id="@+id/view_touch"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@color/transparent_background"/>
+
+        <ImageView
+            android:id="@+id/thum_image"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"
+            android:scaleType="fitXY"/>
+
+        <ImageButton
+            android:id="@+id/video_image"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"
+            android:background="#dfdfdf"
+            android:src="@drawable/no_vedio"
+            android:visibility="gone"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/btn_start_height"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:background="@color/transparent_background"
+            android:minWidth="150dp"
+            android:onClick="onBack"
+            android:padding="5dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/vedio_back_icon"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/lay_ctrl"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/btn_start_height"
+            android:layout_alignParentBottom="true"
+            android:background="@color/transparent_background">
+
+            <ImageView
+                android:id="@+id/img_pause_or_continue"
+                android:layout_width="@dimen/main_top_header"
+                android:layout_height="@dimen/main_top_header"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/play_playing"/>
+
+            <SeekBar
+                android:id="@+id/sbr_produce"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/txt_current_time"
+                android:layout_toRightOf="@+id/img_pause_or_continue"
+                android:maxHeight="2dip"
+                android:minHeight="2dip"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:progressDrawable="@drawable/vol_sharp"
+                android:thumb="@drawable/vol_bar"
+                android:visibility="visible"/>
+
+            <TextView
+                android:id="@+id/txt_current_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/txt_totle_time"
+                android:text="00:00"
+                android:textColor="@color/white"
+                android:textSize="12dp"/>
+
+            <TextView
+                android:id="@+id/txt_totle_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:text="/00:00"
+                android:textColor="@color/white"
+                android:textSize="12dp"/>
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/img_loading"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/loading_logo"
+            android:visibility="invisible"/>
+
+        <ImageView
+            android:id="@+id/btn_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/medial_play"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+
+    <ListView
+        android:id="@+id/lst_comment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_above="@+id/lay_send_comment"
+        android:layout_below="@+id/vew_spi_2"
+        android:layout_weight="2"
+        android:divider="@color/transparent_background"
+        android:listSelector="@color/transparent_background"
+        android:scrollbars="none"/>
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_color_b3">
+
+        <LinearLayout
+            android:id="@+id/lay_send_comment"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/input_wifi_edittext_height"
+            android:layout_margin="@dimen/input_wifi_edittext_margin_right"
+            android:background="@drawable/input_diable_shape"
+            android:minHeight="@dimen/input_wifi_edittext_height"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/edt_comment"
+                style="@style/contentTitleText"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="4"
+                android:background="@color/transparent"
+                android:hint="@string/shop_page_comment_note"
+                android:imeOptions="actionSend"
+                android:paddingLeft="@dimen/input_wifi_edittext_margin_right"
+                android:textColor="@color/text_color_t2"
+                android:textColorHint="@color/text_color_t4"/>
+
+            <TextView
+                android:id="@+id/txt_send_comment"
+                style="@style/contentTitleText"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:layout_margin="1dp"
+                android:layout_toRightOf="@id/edt_comment"
+                android:layout_weight="1"
+                android:background="@drawable/send_button_disable"
+                android:gravity="center"
+                android:text="@string/shop_page_comment_send"
+                android:textColor="@color/text_color_t4"
+                android:visibility="visible"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

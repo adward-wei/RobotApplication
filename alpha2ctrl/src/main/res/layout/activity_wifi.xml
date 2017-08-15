@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/rounder_white_bg"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/scan_wifi_title"
+        style="@style/SecondTitleText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:clickable="true"
+        android:gravity="center"
+        android:padding="@dimen/scan_alpha_title_padding"
+        android:text="@string/wifi_scan"
+        android:textColor="@color/black2" />
+
+    <!-- @dimen/setting_activity_wifilistviewheight -->
+
+    <ListView
+        android:id="@+id/wifilistView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/scan_wifi_title"
+        android:layout_marginBottom="@dimen/list_margin_bottom"
+        android:cacheColorHint="@null"
+        android:fadingEdge="none"
+        android:overScrollMode="never" >
+    </ListView>
+
+    <Button
+        android:id="@+id/btn_cancel"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/btn_cancel_height"
+        android:layout_alignParentBottom="true"
+       android:layout_margin="@dimen/btn_cancel_margin"
+        android:background="@drawable/btn_cancel"
+        android:onClick="onBack"
+        style="@style/contentTitleText"
+        android:text="@string/common_btn_cancel" />
+
+</RelativeLayout>

@@ -1,0 +1,60 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_funciton_bg"
+    android:focusable="true"
+    android:focusableInTouchMode="true" >
+
+    <include
+        android:id="@+id/top_title"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/top_title_heigh"
+        layout="@layout/authorize_top_title" />
+
+    <RelativeLayout
+        android:id="@+id/lay_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/top_title" >
+
+
+        <com.ubtechinc.alpha2ctrlapp.widget.RefreshListView
+            android:id="@+id/lst_actions"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/search_lay"
+            android:divider="@color/transparent_background"
+            android:listSelector="@color/transparent_background"
+            android:scrollbars="none" />
+
+        <RelativeLayout
+            android:id="@+id/no_search_tip"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/search_lay"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/no_search_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:src="@drawable/no_search" />
+
+            <TextView
+                style="@style/thirdTitleText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/no_search_icon"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:text="@string/shop_page_no_search"
+                android:textColor="@color/text_black" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color_b6"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    >
+
+    <include
+        android:id="@+id/top_title"
+        layout="@layout/authorize_top_title"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/top_title_heigh"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:id="@+id/connection_layer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/top_title"
+                android:layout_marginTop="54dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                >
+
+                <ImageView
+                    android:id="@+id/connection_state_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/warning"
+                    />
+
+                <TextView
+                    android:id="@+id/connection_device_tv"
+                    style="@style/t2_text_style"
+                    android:layout_marginTop="20dp"
+                    android:gravity="left"
+                    android:text=""
+                    android:textColor="@color/text_color_t5"
+                    android:textSize="@dimen/text_click_size"
+                    />
+
+                <TextView
+                    android:id="@+id/connection_state_tv"
+                    style="@style/t2_text_style"
+                    android:layout_marginTop="20dp"
+                    android:gravity="left"
+                    android:text="@string/bt_none"
+                    android:textSize="@dimen/text_click_size"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/control_layer"
+                style="@style/contentTitleText"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/btn_cancel_height"
+                android:layout_marginLeft="@dimen/btn_cancel_margin"
+                android:layout_marginRight="@dimen/btn_cancel_margin"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/btn_button_able"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:text="@string/authorize_accept"
+                android:textColor="@color/text_color_t3"
+                >
+
+                <ImageView
+                    android:id="@+id/control_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/search_signal"
+                    />
+
+                <TextView
+                    android:id="@+id/control_tv"
+                    style="@style/t2_text_style"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/bt_button_searching"
+                    android:textColor="@color/bg_color_b3"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/search_result_layer"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+
+                android:orientation="vertical"
+                android:visibility="gone"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+                    <TextView
+
+                        style="@style/t2_text_style"
+                        android:layout_height="36dp"
+                        android:layout_alignParentLeft="true"
+
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="@dimen/input_wifi_edittext_margin_right"
+                        android:text="@string/bt_results"
+                        android:textSize="@dimen/text_third_size"
+                        />
+
+                    <ProgressBar
+                        android:id="@+id/search_pb"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:visibility="gone"
+                        />
+                </RelativeLayout>
+
+                <com.ubtechinc.alpha2ctrlapp.widget.NoScrollListView
+                    android:id="@+id/search_result_lv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/bg_color_b3"
+                    android:divider="@drawable/divide_line_left_margin"
+                    android:paddingLeft="@dimen/input_wifi_edittext_margin_right"
+                    android:paddingRight="@dimen/input_wifi_edittext_margin_right"
+                    android:scrollbars="none"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/history_layer"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:background="@color/bg_color_b3"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/input_wifi_edittext_margin_right"
+                android:paddingRight="@dimen/input_wifi_edittext_margin_right"
+                android:visibility="gone"
+
+                >
+
+                <TextView
+
+                    style="@style/t2_text_style"
+                    android:layout_height="36dp"
+                    android:layout_alignParentLeft="true"
+
+                    android:layout_centerVertical="true"
+                    android:text="@string/bt_history"
+                    android:textSize="@dimen/text_third_size"
+
+                    />
+
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/bg_color_b5"/>
+
+                <com.ubtechinc.alpha2ctrlapp.widget.NoScrollListView
+                    android:id="@+id/connection_records_lv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:divider="@drawable/divide_line_left_margin"
+                    android:scrollbars="none"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

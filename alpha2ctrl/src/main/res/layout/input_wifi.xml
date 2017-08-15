@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg_color_b6"
+    android:orientation="vertical" >
+
+   <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="@dimen/input_wifi_edittext_margin_top"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_weight="2"
+        android:orientation="vertical" >
+        <ImageView
+            style="@style/thirdTitleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/input_wifi_edittext_margin_top"
+            android:src="@drawable/input_wifi_icon" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/input_wifi_edittext_height"
+            android:layout_marginTop="@dimen/input_wifi_edittext_margin_top"
+            android:background="@color/transparent_background"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/input_name"
+                style="@style/contentTitleText"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/white_round_edit_bg"
+                android:hint="@string/wifi_input_name"
+
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black_hint"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:maxLines="1"
+                />
+
+            <ImageView
+                android:id="@+id/btn_scanwifi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/btn_scan_wifi" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/input_wifi_edittext_height"
+            android:layout_marginTop="@dimen/input_wifi_edittext_margin_top"
+            android:background="@color/transparent_background"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/input_psw"
+                style="@style/contentTitleText"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/white_round_edit_bg"
+                android:hint="@string/wifi_input_psw"
+                android:imeOptions="actionDone"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+
+                android:maxLines="1"
+
+                android:inputType="textPassword"
+                android:text="ubtech%888@#"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black_hint"
+
+                />
+
+            <CheckBox
+                android:id="@+id/btn_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:button="@drawable/btn_check_selector" />
+        </RelativeLayout>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/error_wifi_tips"
+        style="@style/contentTitleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/input_wifi_edittext_margin_right"
+        android:layout_marginBottom="@dimen/input_wifi_edittext_margin_right"
+        android:gravity="center"
+        android:text="@string/wifi_error"
+        android:visibility="invisible"
+        android:textColor="@color/text_color_t6" />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="5" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/btn_open_or_send"
+                style="@style/SecondTitleText"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/input_wifi_edittext_height"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/input_wifi_edittext_margin_top"
+                android:layout_weight="3"
+                android:background="@drawable/btn_button_able"
+                android:gravity="center"
+                android:text="@string/common_btn_next"
+                android:textColor="@color/white" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,20 @@
+syntax = "proto3";
+option java_package = "com.ubtechinc.alpha";
+message CmRobotStatusInfoRequest {
+
+    string speechEngine = 1;
+    string speechASREngine = 2;
+    string speechEngineState = 3;
+    string speechEngineDetail = 4;
+    string appName = 5;
+}
+
+message CmRobotStatusInfoResponse {
+
+    string speechEngine = 1;
+    string speechASREngine = 2;
+    string speechEngineState = 3;
+    string speechEngineDetail = 4;
+    string appName = 5;
+
+}

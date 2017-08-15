@@ -1,0 +1,14 @@
+syntax = "proto3";
+option java_package = "com.ubtechinc.alpha";
+import "CmAppEntrityInfo.proto";
+
+message CmAppEntrityListRequest {
+
+    repeated CmAppEntrityInfo appList = 1;
+
+}
+
+message CmAppEntrityListResponse {
+    repeated CmAppEntrityInfo appList = 1;
+
+}

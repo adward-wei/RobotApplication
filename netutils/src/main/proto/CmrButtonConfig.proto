@@ -1,0 +1,28 @@
+syntax = "proto3";
+option java_package = "com.ubtechinc.alpha";
+import "CmrButtonConfigItem.proto";
+import "CmAppEntrityInfo.proto";
+
+message CmrButtonConfigRequest {
+
+    repeated CmrButtonConfigItemRequest models = 1;
+    repeated CmrButtonConfigItemRequest sortedModels = 2;
+    string details = 3;
+    string version = 4;
+    string title = 5;
+    bool isSetting = 6;
+    CmAppEntrityInfo appEntrity = 7;
+
+}
+
+message CmrButtonConfigResponse {
+
+    repeated CmrButtonConfigItemResponse models = 1;
+    repeated CmrButtonConfigItemResponse sortedModels = 2;
+    string details = 3;
+    string version = 4;
+    string title = 5;
+    bool isSetting = 6;
+    CmAppEntrityInfo appEntrity = 7;
+
+}

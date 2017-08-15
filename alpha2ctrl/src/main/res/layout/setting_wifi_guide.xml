@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/wifi_guide_title"
+        style="@style/SecondTitleText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/wifi_guide_title_margin_top"
+        android:gravity="center"
+        android:text="@string/wifi_guide_open_persion_wifi_tips1"
+        android:textColor="@color/black" />
+
+    <TextView
+        style="@style/contentTitleText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/wifi_guide_content_margin_top"
+        android:gravity="center"
+        android:text="@string/wifi_guide_open_persion_wifi_tips3"
+        android:textColor="@color/black" />
+
+    <ImageView
+        android:layout_width="@dimen/wifi_guide_image_width"
+        android:layout_height="@dimen/wifi_guide_image1_height"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/wifi_guide_image1_margin_top"
+        android:src="@drawable/icon_setting_wifi1" />
+
+    <ImageView
+        android:layout_width="@dimen/wifi_guide_image_width"
+        android:layout_height="@dimen/wifi_guide_image2_height"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/wifi_guide_image2_margin_top"
+        android:src="@drawable/icon_setting_wifi2" />
+
+    <TextView
+        style="@style/contentTitleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/wifi_guide_text_margin"
+        android:layout_marginRight="@dimen/wifi_guide_text_margin"
+        android:layout_marginTop="@dimen/wifi_guide_text_margin"
+        android:gravity="left"
+        android:lineSpacingExtra="5dp"
+        android:text="@string/wifi_guide_open_persion_wifi_tips4"
+        android:textColor="@color/black" />
+
+    <ImageView
+        android:layout_width="@dimen/wifi_guide_image_width"
+        android:layout_height="@dimen/wifi_guide_image3_height"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/wifi_guide_image3_margin_top"
+        android:src="@drawable/icon_setting_wifi3" />
+
+   <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="@dimen/wifi_guide_button_margin_top"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_go_setting"
+            style="@style/thirdTitleText"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/btn_cancel_height"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:background="@drawable/btn_bottom_icon"
+            android:text="@string/wifi_guide_go_setting"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btn_confirm"
+            style="@style/thirdTitleText"
+            android:layout_width="wrap_content"
+             android:layout_height="@dimen/btn_cancel_height"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="@dimen/qrcode_btn_success_margin_Left"
+            android:layout_weight="1"
+            android:background="@drawable/btn_bottom_icon"
+            android:text="@string/common_btn_confirm"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</LinearLayout>

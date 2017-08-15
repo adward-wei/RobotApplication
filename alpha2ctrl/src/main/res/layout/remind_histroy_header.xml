@@ -1,0 +1,51 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android_custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/top_title_heigh"
+        android:background="@color/text_color_t3">
+
+        <LinearLayout
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/input_wifi_edittext_margin_right"
+            android:clickable="true"
+            android:minWidth="100dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/btn_back" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/deleteLay"
+            style="@style/top_right_button_style"
+            android:layout_marginLeft="@dimen/input_wifi_edittext_margin_right"
+            android:clickable="true"
+            android:src="@drawable/icon_delete_mind"
+            android:text="@string/alarm_delete" />
+
+        <TextView
+            android:id="@+id/authorize_title"
+            style="@style/top_title_text_style"
+            android:layout_width="fill_parent"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_toLeftOf="@id/deleteLay"
+            android:layout_toRightOf="@id/btn_back"
+            android:text="@string/alarm_tip" />
+    </RelativeLayout>
+
+</LinearLayout>

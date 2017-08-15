@@ -1,0 +1,182 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.protobuf'
+protobuf {
+    protoc {
+        // Download from repositories
+        artifact = rootProject.ext.plugin.protocArtifact
+    }
+    plugins {
+        javalite {
+            // The codegen for lite comes as a separate artifact
+            artifact = rootProject.ext.plugin.javaliteArtifact
+        }
+    }
+    generateProtoTasks {
+        all().each { task ->
+            task.plugins {
+                javalite {}
+            }
+        }
+    }
+}
+
+//获取产品的名字
+def getProductName() {
+    return "alpha2ctrl_v" + rootProject.ext.alphactrl.versionName + "${getJenkinsBuild()}"
+
+}
+
+//获取当前系统的时间
+def releaseTime() {
+    return new Date().format("yyyyMMddHHmmss")
+}
+
+boolean isInJeknins() {
+    Map<String, String> map =  System.getenv()
+    if(map == null) {
+        return false
+    }
+//    printf('env=%s\n',map.toMapString())
+    String str
+    Iterator it = map.iterator();
+    while(it.hasNext()) {
+        str = it.next();
+        if(str.contains("jenkins")){
+            return true
+        }
+    }
+    return false;
+}
+//获取jenkins build number
+def getJenkinsBuild() {
+    boolean  flag = isInJeknins();
+    if(flag){
+        ext.env = System.getenv()
+        ext.buildNumber = env.get("BUILD_NUMBER");
+        return "#" + "$buildNumber"
+    }else{
+        return ""
+    }
+}
+
+android {
+    compileSdkVersion rootProject.ext.alphactrl.compileSdkVersion
+    buildToolsVersion rootProject.ext.alphactrl.buildToolsVersion
+
+    defaultConfig {
+        applicationId "com.ubtechinc.alpha2ctrlapp"
+        minSdkVersion rootProject.ext.alphactrl.minSdkVersion
+        targetSdkVersion rootProject.ext.alphactrl.targetSdkVersion
+        versionCode rootProject.ext.alphactrl.versionCode
+        versionName getProductName()
+        //targetSdkVersion不要超过 23 （android 6.0）权限改成了动态申请，在androidManifest.xml中设置无效
+        multiDexEnabled true
+    }
+
+    signingConfigs {
+        release {
+            keyAlias 'alpha2'
+            keyPassword 'ubtrobot*alpha2'
+            storeFile file('./src/main/key/alpha2')
+            storePassword 'ubtrobot*alpha2'
+        }
+    }
+
+    applicationVariants.all { variant ->
+        variant.outputs.each { output ->
+            def oldFile = output.outputFile
+            if (variant.buildType.name.equals('release')) {
+                def releaseApkName = getProductName() + "_${releaseTime()}_"  + 'release.apk'
+                output.outputFile = new File(oldFile.parent, releaseApkName)
+            }
+        }
+    }
+
+    buildTypes {
+        release {
+            signingConfig signingConfigs.release
+            //混淆
+            minifyEnabled false
+            //加载默认混淆配置文件
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+        //debug版本用release版本的签名，避免单独添加key
+        debug {
+            signingConfig signingConfigs.release
+            minifyEnabled false
+        }
+    }
+
+    lintOptions {
+        abortOnError false;
+        checkReleaseBuilds = false;
+    }
+
+    dexOptions {
+        javaMaxHeapSize "4g"
+        preDexLibraries = false
+
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ["libs"]
+        }
+    }
+    repositories {
+        flatDir {
+            dirs 'libs'
+        }
+    }
+
+}
+android { useLibrary 'org.apache.http.legacy' }
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile project(path:':utilcode')
+
+    compile project(':netutils')
+
+    compile (name:'blelibrary',ext:'aar')
+    compile (name:'choseCountryNum',ext:'aar')
+    compile (name:'facebook',ext:'aar')
+    compile (name:'joysticklibrary',ext:'aar')
+    compile (name:'slidingmenu_library',ext:'aar')
+    testCompile 'junit:junit:4.12'
+
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+
+    compile 'com.spotify.sdk:spotify-auth:1.0.0-beta12@aar'
+    compile 'com.android.support:recyclerview-v7:23.4.0'
+    compile 'com.android.support:cardview-v7:23.4.0'
+
+    compile rootProject.ext.deps.eventbus
+
+
+    compile rootProject.ext.deps.appCompatV7
+    compile rootProject.ext.deps.multidex
+
+    compile rootProject.ext.deps.gifdrawable
+
+    compile rootProject.ext.deps.design
+
+    compile rootProject.ext.deps.guava
+    compile rootProject.ext.deps.supportV4
+    compile rootProject.ext.deps.umeng
+    //图片加载
+    compile rootProject.ext.deps.glide
+    compile rootProject.ext.deps.glidehttp
+    compile rootProject.ext.deps.protobufLite
+    compile rootProject.ext.deps.bugly
+    compile 'com.google.zxing:core:3.2.1'
+    compile 'cn.bingoogolapple:bga-qrcodecore:1.1.7@aar'
+    compile 'cn.bingoogolapple:bga-zxing:1.1.7@aar'
+    compile 'com.orhanobut:logger:2.1.1'
+    //内存泄漏分析
+//    debugCompile rootProject.ext.deps.leakcanary
+//    releaseCompile rootProject.ext.deps.leakcanary_no_op
+//    testCompile rootProject.ext.deps.leakcanary_no_op
+
+}

@@ -1,0 +1,17 @@
+syntax = "proto3";
+option java_package = "com.ubtechinc.alpha";
+import "DeskClock.proto";
+message CmManageDeskClockRequest {
+
+    DeskClock deskClock = 1;
+
+}
+
+
+
+message CmManageDeskClockResponse {
+
+    bool isSuccess = 1;
+    int32 resultCode = 2;
+
+}

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_upgrade_main2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.ubt.alpha2.upgrade.UpgradeMainActivity2">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linear2"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/upgrade_self"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="升级模块自升级"
+            android:layout_marginTop="20dp"
+            />
+
+        <Button
+            android:id="@+id/upgrade_mainservice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="升级主服务"
+            android:layout_marginTop="20dp"
+            />
+
+        <Button
+            android:id="@+id/upgrade_chest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="升级胸版"
+            android:layout_marginTop="20dp"
+            />
+
+        <Button
+            android:id="@+id/upgrade_battery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="升级电池"
+            android:layout_marginTop="20dp"
+            />
+
+        <Button
+            android:id="@+id/upgrade_androidos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="升级android系统"
+            android:layout_marginTop="20dp"
+            />
+
+        <Button
+            android:id="@+id/upgrade_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="全部升级"
+            android:layout_marginTop="20dp"
+            />
+
+        <Button
+            android:id="@+id/action"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="动作升级"
+            android:layout_marginTop="20dp"/>
+
+        <Button
+            android:id="@+id/action_report"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="动作升级异常上报"
+            android:layout_marginTop="20dp"/>
+
+        <Button
+            android:id="@+id/test"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="tts/充电状态测试"
+            android:layout_marginTop="20dp"/>
+    </LinearLayout>
+
+</RelativeLayout>

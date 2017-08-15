@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/main_bg_black"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/top_title"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/top_title_heigh"
+        android:background="@color/text_color_t3"
+        android:gravity="bottom"
+
+        >
+
+        <LinearLayout
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:minWidth="150dp"
+            android:onClick="onBack"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/btn_back"
+                android:textColor="@color/white" />
+
+            <TextView
+                style="@style/SecondTitleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/btn_back_title_margin"
+                android:gravity="center_vertical"
+                android:text="@string/common_btn_back"
+                android:textColor="@color/white"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/top_title_text_style" />
+
+        <Button
+            android:id="@+id/btn_ignore"
+            style="@style/top_right_button_style"
+            android:gravity="center_vertical|right"
+            android:text="@string/common_btn_skip"
+            android:background="@color/transparent_background"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <ViewFlipper
+        android:id="@+id/layout_container"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+</LinearLayout>

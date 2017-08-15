@@ -1,0 +1,23 @@
+syntax = "proto3";
+option java_package = "com.ubtechinc.alpha";
+import "CmrAppSetting.proto";
+
+message CmrAppConfigDataRequest {
+
+    int32 cmdID = 1;
+    bytes datas = 2;
+    string packageName = 3;
+    string tags = 4;
+    CmrAppSettingRequest appSetting = 5;
+
+}
+
+message CmrAppConfigDataResponse {
+
+    int32 cmdID = 1;
+    bytes datas = 2;
+    string packageName = 3;
+    string tags = 4;
+    CmrAppSettingResponse appSetting = 5;
+
+}

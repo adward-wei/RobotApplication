@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/dialog_bg"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@color/transparent_background"
+        android:orientation="vertical"
+        android:padding="@dimen/input_wifi_edittext_margin_right" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/rounder_white_bg"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/deletetips"
+                style="@style/contentTitleText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|left"
+                android:padding="@dimen/input_wifi_edittext_margin_right"
+                android:text="环境选择"
+                android:textColor="@color/text_color_t2" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:src="#d8d8d8" />
+
+            <RelativeLayout
+                android:id="@+id/rl_14"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/input_wifi_edittext_margin_right">
+                <ImageButton
+                    android:id="@+id/btn14"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="40dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/gender_unselected" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_toRightOf="@+id/btn14"
+                    android:text="14服务器"
+                    android:textColor="@color/sex_black"
+                    android:textSize="14dp" >
+                </TextView>
+            </RelativeLayout>
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:src="#d8d8d8" />
+            <RelativeLayout
+                android:id="@+id/rl_12"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/input_wifi_edittext_margin_right">
+                <ImageButton
+                    android:id="@+id/btn12"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/gender_unselected" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_toRightOf="@+id/btn12"
+                    android:text="12服务器"
+                    android:textColor="@color/sex_black"
+                    android:textSize="14dp" />
+                </RelativeLayout>
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:src="#d8d8d8" />
+            <RelativeLayout
+                android:id="@+id/rl_offical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/input_wifi_edittext_margin_right">
+                <ImageButton
+                    android:id="@+id/btn_offical"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/gender_selected" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_toRightOf="@+id/btn_offical"
+                    android:text="正式服务器"
+                    android:textColor="@color/sex_black"
+                    android:textSize="14dp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

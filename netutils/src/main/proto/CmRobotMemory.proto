@@ -1,0 +1,23 @@
+syntax = "proto3";
+option java_package = "com.ubtechinc.alpha";
+import "CmAppUninstallRobotInfo.proto";
+
+message CmRobotMemoryRequest {
+
+    repeated CmAppUninstallRobotInfoRequest appList = 1;
+    int64 availableInternalSize = 2;
+    int64 totalInternalSize = 3;
+    int64 availableExternalSize = 4;
+    int64 totalExternalSize = 5;
+
+}
+
+message CmRobotMemoryResponse {
+
+    repeated CmAppUninstallRobotInfoResponse appList = 1;
+    int64 availableInternalSize = 2;
+    int64 totalInternalSize = 3;
+    int64 availableExternalSize = 4;
+    int64 totalExternalSize = 5;
+
+}

@@ -1,0 +1,213 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   xmlns:android_custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/main_funciton_bg"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/top_title"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/top_title_heigh"
+        layout="@layout/authorize_top_title" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="5dp"
+        android:layout_weight="5"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/system_update_lay"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_setting"
+            android:clickable="true"
+            android:paddingLeft="10dp"
+            android:visibility="gone" >
+
+            <TextView
+                style="@style/SecondTitleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="@string/device_system_update"
+                android:textColor="@color/white" />
+
+            <ImageView
+                style="@style/SecondTitleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/arra"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/status_lay"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:background="@color/color_setting"
+            android:paddingLeft="10dp"
+            android:visibility="gone" >
+
+            <TextView
+                style="@style/SecondTitleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="@string/device_status"
+                android:textColor="@color/white" />
+
+            <ImageView
+                style="@style/SecondTitleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/arra"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layer_lay"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:background="@color/color_setting"
+            android:paddingLeft="10dp"
+            android:visibility="gone" >
+
+            <TextView
+                style="@style/SecondTitleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="@string/device_layer"
+                android:textColor="@color/white" />
+
+            <ImageView
+                style="@style/SecondTitleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/arra"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/devoloper_lay"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/input_wifi_edittext_height"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/menu_bg_selector"
+            android:paddingLeft="@dimen/input_wifi_edittext_margin_right" >
+
+            <TextView
+                style="@style/SecondTitleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="@string/device_developer"
+                android:textColor="@color/edit_hint" />
+
+            <ImageView
+                style="@style/SecondTitleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/arra"
+                android:textColor="@color/white" />
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="@dimen/input_wifi_edittext_margin_right"
+                android:background="@color/bg_color_b5" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/smarthome_lay"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/input_wifi_edittext_height"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/menu_bg_selector"
+            android:paddingLeft="@dimen/input_wifi_edittext_margin_right"
+            android:visibility="gone">
+
+            <TextView
+                style="@style/SecondTitleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="@string/app_setting_smart_home"
+
+                android:textColor="@color/edit_hint" />
+
+            <ImageView
+                style="@style/SecondTitleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/arra"
+                android:textColor="@color/white" />
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="@dimen/input_wifi_edittext_margin_right"
+                android:background="@color/bg_color_b5" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/reset_lay"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/input_wifi_edittext_height"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/menu_bg_selector"
+            android:paddingLeft="@dimen/input_wifi_edittext_margin_right"
+            android:visibility="gone">
+
+            <TextView
+                style="@style/SecondTitleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="出厂重置"
+                android:textColor="@color/edit_hint" />
+
+            <ImageView
+                style="@style/SecondTitleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/arra"
+                android:textColor="@color/white" />
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="@dimen/input_wifi_edittext_margin_right"
+                android:background="@color/bg_color_b5" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

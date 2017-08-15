@@ -1,0 +1,13 @@
+syntax = "proto3";
+option java_package = "com.ubtechinc.alpha";
+message UploadFileUrlRequest {
+
+    string fileUrl = 1;
+
+}
+
+message UploadFileUrlResponse {
+
+    string fileUrl = 1;
+
+}

@@ -1,0 +1,1 @@
+package com.ubt.alpha2.upgrade.impl;/** * @author: slive * @description:  * @create: 2017/6/29 * @email: slive.shu@ubtrobot.com * @modified: slive */public interface IUnzipListener {    /**     * 请求成功回调方法     * @param result     *            结果     */    void onSuccess(String result);    /**     * 请求失败回调方法     *     */    void onFailure(String reason);}

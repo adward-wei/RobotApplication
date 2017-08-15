@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/search_item_margin"
+    android:background="@color/transparent_background"
+    android:minHeight="@dimen/search_item_height"
+    android:orientation="horizontal"
+    android:padding="@dimen/search_item_margin" >
+
+    <com.ubtechinc.alpha2ctrlapp.widget.RoundImageView
+        android:id="@+id/user_header"
+        android:layout_width="@dimen/search_item_image_height"
+        android:layout_height="@dimen/search_item_image_height"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/search_item_margin" />
+
+    <ImageView
+        android:id="@+id/image_using"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/user_header"
+        android:layout_alignRight="@+id/user_header"
+        android:src="@drawable/device_using_icon" />
+
+    <TextView
+        android:id="@+id/user_name"
+        style="@style/smallTitleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user_header"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/search_item_name_margin"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:singleLine="true"
+        android:textColor="@color/text_gray" />
+
+    <TextView
+        android:id="@+id/user_status"
+        style="@style/smallTitleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/search_item_name_margin"
+        android:gravity="center"
+        android:singleLine="true"
+        android:textColor="@color/text_gray" />
+
+</RelativeLayout>

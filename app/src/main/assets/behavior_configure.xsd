@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="Alpha:Behavior" xmlns:behavior="Alpha:Behavior" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <xs:import namespace="http://www.w3.org/2001/XMLSchema-instance" schemaLocation="xsi.xsd"/>
+  <xs:element name="set">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="behavior:set"/>
+        <xs:element ref="behavior:action"/>
+        <xs:element ref="behavior:led"/>
+        <xs:element ref="behavior:music"/>
+        <xs:element ref="behavior:tts"/>
+      </xs:choice>
+      <xs:attribute name="delay" default="0">
+        <xs:simpleType>
+          <xs:restriction base="xs:nonNegativeInteger">
+            <xs:minInclusive value="0"></xs:minInclusive>
+            <xs:maxInclusive value="30000"></xs:maxInclusive>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="order" default="1">
+        <xs:simpleType>
+          <xs:restriction base="xs:nonNegativeInteger">
+            <xs:minInclusive value="1"></xs:minInclusive>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="repeat" default="0">
+        <xs:simpleType>
+          <xs:restriction base="xs:nonNegativeInteger">
+            <xs:minInclusive value="0"></xs:minInclusive>
+            <xs:maxInclusive value="10"></xs:maxInclusive>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute ref="xsi:schemaLocation"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="action">
+    <xs:complexType>
+      <xs:attribute name="action" use="required" type="xs:NCName"/>
+      <xs:attribute name="delay" default="0">
+        <xs:simpleType>
+          <xs:restriction base="xs:nonNegativeInteger">
+            <xs:minInclusive value="0"></xs:minInclusive>
+            <xs:maxInclusive value="30000"></xs:maxInclusive>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="order" default="1">
+        <xs:simpleType>
+          <xs:restriction base="xs:nonNegativeInteger">
+            <xs:minInclusive value="1"></xs:minInclusive>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="repeat" default="0">
+        <xs:simpleType>
+          <xs:restriction base="xs:nonNegativeInteger">
+            <xs:minInclusive value="0"></xs:minInclusive>
+            <xs:maxInclusive value="10"></xs:maxInclusive>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="led">
+    <xs:complexType>
+      <xs:attribute name="bright" default="9">
+        <xs:simpleType>
+          <xs:restriction base="xs:nonNegativeInteger">
+            <xs:enumeration value="0"></xs:enumeration>
+            <xs:enumeration value="1"></xs:enumeration>
+            <xs:enumeration value="2"></xs:enumeration>
+            <xs:enumeration value="3"></xs:enumeration>
+            <xs:enumeration value="4"></xs:enumeration>
+            <xs:enumeration value="5"></xs:enumeration>
+            <xs:enumeration value="6"></xs:enumeration>
+            <xs:enumeration value="7"></xs:enumeration>
+            <xs:enumeration value="8"></xs:enumeration>
+            <xs:enumeration value="9"></xs:enumeration>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="color" default="white">
+        <xs:simpleType>
+          <xs:restriction base="xs:NCName">
+            <xs:enumeration value="red"></xs:enumeration>
+            <xs:enumeration value="green"></xs:enumeration>
+            <xs:enumeration value="blue"></xs:enumeration>
+            <xs:enumeration value="yellow"></xs:enumeration>
+            <xs:enumeration value="black"></xs:enumeration>
+            <xs:enumeration value="magenta"></xs:enumeration>
+            <xs:enumeration value="cyan"></xs:enumeration>
+            <xs:enumeration value="white"></xs:enumeration>
+            <xs:enumeration value="null"></xs:enumeration>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="secondColor" default="null">
+        <xs:simpleType>
+          <xs:restriction base="xs:NCName">
+            <xs:enumeration value="red"></xs:enumeration>
+            <xs:enumeration value="green"></xs:enumeration>
+            <xs:enumeration value="blue"></xs:enumeration>
+            <xs:enumeration value="yellow"></xs:enumeration>
+            <xs:enumeration value="black"></xs:enumeration>
+            <xs:enumeration value="magenta"></xs:enumeration>
+            <xs:enumeration value="cyan"></xs:enumeration>
+            <xs:enumeration value="white"></xs:enumeration>
+            <xs:enumeration value="null"></xs:enumeration>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="delay" default="0">
+        <xs:simpleType>
+          <xs:restriction base="xs:nonNegativeInteger">
+            <xs:minInclusive value="0"></xs:minInclusive>
+            <xs:maxInclusive value="30000"></xs:maxInclusive>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="order" default="1">
+        <xs:simpleType>
+          <xs:restriction base="xs:nonNegativeInteger">
+            <xs:minInclusive value="1"></xs:minInclusive>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="repeat" default="0">
+        <xs:simpleType>
+          <xs:restriction base="xs:nonNegativeInteger">
+            <xs:minInclusive value="0"></xs:minInclusive>
+            <xs:maxInclusive value="10"></xs:maxInclusive>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="effect" default="flash">
+        <xs:simpleType>
+          <xs:restriction base="xs:NCName">
+            <xs:enumeration value="flash"></xs:enumeration>
+            <xs:enumeration value="marquee"></xs:enumeration>
+            <xs:enumeration value="blink"></xs:enumeration>
+            <xs:enumeration value="breath"></xs:enumeration>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="number" default="ff">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:pattern value="[A-Fa-f0-9]{2}"></xs:pattern>
+            <xs:enumeration value="00"></xs:enumeration>
+            <xs:enumeration value="01"></xs:enumeration>
+            <xs:enumeration value="02"></xs:enumeration>
+            <xs:enumeration value="03"></xs:enumeration>
+            <xs:enumeration value="04"></xs:enumeration>
+            <xs:enumeration value="05"></xs:enumeration>
+            <xs:enumeration value="06"></xs:enumeration>
+            <xs:enumeration value="07"></xs:enumeration>
+            <xs:enumeration value="08"></xs:enumeration>
+            <xs:enumeration value="09"></xs:enumeration>
+            <xs:enumeration value="0a"></xs:enumeration>
+            <xs:enumeration value="0b"></xs:enumeration>
+            <xs:enumeration value="0c"></xs:enumeration>
+            <xs:enumeration value="0d"></xs:enumeration>
+            <xs:enumeration value="0e"></xs:enumeration>
+            <xs:enumeration value="0f"></xs:enumeration>
+            <xs:enumeration value="11"></xs:enumeration>
+            <xs:enumeration value="12"></xs:enumeration>
+            <xs:enumeration value="13"></xs:enumeration>
+            <xs:enumeration value="14"></xs:enumeration>
+            <xs:enumeration value="15"></xs:enumeration>
+            <xs:enumeration value="16"></xs:enumeration>
+            <xs:enumeration value="17"></xs:enumeration>
+            <xs:enumeration value="18"></xs:enumeration>
+            <xs:enumeration value="19"></xs:enumeration>
+            <xs:enumeration value="1a"></xs:enumeration>
+            <xs:enumeration value="1b"></xs:enumeration>
+            <xs:enumeration value="1c"></xs:enumeration>
+            <xs:enumeration value="1d"></xs:enumeration>
+            <xs:enumeration value="1e"></xs:enumeration>
+            <xs:enumeration value="1f"></xs:enumeration>
+            <xs:enumeration value="22"></xs:enumeration>
+            <xs:enumeration value="23"></xs:enumeration>
+            <xs:enumeration value="24"></xs:enumeration>
+            <xs:enumeration value="25"></xs:enumeration>
+            <xs:enumeration value="26"></xs:enumeration>
+            <xs:enumeration value="27"></xs:enumeration>
+            <xs:enumeration value="28"></xs:enumeration>
+            <xs:enumeration value="29"></xs:enumeration>
+            <xs:enumeration value="2a"></xs:enumeration>
+            <xs:enumeration value="2b"></xs:enumeration>
+            <xs:enumeration value="2c"></xs:enumeration>
+            <xs:enumeration value="2d"></xs:enumeration>
+            <xs:enumeration value="2e"></xs:enumeration>
+            <xs:enumeration value="2f"></xs:enumeration>
+            <xs:enumeration value="33"></xs:enumeration>
+            <xs:enumeration value="34"></xs:enumeration>
+            <xs:enumeration value="35"></xs:enumeration>
+            <xs:enumeration value="36"></xs:enumeration>
+            <xs:enumeration value="37"></xs:enumeration>
+            <xs:enumeration value="38"></xs:enumeration>
+            <xs:enumeration value="39"></xs:enumeration>
+            <xs:enumeration value="3a"></xs:enumeration>
+            <xs:enumeration value="3b"></xs:enumeration>
+            <xs:enumeration value="3c"></xs:enumeration>
+            <xs:enumeration value="3d"></xs:enumeration>
+            <xs:enumeration value="3e"></xs:enumeration>
+            <xs:enumeration value="3f"></xs:enumeration>
+            <xs:enumeration value="44"></xs:enumeration>
+            <xs:enumeration value="45"></xs:enumeration>
+            <xs:enumeration value="46"></xs:enumeration>
+            <xs:enumeration value="47"></xs:enumeration>
+            <xs:enumeration value="48"></xs:enumeration>
+            <xs:enumeration value="49"></xs:enumeration>
+            <xs:enumeration value="4a"></xs:enumeration>
+            <xs:enumeration value="4b"></xs:enumeration>
+            <xs:enumeration value="4c"></xs:enumeration>
+            <xs:enumeration value="4d"></xs:enumeration>
+            <xs:enumeration value="4e"></xs:enumeration>
+            <xs:enumeration value="4f"></xs:enumeration>
+            <xs:enumeration value="55"></xs:enumeration>
+            <xs:enumeration value="56"></xs:enumeration>
+            <xs:enumeration value="57"></xs:enumeration>
+            <xs:enumeration value="58"></xs:enumeration>
+            <xs:enumeration value="59"></xs:enumeration>
+            <xs:enumeration value="5a"></xs:enumeration>
+            <xs:enumeration value="5b"></xs:enumeration>
+            <xs:enumeration value="5c"></xs:enumeration>
+            <xs:enumeration value="5d"></xs:enumeration>
+            <xs:enumeration value="5e"></xs:enumeration>
+            <xs:enumeration value="5f"></xs:enumeration>
+            <xs:enumeration value="66"></xs:enumeration>
+            <xs:enumeration value="67"></xs:enumeration>
+            <xs:enumeration value="68"></xs:enumeration>
+            <xs:enumeration value="69"></xs:enumeration>
+            <xs:enumeration value="6a"></xs:enumeration>
+            <xs:enumeration value="6b"></xs:enumeration>
+            <xs:enumeration value="6c"></xs:enumeration>
+            <xs:enumeration value="6d"></xs:enumeration>
+            <xs:enumeration value="6e"></xs:enumeration>
+            <xs:enumeration value="6f"></xs:enumeration>
+            <xs:enumeration value="77"></xs:enumeration>
+            <xs:enumeration value="78"></xs:enumeration>
+            <xs:enumeration value="79"></xs:enumeration>
+            <xs:enumeration value="7a"></xs:enumeration>
+            <xs:enumeration value="7b"></xs:enumeration>
+            <xs:enumeration value="7c"></xs:enumeration>
+            <xs:enumeration value="7d"></xs:enumeration>
+            <xs:enumeration value="7e"></xs:enumeration>
+            <xs:enumeration value="7f"></xs:enumeration>
+            <xs:enumeration value="88"></xs:enumeration>
+            <xs:enumeration value="89"></xs:enumeration>
+            <xs:enumeration value="8a"></xs:enumeration>
+            <xs:enumeration value="8b"></xs:enumeration>
+            <xs:enumeration value="8c"></xs:enumeration>
+            <xs:enumeration value="8d"></xs:enumeration>
+            <xs:enumeration value="8e"></xs:enumeration>
+            <xs:enumeration value="8f"></xs:enumeration>
+            <xs:enumeration value="99"></xs:enumeration>
+            <xs:enumeration value="9a"></xs:enumeration>
+            <xs:enumeration value="9b"></xs:enumeration>
+            <xs:enumeration value="9c"></xs:enumeration>
+            <xs:enumeration value="9d"></xs:enumeration>
+            <xs:enumeration value="9e"></xs:enumeration>
+            <xs:enumeration value="9f"></xs:enumeration>
+            <xs:enumeration value="aa"></xs:enumeration>
+            <xs:enumeration value="ab"></xs:enumeration>
+            <xs:enumeration value="ac"></xs:enumeration>
+            <xs:enumeration value="ad"></xs:enumeration>
+            <xs:enumeration value="ae"></xs:enumeration>
+            <xs:enumeration value="af"></xs:enumeration>
+            <xs:enumeration value="bb"></xs:enumeration>
+            <xs:enumeration value="bc"></xs:enumeration>
+            <xs:enumeration value="bd"></xs:enumeration>
+            <xs:enumeration value="be"></xs:enumeration>
+            <xs:enumeration value="bf"></xs:enumeration>
+            <xs:enumeration value="cc"></xs:enumeration>
+            <xs:enumeration value="cd"></xs:enumeration>
+            <xs:enumeration value="ce"></xs:enumeration>
+            <xs:enumeration value="cf"></xs:enumeration>
+            <xs:enumeration value="dd"></xs:enumeration>
+            <xs:enumeration value="de"></xs:enumeration>
+            <xs:enumeration value="df"></xs:enumeration>
+            <xs:enumeration value="ee"></xs:enumeration>
+            <xs:enumeration value="ef"></xs:enumeration>
+            <xs:enumeration value="ff"></xs:enumeration>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="ontime" default="2000">
+        <xs:simpleType>
+          <xs:restriction base="xs:nonNegativeInteger">
+            <xs:minInclusive value="500"></xs:minInclusive>
+            <xs:maxInclusive value="5000"></xs:maxInclusive>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="position" default="eye">
+        <xs:simpleType>
+          <xs:restriction base="xs:NCName">
+            <xs:enumeration value="head"></xs:enumeration>
+            <xs:enumeration value="eye"></xs:enumeration>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="runtime" default="4000">
+        <xs:simpleType>
+          <xs:restriction base="xs:nonNegativeInteger">
+            <xs:minInclusive value="1000"></xs:minInclusive>
+            <xs:maxInclusive value="30000"></xs:maxInclusive>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="music">
+    <xs:complexType>
+      <xs:attribute name="delay" default="0">
+        <xs:simpleType>
+          <xs:restriction base="xs:nonNegativeInteger">
+            <xs:minInclusive value="0"></xs:minInclusive>
+            <xs:maxInclusive value="30000"></xs:maxInclusive>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="order" default="1">
+        <xs:simpleType>
+          <xs:restriction base="xs:nonNegativeInteger">
+            <xs:minInclusive value="1"></xs:minInclusive>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="repeat" default="0">
+        <xs:simpleType>
+          <xs:restriction base="xs:nonNegativeInteger">
+            <xs:minInclusive value="0"></xs:minInclusive>
+            <xs:maxInclusive value="10"></xs:maxInclusive>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="uri" use="required" type="xs:anyURI"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="tts">
+    <xs:complexType>
+      <xs:attribute name="delay" default="0">
+        <xs:simpleType>
+          <xs:restriction base="xs:nonNegativeInteger">
+            <xs:minInclusive value="0"></xs:minInclusive>
+            <xs:maxInclusive value="30000"></xs:maxInclusive>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="order" default="1">
+        <xs:simpleType>
+          <xs:restriction base="xs:nonNegativeInteger">
+            <xs:minInclusive value="1"></xs:minInclusive>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="repeat" default="0">
+        <xs:simpleType>
+          <xs:restriction base="xs:nonNegativeInteger">
+            <xs:minInclusive value="0"></xs:minInclusive>
+            <xs:maxInclusive value="10"></xs:maxInclusive>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="mood" type="xs:string"/>
+      <xs:attribute name="speed" default="64">
+        <xs:simpleType>
+          <xs:restriction base="xs:nonNegativeInteger">
+            <xs:maxInclusive value="100"></xs:maxInclusive>
+            <xs:minExclusive value="0"></xs:minExclusive>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="text" type="xs:string"/>
+      <xs:attribute name="volume" default="80">
+        <xs:simpleType>
+          <xs:restriction base="xs:nonNegativeInteger">
+            <xs:maxInclusive value="100"></xs:maxInclusive>
+            <xs:minExclusive value="0"></xs:minExclusive>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="voicer" default="nannan">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="nannan"></xs:enumeration>
+            <xs:enumeration value="xiaoyan"></xs:enumeration>
+            <xs:enumeration value="xiaofeng"></xs:enumeration>
+            <xs:enumeration value="catherine"></xs:enumeration>
+            <xs:enumeration value="john"></xs:enumeration>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

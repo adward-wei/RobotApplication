@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dialog"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#90ffffff"
+    tools:context="com.ubtechinc.alpha2ctrlapp.activity.alarm.AlarmChooseDateFragment" >
+
+    <LinearLayout
+        android:id="@+id/dummy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:orientation="horizontal"
+        android:weightSum="5" >
+
+        <com.ubtechinc.alpha2ctrlapp.widget.wheelview.WheelView
+            android:id="@+id/year"
+            style="@style/alarm_wheel" />
+
+        <com.ubtechinc.alpha2ctrlapp.widget.wheelview.WheelView
+            android:id="@+id/month"
+            style="@style/alarm_wheel" />
+
+        <com.ubtechinc.alpha2ctrlapp.widget.wheelview.WheelView
+            android:id="@+id/day"
+            style="@style/alarm_wheel" />
+
+        <com.ubtechinc.alpha2ctrlapp.widget.wheelview.WheelView
+            android:id="@+id/hour"
+            style="@style/alarm_wheel" />
+
+        <com.ubtechinc.alpha2ctrlapp.widget.wheelview.WheelView
+            android:id="@+id/minute"
+            style="@style/alarm_wheel" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/dummy"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="#E4E4E4"
+        android:orientation="horizontal"
+        android:weightSum="2" >
+
+        <TextView
+            android:id="@+id/cancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/common_btn_cancel"
+            android:textColor="@android:color/black" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#30797979" />
+
+        <TextView
+            android:id="@+id/ok"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/alarm_btn_ok"
+            android:textColor="@android:color/black" />
+    </LinearLayout>
+
+</RelativeLayout>

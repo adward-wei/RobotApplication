@@ -1,0 +1,174 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:android_custom="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="@color/setting_fragment_white"
+              android:fitsSystemWindows="true"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/main_page_top_view"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/top_title_heigh"
+        android:background="@color/main_bg_black"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/user_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:padding="5dp"
+                android:src="@drawable/top_menu_open"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                >
+
+                <RelativeLayout
+                    android:id="@+id/rl_my_page"
+                    android:layout_width="85dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/search_item_margin"
+                    android:background="@drawable/main_page_title_left_bg"
+                    android:paddingLeft="@dimen/input_wifi_edittext_margin_right"
+                    android:paddingRight="@dimen/input_wifi_edittext_margin_right">
+
+                    <TextView
+                        android:id="@+id/btn_my_page"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/main_page_my"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_third_size"/>
+
+                    <ImageView
+                        android:id="@+id/btn_my_page_line"
+                        android:layout_width="fill_parent"
+                        android:layout_height="2dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="5dp"
+                        android:background="@color/text_color_t5"
+                        android:visibility="gone"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_shop_page"
+                    android:layout_width="85dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/search_item_margin"
+                    android:background="@drawable/main_page_title_right_gray_bg"
+                    android:paddingLeft="@dimen/input_wifi_edittext_margin_right"
+                    android:paddingRight="@dimen/input_wifi_edittext_margin_right">
+
+                    <ImageView
+                        android:id="@+id/btn_shop_line"
+                        android:layout_width="fill_parent"
+                        android:layout_height="2dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="5dp"
+                        android:background="@color/transparent_background"
+                        android:visibility="gone"/>
+
+                    <TextView
+                        android:id="@+id/btn_shop"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="@string/main_page_shop"
+                        android:textColor="@color/text_color_t5"
+                        android:textSize="@dimen/text_third_size"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/btn_cmd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/btn_msg"
+                android:padding="5dp"
+                android:src="@drawable/icon_yuyin"
+                android:visibility="gone"
+                />
+
+            <ImageView
+                android:id="@+id/btn_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:padding="5dp"
+                android:src="@drawable/message_icon"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ViewFlipper
+        android:id="@+id/layout_container"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <!--<include-->
+    <!--android:id="@+id/bottom_status"-->
+    <!--layout="@layout/bottom_current_status"-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="@dimen/header_image_width"/>-->
+    <com.ubtechinc.alpha2ctrlapp.widget.MyBottomRelativeLayout
+        android:id="@+id/bottom_status"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/main_bottom_bg"
+        >
+
+
+        <ImageView
+            android:id="@+id/iv_startrecord"
+            android:layout_width="50dp"
+            android:layout_height="42dp"
+            android:layout_centerInParent="true"
+            android:background="@color/white"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:src="@drawable/ic_shanghua"
+            />
+
+
+    </com.ubtechinc.alpha2ctrlapp.widget.MyBottomRelativeLayout>
+
+    <TextView
+        android:id="@+id/btn_finish"
+        style="@style/SecondTitleText"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/top_title_heigh"
+        android:background="@color/main_page_active_unselect_bg"
+        android:gravity="center"
+        android:text="@string/common_btn_finish"
+        android:textColor="@color/black"
+        android:visibility="gone"/>
+
+</LinearLayout>

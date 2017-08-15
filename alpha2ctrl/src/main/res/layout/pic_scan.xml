@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/pic_scan"
+    android:orientation="vertical" >
+
+    <ViewSwitcher
+        android:id="@+id/picScanView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="@dimen/top_title_heigh"
+        android:layout_marginTop="@dimen/top_title_heigh" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="@dimen/top_title_heigh"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/xiexian"
+            style="@style/thirdTitleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:text="/"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/current_pic_num"
+            style="@style/thirdTitleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_toLeftOf="@id/xiexian"
+            android:text="2"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/pic_count"
+            style="@style/thirdTitleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/xiexian"
+            android:gravity="left"
+            android:text="5"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+ <RelativeLayout
+       android:id="@+id/btn_back"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal" >
+    <ImageView
+      
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/top_title_heigh"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/btn_back_margin_left"
+        android:src="@drawable/btn_back"
+        android:gravity = "center_vertical|left"
+        android:textColor="@color/white" />
+</RelativeLayout>
+</RelativeLayout>

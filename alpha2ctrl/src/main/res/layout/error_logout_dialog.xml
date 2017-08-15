@@ -1,0 +1,32 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg_color_b3"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/TopTitleText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/input_wifi_edittext_margin_top"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:text="@string/error_message_network_unavailable"
+        android:textColor="@color/black" />
+
+
+            <TextView
+                android:id="@+id/dialog_msg"
+                style="@style/SecondTitleText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_centerInParent="true"
+                android:text="@string/error_logout_tips"
+                android:textColor="@color/black" />
+
+
+
+
+</RelativeLayout>

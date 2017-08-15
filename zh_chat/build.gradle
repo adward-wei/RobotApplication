@@ -1,0 +1,114 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.jakewharton.hugo'
+apply plugin: 'bugly'
+
+//获取产品的名字
+def getProductName() {
+    return "zh_chat_"+rootProject.ext.zh_chat.versionName + "${getJenkinsBuild()}"
+
+}
+
+//获取当前系统的时间
+def releaseTime() {
+    return new Date().format("yyyyMMddHHmmss")
+}
+
+boolean isInJeknins() {
+    Map<String, String> map =  System.getenv()
+    if(map == null) {
+        return false
+    }
+//    printf('env=%s\n',map.toMapString())
+    String str
+    Iterator it = map.iterator();
+    while(it.hasNext()) {
+        str = it.next();
+        if(str.contains("jenkins")){
+            return true
+        }
+    }
+    return false;
+}
+//获取jenkins build number
+def getJenkinsBuild() {
+    boolean  flag = isInJeknins();
+    if(flag){
+        ext.env = System.getenv()
+        ext.buildNumber = env.get("BUILD_NUMBER");
+        return "#" + "$buildNumber"
+    }else{
+        return ""
+    }
+}
+
+android {
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+    buildToolsVersion rootProject.ext.android.buildToolsVersion
+
+    defaultConfig {
+        applicationId "com.ubtech.iflytekmix"
+        multiDexEnabled  true
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        versionCode rootProject.ext.zh_chat.versionCode
+        versionName rootProject.ext.zh_chat.versionName
+        ndk {
+            abiFilters 'armeabi-v7a'
+        }
+    }
+
+    signingConfigs {
+        release {
+//            storeFile file("rk-debug.keystore")
+//            storePassword "ubt83474428"
+//            keyAlias "androiddebugkey"
+//            keyPassword "ubt83474428"
+            keyAlias 'chat'
+            keyPassword 'ubtech_chinese_chat_83474428'
+            storeFile file('chinesechat')
+            storePassword 'ubtech_chinese_chat_83474428'
+        }
+    }
+
+    applicationVariants.all { variant ->
+        variant.outputs.each { output ->
+            def oldFile = output.outputFile
+            if (variant.buildType.name.equals('release')) {
+                def releaseApkName = getProductName() + "_${releaseTime()}_"  + 'release.apk'
+                output.outputFile = new File(oldFile.parent, releaseApkName)
+            }
+        }
+    }
+
+    buildTypes {
+        release {
+            signingConfig signingConfigs.release
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+        ignoreWarnings true
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile project(':utilcode')
+    compile project (':netutils')
+    compile project (':servicesdk')
+    compile project (':nlu')
+    //调试
+    provided rootProject.ext.deps.supportAnnotations
+    compile rootProject.ext.deps.timber
+    compile rootProject.ext.deps.hugo
+
+    //bugly
+    compile 'com.tencent.bugly:crashreport:latest.release'
+//    compile 'com.tencent.bugly:nativecrashreport'
+
+    testCompile rootProject.ext.deps.junit
+}

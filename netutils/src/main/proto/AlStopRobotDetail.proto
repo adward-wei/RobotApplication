@@ -1,0 +1,17 @@
+syntax = "proto3";
+option java_package = "com.ubtechinc.alpha";
+message AlStopRobotDetailRequest {
+
+    string controlAppName = 1;
+    string controlUserName = 2;
+    string controlTime = 3;
+
+}
+
+message AlStopRobotDetailResponse {
+
+    string controlAppName = 1;
+    string controlUserName = 2;
+    string controlTime = 3;
+
+}

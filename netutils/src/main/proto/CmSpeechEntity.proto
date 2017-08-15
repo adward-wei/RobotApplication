@@ -1,0 +1,17 @@
+syntax = "proto3";
+option java_package = "com.ubtechinc.alpha";
+message CmSpeechEntityRequest {
+
+    string content = 1;
+    string actionId = 2;
+    string language = 3;
+    string needTranslate = 4;
+
+}
+
+message CmSpeechEntityResponse {
+
+       bool isSuccess =1;
+       int32 returnCode = 2;
+
+}

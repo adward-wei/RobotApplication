@@ -1,0 +1,11 @@
+syntax = "proto3";
+option java_package = "com.ubtechinc.alpha";
+import "CmPlayActionFile.proto";
+
+message CmrGetActionFileListRequest {
+    repeated CmPlayActionFile actionFileList = 1;
+}
+
+message CmrGetActionFileListResponse {
+    repeated CmPlayActionFile actionFileList = 1;
+}

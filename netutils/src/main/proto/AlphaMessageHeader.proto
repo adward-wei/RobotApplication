@@ -1,0 +1,10 @@
+syntax = "proto3";
+option java_package = "com.ubtechinc.alpha";
+message AlphaMessageHeader {
+
+    int32 commandId = 1;
+    string versionCode = 2;
+    int64 sendSerial = 3;
+    int64 responseSerial = 4;
+
+}

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/txt_note"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="@dimen/scan_qrcode_tips_margin_top"
+        android:gravity="center"
+        android:text="@string/find_psw_get_verification_phone"
+        android:textColor="@color/find_psw_tip_color"
+        android:textSize="16dp" />
+
+    <LinearLayout
+        android:id="@+id/get_code_Lay"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/input_wifi_edittext_height"
+        android:layout_below="@+id/txt_note"
+        android:layout_marginTop="@dimen/scan_qrcode_tips_margin_top"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/edt_phone_verification_code"
+            style="@style/contentTitleText"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="@dimen/input_wifi_edittext_margin_right"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/input_nomal"
+            android:gravity="center_vertical|left"
+            android:hint="@string/ui_verification_input"
+            android:paddingLeft="@dimen/input_wifi_edittext_margin_right"
+            android:textColor="@color/text_color_t2"
+            android:textColorHint="@color/text_color_t4" />
+
+        <TextView
+            android:id="@+id/btn_phone_verification_code"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="20dp"
+            android:layout_weight="2"
+            android:background="@drawable/input_nomal"
+            android:gravity="center"
+            android:text="@string/find_psw_get_verification"
+            android:textColor="@color/black2"
+                  style="@style/SecondTitleText" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btn_start_height"
+        android:layout_below="@+id/get_code_Lay"
+        android:layout_marginLeft="@dimen/btn_start_margin"
+        android:layout_marginRight="@dimen/btn_start_margin"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/button_disable"
+        android:gravity="center"
+        android:text="@string/common_btn_submit"
+        android:textColor="@android:color/white"
+        android:textSize="18dp" />
+
+</RelativeLayout>

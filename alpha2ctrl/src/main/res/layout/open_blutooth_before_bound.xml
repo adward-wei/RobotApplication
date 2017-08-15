@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg_color_b6"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical" >
+    <include
+        android:id="@+id/top_title"
+        layout="@layout/authorize_top_title"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/top_title_heigh" />
+    <RelativeLayout
+        android:id="@+id/tips_lay"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/icon_down_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/input_wifi_top_margin_top"
+            android:background="@drawable/icon_down" />
+
+        <TextView
+            style="@style/thirdTitleText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/icon_down_image"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/voice_tips_margin_top"
+            android:ellipsize="end"
+            android:gravity="center_horizontal"
+            android:lineSpacingExtra="2dp"
+            android:maxLines="6"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="@string/connect_guide_open_alpha_net_listener"
+            android:textColor="@color/bound_tips_color" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="5" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/btn_start"
+                style="@style/SecondTitleText"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/input_wifi_edittext_height"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/input_wifi_edittext_margin_top"
+                android:layout_weight="3"
+                android:background="@drawable/btn_button_able"
+                android:gravity="center"
+                android:text="@string/connect_open_next"
+                android:onClick="getCode"
+                android:textColor="@color/white" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/btn_go_guide"
+            style="@style/contentTitleText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@null"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="5dp"
+            android:onClick="goGuide"
+            android:text="@string/connect_disable_voice"
+            android:textColor="@drawable/blue_txt_selector" />
+    </LinearLayout>
+
+</LinearLayout>

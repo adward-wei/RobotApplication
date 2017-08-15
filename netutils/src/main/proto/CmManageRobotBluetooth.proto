@@ -1,0 +1,19 @@
+syntax = "proto3";
+option java_package = "com.ubtechinc.alpha";
+message CmManageRobotBluetoothRequest {
+
+    int32 orderCmd = 1;
+    bool isSendByClient = 2;
+    int32 code = 3;
+    string content = 4;
+
+}
+
+message CmManageRobotBluetoothResponse {
+
+    int32 orderCmd = 1;
+    bool isSendByClient = 2;
+    int32 code = 3;
+    string content = 4;
+
+}

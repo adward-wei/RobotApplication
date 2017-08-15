@@ -1,0 +1,88 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   xmlns:android_custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/main_bg_black"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/top_title"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/top_title_heigh"
+        android:layout_alignParentTop="true"
+        layout="@layout/authorize_top_title" />
+
+    <TextView
+        android:id="@+id/loadTips"
+        style="@style/contentTitleText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top_title"
+        android:gravity="center"
+        android:text="@string/image_has_new_photo"
+        android:background="@color/red"
+        android:padding="@dimen/input_wifi_edittext_margin_right"
+        android:textColor="@color/white" 
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:id="@+id/btn_delete"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#50D8D8D8"
+        android:orientation="vertical"
+        android:padding="@dimen/input_wifi_edittext_margin_right"
+        android:visibility="gone" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/btn_delete_photo" />
+    </LinearLayout>
+
+    <com.ubtechinc.alpha2ctrlapp.widget.RefreshListView
+        android:id="@+id/sgv"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/btn_delete"
+        android:layout_below="@id/loadTips"
+        android:divider="@color/transparent_background"
+        android:dividerHeight="1dp"
+        android:gravity="bottom"
+        android:listSelector="@color/transparent_background"
+        android:scrollbars="none"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:id="@+id/no_photo"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/top_title"
+        android:layout_marginTop="@dimen/main_top_header"
+        android:background="@color/transparent_background"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/main_top_header"
+            android:background="@drawable/no_photo" />
+
+        <TextView
+            style="@style/thirdTitleText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/top_title"
+            android:layout_marginTop="@dimen/input_wifi_edittext_margin_right"
+            android:gravity="center"
+            android:text="@string/image_no_photo"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,289 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android_custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg_color_b6"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true">
+
+    <include
+        android:id="@+id/top_title"
+        layout="@layout/authorize_top_title"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/top_title_heigh" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="5dp"
+        android:layout_weight="5"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/input_wifi_edittext_margin_right"
+            android:background="@color/bg_color_b3"
+            android:orientation="vertical">
+
+
+
+            <LinearLayout
+                android:id="@+id/auto_connect_lay"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/input_wifi_edittext_margin_right">
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/input_wifi_edittext_height"
+                    android:background="@drawable/menu_bg_selector">
+
+                    <TextView
+                        style="@style/contentTitleText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/settings_connect_title"
+                        android:textColor="@color/text_color_t2" />
+
+                    <CheckBox
+                        android:id="@+id/auto_connect_tg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:button="@drawable/button_tg_sel"
+                        android:checked="true"
+                        android:text=""
+                        android:textOff=""
+                        android:textOn="" />
+
+                </RelativeLayout>
+
+                <TextView
+                    style="@style/smallTitleText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/settings_connect_describe"
+                    android:textColor="@color/text_color_t4" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/input_wifi_edittext_margin_right"
+                android:layout_marginRight="@dimen/input_wifi_edittext_margin_right"
+                android:background="@color/bg_color_b5" />
+
+            <RelativeLayout
+                android:id="@+id/wifi_setting_lay"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/input_wifi_edittext_height"
+                android:background="@drawable/menu_bg_selector"
+                android:paddingLeft="@dimen/input_wifi_edittext_margin_right"
+               android:paddingRight="@dimen/input_wifi_edittext_margin_right"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp">
+
+                <TextView
+                    style="@style/contentTitleText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/app_setting_down_load_only_wifi"
+                    android:textColor="@color/text_color_t2" />
+
+                <CheckBox
+                    android:id="@+id/wifi_setting_tg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:button="@drawable/button_tg_sel"
+                    android:checked="true"
+                    android:text=""
+                    android:textOff=""
+                    android:textOn="" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/input_wifi_edittext_margin_right"
+                android:layout_marginRight="@dimen/input_wifi_edittext_margin_right"
+                android:background="@color/bg_color_b5" />
+
+            <RelativeLayout
+                android:id="@+id/noty_lay"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/menu_bg_selector"
+                android:minHeight="@dimen/input_wifi_edittext_height"
+                android:paddingLeft="@dimen/input_wifi_edittext_margin_right"
+                android:paddingRight="@dimen/input_wifi_edittext_margin_right"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp">
+
+                <TextView
+                    style="@style/contentTitleText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/app_setting_nott"
+                    android:textColor="@color/text_color_t2" />
+
+                <CheckBox
+                    android:id="@+id/noty_tg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:button="@drawable/button_tg_sel"
+                    android:checked="true"
+                    android:text=""
+                    android:textOff=""
+                    android:textOn="" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginBottom="5dp"/>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/input_wifi_edittext_margin_right"
+            android:orientation="vertical"
+            android:background="@color/bg_color_b3">
+
+
+
+            <RelativeLayout
+                android:id="@+id/language_lay"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/menu_bg_selector"
+                android:minHeight="@dimen/input_wifi_edittext_margin_right"
+                android:paddingLeft="@dimen/input_wifi_edittext_margin_right"
+                android:paddingRight="@dimen/input_wifi_edittext_margin_right"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp">
+
+                <TextView
+                    style="@style/contentTitleText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/language_setting"
+                    android:textColor="@color/text_color_t2" />
+
+                <TextView
+                    android:id="@+id/language_tv"
+                    style="@style/contentTitleText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:drawableRight="@drawable/arra"
+                    android:text="@string/language_system"
+                    android:textColor="@color/text_color_t4" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/input_wifi_edittext_margin_right"
+                android:layout_marginRight="@dimen/input_wifi_edittext_margin_right"
+                android:background="@color/bg_color_b5" />
+
+            <LinearLayout
+                android:id="@+id/log_lay"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/menu_bg_selector"
+                android:clickable="true"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="@dimen/input_wifi_edittext_height"
+                    android:paddingLeft="@dimen/input_wifi_edittext_margin_right"
+                    android:paddingRight="@dimen/input_wifi_edittext_margin_right"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp">
+
+                    <TextView
+                        style="@style/contentTitleText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/abnormal_name"
+                        android:textColor="@color/text_color_t2" />
+
+                    <ImageView
+                        style="@style/contentTitleText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/arra" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="@dimen/input_wifi_edittext_margin_right"
+                    android:layout_marginRight="@dimen/input_wifi_edittext_margin_right"
+                    android:background="@color/bg_color_b5" />
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/clear_cache_lay"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/menu_bg_selector"
+                android:clickable="true"
+                android:minHeight="@dimen/input_wifi_edittext_height"
+                android:paddingLeft="@dimen/input_wifi_edittext_margin_right"
+                android:paddingRight="@dimen/input_wifi_edittext_margin_right"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp">
+
+                <TextView
+                    style="@style/contentTitleText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/app_setting_clear_cache"
+                    android:textColor="@color/text_color_t2" />
+
+                <TextView
+                    android:id="@+id/cacheSize"
+                    style="@style/contentTitleText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/text_color_t4" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

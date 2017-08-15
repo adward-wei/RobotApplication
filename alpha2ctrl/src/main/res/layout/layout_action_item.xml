@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent_background"
+    android:descendantFocusability="blocksDescendants" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/input_wifi_edittext_margin_right" >
+
+        <ImageView
+            android:id="@+id/action_logo"
+            android:layout_width="@dimen/app_image_size"
+            android:layout_height="@dimen/app_image_size"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:scaleType="fitXY" >
+        </ImageView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/input_wifi_edittext_margin_right"
+            android:layout_toRightOf="@+id/action_logo"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/txt_action_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                style="@style/thirdTitleText"
+                android:textColor="@color/text_color_t2" />
+
+           <LinearLayout
+                android:id="@+id/lay_center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_action_name"
+                android:layout_centerVertical="true"
+                android:orientation="horizontal"
+                android:padding="5dp" >
+
+                <ImageView
+                    android:id="@+id/img_type_logo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/time_icon" />
+
+                <TextView
+                    android:id="@+id/txt_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/smallTitleText"
+                    android:layout_marginLeft="@dimen/input_wifi_edittext_margin_right"
+                    android:textColor="@color/text_color_t1"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txt_disc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lay_center"
+                android:padding="5dp"
+                style="@style/contentTitleText"
+                android:text="@string/hello_world"
+                android:textColor="@color/text_color_t4" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/img_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/app_dis_download" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/left_menu_line"
+        android:visibility="visible"
+        android:layout_marginRight="@dimen/input_wifi_edittext_margin_right"
+        android:layout_marginLeft="@dimen/input_wifi_edittext_margin_right" />
+
+</RelativeLayout>

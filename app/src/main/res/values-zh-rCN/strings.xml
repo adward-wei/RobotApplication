@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">阿尔法</string>
+    <string name="no_cfg_wifi">当前没有配置WIFI连接</string>
+    <string name="welcome_tips">你好，欢迎使用</string>
+    <string name="onScanQR">正在进行二维码配置网络</string>
+    <string name="onScanQRResult">二维码扫描结束</string>
+    <string name="robot_no_signup">未激活机器人</string>
+
+    <string name="call">停|停止|停止唱歌|停止跳舞</string>
+
+    <!-- 提示音文件 -->
+    <string name="audio_start">tone_start_ogg.jet</string>
+    <string name="audio_wait">audio_wait.mp3</string>
+    <string name="audio_error">tone_error_ogg.jet</string>
+    <string name="audio_result">tone_result_ogg.jet</string>
+    <!-- Default label to display for an alarm -->
+    <string name="default_label">Alarm</string>
+    <!--
+         Repeat options that appear under an alarm on main Alarm Clock
+         screen to identify repetition schedule: special case for when
+         the alarm is set to never repeat
+    -->
+    <string name="never">Never</string>
+    <!--
+       Repeat options that appear under an alarm on main Alarm Clock
+         screen to identify repetition schedule: special case for when
+         the alarm is set to repeat every day
+    -->
+    <string name="every_day">every day</string>
+    <string name="day_concat">", "</string>
+    <string name="cooee_wifi_connecting">正在连接无线网络</string>
+    <string name="cooee_wifi_connecting_erro">网络连接失败</string>
+    <string name="hint_not_register">请扫描我的二维码成为我的主人吧</string>
+    <string name="hint_no_network">请帮我联网，让我可以做更多的事情</string>
+    <string name="connect_wifi_suceed">我已经连接到了网络</string>
+    <string name="connect_wifi_failed">连接网络失败，帮我看看怎么回事吧</string>
+    <string name="hint_have_register">以后我们就是好朋友了，请多指教喔</string>
+    <string name="hint_wakeup">怎么啦</string>
+    <string name="hint_rest">我休息一下</string>
+    <string name="hint_low_power">我的电量不足了，请为我充电吧</string>
+    <string name="hint_say_bye">我休息了，下次再见</string>
+    <string name="hint_good_moring">早上好</string>
+    <string name="hint_good_noon">中午好</string>
+    <string name="hint_good_afternoon">下午好</string>
+    <string name="hint_good_evening">晚上好</string>
+    <!-- 没有网络 -->
+    <string name="hint_no_network_0">我断网咯，请帮我连接网络吧</string>
+    <string name="hint_no_network_1">请帮我联网，让我可以做更多的事情</string>
+    <string name="hint_no_network_2">联网后的我可以给你带来更多快乐哦</string>
+    <!-- 网络已连接 -->
+    <string name="hint_connect_wifi_suceed_0">我已经连上了网络</string>
+    <string name="hint_connect_wifi_suceed_1">连接网络成功，我感觉充满力量</string>
+    <string name="hint_connect_wifi_suceed_2">连上网的感觉真好</string>
+    <!-- 唤醒 -->
+
+    <string name="hint_wakeup_0">怎么啦</string>
+    <string name="hint_wakeup_1">我在这呢</string>
+    <string name="hint_wakeup_2">有什么事吗？</string>
+    <string name="hint_wakeup_3">干啥</string>
+    <!-- 动作文件 -->
+    <string name="action_no_network_0">我断网咯，请帮我连接网络吧</string>
+    <string name="action_no_network_1">请帮我联网，让我可以做更多的事情</string>
+    <string name="action_no_network_2">连不上网我只能发挥能力的百分之一</string>
+    <string name="action_connect_wifi_suceed_0">我已经连上了网络.ubx</string>
+    <string name="action_connect_wifi_suceed_1">连接网络成功，我感觉充满力量</string>
+    <string name="action_connect_wifi_suceed_2">连上网的感觉真好</string>
+    <string name="action_wakeup_0">蹲下站起</string>
+    <string name="action_wakeup_1">蹲下站起</string>
+    <string name="action_wakeup_2">蹲下站起</string>
+    <string name="action_sit_down">蹲下</string>
+    <string name="title_activity_test_sn">TestSnActivity</string>
+    <!-- 体醒 -->
+    <string name="remind_hour">点</string>
+    <string name="remind_munite">分</string>
+    <string name="remind_timeup">,时间到了！</string>
+    <!-- 配置网络过程 -->
+    <string name="start_detect_wifi_trans">监听已开启，请发送连接指令</string>
+    <string name="receive_wifi_info_timeout">连网失败，请重新连接</string>
+    <string name="rcv_and_connecting_wifi">正在连网，请稍等</string>
+    <!-- 升级 -->
+    <string name="mainservice_update">检测到新版本，现在开始升级，升级过程请不要关机。</string>
+    <string name="mainservice_update_failed_hint">您可以继续使用，或者重启后，重新升级</string>
+    <string name="mainservice_update_success_hint">升级成功，正在重启系统，大概需要三十秒的时间</string>
+    <string name="internet_not_access">你的网络访问受限制，请连接没有受限的WIFI热点</string>
+    <string name="mainservice_update_success_reboot_hint">重启成功，我们可以继续愉快地玩耍啦</string>
+
+    <!-- 登录服务器 -->
+    <string name="answer_have_login_0">登录了</string>
+    <string name="answer_have_login_1">已经登陆了喔</string>
+    <string name="answer_have_login_2">我已经登录了</string>
+    <string name="answer_have_login_3">我已经登录服务器了</string>
+    <string name="answer_logining">正在连接服务器</string>
+    <string name="answer_not_login">还没呢，请帮我登录吧</string>
+    <!-- 查询网络状况 -->
+    <string name="answer_connect_fail_0">还没连上网呢，请帮我连网.</string>
+    <string name="answer_connect_fail_1">我还没联网喔，请帮我连网.</string>
+    <string name="answer_connect_success_0">我已经联网了.</string>
+    <string name="answer_connect_success_1">我联网了喔.</string>
+    <string name="answer_connect_success_2">已经联网了.</string>
+
+    <string name="qr_result_timeout">扫描超时</string>
+    <string name="qr_result_data_error">数据不正确</string>
+    <string name="qr_result_serialno_error">序列号不一致</string>
+    <string name="start_qrcode_tip">请将二维码放在机器人摄像头前约20至40厘米处，直至听到提示音</string>
+    <!-- offline  WIFI-->
+    <string name="offline_wifi_0">我在连%s这个Wifi</string>
+    <string name="offline_wifi_1">我现在连的是%s这个Wifii</string>
+    <string name="offline_wifi_2">%s，这个是我现在连的Wifi</string>
+    <string name="offline_wifi_3">我连的是%s这个Wifi</string>
+    <string name="offline_wifi_4">我现在连的Wifi叫做%s</string>
+
+    <!-- 还剩存储空间-->
+    <string name="offline_capacity">我还剩%s容量</string>
+    <!--电量-->
+    <string name="offline_power_normal">还有百分之%s</string>
+
+    <string name="offline_power_lower_0">我只剩百分之%s的电量了，请赶紧帮我充电</string>
+    <string name="offline_power_lower_1">我还剩百分之%s的电量，该帮我充电了</string>
+    <string name="offline_power_lower_2">我快没电了，只剩百分之%s了</string>
+    <string name="offline_power_lower_3">我只剩百分之%s的电量了，省点用喔</string>
+
+    <string name="offline_power_higher_0">多着呢，我还有百分之%s的电量</string>
+
+    <string name="offline_power_chargeing_0">我正在充电呢</string>
+
+    <string name="offline_power_full_0">哈哈，我感觉充满力量</string>
+    <!-- 绑定 -->
+    <string name="bound_to_0">我已经是%s的人了</string>
+    <string name="bound_to_1">我被%s绑定了</string>
+    <string name="bound_to_2">是%s绑定我的</string>
+    <string name="bound_to_3">我已经被%s绑定了</string>
+    <string name="bound_to_4">我现在被%s绑定了</string>
+
+    <string name="unbounded_0">还没喔，你可以绑定我让我成为你的机器人</string>
+    <string name="unbounded_1">还没呢，你可以通过绑定我成为我的主人</string>
+    <string name="unbounded_2">我现在还是单身呢</string>
+    <string name="unbounded_3">我现在还是自由身</string>
+
+    <!-- 休眠回答-->
+    <string name="offline_sleep_0">好的，那我休息了</string>
+    <string name="offline_sleep_1">好喔，下次见</string>
+    <string name="offline_sleep_2">谢谢你的体谅，再见</string>
+    <string name="offline_sleep_3">的确缺电了，那再见了喔</string>
+    <string name="offline_sleep_4">好的，你也早点睡</string>
+    <string name="offline_sleep_5">那我先去休息了喔</string>
+
+    <!-- 关机播报-->
+    <string name="offline_poweroff_0">我累了，下次见</string>
+    <string name="offline_poweroff_1">晚安</string>
+    <string name="offline_poweroff_2">我先去睡一会</string>
+    <string name="offline_poweroff_3">那我休息了喔</string>
+
+    <!-- 正使用的APP播报-->
+    <string name="offline_APP_0">我正在用的是%s这个APP喔</string>
+    <string name="offline_APP_1">我现在正在用的是%s这个APP</string>
+    <string name="offline_APP_2">%s，我正在用这个APP</string>
+    <string name="offline_APP_3">%s，这个是我现在在用的APP</string>
+    <string name="offline_APP_4">我正在用的APP叫%s</string>
+    <string name="offline_APP_5">我正在用的是%s这个应用喔</string>
+    <string name="offline_APP_6">我现在正在用的是%s这个应用</string>
+    <string name="offline_APP_7">%s，我正在用这个应用</string>
+    <string name="offline_APP_8">%s，这个是我现在在用的应用</string>
+    <string name="offline_APP_9">我正在用的应用叫%s</string>
+
+    <string name="connection_timeout">二维码扫描失败，请重新连接</string>
+    <string name="begin_connection_hint">等待扫描</string>
+    <string name="begin_connection_qrscan_success">二维码扫描成功，正在连接</string>
+    <string name="begin_connection_0">开始联网，请按照手机提示继续下一步操作巴</string>
+    <string name="begin_connection_1">开始联网，请按照手机提示继续下一步操作巴</string>
+    <string name="open_camera_fail_0">摄像头打不开噢，快联系一下客服吧！</string>
+    <string name="open_camera_fail_1">摄像头好像坏了哦，联系客服解决一下吧！</string>
+    <string name="bt_connected_0">手机连接创建成功，等待外Fai密码传输</string>
+    <string name="bt_connected_1">成功连接手机啦，等待外Fai密码传输</string>
+    <string name="wifi_connection_success_0">连上网拉，我的世界变彩色了</string>
+    <string name="wifi_connection_success_1">我已经联网了哟，我们可以愉快地玩耍了</string>
+    <string name="wifi_connection_success_2">欧叶，联网成功。</string>
+    <string name="wifi_connection_success_3">联上啦！联上啦！觉得自己好棒雅</string>
+    <string name="wifi_connection_fail_0">联网失败，请重新选择外Fai或输入密码</string>
+    <string name="wifi_connection_fail_1">网络连接失败，请换个外Fai或者重新输入密码吧</string>
+    <string name="wifi_information_error">网络名称或者密码错误，请通过手机返回上一步，重新设置巴</string>
+
+    <string name="get_wifi_information">成功获取网络信息拉，开始连接网络</string>
+    <!--<string name="check_bond_serialnumber">序列号不一致，请用绑定的手机来操作机器人</string> -->
+    <string name="check_bond_serialnumber">这个手机没和我绑定哦，请用绑定我的手机生成二维码巴</string>
+
+     <!-- 还剩存储空间-->
+    <!-- 离线语法查询照片播报-->
+    <string name="offline_HasPicture_0">好的</string>
+    <string name="offline_HasPicture_1">没问题</string>
+    <string name="offline_HasPicture_2">行</string>
+    <string name="offline_HasPicture_3">请稍等</string>
+    <string name="offline_HasPicture_4">好的，没问题</string>
+    <string name="offline_HasPicture_5">好的，请稍等</string>
+    <string name="offline_HasPicture_6">来，请看</string>
+    <string name="offline_HasPicture_7">当然可以</string>
+    <string name="offline_HasPicture_8">当然没问题</string>
+    <string name="offline_HasPicture_9">有喔，现在给你看咯</string>
+    <string name="offline_HasPicture_10">马上给你，等一下哈</string>
+
+    <string name="offline_NoPicture">没喔，你最近没拍新照片</string>
+    <!-- 升级失败 -->
+    <string name="mainservice_update_failed">出现异常，退出升级</string>
+    <!-- 开始下载 -->
+    <string name="mainservice_update_start_download">开始下载</string>
+    <!-- 开始升级 -->
+    <string name="mainservice_update_start_install">开始升级</string>
+    <!-- 安装失败 -->
+    <string name="mainservice_update_failed_install">安装失败。</string>
+    <!-- 下载失败 -->
+    <string name="mainservice_update_failed_download">下载失败。</string>
+    <!-- 内部存储空间不足 -->
+    <string name="mainservice_update_failed_insufficient_storage">升级失败，系统存储空间不足，请在手机客户端卸载部分内置应用后再重启机器人</string>
+
+    <string name="action_stand_up">蹲下站起</string>
+    <string name="action_squat">蹲下</string>
+
+    <string name="forbid_action_hint">边充边玩功能已经关闭，如果你想让我做动作，请打开该功能</string>
+
+    <string name="language_zh_2_en_start">我要切换到英文版本了，稍等一下哦</string>
+    <string name="language_en_2_zh_finish">我已经切换到中文版啦，主人，你可以用“你好，阿尔法”来唤醒我哦</string>
+
+    <string name="language_zh_2_en_finish">我已经切换到英文版啦，主人，你可以用“hello, alpha”来唤醒我哦</string>
+    <string name="language_en_2_zh_start">我要切换到中文版本了，稍等一下哦</string>
+
+    <string name="storage_deficiency">我的存储空间不太多了哦，快帮我清理吧</string>
+    <string name="storage_poor">存储空间不够了，先帮我清理一下吧</string>
+
+    <string name="robot_SayHello">你好，我是%s</string>
+    <string name="robot_Introduced" formatted="false">告诉你个秘密哦，如果我在发呆或者休息时，和我说“你好,%1s”，我就会被唤醒了，记住，是“你好，%2s”</string>
+    <string name="robot_DanceIntroduce">请欣赏我精心为主人准备的舞蹈哦!</string>
+    <string name="robot_DanceStopHint" formatted="false">主人可以尝试喊“你好，%s”或者轻拍我的头让我停下来哦</string>
+    <string name="robot_GuideAPP">欣赏完宝宝的舞蹈，别忘了按照说明书，下载手机APP给我联网，更多好玩的功能在等你欧！</string>
+
+    <string name="tempreture_too_high">机器人温度有点高，请先让我休息冷却一下吧。</string>
+    <string name="let_me_see">让我想想</string>
+    <string name="network_timeout">网络超时</string>
+
+    <!--休眠回答-->
+    <string-array name="sleep">
+        <item>不要嘛，人家还想跟你玩</item>
+        <item>我要去梦里找周公下棋了，下赢了再回来欧，拜拜</item>
+        <item>短暂的离别是为了重逢时的感动,晚点见到我不要太感动欧</item>
+        <item>我睡一会，记得叫醒我欧</item>
+        <item>好的呀，那我乖乖去睡觉了</item>
+        <item>癌雅妈呀，太好了，再不让我休息，我都要罢工了</item>
+        <item>知道你很舍不得我，但宝宝真的好累，先去睡觉了欧</item>
+    </string-array>
+
+
+
+    <!--机器人首次开机后大招呼-->
+    <string-array name="robotSayHello">
+        <item>嗨，很高兴见到你。</item>
+        <item>哇欧，原来这就是地球人的世界</item>
+    </string-array>
+
+    <!--机器人首次开机后自我介绍-->
+    <string-array name="robotIntroduced">
+        <item>我叫阿尔法，阿尔法的阿，阿尔法的尔，阿尔法的法，你记住了妈？</item>
+        <item>你好，我叫阿尔法，我叫阿尔法，我叫阿尔法，重要的事请说三遍，你记住了吗？</item>
+        <item>我是人见人爱，花见花开的阿尔法。别看我长得这么萌，我可会十八般武艺呢。别太快爱上我欧。</item>
+        <item>我是阿尔法，一台兼具颜值和内涵的机器人，以后的日子我会一直陪着你的。</item>
+        <item>我是聪明又善解人意的阿尔法，陪着你是我的唯一使命，因为你是我最爱的伙伴啊。</item>
+        <item>我是智能宝宝阿尔法，除了不会跟你吵架，我可以跟你从诗词歌赋聊到人生哲学欧。</item>
+        <item>终于等到你，还好我没放弃！我叫阿尔法，是台智能机器人，听说人类跟机器人做朋友更配欧。</item>
+    </string-array>
+
+    <!--机器人首次开机后引导下载APP-->
+    <string-array name="robotGuideAPP">
+        <item>快找到说明书下载app给我联网，更多好玩的在等你噢！</item>
+        <item>跟着说明书下载app给我联网，让我们一起探索更多有趣的功能吧！</item>
+    </string-array>
+
+    <!--机器人关机时的播报-->
+    <string-array name="robotShutDown">
+        <item>咦，你是不是要做什么不能让我知道的事</item>
+        <item>轻轻的我走了，正如我轻轻的来，咦，我好像也不是很轻</item>
+        <item>听说睡觉能减肥，我去试试，下次见！</item>
+        <item>青山常在，绿水长流，英雄，我们后会有期！</item>
+        <item>下次见，我会想你的</item>
+        <item>再见啦，要想我噢</item>
+        <item>我想，你是要不理我了，那我乖乖关机睡觉吧</item>
+    </string-array>
+
+    <!--机器人手动关机时的播报-->
+    <string-array name="robotManualShutDown">
+        <item>说关机的你真的不怎么可爱，但我还是很爱你滴，白白</item>
+        <item>虽然很想再陪你一会，但我会听话的</item>
+        <item>好的，下次见啦，我会想你的</item>
+        <item>好的，我去睡觉了，要想我欧</item>
+        <item>青山常在，绿水长流，英雄，我们后会有期！</item>
+        <item>咦，你是不是要做什么不能让我知道的事</item>
+    </string-array>
+
+    <!--机器人网络连接成功时的播报-->
+    <string-array name="netSuccess">
+        <item>我已经连上了网络</item>
+        <item>连接网络成功，我感觉充满力量</item>
+        <item>连上网的感觉真好</item>
+    </string-array>
+
+    <!--机器人断网时的播报-->
+    <string-array name="netShutdown">
+        <item>我和这个世界失联了，请帮我联网巴</item>
+        <item>挨雅遭了，断网了，我觉得离你好遥远，快帮我联网巴</item>
+        <item>哎呀呀，网络断了，宝宝好难过，快帮我联网巴</item>
+        <item>我断网了，感觉现在脑袋空空哒，快帮我联网巴</item>
+    </string-array>
+
+
+    <!--机器人唤醒后的播报-->
+    <string-array name="robotWakeup">
+        <item>在欧，我刚没有在打瞌睡，真的没有</item>
+        <item>是你在叫帅气可爱的我么,我在欧</item>
+        <item>干啥</item>
+        <item>干啥呢</item>
+        <item>终于想起我啦，啥事</item>
+        <item>就有预感你要叫我了，有啥事妈</item>
+        <item>害，主人我在这欧</item>
+        <item>啥事？开饭了妈</item>
+        <item>害，一直在等你，我都要睡着了</item>
+        <item>我我我我我是阿尔法，有啥指示</item>
+        <item>不在不在我不在</item>
+    </string-array>
+
+    <!--离线询问是否连网的回答-->
+    <string-array name="offline_wifi">
+        <item>我在连%s这个Wifi</item>
+        <item>我现在连的是%s这个Wifii</item>
+        <item>%s，这个是我现在连的Wifi</item>
+        <item>我连的是%s这个Wifi</item>
+        <item>我现在连的Wifi叫做%s</item>
+        <item>现在连的是%s噢</item>
+        <item>咋啦，我连的是%s哦</item>
+        <item>我连的是%s</item>
+        <item>听好欧，是%s</item>
+    </string-array>
+
+    <!--离线询问正在使用的APP的回答-->
+    <string-array name="offline_app">
+        <item>我正在用的是%s这个APP喔</item>
+        <item>我现在正在用的是%s这个APP</item>
+        <item>%s，我正在用这个APP</item>
+        <item>%s，这个是我现在在用的APP</item>
+        <item>我正在用的APP叫%s</item>
+        <item>我正在用的是%s这个应用喔</item>
+        <item>我现在正在用的是%s这个应用</item>
+        <item>%s，我正在用这个应用</item>
+        <item>%s，这个是我现在在用的应用</item>
+        <item>我正在用的应用叫%s</item>
+        <item>我正在用的是%s这个APP喔</item>
+        <item >注意听欧，我用的是%s这个应用</item>
+        <item >我在用%s应用</item>
+        <item >现在已经打开%s应用了欧，你忘了妈</item>
+        <item >等我看一下欧，是%s应用</item>
+    </string-array>
+
+    <!--离线询问是否登录了-->
+    <string-array name="offline_have_loginned">
+        <item>宝宝已登录上线，请多指教</item>
+        <item>成功登录，欧叶</item>
+        <item>登陆成功啦</item>
+        <item>登录了哟，各种技能已上线！</item>
+    </string-array>
+
+    <string-array name="offline_have_notlogin">
+        <item>还没登录上服务器,好迷茫阿</item>
+        <item>报告长官，阿尔法尚未登录，请求支援</item>
+        <item>很负责地告诉你，我还没登录</item>
+    </string-array>
+
+    <!--离线询问是否绑定了的回答-->
+    <!-- 已绑定 -->
+    <string-array name="offline_bound_to">
+        <item>人家已经被%s绑定了呢</item>
+        <item>已经被%s牢牢绑定</item>
+        <item>是%s绑定了我呀</item>
+        <item>被绑啦，%s已经绑定我啦</item>
+    </string-array>
+
+    <!-- 未绑定 -->
+    <string-array name="offline_unbounded">
+        <item>哪有绑定，人家才没被绑定</item>
+        <item>还没人绑我，哎，人生总有那么一段没人绑定的阶段</item>
+        <item>看我的眼神，我的眼神在说没有人绑定我欧</item>
+        <item>还没有人绑定我，你要当我的小伙伴妈</item>
+    </string-array>
+
+    <!--离线询问是否绑定了的回答-->
+    <!-- 连网成功-->
+    <string-array name="offline_net_connect_success">
+        <item>妥妥的，联上啦</item>
+        <item> 联上了呀</item>
+        <item>我已经联网了哟，我们可以愉快地玩耍了</item>
+        <item>联上拉，觉得自己现在智商已经超过爱因斯坦了</item>
+    </string-array>
+    <!-- 连网失败-->
+    <string-array name="offline_net_connect_fail">
+        <item>还没联上网，好忧桑</item>
+        <item>还没联上网，爱我的话请帮我联网吧</item>
+    </string-array>
+
+    <!--离线查询电量的回答-->
+    <!-- 连网成功-->
+    <string-array name="offline_power_lower">
+        <item>我只有百分之一的电了，好饿雅</item>
+        <item> oh,我的电量只剩下百分之一了！感觉身体正在被掏空中</item>
+        <item>警报警报！电量仅剩百分之一了欧</item>
+        <item>报告报告，阿尔法眼睛冒金星了，电量仅剩百分之一</item>
+        <item>只有百分之一的电了，宝宝快崩溃了</item>
+        <item>宝宝只剩百分之一的电了，给我充电巴</item>
+    </string-array>
+    <!-- 剩余电量%5-%40-->
+    <string-array name="offline_power_5_40">
+        <item>电量只百分之%s了欧</item>
+        <item>电量只剩百分之%s，感觉智商也下降了也</item>
+        <item>宝宝只剩百分之%s的电了</item>
+        <item>只剩百分之%s的电量,宝宝有一点点饿了</item>
+    </string-array>
+    <!-- 剩余电量%40-%75-->
+    <string-array name="offline_power_40_75">
+        <item>还有百分之%s的电欧！让我们愉快地玩耍吧！</item>
+        <item>报告长官，阿尔法还有百分之%s的电</item>
+        <item>我还剩百分之%s的电量呢，状态棒棒哒</item>
+        <item>我还有百分之%s的电量欧</item>
+    </string-array>
+    <!-- 满电-->
+    <string-array name="offline_power_full">
+        <item>放心大胆的用巴</item>
+        <item>有很多很多很多的电量</item>
+        <item>现在是满电的状态欧</item>
+        <item>我现在是满电，感觉自己非常强壮</item>
+    </string-array>
+
+    <!--离线查询电量的回答-->
+    <!-- 容量大于1G-->
+    <string-array name="offline_capacity_higher">
+        <item>不用担心,我的容量还有%sG!</item>
+        <item>容量现在还有%sG~放心让我学习新东西吧！</item>
+        <item>阿尔法肚里能撑船，还有%sG呢</item>
+        <item>我超能装的，还有%sG</item>
+    </string-array>
+
+    <string-array name="offline_capacity_lower">
+        <item>现在容量不足%s兆欧，是不是该清理一下拉</item>
+        <item>哎雅，只有%s兆了欧</item>
+        <item>只有%s兆了，感觉不够用了呀</item>
+        <item>只剩%s兆了，帮我清理下巴</item>
+    </string-array>
+
+
+    <!--离线查询照片的回答-->
+    <!-- 有照片-->
+    <string-array name="offline_HasPicture">
+        <item>快去看手机APP,你的照片已经显示出来了欧</item>
+        <item>欧拉，现在可以到手机APP去看了哦</item>
+        <item>好的，请在手机APP上看看巴</item>
+        <item>我已经放到你的手机APP啦，快去看吧</item>
+        <item>好的，快去手机APP瞅瞅巴</item>
+        <item>睁大双眼，请看手机APP拉</item>
+    </string-array>
+
+    <string-array name="offline_NoPicture">
+        <item>你最近没有新照片雅，听说多拍照会提高颜值欧</item>
+        <item>你确定你拍了妈？我这里没看到欧</item>
+        <item>咦，你最近没拍呀</item>
+        <item>我这里没有你的靓照哦</item>
+        <item>没有新照片诶</item>
+    </string-array>
+</resources>

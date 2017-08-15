@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/poplistbg"
+    android:orientation="vertical" >
+
+    <!-- 如果layout_width的值为fill_parent时，居中要用android:gravity="center" -->
+
+    <ListView
+        android:id="@+id/lv_up"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:divider="@color/white"
+        android:dividerHeight="0.5dip"
+        android:entries="@array/city" />
+
+</LinearLayout>

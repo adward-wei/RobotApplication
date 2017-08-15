@@ -1,0 +1,227 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.jakewharton.hugo'
+
+def bakPath = file("${buildDir}/bakFile/")
+def bakFiles = ["mapping.txt","resources.txt","seeds.txt","usage.txt"]
+
+//获取产品的名字
+def getProductName() {
+    return "alpha_service_"+ rootProject.ext.alpha_services.versionName + "${getJenkinsBuild()}"
+}
+
+//获取当前系统的时间
+def releaseTime() {
+    return new Date().format("yyyyMMddHHmmss")
+}
+
+boolean isInJeknins() {
+    Map<String, String> map =  System.getenv()
+    if(map == null) {
+        return false
+    }
+//    printf('env=%s\n',map.toMapString())
+    String str
+    Iterator it = map.iterator();
+    while(it.hasNext()) {
+        str = it.next();
+        if(str.contains("jenkins")){
+            return true
+        }
+    }
+    return false;
+}
+//获取jenkins build number
+def getJenkinsBuild() {
+    boolean  flag = isInJeknins();
+    if(flag){
+        ext.env = System.getenv()
+        ext.buildNumber = env.get("BUILD_NUMBER");
+        return "#" + "$buildNumber"
+    }else{
+        return ""
+    }
+}
+
+def getProductProps(String product){
+    def Properties props = new Properties()
+    def proFile = file('products/'+ product +'/config.properties')
+    if (proFile.canRead()){
+        props.load(new FileInputStream(proFile))
+    }
+    props
+}
+
+android {
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+    buildToolsVersion rootProject.ext.android.buildToolsVersion
+    defaultConfig {
+        applicationId "com.ubtechinc.alpha2services"
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        versionCode rootProject.ext.alpha_services.versionCode
+        versionName rootProject.ext.alpha_services.versionName
+        multiDexEnabled  true
+        compileOptions {
+            sourceCompatibility JavaVersion.VERSION_1_7
+            targetCompatibility JavaVersion.VERSION_1_7
+        }
+        ndk {
+            abiFilters 'armeabi-v7a'
+        }
+    }
+
+    signingConfigs {
+        release {
+            storeFile file("rk-debug.keystore")
+            storePassword "ubt83474428"
+            keyAlias "androiddebugkey"
+            keyPassword "ubt83474428"
+        }
+        debug {
+            storeFile file("rk-debug.keystore")
+            storePassword "ubt83474428"
+            keyAlias "androiddebugkey"
+            keyPassword "ubt83474428"
+        }
+    }
+
+    applicationVariants.all { variant ->
+        variant.outputs.each { output ->
+            def oldFile = output.outputFile
+            if (variant.buildType.name.equals('release')) {
+                def releaseApkName = variant.flavorName + "_" + getProductName() + "_${releaseTime()}_"  + 'release.apk'
+                output.outputFile = new File(oldFile.parent, releaseApkName)
+            }
+        }
+    }
+
+    android.applicationVariants.all{ variant->
+        def taskName = variant.name
+        tasks.all{
+            if("assemble${taskName}".equalsIgnoreCase(it.name)){
+                it.doLast{
+                    copy{
+                        def fileName = getProductName() + "_${releaseTime()}"
+                        if(variant.productFlavors != null && variant.productFlavors[0] != null){
+                            fileName += "_"+variant.productFlavors[0].name
+                        }
+
+                        if(variant.buildType != null){
+                            fileName += "_"+variant.buildType.name
+                        }
+                        def destPath = bakPath;
+                        def apkName = fileName+".apk"
+                        def sourceApk = variant.outputs.outputFile
+                        def sourceApkName = sourceApk[0].getName()
+                        from sourceApk
+                        into destPath
+
+                        //备份 apk
+                        include(sourceApkName)
+                        rename(sourceApkName,apkName)
+
+                        //备份混淆文件
+                        from "${buildDir}/outputs/mapping/${variant.dirName}/"
+                        into destPath
+                        for(bakFileName in bakFiles){
+                            include(bakFileName)
+                            rename(bakFileName,fileName+"_"+bakFileName)
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            signingConfig signingConfigs.release
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+        debug {
+            minifyEnabled false
+            shrinkResources false
+            signingConfig signingConfigs.release
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+        debug_proguard {
+            minifyEnabled true
+            shrinkResources true
+            signingConfig signingConfigs.release
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+        ignoreWarnings true
+    }
+
+    productFlavors {
+        two {
+            def props = getProductProps('all')
+            if (props != null){
+                applicationId props['applicationId']
+                buildConfigField "String", "SpeechEngine", props['className']
+                printf('applicationId=%s,className=%s\n',props['applicationId'], props['className'])
+            }
+        }
+
+        ifytek {
+            def props = getProductProps('ifytek')
+            if (props != null){
+                applicationId props['applicationId']
+                buildConfigField "String", "SpeechEngine", props['className']
+                printf('applicationId=%s,className=%s\n',props['applicationId'], props['className'])
+            }
+        }
+        nuance {
+            def props = getProductProps('nuance')
+            if (props != null){
+                applicationId props['applicationId']
+                buildConfigField "String", "SpeechEngine", props['className']
+                printf('applicationId=%s, className=%s\n',props['applicationId'], props['className'])
+            }
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    provided rootProject.ext.deps.supportAnnotations
+    compile project(':utilcode')
+    compile project(':netutils')
+    compile project(':servicemodel')
+    compile project(':QREncodeLib2')
+    compile project(':download')
+
+    ifytekCompile project(':speechifytek')
+    nuanceCompile project(':speechnuance')
+    twoCompile project(':speechifytek')
+    twoCompile project(':speechnuance')
+    //语音注入
+    //compile rootProject.ext.deps.dagger
+    //provided rootProject.ext.deps.dagger_compiler
+
+    //调试
+    compile rootProject.ext.deps.timber
+    compile rootProject.ext.deps.hugo
+    compile 'cn.zhaiyifan:init:1.0.1'
+//    compile 'com.parse.bolts:bolts-tasks:1.4.0'
+    //bugly
+    compile rootProject.ext.deps.bugly
+//    compile 'com.tencent.bugly:nativecrashreport:2.6.5'
+    //测试
+    testCompile rootProject.ext.deps.junit
+    testCompile rootProject.ext.deps.mockito
+
+    testCompile(rootProject.ext.deps.robolectric) {
+        exclude group: 'commons-logging', module: 'commons-logging'
+        exclude group: 'org.apache.httpcomponents', module: 'httpclient'
+    }
+}

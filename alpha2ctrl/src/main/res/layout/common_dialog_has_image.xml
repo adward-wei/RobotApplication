@@ -1,0 +1,141 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="@color/dialog_bg"
+              android:fitsSystemWindows="true"
+              android:orientation="vertical"
+              android:weightSum="3">
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="6">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_weight="4"
+            android:background="@drawable/connect_robot_background"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:weightSum="4">
+
+            <ImageView
+                android:id="@+id/dialog_image"
+                style="@style/contentTitleText"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/scan_qrcode_tips_margin_top"
+                android:layout_weight="1.2"
+                android:gravity="center"
+                android:padding="5dp"
+                android:src="@drawable/no_app"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/dialog_tips"
+                style="@style/contentTitleText"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_below="@id/dialog_image"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/scan_qrcode_tips_margin_top"
+                android:layout_weight="1.2"
+                android:gravity="center"
+                android:padding="5dp"
+                android:textColor="@color/text_gray"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/dialog_msg"
+                style="@style/thirdTitleText"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="@dimen/scan_qrcode_tips_margin_top"
+                android:layout_weight="1.6"
+                android:gravity="center"
+                android:padding="5dp"
+                android:textColor="@color/black"/>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/text_gray2"/>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_alignParentBottom="true"
+                android:layout_weight="1.2"
+                android:orientation="horizontal"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textColor="@color/white">
+
+                <Button
+                    android:id="@+id/btn_cancel"
+                    style="@style/thirdTitleText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="@dimen/input_wifi_edittext_margin_right"
+                    android:layout_marginRight="@dimen/input_wifi_edittext_margin_right"
+                    android:layout_weight="1"
+                    android:background="@color/transparent"
+                    android:text="@string/common_btn_cancel"
+                    android:textColor="@color/black"/>
+
+                <View
+                    android:id="@+id/vertical_divider"
+                    android:layout_width="1dp"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/text_gray2"/>
+
+                <Button
+                    android:id="@+id/btn_comfirm"
+                    style="@style/thirdTitleText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="@dimen/input_wifi_edittext_margin_right"
+                    android:layout_marginRight="@dimen/input_wifi_edittext_margin_right"
+                    android:layout_weight="1"
+                    android:background="@color/transparent_background"
+                    android:text="@string/common_btn_confirm"
+                    android:textColor="@color/red"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1.1"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="1.1"/>
+
+</LinearLayout>

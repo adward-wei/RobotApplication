@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:descendantFocusability="blocksDescendants"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginBottom="@dimen/app_detail_margin"
+        android:layout_marginTop="@dimen/app_detail_margin"
+        android:layout_marginRight="@dimen/app_detail_margin"
+
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_selected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/_mode_text_margin_top"
+            android:src="@drawable/ic_unpress"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/iv_app_img"
+            android:layout_width="@dimen/app_detail_button_heigh"
+            android:layout_height="@dimen/app_detail_button_heigh"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/iv_selected"
+             />
+
+        <TextView
+            android:id="@+id/tv_app_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/_mode_text_margin_top"
+            android:layout_toRightOf="@+id/iv_app_img"
+            android:text="中英互译"
+            android:textColor="@color/alarm_black"
+            android:textSize="@dimen/text_click_size"
+            />
+
+        <TextView
+            android:id="@+id/tv_app_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/_mode_text_margin_top"
+            android:layout_marginRight="@dimen/app_detail_margin"
+            android:text="1.5M"
+            android:textColor="@color/bg_color_b7"
+            android:textSize="@dimen/text_click_size"
+            />
+
+    </RelativeLayout>
+</LinearLayout>

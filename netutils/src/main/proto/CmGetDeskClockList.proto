@@ -1,0 +1,15 @@
+syntax = "proto3";
+option java_package = "com.ubtechinc.alpha";
+import "DeskClock.proto";
+message CmGetDeskClockListRequest {
+
+
+
+}
+
+message CmGetDeskClockListResponse {
+
+
+    repeated DeskClock clockList = 1;
+}
+

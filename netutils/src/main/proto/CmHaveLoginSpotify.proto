@@ -1,0 +1,13 @@
+syntax = "proto3";
+option java_package = "com.ubtechinc.alpha";
+message CmHaveLoginSpotifyRequest {
+
+    int32 isLogin = 1;
+
+}
+
+message CmHaveLoginSpotifyResponse {
+
+    int32 isLogin = 1;
+
+}

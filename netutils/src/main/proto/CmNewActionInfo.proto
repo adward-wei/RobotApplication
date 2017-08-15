@@ -1,0 +1,17 @@
+syntax = "proto3";
+option java_package = "com.ubtechinc.alpha";
+message CmNewActionInfoRequest {
+
+    string actionId = 1;
+    string actionName = 2;
+    int32 actionType = 3;
+
+}
+
+message CmNewActionInfoResponse {
+
+    string actionId = 1;
+    string actionName = 2;
+    int32 actionType = 3;
+
+}

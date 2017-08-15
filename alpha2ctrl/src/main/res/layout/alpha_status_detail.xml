@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android_custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg_color_b6"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/top_title"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/top_title_heigh"
+        layout="@layout/authorize_top_title" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_color_b3"
+                android:orientation="vertical"
+                android:padding="@dimen/input_wifi_edittext_margin_right" >
+
+                <TextView
+                    style="@style/t2_text_style"
+                    android:padding="5dp"
+                    android:text="语音引擎类型"
+                    android:textSize="@dimen/text_second_size" />
+
+                <TextView
+                    android:id="@+id/speechengine_tv"
+                    style="@style/click_text_style"
+                    android:padding="5dp" />
+
+                <TextView
+                    style="@style/t2_text_style"
+                    android:layout_marginTop="@dimen/input_wifi_edittext_margin_right"
+                    android:padding="5dp"
+                    android:text="语音引擎运行状态"
+                    android:textSize="@dimen/text_second_size" />
+
+                <TextView
+                    android:id="@+id/speechengineState_tv"
+                    style="@style/click_text_style"
+                    android:padding="5dp"
+                    android:text="@string/device_soft_hard_ware_info_software" />
+
+                <TextView
+                    style="@style/t2_text_style"
+                    android:layout_marginTop="@dimen/input_wifi_edittext_margin_right"
+                    android:padding="5dp"
+                    android:text="语音引擎详细运行细节"
+                    android:textSize="@dimen/text_second_size" />
+
+                <TextView
+                    android:id="@+id/speechengineDetail_tv"
+                    style="@style/click_text_style"
+                    android:padding="5dp"
+                    android:text="@string/device_soft_hard_ware_info_software" />
+
+                <TextView
+                    style="@style/t2_text_style"
+                    android:layout_marginTop="@dimen/input_wifi_edittext_margin_right"
+                    android:padding="5dp"
+                    android:text="当前正在运行的第三方app"
+                    android:textSize="@dimen/text_second_size" />
+
+                <TextView
+                    android:id="@+id/appName_tv"
+                    style="@style/click_text_style"
+                    android:padding="5dp"
+                    android:text="@string/device_soft_hard_ware_info_software" />
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_color_b3"
+                android:orientation="vertical"
+                android:padding="@dimen/input_wifi_edittext_margin_right" >
+
+                <TextView
+                    style="@style/t2_text_style"
+                    android:padding="5dp"
+                    android:text="正在运行的识别引擎类型"
+                    android:textSize="@dimen/text_second_size" />
+
+                <TextView
+                    android:id="@+id/speechASREngine_tv"
+                    style="@style/click_text_style"
+                    android:padding="5dp"
+                    android:text="@string/device_soft_hard_ware_info_software" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/input_wifi_edittext_margin_top"
+                android:background="@color/color_setting"
+                android:minHeight="@dimen/search_item_height"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp"
+                android:paddingLeft="5dp"
+                android:paddingTop="5dp">
+
+
+    <CheckBox
+        android:id="@+id/select_checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:button="@drawable/message_checkbox_selector"
+        android:clickable="false"
+        android:focusable="false"
+        android:layout_marginLeft="10dp"
+        android:visibility="gone"/>
+
+
+
+    <com.ubtechinc.alpha2ctrlapp.widget.RoundImageView
+        android:id="@+id/head_pic"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/select_checkBox"
+
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/header_item_icon"/>
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingLeft="15dp"
+            android:paddingRight="25dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/head_pic"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/chat_object"
+                style="@style/t2_text_style"
+                android:textSize="@dimen/text_third_size"
+                android:text=""
+                android:gravity="left|top"
+                android:layout_weight="1"
+              />
+
+            <ImageView
+                android:id="@+id/msg_status"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:background="@drawable/msg_red_point"
+               android:visibility="gone"
+
+               />
+        </LinearLayout>
+
+
+
+
+
+
+    <ImageView
+        android:id="@+id/arrow_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/detail_forward"
+        android:paddingLeft="5dp"
+        />
+
+    <TextView
+        android:id="@+id/time_tv"
+        style="@style/smallTitleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+
+        android:text=""
+        android:textColor="@color/text_gray2"/>
+
+</RelativeLayout>

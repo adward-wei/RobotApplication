@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">sdk测试</string>
+    <string name="led_test">led测试</string>
+    <string name="speech_test">语音测试</string>
+    <string name="title_led">led接口</string>
+    <string name="title_motion">motion接口</string>
+    <string name="title_speech">speech接口</string>
+    <string name="title_system">sys接口</string>
+</resources>

@@ -1,0 +1,234 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/alarm_bg"
+        android:orientation="vertical" >
+
+        <include
+            android:id="@+id/top_title"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/top_title_heigh"
+            layout="@layout/authorize_top_title" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:clickable="true"
+            android:minHeight="@dimen/search_item_height" >
+
+            <EditText
+                android:id="@+id/alarm_name"
+                style="@style/thirdTitleText"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/input_wifi_edittext_height"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+
+                android:background="@drawable/input_nomal"
+                android:hint="@string/alarm_name"
+                android:maxLength="20"
+                android:paddingLeft="40dp"
+                android:singleLine="true"
+                android:textColor="#656c71"
+                android:textColorHint="#C8C8C8" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/alarm_icon_image" >
+            </ImageView>
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@color/text_gray2" >
+        </ImageView>
+
+        <RelativeLayout
+            android:id="@+id/alarm_time_lay"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:clickable="true"
+            android:minHeight="@dimen/search_item_height"
+            android:paddingLeft="10dp" >
+
+            <TextView
+                style="@style/SecondTitleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="@string/alarm_time"
+                android:textColor="@color/alarm_hint" />
+
+            <TextView
+                android:id="@+id/alarm_time_tv"
+                style="@style/SecondTitleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:text="2015年10月28日"
+                android:textColor="@color/alarm_black" />
+
+            <ImageView
+                style="@style/SecondTitleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/arra"
+                android:textColor="@color/white"
+                android:visibility="invisible" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/alarm_active_lay"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:background="@color/white"
+            android:clickable="true"
+            android:minHeight="@dimen/search_item_height"
+            android:paddingLeft="10dp" >
+
+            <TextView
+                style="@style/SecondTitleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="@string/alarm_active"
+                android:textColor="@color/alarm_hint" />
+
+            <ImageView
+                android:id="@+id/arrar_active"
+                style="@style/SecondTitleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/arra"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/alarm_active_tv"
+                style="@style/SecondTitleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:layout_toLeftOf="@id/arrar_active"
+                android:gravity="right"
+                android:text="@string/alarm_choose_active"
+                android:textColor="@color/alarm_black" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/alarm_repeat_lay"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:background="@color/white"
+            android:clickable="true"
+            android:minHeight="@dimen/search_item_height"
+            android:paddingLeft="10dp" >
+
+            <TextView
+                style="@style/SecondTitleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="@string/activity_more_alarm_detail_repeat"
+                android:textColor="@color/alarm_hint" />
+
+            <ImageView
+                android:id="@+id/arrar_repeat"
+                style="@style/SecondTitleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/arra"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/alarm_repeat_tv"
+                style="@style/SecondTitleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:layout_toLeftOf="@id/arrar_repeat"
+                android:gravity="right"
+                android:text="@string/alarm_repeat_no"
+                android:textColor="@color/alarm_black" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/alarm_tip_lay"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:background="@color/color_setting"
+            android:clickable="true"
+            android:paddingLeft="10dp"
+            android:visibility="gone" >
+
+            <TextView
+                style="@style/SecondTitleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="@string/alarm_tip"
+                android:textColor="@color/white" />
+
+            <ImageView
+                android:id="@+id/arrar_tip"
+                style="@style/SecondTitleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/arra"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/alarm_tip_tv"
+                style="@style/SecondTitleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/arrar_tip"
+                android:gravity="right"
+                android:text="@string/alarm_no"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <include
+        layout="@layout/activity_imitate_wheel_main"
+        android:visibility="gone" />
+
+</RelativeLayout>

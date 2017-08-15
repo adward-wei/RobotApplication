@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/transparent_background"
+    android:paddingBottom="10dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="10dp" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/rounder_white_bg"
+        android:scrollbars="none" 
+        android:id="@+id/scoll_view">
+  
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@style/thirdTitleText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:gravity="center"
+                android:text="@string/connect_disable_voice"
+                android:textColor="@color/main_page_active_select" />
+
+            <TextView
+                style="@style/contentTitleText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:gravity="left"
+                android:lineSpacingExtra="5dp"
+                android:text="@string/connect_guide_tips1"
+                android:textColor="@color/main_page_active_select" />
+
+            <TextView
+                style="@style/contentTitleText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:gravity="left"
+                android:lineSpacingExtra="5dp"
+                android:text="@string/connect_guide_tips2"
+                android:textColor="@color/main_page_active_select" />
+
+            <TextView
+                android:id="@+id/tips4Tv"
+                style="@style/contentTitleText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:gravity="left"
+                android:lineSpacingExtra="5dp"
+                android:visibility="gone"
+                android:text="@string/connect_guide_tips3"
+                android:textColor="@color/main_page_active_select" />
+
+            <TextView
+                style="@style/contentTitleText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:gravity="left"
+                  android:visibility="gone"
+                android:lineSpacingExtra="5dp"
+                android:text="@string/connect_guide_tips4"
+                android:textColor="@color/main_page_active_select" />
+
+            <ImageView
+                android:id="@+id/tips_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@null"
+                  android:visibility="gone"
+                android:src="@drawable/juli2" />
+
+            <TextView
+                style="@style/contentTitleText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:lineSpacingExtra="5dp"
+                  android:visibility="gone"
+                android:text="@string/connect_guide_icon_1"
+                android:textColor="@color/tip_gray" />
+
+            <TextView
+                style="@style/contentTitleText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:gravity="left"
+                android:lineSpacingExtra="5dp"
+                  android:visibility="gone"
+                android:text="@string/connect_guide_tips5"
+                android:textColor="@color/main_page_active_select" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                  android:visibility="gone"
+                android:background="@null"
+                android:src="@drawable/icon_down" />
+
+            <TextView
+                style="@style/contentTitleText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:lineSpacingExtra="5dp"
+                  android:visibility="gone"
+                android:text="@string/connect_guide_icon_2"
+                android:textColor="@color/tip_gray" />
+
+            <TextView
+                style="@style/contentTitleText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:gravity="left"
+                android:lineSpacingExtra="5dp"
+                  android:visibility="gone"
+                android:text="@string/connect_guide_tips6"
+                android:textColor="@color/main_page_active_select" />
+
+            <TextView
+                style="@style/smallTitleText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="25dp"
+                android:gravity="left"
+                android:lineSpacingExtra="5dp"
+                  android:visibility="gone"
+                android:text="@string/connect_guide_tips6_tips"
+                android:textColor="@color/tip_gray" />
+
+            <TextView
+                style="@style/contentTitleText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:gravity="left"
+                android:lineSpacingExtra="5dp"
+                android:text="@string/connect_guide_tips7"
+                android:textColor="@color/main_page_active_select" />
+
+            <TextView
+                style="@style/smallTitleText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="25dp"
+                android:gravity="left"
+                android:lineSpacingExtra="5dp"
+                android:text="@string/connect_guide_tips7_tips"
+                android:textColor="@color/tip_gray" />
+
+            <TextView
+                style="@style/smallTitleText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="25dp"
+                android:gravity="left"
+                android:lineSpacingExtra="5dp"
+                android:text="@string/connect_guide_our_email"
+                android:textColor="@color/tip_gray" />
+
+            <TextView
+                style="@style/smallTitleText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="left"
+                android:lineSpacingExtra="5dp"
+                android:text="@string/connect_guide_our_phone"
+                android:visibility="invisible"
+                android:textColor="@color/tip_gray" />
+        </LinearLayout>
+       
+    </ScrollView>
+ <ImageView 
+            android:id="@+id/btn_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+              android:layout_alignRight="@id/scoll_view"
+               android:layout_alignTop="@id/scoll_view"
+            android:src="@drawable/icon_delete"
+            android:layout_marginTop="@dimen/input_wifi_edittext_margin_right"
+            android:layout_marginRight="@dimen/input_wifi_edittext_margin_right"/>
+
+</RelativeLayout>
